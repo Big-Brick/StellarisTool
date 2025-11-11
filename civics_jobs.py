@@ -25,9 +25,16 @@ import glob
 from dataclasses import dataclass, field
 from typing import Dict, List, Tuple, Optional, Set
 
+from pathlib import Path
+
 import gi
 gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk, GObject
+
+DEBUG = True
+def dbg(*a):
+	if DEBUG:
+		print("[civics_jobs]", *a)
 
 # ----------------------------
 # Data types
@@ -48,6 +55,84 @@ class CivicJobEffects:
 	civic_key: str
 	civic_name: str
 	effects: List[JobEffect] = field(default_factory=list)
+
+# Top-level “key = { … }” matcher (jobs have bare keys like 'physicist', 'clerk', etc.)
+_JOB_DEF_START = re.compile(r'^\s*([A-Za-z0-9_]+)\s*=\s*{', re.M)
+
+_SKIP_TOP_KEYS = {
+    # common container keys we might bump into; we only want actual job blocks
+    'country', 'species', 'planet', 'triggered_planet_modifier', 'triggered_country_modifier',
+    'resources', 'upkeep', 'produces', 'possible', 'possible_pre_triggers', 'possible_precalc',
+    'promotion', 'demotion', 'weight', 'planet_modifier', 'inline_script', 'swappable_data',
+    'overlord_resources', 'tags', 'category'
+}
+
+def _find_matching_brace(s: str, open_pos: int) -> int:
+    """Given s[open_pos] == '{', find the matching '}' position (or -1)."""
+    depth = 0
+    for i in range(open_pos, len(s)):
+        ch = s[i]
+        if ch == '{':
+            depth += 1
+        elif ch == '}':
+            depth -= 1
+            if depth == 0:
+                return i
+    return -1
+
+# Requires: _JOB_DEF_START, _SKIP_TOP_KEYS, _find_matching_brace, dbg(), _loc_get()
+# (you already have those; keep them)
+
+def _discover_jobs(common_root: str, loc: Dict[str, str]) -> Tuple[Set[str], Dict[str, str]]:
+	pop_jobs_dir = os.path.join(common_root, "pop_jobs")
+	dbg("discover jobs in:", pop_jobs_dir)
+
+	known_jobs: Set[str] = set()
+	job_names: Dict[str, str] = {}
+
+	if not os.path.isdir(pop_jobs_dir):
+		dbg("WARNING: pop_jobs dir missing")
+		return known_jobs, job_names
+
+	for path in sorted(glob.glob(os.path.join(pop_jobs_dir, "*.txt"))):
+		try:
+			raw = open(path, "r", encoding="utf-8-sig").read()
+		except Exception as e:
+			dbg("read error:", path, e)
+			continue
+
+		text = _strip_comments(raw)
+
+		# Jobs are defined with bare keys like:  physicist = { ... }, clerk = { ... }
+		for m in _JOB_DEF_START.finditer(text):
+			key = m.group(1)
+			if key in _SKIP_TOP_KEYS:
+				continue
+
+			# Extract the block to sanity-check it's a real job (has a category)
+			open_brace = text.find('{', m.end() - 1)
+			if open_brace == -1:
+				continue
+			close_brace = _find_matching_brace(text, open_brace)
+			if close_brace == -1:
+				continue
+
+			body = text[open_brace:close_brace]
+			# Real job defs always have a category (worker/specialist/ruler/…)
+			if re.search(r'\bcategory\s*=\s*[A-Za-z_]+', body) is None:
+				continue
+
+			job_key = f"job_{key}"
+			known_jobs.add(job_key)
+			job_names[job_key] = _loc_get(loc, job_key)
+
+	dbg(f"discovered {len(known_jobs)} jobs")
+	try:
+		dbg("sample jobs:", sorted(list(known_jobs))[:10])
+	except Exception:
+		pass
+
+	return known_jobs, job_names
 
 # ----------------------------
 # Localisation helpers
@@ -171,9 +256,124 @@ def _extract_block(body: str, name: str) -> List[str]:
 			break
 	return out
 
+def _parse_triggered_jobs_blocks(text: str, loc: Dict[str, str], known_jobs: Set[str], srcfile: str) -> Dict[str, List[JobEffect]]:
+	"""
+	Find blocks like:
+	  triggered_jobs = {
+	    potential = { has_civic = civic_foo }
+	    job_research_director = 2
+	    job_politician = -2
+	  }
+	Return: civic_key -> [JobEffect, ...]
+	"""
+	result: Dict[str, List[JobEffect]] = {}
+	for tb in _extract_block(text, "triggered_jobs"):
+		# Collect all civics referenced in potential/limit/etc inside this block
+		civics = set(re.findall(r'\bhas_civic\s*=\s*(civic_[A-Za-z0-9_]+)\b', tb))
+		if not civics:
+			continue
+		# Find job deltas in the same block
+		for jm in re.finditer(r'\b(job_[A-Za-z0-9_]+)\s*=\s*([+\-]?\d+)\b', tb):
+			job_key, val = jm.group(1), jm.group(2)
+			if job_key not in known_jobs:
+				continue
+			eff = JobEffect(job_key, _job_name(loc, job_key), "count", val, "planet/building", srcfile, "triggered_jobs")
+			for ck in civics:
+				result.setdefault(ck, []).append(eff)
+	return result
+
+def _parse_tpm_for_civic_jobs(tpm_text: str, loc: Dict[str, str], known_jobs: Optional[Set[str]], srcfile: str) -> Dict[str, List[JobEffect]]:
+	def is_job(j: str) -> bool:
+		return (known_jobs is None) or (j in known_jobs)
+
+	civics = set(re.findall(r'\bhas_civic\s*=\s*(civic_[A-Za-z0-9_]+)\b', tpm_text))
+	if not civics:
+		return {}
+	collected: List[JobEffect] = []
+
+	for mod in _extract_block(tpm_text, "modifier"):
+		collected.extend(_parse_effects_from_modifier(mod, loc, known_jobs, srcfile, "building/district TPM"))
+
+	for jm in re.finditer(r'\b(job_[A-Za-z0-9_]+)\s*=\s*([+\-]?\d+)\b', tpm_text):
+		jk, val = jm.group(1), jm.group(2)
+		if is_job(jk):
+			collected.append(JobEffect(jk, _job_name(loc, jk), "count", val, "planet/building", srcfile, "TPM: add_jobs"))
+
+	out: Dict[str, List[JobEffect]] = {}
+	if collected:
+		for ck in civics:
+			out.setdefault(ck, []).extend(collected)
+	return out
+
+def _scan_job_swaps_from_assets(common_root: str, loc: Dict[str, str], known_jobs: Optional[Set[str]]) -> Dict[str, List[JobEffect]]:
+	out: Dict[str, List[JobEffect]] = {}
+	for sub in ("buildings","districts"):
+		ad = os.path.join(common_root, sub)
+		if not os.path.isdir(ad):
+			dbg("missing assets dir:", ad)
+			continue
+		for path in sorted(glob.glob(os.path.join(ad, "*.txt"))):
+			try:
+				raw = open(path, "r", encoding="utf-8-sig").read()
+			except Exception as e:
+				dbg("read error:", path, e)
+				continue
+			text = _strip_comments(raw)
+
+			found1 = _parse_triggered_jobs_blocks(text, loc, known_jobs or set(), os.path.basename(path))
+			found2: Dict[str, List[JobEffect]] = {}
+			for tpm in _extract_block(text, "triggered_planet_modifier"):
+				mapped = _parse_tpm_for_civic_jobs(tpm, loc, known_jobs, os.path.basename(path))
+				for ck, effs in mapped.items():
+					found2.setdefault(ck, []).extend(effs)
+
+			for d in (found1, found2):
+				for ck, effs in d.items():
+					out.setdefault(ck, []).extend(effs)
+	dbg("job swaps found for", len(out), "civics")
+	return out
+
 # ----------------------------
 # Effect extraction
 # ----------------------------
+
+# e.g. planet_researchers_society_research_produces_add = 1
+_PLANET_GROUP_RES_RE = re.compile(
+    r'\bplanet_([a-z_]+?)s_([a-z_]+)_(produces|upkeep)_(add|mult)\s*=\s*([+-]?\d+(?:\.\d+)?)'
+)
+
+PLANET_JOB_RESOURCE_RE = re.compile(
+	r'\bplanet_([A-Za-z0-9_]+)s_([A-Za-z0-9_]+)_produces_(add|mult)\s*=\s*([+\-]?[0-9.]+)\b'
+)
+
+# e.g. physicist_jobs_bonus_workforce_mult = 0.02
+JOBS_BONUS_WORKFORCE_RE = re.compile(
+    r'\b([a-z_]+)_jobs_bonus_workforce_mult\s*=\s*([+-]?\d+(?:\.\d+)?)'
+)
+
+def _singular(plural: str) -> str:
+    if plural.endswith('ies'):
+        return plural[:-3] + 'y'
+    if plural.endswith('ses'):
+        return plural[:-2]  # e.g. "taxes" -> "taxe" (rare), but fine for most job names
+    if plural.endswith('s'):
+        return plural[:-1]
+    return plural
+
+# Special group→jobs expansion (because there is no 'job_researcher')
+_GROUP_TO_JOBS = {
+    'researcher': ['job_physicist', 'job_biologist', 'job_engineer'],
+    # you can add other weird groups here if needed later
+}
+
+def _expand_group_to_jobs(group_base: str, known_jobs: Set[str]) -> List[str]:
+    # group_base is singular form already (we pass singularized value below)
+    if group_base in _GROUP_TO_JOBS:
+        return _GROUP_TO_JOBS[group_base]
+    # otherwise assume a straightforward singular job exists
+    candidate = f'job_{group_base}'
+    return [candidate] if candidate in known_jobs or not known_jobs else []
+
 
 # Match direct job count modifiers: job_<id>_add = N
 JOB_ADD_RE = re.compile(r'\b(job_[A-Za-z0-9_]+)_add\s*=\s*([+-]?\d+)\b')
@@ -222,117 +422,166 @@ def _plural_to_job_id(plural_root: str) -> Optional[str]:
 		return _IRREGULAR[sing]
 	return f"job_{sing}"
 
-def _parse_effects_from_modifier(mod_text: str, loc: Dict[str, str], src: str, note: str) -> List[JobEffect]:
+def _parse_effects_from_modifier(mod_text: str, loc: Dict[str, str], known_jobs: Optional[Set[str]], src: str, note: str) -> List[JobEffect]:
+	def is_job(j: str) -> bool:
+		return (known_jobs is None) or (j in known_jobs)
+
 	effects: List[JobEffect] = []
 
-	# Direct job counts
+	# A) job_*_add
 	for m in JOB_ADD_RE.finditer(mod_text):
-		job_key, val = m.group(1), m.group(2)
-		effects.append(JobEffect(
-			job_key=job_key,
-			job_name=_job_name(loc, job_key),
-			kind="count",
-			value=val,
-			scope="country",
-			source=src,
-			note=note
-		))
+		jk, val = m.group(1), m.group(2)
+		if is_job(jk):
+			effects.append(JobEffect(jk, _job_name(loc, jk), "count", val, "country", src, note))
 
-	# Planet job production / upkeep multipliers (job-group specific)
+	# B1) planet_<plural>_(produces|upkeep)_mult
 	for m in PLANET_JOB_MULT_RE.finditer(mod_text):
 		plural, kind, val = m.group(1), m.group(2), m.group(3)
-		job_key = _plural_to_job_id(plural)
-		if not job_key:
+		if plural in ("jobs","pops"):
 			continue
-		effects.append(JobEffect(
-			job_key=job_key,
-			job_name=_job_name(loc, job_key),
-			kind=kind,  # "produces_mult" or "upkeep_mult"
-			value=val,
-			scope="country",
-			source=src,
-			note=note
-		))
+		jk = _plural_to_job_id(plural)
+		if jk and is_job(jk):
+			effects.append(JobEffect(jk, _job_name(loc, jk), kind, val, "country", src, note))
+
+	# B2) planet_<plural>_<resource>_produces_(add|mult)
+	for m in PLANET_JOB_RESOURCE_RE.finditer(mod_text):
+		plural, resource, mode, val = m.group(1), m.group(2), m.group(3), m.group(4)
+		if plural in ("jobs","pops"):
+			continue
+		jk = _plural_to_job_id(plural)
+		if jk and is_job(jk):
+			effects.append(JobEffect(jk, _job_name(loc, jk), f"produces_{mode}", val, "country", src, f"{note}; {resource}"))
+
+	# C) job_<id>_(produces|upkeep)_mult
+	for m in re.finditer(r'\b(job_[A-Za-z0-9_]+)_(produces_mult|upkeep_mult)\s*=\s*([+\-]?[0-9.]+)\b', mod_text):
+		jk, kind, val = m.group(1), m.group(2), m.group(3)
+		if is_job(jk):
+			effects.append(JobEffect(jk, _job_name(loc, jk), kind, val, "country", src, note))
+
+	# D) job_<id>_<resource>_produces_(add|mult)
+	for m in re.finditer(r'\b(job_[A-Za-z0-9_]+)_([A-Za-z0-9_]+)_produces_(add|mult)\s*=\s*([+\-]?[0-9.]+)\b', mod_text):
+		jk, resource, mode, val = m.group(1), m.group(2), m.group(3), m.group(4)
+		if is_job(jk):
+			effects.append(JobEffect(jk, _job_name(loc, jk), f"produces_{mode}", val, "country", src, f"{note}; {resource}"))
+
+	# E) job_<id>_output[_add|_mult]
+	for m in re.finditer(r'\b(job_[A-Za-z0-9_]+)_output(_(add|mult))?\s*=\s*([+\-]?[0-9.]+)\b', mod_text):
+		jk, _, suffix, val = m.group(1), m.group(2), m.group(3), m.group(4)
+		if is_job(jk):
+			kind = "output" if not suffix else f"output_{suffix}"
+			effects.append(JobEffect(jk, _job_name(loc, jk), kind, val, "country", src, note))
+
+	# F) <job-base>_jobs_bonus_workforce_mult
+	for m in JOBS_BONUS_WORKFORCE_RE.finditer(mod_text):
+		base, val = m.group(1), m.group(2)
+		jk = f"job_{base}"
+		if is_job(jk):
+			effects.append(JobEffect(jk, _job_name(loc, jk), "bonus_workforce_mult", val, "country", src, note))
 
 	return effects
 
 def parse_civics_job_effects(common_root: str, loc: Dict[str, str]) -> Tuple[List[CivicJobEffects], Dict[str, str]]:
-	"""
-	Parse all civics AND origins for job effects and return:
-	  - list of CivicJobEffects (one entry per civic/origin, only if it has job effects)
-	  - job_name_map: job_key -> localized name (for filter UI)
-
-	We scan:
-	  - common/governments/civics/*.txt   (blocks: civic_*)
-	  - common/origins/*.txt               (blocks: origin_*)
-	Looking for:
-	  - modifier = { job_*_add, planet_*s_{produces,upkeep}_mult }
-	  - triggered_country_modifier = { modifier = { ... } }
-	  - triggered_planet_modifier  = { modifier = { ... } }
-	"""
+	# Discover jobs
+	known_jobs, job_names_from_defs = _discover_jobs(common_root, loc)
+	if len(known_jobs) == 0:
+		dbg("WARNING: 0 jobs discovered — will NOT filter by known jobs (fallback enabled)")
+		known_jobs = None  # disable filtering so we still see effects
 
 	def _scan_dir(dir_path: str, block_prefix: str, name_prefix: str = "") -> Tuple[List[CivicJobEffects], Dict[str, str]]:
 		files = sorted(glob.glob(os.path.join(dir_path, "*.txt")))
+		dbg("scan", dir_path, "files:", len(files))
 		found: List[CivicJobEffects] = []
 		job_names: Dict[str, str] = {}
 
 		for path in files:
 			try:
-				with open(path, "r", encoding="utf-8-sig") as f:
-					raw = f.read()
-			except Exception:
+				raw = open(path, "r", encoding="utf-8-sig").read()
+			except Exception as e:
+				dbg("read error:", path, e)
 				continue
-
 			text = _strip_comments(raw)
+
 			for key, body_start, body_end in _top_blocks(text, block_prefix):
 				body = text[body_start:body_end]
-
 				effects: List[JobEffect] = []
 
-				# Inline (country) modifier
 				for mod in _extract_block(body, "modifier"):
-					effects.extend(_parse_effects_from_modifier(mod, loc, os.path.basename(path), "modifier"))
-
-				# Triggered country modifier(s)
+					effects.extend(_parse_effects_from_modifier(mod, loc, known_jobs, os.path.basename(path), "modifier"))
 				for tcm in _extract_block(body, "triggered_country_modifier"):
 					for mod in _extract_block(tcm, "modifier"):
-						effects.extend(_parse_effects_from_modifier(mod, loc, os.path.basename(path), "triggered_country_modifier"))
-
-				# Triggered planet modifier(s)
+						effects.extend(_parse_effects_from_modifier(mod, loc, known_jobs, os.path.basename(path), "triggered_country_modifier"))
 				for tpm in _extract_block(body, "triggered_planet_modifier"):
 					for mod in _extract_block(tpm, "modifier"):
-						effects.extend(_parse_effects_from_modifier(mod, loc, os.path.basename(path), "triggered_planet_modifier"))
+						effects.extend(_parse_effects_from_modifier(mod, loc, known_jobs, os.path.basename(path), "triggered_planet_modifier"))
 
 				if effects:
 					display_name = f"{name_prefix}{_loc_get(loc, key)}"
-					found.append(CivicJobEffects(
-						civic_key=key,
-						civic_name=display_name,
-						effects=effects
-					))
+					found.append(CivicJobEffects(key, display_name, effects))
 					for eff in effects:
 						job_names.setdefault(eff.job_key, eff.job_name)
 
-		# Sort by display name for stable UI
 		found.sort(key=lambda c: c.civic_name.lower())
+		dbg(f"scan done: {block_prefix} -> {len(found)} entries with effects")
 		return found, job_names
 
-	# Civics
+	# Civics & Origins
 	civic_dir = os.path.join(common_root, "governments", "civics")
-	civics, job_names_civ = _scan_dir(civic_dir, "civic_", name_prefix="")
+	orig_dir  = os.path.join(common_root, "origins")
+	civics, jn_civ = _scan_dir(civic_dir, "civic_", "")
+	origins, jn_org = _scan_dir(orig_dir,  "origin_", "[Origin] ")
 
-	# Origins
-	origin_dir = os.path.join(common_root, "origins")
-	origins, job_names_org = _scan_dir(origin_dir, "origin_", name_prefix="[Origin] ")
+	# Job swaps
+	swap_map = _scan_job_swaps_from_assets(common_root, loc, known_jobs)
+	if swap_map:
+		index: Dict[str, CivicJobEffects] = {c.civic_key: c for c in civics}
+		for ck, effs in swap_map.items():
+			if ck not in index:
+				index[ck] = CivicJobEffects(ck, _loc_get(loc, ck), [])
+				civics.append(index[ck])
+			index[ck].effects.extend(effs)
+			for eff in effs:
+				jn_civ.setdefault(eff.job_key, eff.job_name)
 
-	# Merge results
-	results = civics + origins
-	job_names_all = {**job_names_civ}
-	for k, v in job_names_org.items():
-		job_names_all.setdefault(k, v)
+	# Finalize
+	results = [c for c in civics if c.effects] + [o for o in origins if o.effects]
+	results.sort(key=lambda x: x.civic_name.lower())
 
+	job_names_all = dict(job_names_from_defs)
+	for m in (jn_civ, jn_org):
+		for k, v in m.items():
+			job_names_all.setdefault(k, v)
+
+	dbg(f"FINAL: civics={len(civics)} origins={len(origins)} results={len(results)} jobs={len(job_names_all)}")
 	return results, job_names_all
 
+def _parse_group_resource_effects(buf: str, known_jobs: Set[str]) -> List[JobEffect]:
+    effects: List[JobEffect] = []
+    for m in _PLANET_GROUP_RES_RE.finditer(buf):
+        plural_group, resource, kind, mode, val = m.groups()
+        base = _singular(plural_group)
+        for job_key in _expand_group_to_jobs(base, known_jobs):
+            effects.append(JobEffect(
+                job_key=job_key,
+                effect_type=f"{kind}_{mode}",   # e.g. "produces_add", "upkeep_mult"
+                resource=resource,
+                value=float(val),
+                source="group"
+            ))
+    return effects
+
+def _parse_jobs_bonus_workforce(buf: str, known_jobs: Set[str]) -> List[JobEffect]:
+    effects: List[JobEffect] = []
+    for m in _JOBS_BONUS_WORKFORCE_RE.finditer(buf):
+        base, val = m.groups()
+        for job_key in _expand_group_to_jobs(base, known_jobs):
+            effects.append(JobEffect(
+                job_key=job_key,
+                effect_type="bonus_workforce_mult",
+                resource=None,
+                value=float(val),
+                source="jobs_bonus"
+            ))
+    return effects
 
 # ----------------------------
 # GTK Tab widget
@@ -429,26 +678,48 @@ class CivicsJobsTab(Gtk.Box):
 		self.pack_start(paned, True, True, 0)
 
 	def _make_summary(self, c: CivicJobEffects) -> str:
-		"""
-		Compact single-line summary, e.g.:
-		"Researcher +1; Artisan +10% prod; Farmer -5% upkeep"
-		"""
+		def _fmt_signed_int(s: str) -> str:
+			try:
+				# Some values are "1" or "1.0" – normalize to int when possible
+				n = int(float(s))
+				return f"{n:+d}"
+			except Exception:
+				try:
+					f = float(s)
+					return f"{f:+g}"
+				except Exception:
+					return s  # last-resort: raw
+
+		def _fmt_pct(s: str) -> str:
+			try:
+				return f"{float(s) * 100:+.0f}%"
+			except Exception:
+				return s
+
+		def _maybe_res(note: str) -> str:
+			# We stuffed resource into note like "…; physics_research" or "…; sr_dark_matter"
+			if note and "; " in note:
+				return f" ({note.split('; ', 1)[1]})"
+			return ""
+
 		parts: List[str] = []
 		for eff in c.effects:
 			if eff.kind == "count":
-				parts.append(f"{eff.job_name} {eff.value:+}")
-			elif eff.kind == "produces_mult":
-				try:
-					val = float(eff.value)
-					parts.append(f"{eff.job_name} {val*100:+.0f}% prod")
-				except Exception:
-					parts.append(f"{eff.job_name} {eff.value} prod")
-			elif eff.kind == "upkeep_mult":
-				try:
-					val = float(eff.value)
-					parts.append(f"{eff.job_name} {val*100:+.0f}% upkeep")
-				except Exception:
-					parts.append(f"{eff.job_name} {eff.value} upkeep")
+				parts.append(f"{eff.job_name} {_fmt_signed_int(eff.value)}")
+			elif eff.kind in ("produces_mult", "upkeep_mult", "output_mult", "bonus_workforce_mult"):
+				label = "prod" if eff.kind.startswith("produces") else (
+					"upkeep" if eff.kind.startswith("upkeep") else (
+						"output" if "output" in eff.kind else "workforce"
+					)
+				)
+				parts.append(f"{eff.job_name} {_fmt_pct(eff.value)} {label}{_maybe_res(eff.note)}")
+			elif eff.kind in ("produces_add", "output", "output_add"):
+				label = "prod" if eff.kind.startswith("produces") else "output"
+				parts.append(f"{eff.job_name} {eff.value} {label}{_maybe_res(eff.note)}")
+			else:
+				# Unknown/new kind – don’t drop it, display raw
+				parts.append(f"{eff.job_name} {eff.kind}={eff.value}{_maybe_res(eff.note)}")
+
 		return "; ".join(parts) if parts else "—"
 
 	# ---- Civic filter logic

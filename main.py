@@ -19,7 +19,7 @@ Notes:
 
 import os
 import re
-import sys
+import sys, traceback
 import glob
 from dataclasses import dataclass, field
 from typing import Dict, List, Optional, Tuple
@@ -676,12 +676,15 @@ class MainWindow(Gtk.Window):
 		# --- Civics & Jobs tab ---
 		try:
 			civic_effects, job_names = parse_civics_job_effects(common_dir, loc_map)
+			print(f"[main] civics_tab: effects={len(civic_effects)} jobs={len(job_names)}", file=sys.stderr)
 			if civic_effects:
 				cj_tab = CivicsJobsTab(civic_effects, job_names)
 				nb.append_page(cj_tab, Gtk.Label(label="Civics & Jobs"))
-		except Exception as _e:
-			# Keep the UI resilient even if parsing fails
-			pass
+			else:
+				print("[main] civics_tab: empty (not adding tab)", file=sys.stderr)
+		except Exception as e:
+			print("[main] civics_tab: exception:", e, file=sys.stderr)
+			traceback.print_exc()
 		self.connect("destroy", Gtk.main_quit)
 
 
