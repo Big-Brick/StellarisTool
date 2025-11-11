@@ -24,6 +24,8 @@ import glob
 from dataclasses import dataclass, field
 from typing import Dict, List, Optional, Tuple
 
+from civics_jobs import parse_civics_job_effects, CivicsJobsTab
+
 # --- Localisation -------------------------------------------------------------
 
 def load_localisation(loc_root: str, language: str = "english") -> Dict[str, str]:
@@ -652,9 +654,11 @@ class TechAreaCanvas(Gtk.DrawingArea):
 
 
 class MainWindow(Gtk.Window):
-	def __init__(self, techs: Dict[str, Tech], key_to_name: Dict[str, str]):
+	def __init__(self, techs: Dict[str, Tech], key_to_name: Dict[str, str], common_dir, loc_map):
 		super().__init__(title="Stellaris Tech Trees (first version)")
 		self.set_default_size(1200, 800)
+		self.common_dir = common_dir
+		self.loc_map = loc_map
 
 		nb = Gtk.Notebook()
 		self.add(nb)
@@ -669,7 +673,15 @@ class MainWindow(Gtk.Window):
 			scroller.set_policy(Gtk.PolicyType.AUTOMATIC, Gtk.PolicyType.AUTOMATIC)
 			scroller.add_with_viewport(canvas)
 			nb.append_page(scroller, Gtk.Label(label=area_label))
-
+		# --- Civics & Jobs tab ---
+		try:
+			civic_effects, job_names = parse_civics_job_effects(common_dir, loc_map)
+			if civic_effects:
+				cj_tab = CivicsJobsTab(civic_effects, job_names)
+				nb.append_page(cj_tab, Gtk.Label(label="Civics & Jobs"))
+		except Exception as _e:
+			# Keep the UI resilient even if parsing fails
+			pass
 		self.connect("destroy", Gtk.main_quit)
 
 
@@ -699,7 +711,7 @@ def main():
 	key_to_name = {k: (t.name or k) for k, t in techs.items()}
 	# Also include description keys if needed later (key_desc), but not required here
 
-	win = MainWindow(techs, key_to_name)
+	win = MainWindow(techs, key_to_name, common_dir, loc_map)
 	win.show_all()
 	Gtk.main()
 
