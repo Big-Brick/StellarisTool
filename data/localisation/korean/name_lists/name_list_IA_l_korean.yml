@@ -1,0 +1,5 @@
+﻿l_korean:
+ #Sequential name formats
+ IA_IMPERIALARMADA: "제국 함대 $R$"
+ #Obsolete sequentials (for backwards compatibility)
+ IA_xxIMPERIALARMADA_ROM: "제국 함대 $R$"

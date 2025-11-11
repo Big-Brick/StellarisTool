@@ -1,0 +1,117 @@
+﻿l_korean:
+ ####################################
+ #Alpha Naming Convention - WILL LIKELY BE CHANGED IF SECTIONS ARE REDESIGNED
+ #Mid sections have a flavor-name fitting to number of weapon/utility slots followed by the key-word "Core"
+ #Front sections have a flavor-name followed by the key-word "Breaker"
+ #Rear sections have a flavor-name followed by the key-word "Bulwark"
+ ####################################
+ ####################################
+ #Juggernaut
+ ####################################
+ CORE_JUGGERNAUT_SECTION: "저거너트"
+ ####################################
+ #Titan
+ ####################################
+ TITAN_BOW: "타이탄 선수"
+ TITAN_MID: "타이탄 선체"
+ TITAN_STERN: "타이탄 선미"
+ BIO_TITAN_BOW: "$TITAN_BOW$"
+ BIO_TITAN_MID: "$TITAN_MID$"
+ BIO_TITAN_STERN: "$TITAN_STERN$"
+ ####################################
+ #Battleship
+ ####################################
+ BATTLESHIP_BOW_L1M1S2: "전열 선수"
+ BATTLESHIP_BOW_L1S4: "타이탄 브레이커"
+ BATTLESHIP_BOW_L2: "함포 선수"
+ BATTLESHIP_BOW_M1S2SHB: "격납고 선수"
+ BATTLESHIP_BOW_M2S4: "중추 선수"
+ BATTLESHIP_BOW_M3S2: "소울 브레이커"
+ BATTLESHIP_MID_L2S4: "노바 선체"
+ BATTLESHIP_MID_L1M4: "스톰브링어 선체"
+ BATTLESHIP_MID_L2M2: "전열 선체"
+ BATTLESHIP_MID_L3: "함포 선체"
+ BATTLESHIP_MID_M4SHB: "격납고 선체"
+ BATTLESHIP_MID_S4LHB: "모함 선체"
+ BATTLESHIP_STERN_M1S2: "영겁의 방벽"
+ BATTLESHIP_STERN_L1: "함포 선미"
+ BATTLESHIP_STERN_M2: "전열 선미"
+ BATTLESHIP_STERN_S4: "창공의 방벽"
+ ####################################
+ #Colonizer
+ ####################################
+ COLONIZER_MID_M1S1: "개척선"
+ COLONIZER_MID_S3: "파종 선체"
+ COLONIZER_MID_MU1: "가이아 선체"
+ ####################################
+ #Constructor
+ ####################################
+ CONSTRUCTOR_MID_M1S1: "건설선"
+ CONSTRUCTOR_MID_S3: "개발 선체"
+ CONSTRUCTOR_MID_MU1: "용접 선체"
+ ####################################
+ #Corvette
+ ####################################
+ CORVETTE_MID_M1S1: "어뢰정"
+ CORVETTE_MID_S3: "요격함"
+ CORVETTE_MID_S1: "이동 선체"
+ CORVETTE_MID_S2PD1: "방공함"
+ ####################################
+ #Cruiser
+ ####################################
+ CRUISER_BOW_L1: "함포 선수"
+ CRUISER_BOW_M1S2: "어뢰 선수"
+ CRUISER_BOW_M2: "전열 선수"
+ CRUISER_MID_S2HB: "격납고 선체"
+ CRUISER_MID_L1M1: "함포 선체"
+ CRUISER_MID_M3: "전열 선체"
+ CRUISER_MID_M2S2: "어뢰 선체"
+ CRUISER_STERN_M1: "전열 선미"
+ CRUISER_STERN_S2: "포함 선미"
+ ####################################
+ #Destroyer
+ ####################################
+ DESTROYER_BOW_M1S2: "포함 선수"
+ DESTROYER_BOW_S3: "방공 선수"
+ DESTROYER_BOW_L1: "함포 선수"
+ DESTROYER_STERN_PD2: "방공 선미"
+ DESTROYER_STERN_S2: "요격 선미"
+ DESTROYER_STERN_M1: "포함 선미"
+ ####################################
+ #Science
+ ####################################
+ SCIENCE_MID_M1S1: "과학선"
+ SCIENCE_MID_S3: "선구자 선체"
+ SCIENCE_MID_MU1: "통찰 선체"
+ ####################################
+ #Science
+ ####################################
+ LIGHT_MILITARY_STATION_SECTION: "소형 기지 구획"
+ PD_MILITARY_STATION_SECTION: "거점 방어 기지 구획"
+ MEDIUM_MILITARY_STATION_SECTION: "중형 기지 구획"
+ MISSILE_MILITARY_STATION_SECTION: "미사일 기지 구획"
+ HEAVY_MILITARY_STATION_SECTION: "대형 기지 구획"
+ HANGAR_MILITARY_STATION_SECTION: "격납고 기지 구획"
+ LIGHT_LARGE_MILITARY_STATION_SECTION: "소형 기지 구획"
+ MEDIUM_LARGE_MILITARY_STATION_SECTION: "중형 기지 구획"
+ HEAVY_LARGE_MILITARY_STATION_SECTION: "대형 기지 구획"
+ HANGAR_LARGE_MILITARY_STATION_SECTION: "격납고 기지 구획"
+ OUTPOST_STATION_SECTION: "개척 전초 기지 선체"
+ ####################################
+ #Other
+ ####################################
+ MISSILE_DEFAULT: "어뢰 구획"
+ DEFAULT_CONSTRUCTION_SECTION: "건설선"
+ DEFAULT_COLONIZATION_SECTION: "개척선"
+ DEFAULT_SCIENCESHIP_SECTION: "과학선"
+ DEFAULT_ORBITAL_STATION_SECTION: "궤도 기지 뼈대"
+ DEFAULT_MINING_STATION_SECTION: "채굴 기지 뼈대"
+ DEFAULT_RESEARCH_STATION_SECTION: "연구 기지 뼈대"
+ DEFAULT_WORMHOLE_STATION_SECTION: "웜홀 기지 뼈대"
+ DEFAULT_MILITARY_STATION_SECTION: "기본 군용 플랫폼"
+ DEFAULT_TRANSPORT_SECTION: "수송선"
+ SHIP_COLOSSUS_SECTION: "콜로서스"
+ GHOST_SHIP_SECTION: "유령선 뼈대"
+ lost_swarm_adult: "곤충 떼"
+ lost_swarm_adult_cap: "$lost_swarm_adult$"
+ lost_swarm_adult_plural: "곤충 떼"

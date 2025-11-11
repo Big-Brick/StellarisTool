@@ -1,0 +1,5 @@
+﻿l_polish:
+ #Sequential name formats
+ GDF_GDFFLEET: "$ORD$ Flota GDF"
+ #Obsolete sequentials (for backwards compatibility)
+ GDF_xxGDFFLEET_ORD: "$O$ Flota GDF"

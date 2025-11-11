@@ -1,0 +1,117 @@
+﻿l_japanese:
+ ####################################
+ #Alpha Naming Convention - WILL LIKELY BE CHANGED IF SECTIONS ARE REDESIGNED
+ #Mid sections have a flavor-name fitting to number of weapon/utility slots followed by the key-word "Core"
+ #Front sections have a flavor-name followed by the key-word "Breaker"
+ #Rear sections have a flavor-name followed by the key-word "Bulwark"
+ ####################################
+ ####################################
+ #Juggernaut
+ ####################################
+ CORE_JUGGERNAUT_SECTION: "ジャガーノート"
+ ####################################
+ #Titan
+ ####################################
+ TITAN_BOW: "タイタン・ボウ"
+ TITAN_MID: "タイタン・コア"
+ TITAN_STERN: "タイタン・スタン"
+ BIO_TITAN_BOW: "$TITAN_BOW$"
+ BIO_TITAN_MID: "$TITAN_MID$"
+ BIO_TITAN_STERN: "$TITAN_STERN$"
+ ####################################
+ #Battleship
+ ####################################
+ BATTLESHIP_BOW_L1M1S2: "ブロードサイド・ボウ"
+ BATTLESHIP_BOW_L1S4: "タイタン・ブレイカー"
+ BATTLESHIP_BOW_L2: "アーティラリー・ボウ"
+ BATTLESHIP_BOW_M1S2SHB: "ハンガー・ボウ"
+ BATTLESHIP_BOW_M2S4: "スピナルマウント・ボウ"
+ BATTLESHIP_BOW_M3S2: "ソウル・ブレイカー"
+ BATTLESHIP_MID_L2S4: "ノヴァ・コア"
+ BATTLESHIP_MID_L1M4: "ストームブリンガー・コア"
+ BATTLESHIP_MID_L2M2: "ブロードサイド・コア"
+ BATTLESHIP_MID_L3: "アーティラリー・コア"
+ BATTLESHIP_MID_M4SHB: "ハンガー・コア"
+ BATTLESHIP_MID_S4LHB: "キャリアー・コア"
+ BATTLESHIP_STERN_M1S2: "イーオン・ブルワーク"
+ BATTLESHIP_STERN_L1: "アーティラリー・スタン"
+ BATTLESHIP_STERN_M2: "ブロードサイド・スタン"
+ BATTLESHIP_STERN_S4: "ゼニス・ブルワーク"
+ ####################################
+ #Colonizer
+ ####################################
+ COLONIZER_MID_M1S1: "コロニー・シップ"
+ COLONIZER_MID_S3: "シード・コア"
+ COLONIZER_MID_MU1: "ガイア・コア"
+ ####################################
+ #Constructor
+ ####################################
+ CONSTRUCTOR_MID_M1S1: "コンストラクション・シップ"
+ CONSTRUCTOR_MID_S3: "デベロッパー・コア"
+ CONSTRUCTOR_MID_MU1: "フューザ・コア"
+ ####################################
+ #Corvette
+ ####################################
+ CORVETTE_MID_M1S1: "トーピドー・ボート"
+ CORVETTE_MID_S3: "インターセプター"
+ CORVETTE_MID_S1: "シフター・コア"
+ CORVETTE_MID_S2PD1: "ピケットシップ"
+ ####################################
+ #Cruiser
+ ####################################
+ CRUISER_BOW_L1: "アーティラリー・ボウ"
+ CRUISER_BOW_M1S2: "トーピドー・ボウ"
+ CRUISER_BOW_M2: "ブロードサイド・ボウ"
+ CRUISER_MID_S2HB: "ハンガー・コア"
+ CRUISER_MID_L1M1: "アーティラリー・コア"
+ CRUISER_MID_M3: "ブロードサイド・コア"
+ CRUISER_MID_M2S2: "トーピドー・コア"
+ CRUISER_STERN_M1: "ブロードサイド・スタン"
+ CRUISER_STERN_S2: "ガンシップ・スタン"
+ ####################################
+ #Destroyer
+ ####################################
+ DESTROYER_BOW_M1S2: "ガンシップ・ボウ"
+ DESTROYER_BOW_S3: "ピケットシップ・ボウ"
+ DESTROYER_BOW_L1: "アーティラリー・ボウ"
+ DESTROYER_STERN_PD2: "ピケットシップ・スタン"
+ DESTROYER_STERN_S2: "インターセプター・スタン"
+ DESTROYER_STERN_M1: "ガンシップ・スタン"
+ ####################################
+ #Science
+ ####################################
+ SCIENCE_MID_M1S1: "サイエンス・シップ"
+ SCIENCE_MID_S3: "トレールブレザー・コア"
+ SCIENCE_MID_MU1: "インサイト・コア"
+ ####################################
+ #Science
+ ####################################
+ LIGHT_MILITARY_STATION_SECTION: "小型兵器セクション"
+ PD_MILITARY_STATION_SECTION: "個艦防空セクション"
+ MEDIUM_MILITARY_STATION_SECTION: "中型兵器セクション"
+ MISSILE_MILITARY_STATION_SECTION: "ミサイルセクション"
+ HEAVY_MILITARY_STATION_SECTION: "大型兵器セクション"
+ HANGAR_MILITARY_STATION_SECTION: "ハンガーセクション"
+ LIGHT_LARGE_MILITARY_STATION_SECTION: "小型兵器セクション"
+ MEDIUM_LARGE_MILITARY_STATION_SECTION: "中型兵器セクション"
+ HEAVY_LARGE_MILITARY_STATION_SECTION: "大型兵器セクション"
+ HANGAR_LARGE_MILITARY_STATION_SECTION: "ハンガーセクション"
+ OUTPOST_STATION_SECTION: "フロンティアアウトポスト・コア"
+ ####################################
+ #Other
+ ####################################
+ MISSILE_DEFAULT: "トーピドー・セクション"
+ DEFAULT_CONSTRUCTION_SECTION: "コンストラクション・シップ"
+ DEFAULT_COLONIZATION_SECTION: "コロニー・シップ"
+ DEFAULT_SCIENCESHIP_SECTION: "調査船"
+ DEFAULT_ORBITAL_STATION_SECTION: "軌道ステーション・フレーム"
+ DEFAULT_MINING_STATION_SECTION: "採掘ステーション・フレーム"
+ DEFAULT_RESEARCH_STATION_SECTION: "研究ステーション・フレーム"
+ DEFAULT_WORMHOLE_STATION_SECTION: "ワームホールステーション・フレーム"
+ DEFAULT_MILITARY_STATION_SECTION: "基本軍事プラットフォーム"
+ DEFAULT_TRANSPORT_SECTION: "トランスポート・シップ"
+ SHIP_COLOSSUS_SECTION: "コロッサス"
+ GHOST_SHIP_SECTION: "幽霊船の船殻"
+ lost_swarm_adult: "イナゴ"
+ lost_swarm_adult_cap: "$lost_swarm_adult$"
+ lost_swarm_adult_plural: "イナゴ"

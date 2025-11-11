@@ -1,0 +1,62 @@
+﻿l_korean:
+ #The following names are applied to generic ships, Megastructures, and space creatures ('fauna') which populate the galaxy and are related to features, rather than particular events.
+ #Generic ships
+ NAME_Constructor: "건설선"
+ #Space Fauna 'countries' (describing e.g. the Tiyanki, Space Crystals, Mining Drones...)
+ #Galactic Imperium
+ NAME_Rebellion: "반란군 연합" #federation
+ NAME_Loyalists: "제국 충성파" #federation
+ NAME_The_Civil_War: "은하 반란" #war
+ NAME_Declared_Crisis_War: "[This.MainDefender.GetAdj] 위기 전쟁" #war
+ NAME_Crisis_Star_Eater: "포식자"
+ NAME_GDF: "은하 방위군(GDF)"
+ NAME_Imperial_Crusade_War: "은하 제국 성전" #war
+ #################
+ #MEGASTRUCTURES
+ #################
+ #Ring World sections
+ NAME_Ring_Section_A: "링 구획 A"
+ NAME_Ring_Section_B: "링 구획 B"
+ NAME_Ring_Section_C: "링 구획 C"
+ NAME_Ring_Section_D: "링 구획 D"
+ NAME_Ring_Section_E: "링 구획 E"
+ NAME_Ring_Section_F: "링 구획 F"
+ NAME_Ring_Section_G: "링 구획 G"
+ NAME_Ring_Section_H: "링 구획 H"
+ NAME_Ring_Section_I: "링 구획 I"
+ NAME_Ring_Section_K: "링 구획 K"
+ NAME_Ring_Section_L: "링 구획 L"
+ NAME_Ring_Section: "링 구획"
+ NAME_Habitable_Section_A: "거주 구획 A"
+ NAME_Habitable_Section_B: "거주 구획 B"
+ NAME_Habitable_Section_C: "거주 구획 C"
+ NAME_Habitable_Section_D: "거주 구획 D"
+ ##########
+ #ORIGINS
+ ##########
+ #Galactic Doorstep
+ NAME_Galactic_Doorstep: "검은 왕관" #megastructure
+ NAME_Gateway_Vermin: "게이트웨이 해충" #empire
+ #On the Shoulders of Giants
+ NAME_Theros: "테로스" #planet
+ NAME_Melidas: "멜리다스" #planet
+ NAME_Koras: "코라스" #planet
+ NAME_Haradas: "하라다스" #planet
+ NAME_Islena: "이슬레나" #planet
+ #Shattered Ring
+ NAME_Irreparable_Damage: "재앙적 피해" #ringworld segment
+ NAME_The_Interloper: "침입자" #shattered planet
+ #Here Be Dragons
+ NAME_Sky_Dragon: "스카이 드래곤"
+ NAME_Sky_Dragon_Baby: "어린 스카이 드래곤"
+ NAME_Hrozgar_of_the_Endless_Flames: "영원한 불꽃의 흐로즈가르"
+ #Imperial Fiefdom
+ NAME_Imperial_Origin_Empire: "신성 [origin_imperial_species.GetAdj] 제국"
+ NAME_Imperial_Origin_Empire_2: "[origin_imperial_species_2.GetNamePlural] 왕국"
+ NAME_Imperial_Origin_Empire_3: "[origin_imperial_species_3.GetNamePlural] 선제후국"
+ NAME_Imperial_Origin_Empire_4: "[origin_imperial_species_4.GetNamePlural] 궁정백국"
+ NAME_Imperial_Origin_Empire_5: "[origin_imperial_species_5.GetAdj] 연맹"
+ NAME_Aix: "아익스" #planet
+ #Toxic Knights
+ NAME_Sinople: "시노플"
+ NAME_Syamelle: "시아멜"

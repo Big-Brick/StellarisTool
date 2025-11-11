@@ -1,0 +1,546 @@
+﻿l_japanese:
+ #######
+ #MISC
+ #######
+ #Assorted empire/country names
+ NAME_Ancient_AI: "古代のAI"
+ NAME_Armistice_Initiative: "休戦イニシアティブ"
+ NAME_Awoken: "覚醒者"
+ NAME_Commonwealth_of_Man: "人類起源独立国" #UNE initializer
+ NAME_Creatures_of_the_Shroud: "シュラウドの怪物"
+ NAME_Cunning_Pirates: "狡猾な海賊"
+ NAME_Deformed_Creatures: "歪んだ怪物" #terraforming accident
+ NAME_Demonic_Creatures: "邪悪な生命体"
+ NAME_Demon_Incursion: "邪悪な侵攻"
+ NAME_Demon_Incursion_adj: "邪悪"
+ NAME_Eternal_Watchers: "永遠の監視員"
+ NAME_Incoming_Asteroid: "飛来する小惑星" #a literal asteroid
+ NAME_Living_Snow: "生きている雪" #empire (planetary event)
+ NAME_Looped_Syzygy: "ループしたスィズィジー"
+ NAME_Marauding_Creatures: "這いずり回る怪物" #planetary event
+ NAME_mardak_vol_haters: "ヴォル"
+ NAME_Mutant_Horrors: "変異体の恐怖" #also used as an army name
+ NAME_Prikkiki_Ti: "プリッキキ＝ティー"
+ NAME_Psionic_Avatar_Country: "サイオニック・アバター"
+ NAME_Ransomeers: "ランソマーズ"
+ NAME_Rising_Manifold: "増加する連結管" #abstract/nonsensical
+ NAME_Shattered_Frontier: "砕かれたフロンティア" #empire, alluding to colonial frontiers (Shroud entity)
+ NAME_Shroud_Reformers: "シュラウドの改革者" #the definitive Shroud
+ NAME_Spawning_Dragons: "解放されたドラゴン" #literal
+ NAME_Subterranean_Nation: "地底国家"
+ NAME_The_Loop: "ループ" #as in time
+ NAME_The_Shroud: "シュラウド"
+ NAME_Titanic_Life: "巨大生命体" #gigantic lifeforms
+ NAME_Unknown_Ancientry: "未知なる古代"
+ NAME_Unscrupulous_Salvagers: "悪質な回収者"
+ NAME_Wreckers: "解体者"
+ #Assorted species names
+ NAME_AI: "AI"
+ NAME_Awoken_Robot: "覚醒者"
+ NAME_Azizians: "アジジアン"
+ NAME_Cockroach: "ゴキブリ" #literal
+ NAME_Cockroach_plural: "ゴキブリ" #literal
+ NAME_Migrating_Trees: "さまよう樹木" #literal
+ NAME_Rampaging_Forests: "荒れ狂う森" #literal
+ NAME_Prikki: "プリッキ"
+ NAME_Robot: "ロボット"
+ NAME_Robot_plural: "ロボット"
+ NAME_Titans: "タイタン" #gigantic lifeforms
+ NAME_Demon_Refugees: "ダイモン"
+ NAME_Demon_Refugee_pl: "ダイモン"
+ #Assorted star system names
+ NAME_Klendath: "クレンダース"
+ NAME_Pantagruel: "パンタグリュエル"
+ NAME_Zron: "ズィロン"
+ #Assorted planet names
+ NAME_Baldarak: "バルダラク"
+ NAME_New_Baldarak: "ニューバルダラク"
+ NAME_Chabkymak: "チャブカイマク"
+ NAME_Exile: "エグザイル"
+ NAME_Fotangia: "フォタンギア"
+ NAME_The_Fragments: "断片" #a shattered world
+ NAME_Gish: "ギッシュ"
+ NAME_Homeworld_Two: "[Space_Owner.GetHomeWorldName] II" #after terraforming
+ NAME_Paridayda: "パリデイダ" #gaia world
+ NAME_Spjuuht: "スィプジュート"
+ NAME_Tollok_Rong: "トーロック・ロング"
+ NAME_Zron_Prime: "ズィロンプライム" #as in 'NAME_Zron'
+ #Assorted fleet names
+ NAME_5th_Dimensionalists: "第5次元論者"
+ NAME_Ancient_AI_Fleet: "古代のAI艦隊"
+ NAME_Clutch_of_Whelps: "幼生の群れ" #dragons
+ NAME_Dimensional_Portal: "次元ポータル"
+ NAME_Greased_Lightning: "電光石火"
+ NAME_Head_in_Sand: "ヘッド・イン・サンド" #i.e. cowardly/ignorant
+ NAME_Hijacked_Fleet: "ハイジャックされた艦隊"
+ NAME_Main_Forces: "主戦力"
+ NAME_mardak_vol_haters_fleet: "マルダクの浄化者"
+ NAME_Modified_Probe: "改造された探査機"
+ NAME_New_Ship_plural: "新規艦船"
+ NAME_Occupation_Flotilla: "進駐軍船団"
+ NAME_Other_Science_Ship: "生還した調査船" #comprises 'NAME_From_Beyond'
+ NAME_Psionic_Avatar: "サイオニック・アバター"
+ NAME_Ransomeer_Base: "ランソマーズ海賊基地" #starbase
+ NAME_Salvage_Fleet: "回収船艦隊"
+ NAME_Scrap_Probes: "スクラップ探査機"
+ NAME_Seaborn: "海上"
+ NAME_Seaborn_Flotilla: "海上船団"
+ NAME_Skeletal_Giant: "スケルトンの巨人"
+ NAME_Surveillance_Bots: "監視ボット"
+ NAME_TIME_IS_SIGHT_GRAVITY_IS_DESIRE: "時間は見解、 重力は欲望" #abstract/nonsensical
+ NAME_The_End: "終焉" #End of the Cycle (Shroud)
+ NAME_Wrecker_Base: "解体者基地" #as in 'NAME_Wreckers'
+ NAME_Zarqlans_Pilgrims: "ザークランの巡礼者"
+ NAME_Mercenary_Fleet: "[event_target:mercenary_enclave_country.GetName]艦隊"
+ NAME_Mindwarden_Fleet: "[mindwarden_enclave_country.GetName]艦隊"
+ #Assorted ship names (sometimes also used as the fleet name)
+ NAME_Abandoned_Alien_Vessel: "放棄された異星人の船"
+ NAME_AI_Core: "AIのコア"
+ NAME_AI_Final_Core: "マスターコア"
+ NAME_Alien_Ship: "異星人の船"
+ NAME_Asteroid: "小惑星" #a literal asteroid
+ NAME_Autonomous_Drone: "自律ドローン"
+ NAME_Burnt_Out_Science_Ship: "焼け落ちた調査船"
+ NAME_Conceptual_Ship: "概念としての艦船" #abstract
+ NAME_Corrupted_Avatar: "崩壊したアバター" #psionic entity
+ NAME_Dark_Wanderer: "闇の放浪者"
+ NAME_Dimensional_Horror: "異次元の恐怖"
+ NAME_enigmatic_cache: "謎の筒型物体"
+ NAME_Foundling: "ファウンドリング" #lost science ship
+ NAME_Fragment: "断片" #Shroud manifestation
+ NAME_From_Beyond: "彼方から"
+ NAME_Gallant_Dawn: "気高き曙光"
+ NAME_Grand_Herald: "グランド・ヘラルド"
+ NAME_Herald: "ヘラルド"
+ NAME_Junk_Probe_Alpha: "ジャンク探査機アルファ"
+ NAME_Junk_Probe_Beta: "ジャンク探査機ベータ"
+ NAME_Kellop-Gar: "ケロップ＝ガー"
+ NAME_Lessenger: "レッサー・メッセンジャー"
+ NAME_Lesser_Messenger: "$NAME_Lessenger$"
+ NAME_Mended_Frontier: "修復されたフロンティア" #as in 'NAME_Shattered_Frontier'
+ NAME_Migil-Yar: "ミギル＝ヤー"
+ NAME_Suntha-Pol: "スンサ＝ポル"
+ NAME_Nanite_Dragon: "シミュレートされたドラゴンスポーン" #a literal dragon
+ NAME_New_Ship: "新規艦船"
+ NAME_Ostrich: "ダチョウ" #reference to 'NAME_Head_in_Sand'
+ NAME_Patchwork_Paradise: "ツギハギの楽園" #wrecker ship
+ NAME_Reckoning: "報復"
+ NAME_Reclaimed_Ship: "再生された艦船" #as in 'back in our possession'
+ NAME_Research_Expedition_Vessel: "研究遠征船"
+ NAME_Salvage: "回収" #literal
+ NAME_Seafallen_Cruiser: "水没した巡洋艦"
+ NAME_Ship_of_Unknown_Origin: "起源不明の艦船"
+ NAME_Shroud_Manifestation: "顕現せしシュラウド"
+ NAME_Skeletal_Transport: "スケルトン輸送艦" #as in 'NAME_Skeletal_Giant'
+ NAME_Specter: "亡霊"
+ NAME_Subspace_Anomaly: "亜空間の異常" #literal
+ NAME_Syzygy: "スィズィジー"
+ NAME_Unshrouded_Science_Ship: "シュラウドより帰還した調査船"
+ NAME_Worm_in_Waiting: "待ち構えるワーム" #definite article, 'The Worm'
+ #Assorted army names
+ NAME_Awoken_Army: "覚醒軍"
+ NAME_Enraged_Guardian: "激昂した守護者"
+ NAME_Enraged_Titan: "激昂したタイタン"
+ NAME_Invading_Horde: "侵略軍団" #subterranean army
+ NAME_Loot_Equipped_Army: "略奪品装備軍"
+ NAME_Marauding_Swarms: "這いずり回る群れ"
+ NAME_mechawarrior_contractors: "機械戦士請負業者"
+ NAME_military_contractors: "軍事請負業者"
+ NAME_Mutated_Horrors: "異形の恐怖"
+ NAME_Monstrous_Snow: "雪の怪物" #from literal snow
+ NAME_Twisted_Beasts: "ねじれた獣"
+ #Assorted leader names
+ NAME_00110001: "110001" #1
+ NAME_00110010: "110010" #2
+ NAME_00110011: "110011" #3
+ NAME_00110100: "110100" #4
+ NAME_00110101: "110101" #5
+ NAME_01000001_01001001: "01000001 01001001" #AI
+ NAME_0101010111: "101010111" #W
+ NAME_Majula_the_Bearer: "〈担い手〉マジュラ"
+ NAME_Oracle: "オラクル" #also used as the species name
+ NAME_The_Exile: "追放者" #a scientist of the player's own species
+ NAME_William_Shakespeare: "ウィリアム・シェイクスピア" #May be replaced with a more relevant, national literary figure depending on the extent to which you localize event 'federations2.1', 'Love's Labor's Lost'. See also '.GetAuteur' scripted loc for use of Molière in French.
+ #Other
+ NAME_Machine_Uprising_War: "[This.MainDefender.GetAdj]機械の反乱"
+ #########
+ #CRISES
+ #########
+ #Empire names
+ NAME_Aberrant: "逸脱せるもの"
+ NAME_Unbidden: "招かれざるもの"
+ NAME_Vehement: "激怒せるもの"
+ NAME_Contingency: "コンティンジェンシー"
+ NAME_Cybrex: "サイブレックス"
+ NAME_Cybrex_Empire: "サイブレックスの残骸"
+ NAME_Dessanu: "デッサヌ"
+ NAME_Dessanu_Consonance: "デッサヌ協定機構"
+ NAME_Gray: "グレイ" #also used as a name for the leader, ship and army
+ NAME_Gray_Goo: "グレイ・テンペスト"
+ NAME_Portal_Holder_1: "異次元ポータル"
+ NAME_Prethoryn_Scourge: "プレスリンの災厄"
+ #Species names
+ NAME_Custodian_Bot: "有機知性体保管ロボット"
+ NAME_Prethoryn: "プレスリン"
+ #Star system names
+ NAME_Contingency_System: "CX-9881"
+ NAME_Cybrex_Beta: "サイブレックス・ベータ"
+ #Planet names
+ NAME_Contingency_Lair: "ネクサス・ゼロワン"
+ NAME_Cybrex_Beta_1: "サイブレックス・ベータ I"
+ NAME_Cybrex_Beta_2: "サイブレックス・ベータ II"
+ NAME_Cybrex_Beta_3: "サイブレックス・ベータ III"
+ NAME_Cybrex_Beta_4: "サイブレックス・ベータ IV"
+ #Fleet names
+ NAME_Dessanu_Fleet: "デッサヌ防衛艦隊"
+ NAME_Dessanu_Fleet_2: "デッサヌ哨戒艦隊"
+ NAME_Feral_Prethoryn: "野生化プレスリン"
+ NAME_Loyal_Brood: "女王の血統"
+ NAME_Prethoryn_Armies: "プレスリン兵団"
+ NAME_Prethoryn_Constructor: "プレスリン建設船"
+ NAME_Prethoryn_Infestor: "プレスリン・インフェスター"
+ NAME_Prethoryn_Star_Brood: "プレスリン星間群族"
+ NAME_Prethoryn_Transport: "プレスリン輸送艦"
+ NAME_Prethoryn_Vanguard: "プレスリン先遣隊"
+ NAME_Refugee_Fleet: "亡命艦隊"
+ NAME_Sentinel_Auxiliary_Fleet: "センチネル補助艦隊"
+ NAME_Sentinel_Battle_Fleet: "センチネル戦闘艦隊"
+ NAME_Sentinel_Defense_Fleet: "センチネル防衛艦隊"
+ NAME_Sterilization_Hub_1: "滅菌ハブ 001"
+ NAME_Sterilization_Hub_2: "滅菌ハブ 002"
+ NAME_Sterilization_Hub_3: "滅菌ハブ 003"
+ NAME_Sterilization_Hub_4: "滅菌ハブ 004"
+ NAME_Tempest_Fleet: "テンペストの大群"
+ #Ship names
+ NAME_Dessanu_Interdictor: "ウィルシク"
+ NAME_Dessanu_Mothership: "ウンスーラ"
+ NAME_Domesticated_Prethoryn: "家畜化プレスリン"
+ NAME_Domesticated_Queen: "家畜化クイーン"
+ NAME_Domesticated_Swarmling: "家畜化群体"
+ NAME_Domesticated_Warrior: "家畜化戦士"
+ NAME_Early_Warning_X_34: "早期警告 X-34"
+ NAME_Early_Warning_X_35: "早期警告 X-35"
+ NAME_Early_Warning_X_36: "早期警告 X-36"
+ NAME_Early_Warning_X_37: "早期警告 X-37"
+ NAME_Early_Warning_X_38: "早期警告 X-38"
+ NAME_Gatebuilder_Starbase: "カプロック"
+ NAME_Refugee_Site_Beta: "亡命建設拠点ベータ"
+ NAME_Sentinel_Alpha: "センチネル・アルファ"
+ NAME_Deep_Eyes: "深き眼"
+ NAME_Gray_Moon: "グレイムーン"
+ NAME_Kobyar_Miru: "コビヤール・ミル"
+ NAME_Princess_Kolos: "コロス王女"
+ NAME_Refugee_Site_Alpha: "亡命建設拠点アルファ"
+ NAME_Stellar_Queen: "ステラークイーン"
+ #Army names
+ NAME_Prethoryn_Invaders: "プレスリンの侵略者"
+ #Leader names
+ NAME_Fleet_Consciousness: "艦隊意識"
+ #Cybrex megastructure
+ NAME_Ring_Segment_A: "リング区域 A"
+ NAME_Ring_Segment_B: "リング区域 B"
+ NAME_Ring_Segment_C: "リング区域 C"
+ NAME_Ring_Segment_D: "リング区域 D"
+ NAME_Ring_Segment_E: "リング区域 E"
+ NAME_Ring_Segment_F: "リング区域 F"
+ NAME_Ring_Segment_G: "リング区域 G"
+ NAME_Ring_Segment_H: "リング区域 H"
+ NAME_Ring_Segment_I: "リング区域 I"
+ NAME_Ring_Segment_J: "リング区域 J"
+ NAME_Ring_Segment_K: "リング区域 K"
+ NAME_Ring_Segment_L: "リング区域 L"
+ ###########
+ #ENCLAVES
+ ###########
+ #Leader names
+ NAME_Doctor_Xib: "ジーブ博士"
+ NAME_Kix_the_Brilliant: "聡明なるキックス"
+ NAME_merchant_leader: "プラクーティ・マグホーン"
+ NAME_Professor_Zarg: "ザーグ教授"
+ NAME_Sensei_Borkaz: "ボルカス先生"
+ NAME_The_Mentat: "メンタット"
+ ############################
+ #FALLEN & AWAKENED EMPIRES
+ ############################
+ #Leader names
+ NAME_Tuborek: "ツボレク"
+ #Other
+ NAME_Holy_World_War: "[This.MainAttacker.GetAdj]聖地惑星戦争" #war over a designated Holy World
+ NAME_The_War_in_Heaven: "天上戦争" #war between fallen empires
+ ##############
+ #FEDERATIONS
+ ##############
+ #Military Alliance Joint Operation
+ NAME_training_adversary: "訓練用敵機" #empire
+ NAME_Training_Targets: "演習用標的" #fleet
+ NAME_Elusive_Craft: "謎に包まれた機体" #ship
+ #####################
+ #KHANATE & DIADOCHI
+ #####################
+ #Empire & Federation names
+ NAME_Galactic_Horde: "銀河の大群" #federation
+ #Fleet names
+ NAME_Chosen_of_the_Great_Khan: "大ハーンの選定者"
+ NAME_Horde_Auxiliary_Fleet: "[satrapy_species.GetName]支援艦隊"
+ ###########################
+ #LEVIATHANS & SPACE FAUNA
+ ###########################
+ #See also: initializers_names_l_english.yml, containing names related to Leviathans and Space Fauna which appear at galaxy start
+ #Empire names
+ NAME_Alien_Hive: "異星のハイヴ"
+ NAME_Mining_Drone_Expansion_Initiative: "採掘ドローン拡張イニシアティブ"
+ NAME_Aggressive_Mining_Drone_Expansion_Initiative: "強硬ドローン拡張イニシアティブ"
+ NAME_Old_One: "古きもの" #void cloud
+ NAME_Stellarite: "太陽を喰らうもの"
+ NAME_VLUUR: "ヴルーア"
+ #Planet names
+ NAME_Bot_Compactor: "スカベンジャー・ロボットの圧縮機"
+ NAME_Drakes_Roost: "ドレイクのねぐら"
+ #Fleet names
+ NAME_Aggressive_Mining_Drone_Expansion_Fleet: "攻撃的ドローン拡張艦隊"
+ NAME_Ancient_Mining_Drones: "古代の採掘ドローン"
+ NAME_Mining_Drone_Expansion_Fleet: "採掘ドローン拡張艦隊"
+ NAME_Crystalline_Elites: "上質結晶生命体"
+ NAME_Crystalline_Entity: "結晶生命体"
+ NAME_Exiled_One: "追放されし者" #void cloud
+ NAME_Hiver_Nest: "集合意識の巣"
+ NAME_Life_Tree_Protector_plural: "生命の樹の守護者"
+ NAME_Nesting_Crystals: "入れ子の結晶" #space crystals
+ NAME_Shard: "シャード" #named dragon
+ NAME_Space_Amoeba_plural: "宇宙アメーバ" #fleet
+ NAME_Space_Amoeba_plural_seed: "宇宙アメーバ (£seed_pod£)" #fleet carrying seeds (Gardeners Origin)
+ NAME_Stellarite_Devourer: "太陽を喰らうもの"
+ NAME_Subspace_Rupture_Cloud_1: "亜空間分裂 XV-990"
+ NAME_Subspace_Rupture_Cloud_2: "亜空間分裂 R-5921"
+ NAME_Subspace_Rupture_Cloud_3: "亜空間分裂 TLZ-84"
+ NAME_Tricksy_Mining_Drones: "いたずら採掘ドローン" #cute form of 'tricky'
+ NAME_Void_Cloud: "ボイドクラウド"
+ #Ship names
+ NAME_Annoyed_Crystal: "腹を立てた結晶"
+ NAME_Cortus: "コルトゥス" #space amoeba
+ NAME_Cracked_Crystalline_Shard: "砕けた結晶生命体のかけら"
+ NAME_Dreadnought: "ドレッドノート"
+ NAME_Drone_0931_F: "ドローン 0931-F"
+ NAME_Drone_1119_X: "ドローン 1119-X"
+ NAME_Drone_1433_D: "ドローン 1433-D"
+ NAME_Drone_1832-D: "ドローン 1832-D"
+ NAME_Drone_2432_D: "ドローン 2432-D"
+ NAME_Drone_4119_X: "ドローン 4119-X"
+ NAME_Drone_5110_X: "ドローン 5110-X"
+ NAME_Drone_6732_A: "ドローン 6732-A"
+ NAME_Drone_7731_A: "ドローン 7731-A"
+ NAME_Effluvial_Offspring: "放出された子孫" #void cloud
+ NAME_Ether_Hatchling: "エーテル・ハッチリング" #ether drake
+ NAME_Shard_Dragon: "グランデスト・ドラゴン" #ether drake
+ NAME_KASH: "カッシュ" #void cloud
+ NAME_Life_Tree_Protector: "生命の樹の守護者"
+ NAME_Mining_Drone_C_Class: "採掘ドローンC級"
+ NAME_Oriens: "オーリエンス" #space amoeba
+ NAME_Ortus: "オルトゥス" #space amoeba
+ NAME_Psi: "サイ"
+ NAME_SHAB: "シャーブ" #void cloud
+ NAME_Scile: "サイル" #named dragon
+ NAME_Stellar_Devourer: "太陽を喰らうもの"
+ NAME_TAHA: "タハ" #void cloud
+ NAME_TANT: "タント" #void cloud
+ NAME_Trapped_Asteroid: "捕らわれた小惑星" #inert space crystal
+ NAME_Wraith_450THz: "レイス 450THz"
+ NAME_Wraith_520THz: "レイス 520THz"
+ NAME_Wraith_650THz: "レイス 650THz"
+ NAME_XADRA: "ザードラ" #void cloud
+ NAME_XELMAGGUS: "ゼルマグス" #void cloud
+ NAME_XILNIAK: "ジルニアック" #void cloud
+ NAME_XUNIA: "ズニア" #void cloud
+ NAME_XUUL: "ズール" #void cloud
+ NAME_Young_Dragon: "子供の標本"
+ ############
+ #MARAUDERS
+ ############
+ #Fleet names
+ NAME_234th_Dwamak_Bashers: "第234ドゥワマクぶっ潰し隊"
+ NAME_Armada_of_the_Voidborn: "虚空に生まれしアルマダ"
+ NAME_First_Storm_Wing: "第一強襲団"
+ NAME_Frenzied_Volunteer_Squadron: "熱狂的志願部隊"
+ NAME_Garrison_Fleet: "群衆守備隊艦隊"
+ NAME_Her_Chosen_Champions: "女神に選ばれし戦士団"
+ NAME_Order_of_Eternal_Night: "永遠なる夜の騎士団"
+ NAME_Raiding_Fleet: "襲撃艦隊"
+ NAME_Salvaged_Fleet: "回収された艦隊"
+ NAME_Star_Rider_Flotilla: "スターライダー船隊"
+ NAME_Twilight_Congregation: "黄昏の信徒団"
+ #Ship & starbase names
+ NAME_Garrison_Base: "群衆守備隊ステーション"
+ #########
+ #NOMADS
+ #########
+ NAME_Galactic_Nomads: "銀河放浪種族" #empire name
+ #Species names
+ NAME_Namarian: "ナマリア人" #also used as an adjective
+ NAME_Namarian_plural: "ナマリア人"
+ #Fleet names
+ NAME_Nomad_Delivery: "放浪種族の展開"
+ NAME_Nomadic_Armada: "放浪種族軍"
+ NAME_Redirected_Nomad_Delivery: "転進した放浪種族の展開"
+ NAME_Unhinged_Screamer_Flotilla: "イカれたシャウト船団"
+ #Ship names
+ NAME_Defender: "防衛者"
+ NAME_Home_One: "ホーム・ワン"
+ NAME_Home_Two: "ホーム・ツー"
+ NAME_Home_Three: "ホーム・スリー"
+ NAME_Protector: "守護者"
+ ##########
+ #PIRATES
+ ##########
+ #Empire names
+ NAME_Pirates: "海賊"
+ NAME_Privateers: "私掠船団"
+ NAME_Sunblaster_Pirates: "サンブラスター海賊団"
+ #Fleet names
+ NAME_Old_Guard: "古き守護者"
+ NAME_Scarred_Veterans: "痕持つ退役軍人"
+ NAME_Young_Blood: "若き血"
+ NAME_Numerous_Pirates: "数多の海賊"
+ NAME_Pirate_Fleet: "海賊艦隊"
+ NAME_Pirate_Station: "海賊ステーション" #starbase
+ NAME_Wounded_Pirates: "怪我を負った海賊"
+ #Ship names
+ NAME_Damaged_Pillager: "傷ついた略奪者"
+ NAME_Defaced_Gunmouth: "汚れたガンマウス"
+ NAME_Defaced_Starflinger: "汚れたスターフィンガー"
+ NAME_Dices: "ダイス"
+ NAME_First_Pillager: "第一略奪者"
+ NAME_First_Ravager: "第一破壊者"
+ NAME_Ingrates_Inferno: "イングレートの劫火"
+ NAME_Second_Pillager: "第二略奪者"
+ NAME_Second_Ravager: "第二破壊者"
+ NAME_Third_Pillager: "第三略奪者"
+ NAME_Third_Ravager: "第三破壊者"
+ NAME_Outcast_Gunmouth: "放逐されたガンマウス"
+ NAME_Outcast_Starflinger: "放逐されたスターフィンガー"
+ NAME_Pillager: "略奪者"
+ NAME_Ravager: "破壊者"
+ NAME_Swashbuckler: "無法者"
+ NAME_Scorched_Ravager: "灼けた破壊者"
+ NAME_Slices: "スライス"
+ #Bemat Thalassocracy
+ NAME_Thalassocracy: "ベマト星海帝国" #empire
+ NAME_Thalassocracy_species: "ベマト"
+ NAME_Thalassocracy_species_plural: "ベマト"
+ NAME_Thalassocracy_species_adj: "ベマトの"
+ NAME_Thalassocracy_fleet: "アクィジスター艦隊"
+ NAME_Bemat_corvette_01: "シムネ"
+ NAME_Bemat_destroyer_01: "ナバス"
+ NAME_Bemat_destroyer_02: "エルメー"
+ NAME_Bemat_cruiser_01: "ヘベール"
+ NAME_Bemat_cruiser_02: "エッデク"
+ #############
+ #PRECURSORS
+ #############
+ #Cybrex
+ NAME_Cybrex_Alpha: "サイブレックス・アルファ"
+ #First League
+ NAME_Fen_Habbanis: "フェン・ハバニス" #star
+ NAME_Fen_Habbanis_I: "フェン・ハバニス I" #planet
+ NAME_Fen_Habbanis_II: "フェン・ハバニス II" #planet
+ NAME_Fen_Habbanis_III: "フェン・ハバニス III" #planet
+ NAME_Fen_Habbanis_IV: "フェン・ハバニス IV" #planet
+ NAME_Fen_Habbanis_V: "フェン・ハバニス V" #planet
+ NAME_Fen_Habbanis_VI: "フェン・ハバニス VI" #planet
+ #Irassians
+ NAME_Ira: "イラ" #system
+ NAME_Irass: "イラス" #star
+ NAME_Irass_I: "イラス I" #planet
+ NAME_Irass_II: "イラス II" #planet
+ NAME_Irass_III: "イラス III" #planet
+ NAME_Irass_IV: "イラス IV" #planet
+ NAME_Irass_V: "イラス V" #planet
+ NAME_Irass_VI: "イラス VI" #planet
+ NAME_Irassia: "イラッシア" #moon
+ NAME_Irass_VII: "イラス VII" #planet
+ NAME_Irass_VIIa: "イラス VIIa" #moon
+ NAME_Irass_VIIb: "イラス VIIb" #moon
+ NAME_Irass_VIII: "イラス VIII" #planet
+ NAME_Irass_IX: "イラス IX" #planet
+ #Vultaum
+ NAME_Vultaumar: "ヴルタウマー" #star
+ NAME_Vultaumar_Prime: "ヴルタウマー・プライム" #planet
+ NAME_Vultaumar_Ia: "ヴルタウマー Ia" #moon
+ NAME_Vultaumar_Ib: "ヴルタウマー Ib" #moon
+ NAME_Vultaumar_II: "ヴルタウマー II" #planet
+ NAME_Vultaumar_III: "ヴルタウマー III" #planet
+ NAME_Vultaumar_IIa: "ヴルタウマー IIa" #moon
+ NAME_Vultaumar_IV: "ヴルタウマー IV" #planet
+ NAME_Vultaumar_IVa: "ヴルタウマー IVa" #moon
+ NAME_Vultaumar_V: "ヴルタウマー V" #planet
+ #Yuht
+ NAME_Yuhtaan: "ユータアン" #star
+ NAME_Yuhtaan_II: "ユータアン II" #planet
+ NAME_Yuhtaan_III: "ユータアン III" #planet
+ NAME_Yuhtaan_IV: "ユータアン IV" #planet
+ NAME_Yuhtaan_IVa: "ユータアン IVa" #moon
+ NAME_Yuhtaan_IVb: "ユータアン IVb" #moon
+ NAME_Yuhtaan_IVc: "ユータアン IVc" #moon
+ NAME_Yuhtaan_V: "ユータアン V" #planet
+ NAME_Yuhtaan_Va: "ユータアン Va" #moon
+ NAME_Yuhtaan_Majoris: "ユータアン・マジョリス" #broken planet
+ NAME_Yuhtaan_Minoris: "ユータアン・マイノリス" #broken planet
+ ##################
+ #PRE-FTL SPECIES
+ ##################
+ #(Uplifted) species names
+ NAME_Roachoid: "ローチオイド" #cockroaches
+ NAME_Snakeoid: "スネークオイド" #snakes
+ NAME_Robot_Uprising: "ロボットの反乱"
+ #Ship names
+ NAME_Space_Station: "宇宙ステーション"
+ #Army names
+ NAME_Industrial_Army: "工業化時代の地上軍"
+ NAME_Post_Atomic_Army: "ポスト原子力時代の地上軍"
+ NAME_Primitive_Army: "原始的な地上軍"
+ NAME_Robot_Army: "ロボット軍団"
+ #Leader names
+ NAME_Sobak: "ソバク"
+ Sobak_Background: "その才能を発揮させることのできなかった惑星から連れ去った優秀な人材。"
+ ###################
+ #RADICAL CULTISTS
+ ###################
+ NAME_Radical_Cult: "急進的教団" #empire name
+ cultist_flagship_damaged: "損傷した旗艦"
+ #Fleet names
+ NAME_Cult_Defense_Fleet: "教団防衛艦隊"
+ NAME_Cultist_Marauders: "異端者のマローダー"
+ NAME_Exiled_Pirates: "追放されし海賊"
+ #Ship names
+ NAME_Bane_of_the_Heretic: "異端者の破滅"
+ NAME_Cultist_Flagship: "異端者の旗艦"
+ NAME_Cultist_Shipyard: "異端者の造船所"
+ NAME_Dawn_of_Creation: "創造の曙光"
+ NAME_Divine_Fury: "神の憤怒"
+ NAME_Divine_Justicar: "神の裁き"
+ NAME_Divine_Vessel: "神の船"
+ NAME_Eternal_Damnation: "永遠の天罰"
+ NAME_Final_Judgment: "最後の審判"
+ NAME_Glorious_Might: "栄光の力"
+ NAME_Heathens_Doom: "異教徒の破滅"
+ NAME_Heavenly_Judgment: "天上の審判"
+ NAME_Heavenly_Portent: "天上の前兆"
+ NAME_Holy_Avatar: "聖なるアバター"
+ NAME_Holy_Defender: "聖なる防衛者"
+ NAME_Holy_Protector: "聖なる守護者"
+ NAME_Infidel_Slayer: "不信心者を狩る者"
+ NAME_Path_of_the_Pilgrim: "巡礼者の道"
+ NAME_Pious_Crusader: "敬虔なる活動家"
+ NAME_Revered_Elder: "導師"
+ NAME_Righteous_Zealot: "高潔なる狂信者"
+ NAME_The_Chosen_One: "選ばれし者"
+ NAME_Sacred_Might: "神聖なる力"
+ NAME_Temple_of_Light: "光の神殿"
+ NAME_Unyielding_Faith: "不屈の信仰"
+ NAME_Wrath_of_the_Spirits: "精霊の怒り"
+ #########################
+ #REVOLTS & UNREST
+ #########################
+ #Army names
+ NAME_Freedom_Fighters: "自由の戦士"
+ #Other
+ NAME_WAR_OF_REVOLT: "[Root.Target.GetName]の反乱"

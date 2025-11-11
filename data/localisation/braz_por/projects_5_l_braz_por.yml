@@ -1,0 +1,11 @@
+﻿l_braz_por:
+ LIMBO_2_PROJECT: "Limbo: Uma Segunda Chance"
+ LIMBO_2_PROJECT_DESC: "Poderíamos dar uma segunda chance de vida a uma espécie extinta de antigos alienígenas ao carregar seus padrões neurológicos em corpos robóticos."
+ GHOST_SHIP_PROJECT: "Estudar \"Nave Fantasma\""
+ GHOST_SHIP_PROJECT_DESC: "Uma nave científica abandonada foi descoberta fazendo uma patrulha de muitos séculos no sistema $NAME_Hillos$. Qual será o intuito dessa odisseia solitária?"
+ GHOST_SHIP_PROJECT_02: "Responder ao Bebê de $NAME_Hillos_ship$"
+ GHOST_SHIP_PROJECT_02_DESC: "O ruído psiônico detectado no sistema $NAME_Hillos$ parece pertencer à consciência artificial aprisionada a bordo da \"nave fantasma\" $NAME_Hillos_ship$."
+ ANCIENT_MANUFACTORIUM_PROJECT: "Fornecer Energia à Fornalha"
+ ANCIENT_MANUFACTORIUM_PROJECT_DESC: "Agora, depois de todos os preparativos que fizemos, é hora de colocar essas máquinas para funcionar e conectar a instalação à rede elétrica planetária!"
+ STRATOVENTS_PROJECT: "Projeto de Fendas Estratosféricas"
+ STRATOVENTS_PROJECT_DESC: "Estuda as formações de fendas estratosféricas únicas a §Y[planet.GetName]§! e sua importância para a Fauna Espacial."

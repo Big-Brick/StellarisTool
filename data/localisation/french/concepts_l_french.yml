@@ -1,0 +1,814 @@
+﻿l_french:
+ ### CONCEPTS
+ #Above each concept definition are instructions on usage, including an icon where one exists.
+ #Note that between the icon and the term there's a non-breaking space. When you copy the usage example, it will keep the non-breaking space.
+ #This is important to not get a line break between the icon and the concept.
+ #Use a concept link with icon the first time a new concept is mentioned, then use §H without an icon for repeated uses.
+ #Use §H with an icon the first time a concept is used withing its own description.
+ #Use §H without an icon if the concept is used more than once.
+ GAME_CONCEPT_FORMAT: "§C$TEXT$§!"
+ DATABANK_FILTER_DESC: "Catégorie sélectionnée"
+ databank_colony: "Colonie"
+ databank_conquest: "Conquête"
+ databank_development: "Développement"
+ databank_empire: "Empire"
+ databank_exploration: "Exploration"
+ databank_interface: "Interface"
+ databank_resource: "Ressource"
+ dlc_requirement_string: "\n\n§RNécessite le DLC§!"
+ requires_leviathans: "$dlc_requirement_string$ §ILeviathans§!."
+ requires_apoc: "$dlc_requirement_string$ §IApocalypse§!."
+ requires_syn_dawn: "$dlc_requirement_string$ §ISynthetic Dawn§!."
+ requires_megacorp: "$dlc_requirement_string$ §IMegaCorp§!"
+ requires_dis_stars: "$dlc_requirement_string$ §YDistant Stars§!."
+ tt_gain: "\n\nPour en avoir davantage :\n"
+ tt_use: "\n\nUtilisation :\n"
+ tt_market: "En acheter sur le £market£['concept_market',marché]."
+ tt_no_need_hive: "Les §Rconsciences collectives n'utilisent pas cette ressource.§!"
+ tt_some_need_machine: "Les §Rintelligences mécaniques n'utilisent généralement pas cette ressource.§!"
+ concept_advanced_empire: "Empire I.A. avancé"
+ concept_advanced_empires: "Empires I.A. avancés"
+ concept_advanced_empires_desc: "Les empires I.A. avancés commencent la partie avec un avantage initial en ressources, en technologies et en population. Ils ne bénéficient toutefois d'aucun avantage autre que cette situation de départ plus avantageuse."
+ concept_alien_zoo: "$building_xeno_zoo$"
+ concept_alien_zoo_desc: "£mod_job_entertainer_add£[entertainer.GetName] : §G+100§!\n£mod_job_xeno_zoo_keeper_add£$job_xeno_zoo_keeper$ : §G+100§!\n£mod_job_livestock_zoo_animal_add£$job_livestock_zoo_animal$ : §G+300§!\n\nLes £job_xeno_zoo_keeper£xénosoigneurs transforment les £consumer_goods£§Ybiens de consommation§! en §Ypoints de recherche§! £society£sociétale et en £amenities£§Yservices§!.\n$t$Les £amenities£§Yservices§! sont produits en fonction des emplois de £job_livestock_zoo_animal£xéno-animaux protégés.\n$job_entertainer_effect_desc$\n$job_livestock_zoo_animal_effect_desc$\n\n§L$building_xeno_zoo_desc$§!"
+ #Singular: ['concept_ascension_perk'] or §H$concept_ascension_perk$§!
+ #Plural: ['concept_ascension_perks'] or §H$concept_ascension_perks$§!
+ concept_ascension_perk: "Atout de l'ascension"
+ concept_ascension_perks: "Atouts de l'ascension"
+ concept_ascension_perks_desc: "Les §Hatouts de l'ascension§! accordent de puissants avantages à l'échelle de l'empire, qui peuvent avoir un impact déterminant sur le développement d'une civilisation et ouvrir la voie à une force, une résistance ou une transcendance accrues.\n\nVous pouvez les choisir et les gérer depuis l'onglet §H$traditions$§! de la £interface£['concept_society_management_view',vue gestion sociétale]."
+ #Singular: -
+ #Plural: £alloys£ ['concept_alloys'] or £alloys£ §H$concept_alloys$§!
+ concept_alloys: "Alliages"
+ concept_alloys_desc: "Les £alloys£§Halliages§! sont des ressources avancées pouvant être utilisées dans le domaine militaire.\n\nIls sont notamment nécessaires pour la construction de ['concept_civilian_ships',vaisseaux civils], de ['concept_military_ships',vaisseaux militaires], de ['concept_starbases',bases stellaires] et de ['concept_megastructures',mégastructures].$tt_gain$- Construire des £zone£§Hindustries mixtes§! ou des £zone£§Hindustries lourdes§!.\n- Construire des £building£['building:building_foundry_1',fonderies à alliages].\n- $tt_market$"
+ #Singular: £trade_value£ ['concept_trade'] or §H$concept_trade$§!
+ #Plural: -
+ concept_trade: "Valeur commerciale"
+ concept_trade_desc: "La £trade_value£§Yvaleur commerciale§! représente l'activité économique quotidienne, le flux commercial et la capacité logistique d'un ['concept_empire',empire].\n\nElle est utilisée pour la ['concept_ship_upkeep',maintenance des vaisseaux], la ['concept_colony_upkeep',maintenance des colonies] et pour acheter des ressources.$tt_gain$- Construire des £building£['concept_buildings',bâtiments] ayant des £job£['concept_jobs',emplois] qui produisent de la £trade_value£§Yvaleur commerciale§!.\n- Construire des £mining_station£['concept_mining_stations',stations minières] sur des gisements commerciaux interstellaires.\n- Vendre des ressources sur le £market£['concept_market',marché]."
+ #Singular: £building£ ['concept_building'] or £building£ §H$concept_building$§!
+ #Plural: £building£ ['concept_buildings'] or £building£ §H$concept_buildings$§!
+ concept_building: "$buildable_building$"
+ concept_buildings: "$planet_buildings$"
+ concept_building_desc: "Les £building£§Hbâtiments§!, comme les ['building:building_foundry_1',fonderies à alliages] et les ['building:building_research_lab_1',laboratoires de recherche], orientent la production des ['concept_colonies',colonies].\n\nUn §Hemplacement de construction§! libre est nécessaire pour construire un §Hbâtiment§!, qui peut nécessiter la sélection d'une ['concept_district_specialization',spécialisation de district].$tt_gain$- En construire davantage depuis la £interface£['concept_colony_view',vue colonie]."
+ #Singular: £mining_station£ £science_ship£ £shipclass_observation_station£ ['concept_civilian_space_station'] or £mining_station£ £science_ship£ £shipclass_observation_station£ §H$concept_civilian_space_station$§!
+ #Plural: £mining_station£ £science_ship£ ['concept_civilian_space_stations'] or £mining_station£ §H$mining_station$§! £science_ship£ £shipclass_observation_station£ §H$concept_civilian_space_stations$§!
+ concept_civilian_space_station: "$spacestation_1$ civile"
+ concept_civilian_space_stations: "$spacestation_1_plural$ civiles"
+ concept_civilian_space_station_desc: "Les £mining_station£§Hstations minières§! et les £science_ship£§Hstations de recherche§! sont des installations orbitales bâties autour de corps célestes afin d'extraire des ressources ou de mener des recherches scientifiques. Une station minière récolte des £minerals£['concept_minerals',minéraux], de l'£energy£['concept_energy',énergie], et d'autres matériaux stratégiques, tandis qu'une station de recherche génère de la £physics£ £society£ £engineering£['concept_research',recherche] pour réaliser des avancées scientifiques.\n\nCes stations sont cruciales pour l'expansion économique et le développement technologique. Leur construction se fait via un £construction_ship£['concept_construction_ship',vaisseau de construction]."
+ #Singular: £colony£ ['concept_colony'] or £colony£ §H$concept_colony$§!
+ #Plural: £colony£ ['concept_colonies'] or £colony£ §H$concept_colonies$§!
+ concept_colony: "$COLONY$"
+ concept_colonies: "$COLONIES$"
+ concept_colony_desc: "Une £colony£§Hcolonie§! désigne un endroit où les £pop£['concept_pops',pops] vivent et travaillent, comprenant des £district£['concept_districts',districts], des £zone£['concept_district_specializations',spécialisations de districts] et des £building£['concept_buildings',bâtiments].\n\nVotre §Hmonde natal§!, les £planet£['concept_planets',mondes] colonisés par vos £colony_ship£['concept_colony_ships',vaisseaux coloniaux] et les ['concept_habitats',habitats] que vous construisez sont des colonies.\n\nVous pouvez les gérer depuis la £interface£['concept_colony_view',vue colonie]."
+ #Singular: £colony_ship£ ['concept_colony_ship'] or £colony_ship£ §H$concept_colony_ship$§!
+ #Plural: £colony_ship£ ['concept_colony_ships'] or £colony_ship£ §H$concept_colony_ships$§!
+ concept_colony_ship: "$colonizer$"
+ concept_colony_ships: "$colonizer_plural$"
+ concept_colony_ship_desc: "Les £colony_ship£§Hvaisseaux coloniaux§! sont envoyés sur des £planet£['concept_planets',mondes] pour en faire des £colony£['concept_colonies',colonies].\n\nUn §Hvaisseau colonial§! est automatiquement construit lorsque la colonisation est initiée depuis la £interface£['concept_colony_view',vue colonie] ou le £interface£['concept_expansion_planner',planificateur d'expansion]. Ils peuvent également être construits dans un ['concept_shipyard',chantier spatial]."
+ #Singular: £construction_ship£ ['concept_construction_ship'] or £construction_ship£ §H$concept_construction_ship$§!
+ #Plural: £construction_ship£ ['concept_construction_ships']
+ concept_construction_ship: "$constructor$"
+ concept_construction_ships: "$constructor_plural$"
+ concept_construction_ship_desc: "Un £construction_ship£§Hvaisseau de construction§! permet de bâtir des stations spatiales.$tt_use$- Construction d'['concept_outposts',avant-postes] dans des £system£['concept_systems',systèmes] non possédés afin d'étendre l'espace d'un ['concept_empire',empire].\n- Construction de £mining_station£['concept_mining_stations',stations minières] et de £science_ship£['concept_research_stations',stations de recherche] en orbite des £planet£['concept_planets',mondes] et des ['concept_stars',étoiles] reconnus.\n- Construction de ['concept_megastructures',mégastructures].\n- Recherche de certains ['concept_special_projects',projets spéciaux].$tt_gain$- En construire dans un ['concept_shipyard',chantier spatial]."
+ #Singular: £science_ship£ ['concept_science_ship'] or £science_ship£ §H$concept_science_ship$§!
+ #Plural: £science_ship£ ['concept_science_ships'] or £science_ship£ §H$concept_science_ships$§!
+ concept_science_ship: "$science$"
+ concept_science_ships: "$science_plural$"
+ concept_science_ship_desc: "Les £science_ship£§Hvaisseaux scientifiques§! sont spécialement conçus pour mener des opérations d'exploration, de reconnaissance et de recherche. Les £scientist£['concept_scientist',scientifiques] qui les occupent peuvent ainsi observer des systèmes inconnus, étudier des £anomaly£['concept_anomalies',anomalies] ou encore fouiller des £archaeology£['concept_archaeology_sites',sites archéologiques].\n\nCes vaisseaux sont automatiquement équipés des ['concept_components',composants] les plus avancés à disposition et ils sont essentiels à la découverte et l'expansion.\n\nLes §Hvaisseaux scientifiques§! peuvent aussi permettre d'explorer des phénomènes galactiques comme les ['concept_wormholes',trous de ver], des ['concept_debris',débris] de vaisseaux de recherche ou encore participer à des ['concept_special_projects',projets] nécessitant une analyse détaillée."
+ #Singular: -
+ #Plural: £consumer_goods£ ['concept_consumer_goods'] or £consumer_goods£ §H$concept_consumer_goods$§!
+ concept_consumer_goods: "Biens de consommation"
+ concept_consumer_goods_desc: "[GetConceptConsumerGoods]"
+ concept_consumer_goods_desc_start: "Les £consumer_goods£§Hbiens de consommation§! sont une ressource avancée représentant les divers appareils, produits de luxe et équipements nécessaires pour permettre une vie agréable aux £pop£['concept_pops',pops]."
+ concept_consumer_goods_desc_end: "$tt_gain$- Construire des £zone£§Hzones industrielles§! ou des £zone£§Hzones usinières§!.\n- Construire des £building£['building:building_factory_1',industries civiles].\n- $tt_market$"
+ concept_consumer_goods_desc_regular: "$concept_consumer_goods_desc_start$\n\nIls sont nécessaires pour l'exercice de certains £job£['concept_jobs',emplois], comme £job_researcher£['concept_researcher',chercheur] ou £job_priest£['concept_priest',prêtre].$concept_consumer_goods_desc_end$"
+ concept_consumer_goods_desc_hive: "$tt_no_need_hive$\n\n$concept_consumer_goods_desc_regular$"
+ concept_consumer_goods_desc_machine: "$tt_some_need_machine$\n\n$concept_consumer_goods_desc_start$\n\nLes ['concept_auth_machine_intelligence',intelligences mécaniques] ayant un §Hprogramme obsessif§! produisent des £consumer_goods£§Hbiens de consommation§!, tout comme les §Hserviteurs renégats§! pour leurs £pop£§Hpops de biotrophées§!.$concept_consumer_goods_desc_end$"
+ #Singular: -
+ #Plural: £biomass£ ['concept_biomass'] or £biomass£ §H$biomass$§!
+ concept_biomass: "Biomasse"
+ concept_biomass_desc: "La £biomass£§Hbiomass§! correspond au potentiel organique brut généré par l'activité biologique dans l'ensemble des ['concept_owned_systems',systèmes possédés].\n\nElle est nécessaire pour la construction des £building£['concept_buildings',bâtiments] et la ['concept_terraforming',terraformation] de nouvelles ['concept_colonies',colonies].$tt_gain$- Augmenter les £pop£['concept_pops',pops].\n- Construire des £building£['building:building_cradle_of_rebirth',berceaux de la renaissance]."
+ #Singular: £genetic_material£ ['concept_dna'] or £genetic_material£ §H$concept_dna$§!
+ #Plural: -
+ concept_dna: "$genetic_material$"
+ concept_dna_desc: "Le £genetic_material£§Hmatériel génétique§! nous permet de cloner des organismes spatiaux afin de les utiliser comme flottes militaires. Un matériel génétique de niveau supérieur permet de cloner des §Ycréatures spatiales§! rares dans les ['concept_hatchery',écloseries].\n\nIl est possible de collecter du matériel génétique dans la nature grâce à la technologie £physics£['technology:tech_gravity_wells'] et à la reproduction dans le ['concept_vivarium',vivarium]."
+ #Singular: £district£ ['concept_district'] or £district£ §H$concept_district$§!
+ #Plural: £district£ ['concept_districts'] or £district£ §H$concept_districts$§!
+ concept_district: "$DISTRICT$"
+ concept_districts: "$DISTRICTS$"
+ concept_district_desc: "Les £district£§H['concept_districts',districts]§! sont des zones spécialisées d'une £colony£['concept_colony',colonie]. Les ['concept_generator_districts',districts générateurs], les ['concept_mining_districts',districts miniers] et les ['concept_farming_districts',districts agricoles] en sont des exemples.\n\nEn général, ils fournissent à la fois des £housing£['concept_housing',logements] et des £job£['concept_jobs',emplois].$tt_gain$- En construire davantage depuis la £interface£['concept_colony_view',vue colonie]."
+ #Singular: ['concept_edict'] or §H$concept_edict$§!
+ #Plural: ['concept_edicts'] or §H$concept_edicts$§!
+ concept_edict: "Décret"
+ concept_edicts: "Décrets"
+ concept_edicts_desc: "Les §Hdécrets§! sont des décisions dont les conséquences touchent l'ensemble de l'empire. Ils peuvent être promulgués en dépensant des ressources ou en payant un coût mensuel.\n\nCe coût est le plus fréquemment de l'£unity£§Iunité§!, mais ils peuvent aussi être financés par le ['concept_edict_fund',fonds pour les décrets]. Certains §Hdécrets§! peuvent cependant avoir un coût en une autre ressource.\n\nVous pouvez les gérer depuis l'onglet §H$government_view_tab_policies_and_edicts$§! de la £interface£['concept_government_view',vue gouvernement]."
+ #Singular: ['concept_edict_fund'] or §H$concept_edict_fund$§!
+ #Plural: -
+ concept_edict_fund: "Fonds pour les décrets"
+ concept_edict_fund_desc: "Le §Hfonds pour les décrets§! est une réserve d'£unity£['concept_unity',unité] fixe servant à financer le maintien des ['concept_edicts',décrets]. Si ce coût de maintien excède la taille du §Hfond§!, de l'§Hunité§! supplémentaire sera prélevée."
+ #Singular: -
+ #Plural: £energy£ ['concept_energy'] or £energy£ §H$concept_energy$§!
+ concept_energy: "Crédits énergétiques"
+ concept_energy_desc: "Les £energy£§Hcrédits énergétiques§! sont des unités d'énergie stockées et transférables utilisées par tous les ['concept_empires',empires] de la galaxie.\n\nIls sont dépensés pour la maintenance des ['concept_ships',vaisseaux] et des ['concept_buildings',bâtiments], pour déblayer des £blocker£['concept_blockers',bloqueurs] planétaires et pour conclure des accords ou commercer avec d'autres.$tt_gain$- Construire des £district£['concept_generator_districts',districts générateurs].\n- Construire des £mining_station£['concept_mining_stations',stations minières] sur des ['concept_celestial_objects',objets célestes] riches en énergie.\n- $tt_market$"
+ #Singular: ['concept_authority'] or §H$concept_authority$§!
+ #Plural: ['concept_authorities'] or §H$concept_authorities$§!
+ concept_authority: "Autorité"
+ concept_authorities: "Autorités"
+ concept_authority_desc: "Une §Hautorité§! détermine de quelle manière un empire sélectionne ses dirigeants et gouverne sa population. Les démocraties et les oligarchies tiennent des ['concept_democratic_election',élections] périodiques, tandis que les dictatures et systèmes impériaux concentrent le pouvoir entre les mains d'une seule personne.\n\nLe choix de l'§Hautorité§! a une influence sur l'approbation et le soutien des ['concept_factions',factions], la succession des dirigeants, les notions de ['concept_civics',civismes] mises en oeuvre, ainsi que les interactions diplomatiques.\n\nL'§Hautorité§! d'un empire est établie lors de sa création, mais peut être modifiée plus tard par des réformes, à condition de respecter les conditions requises."
+ #Singular: ['concept_ethic'] or §H$concept_ethic$§!
+ #Plural: ['concept_ethics'] or §H$concept_ethics$§!
+ concept_ethic: "Éthique"
+ concept_ethics: "Éthiques"
+ concept_ethic_desc: "Les §Héthiques§! représentent les valeurs essentielles d'un empire. Elles façonnent ses politiques, la structure de sa société et sa posture diplomatique. C'est également elles qui définissent si un individu préférera plutôt la liberté ou le contrôle autoritaire, la conquête militaire ou la coopération pacifique.\n\nLes §Héthiques§! d'un empire influencent ses ['concept_civics',civismes] disponibles, son type d'['concept_authorities',autorité] et ses relations avec les autres empires. Les §Héthiques§! sont choisies lors de la création de l'empire, mais peuvent changer au fil du temps en raison de pressions internes, de l'influence des factions ou de réformes délibérées via un mécanisme de glissement éthique."
+ #Singular: ['concept_faction'] or §H$concept_faction$§!
+ #Plural: ['concept_factions'] or §H$concept_factions$§!
+ concept_faction: "Faction"
+ concept_factions: "Factions"
+ concept_faction_desc: "Les §Hfactions§! sont des groupes de £pop£['concept_pops',pops] partageant la même vision sur la façon dont l'['concept_empire',empire] devrait être gouverné.\n\nL'['concept_approval',approbation] représente le degré de satisfaction d'une §Hfaction§! par rapport à la situation actuelle, qui a un effet sur le £happiness£['concept_happiness',bonheur] des §H['concept_pops',pops]§! qui en sont membres.\n\nPlus son §Happrobation§! et son ['concept_support',soutien] sont importants, plus nous tirons d'£unity£['concept_unity',unité] de cette §Hfaction§!."
+ #Singular: ['concept_approval'] or §H$concept_approval$§!
+ #Plural: -
+ concept_approval: "Approbation"
+ concept_approval_desc: "L'§Happrobation§! d'une ['concept_faction',faction] représente son degré de satisfaction par rapport à la situation actuelle et peut avoir un effet sur le £happiness£['concept_happiness',bonheur] des £pop£['concept_pops',pops] qui en sont membres.\n\nPlus son §Happrobation§! et son ['concept_support',soutien] sont importants, plus nous tirons d'£unity£['concept_unity',unité] de cette faction."
+ #Singular: ['concept_support'] or §H$concept_support$§!
+ #Plural: -
+ concept_support: "Soutien"
+ concept_support_desc: "Le §Hsoutien§! représente la puissance politique d'une ['concept_faction',faction]. Cette puissance évolue en fonction du nombre de £pop£['concept_pops',pops] la soutenant.\n\nLes §Hpops§! disposant d'une §Hpleine citoyenneté§! contribuent bien plus que les autres au soutien."
+ #Singular: ['concept_endgame_crisis'] or §H$concept_endgame_crisis$§!
+ #Plural: ['concept_endgame_crises'] or §H$concept_endgame_crises$§!
+ concept_endgame_crisis: "Crise de fin de partie"
+ concept_endgame_crises: "Crises de fin de partie"
+ concept_endgame_crisis_desc: "Lorsqu'une partie de Stellaris atteint sa dernière phase, une crise galactique survient. Ces crises de fin de partie peuvent être un défi extrême même pour les joueurs vétérans.\n\nElles ne surviennent normalement qu'une fois atteinte l'année d'entrée dans la §Ipériode de fin de partie§!."
+ #Singular: ['concept_fallen_empire'] or §H$concept_fallen_empire$§!
+ #Plural: ['concept_fallen_empires'] or §H$concept_fallen_empires$§!
+ concept_fallen_empire: "Empire déchu"
+ concept_fallen_empires: "Empires déchus"
+ concept_fallen_empires_desc: "Les empires déchus sont des civilisations très anciennes, qui au lancement de la partie disposent d'une technologie avancée et de flottes puissantes, mais sont généralement très passives. Ils peuvent parfois présenter des exigences ou proposer des missions à remplir aux empires moins avancés.\n\nProvoquer un empire déchu est toujours risqué, à moins que vous n'ayez pleine confiance en votre capacité à défaire un tel adversaire sur le plan militaire..."
+ #Singular: ['concept_awakened_empire'] or §H$concept_awakened_empire$§!
+ #Plural: ['concept_awakened_empires'] or §H$concept_awakened_empires$§!
+ concept_fallen_empire_awakening: "Empire déchu renaissant"
+ concept_awaken: "Éveillé"
+ concept_awakened_empire: "$COUNTRY_AWAKENED_FALLEN_EMPIRE$"
+ concept_awakened_empires: "Empires renaissants"
+ concept_awakened_empires_desc: "$COUNTRY_AWAKENED_FALLEN_EMPIRE_DESC$"
+ #Singular: £food£ ['concept_food'] or £food£ §H$concept_food$§!
+ #Plural: -
+ concept_food: "Nourriture"
+ concept_food_desc: "[GetConceptFood]"
+ concept_food_desc_end: "$tt_gain$§Y-§! Construire de £district£['concept_farming_districts',districts agricoles].\n- $tt_market$"
+ concept_food_desc_regular: "La £food£§Hnourriture§! représente les diverses denrées requises pour maintenir et faire croître les £pop£['concept_pops',pops].$concept_food_desc_end$"
+ concept_food_desc_machine: "$tt_some_need_machine$\n\nLa £food£§Hnourriture§! représente les diverses sources de nutriments biologiques nécessaires aux organiques pour alimenter leurs corps frêles.\n\nLes §Hassimilateurs fervents§! produisent de la £food£§Hnourriture§! pour leurs £pop£§Hpops cyborgs§!, et les §Hserviteurs renégats§! pour leurs £pop£§Hpops de biotrophées§!.$concept_food_desc_end$"
+ concept_flexible_traditions: "Traditions dynamiques"
+ concept_flexible_tradition: "Tradition dynamique"
+ concept_flexible_traditions_desc: "Les traditions dynamiques sont des ['concept_traditions',traditions] qui sont adoptées en fonction de vos choix en jeu."
+ #Singular: ['concept_gateway'] or §H$concept_gateway$§!
+ #Plural: ['concept_gateways'] or §H$concept_gateways$§!
+ concept_gateway: "Portail"
+ concept_gateways: "Portails"
+ concept_gateways_desc: "Les portails sont des structures massives générant des conduites subspatiales, permettant un voyage quasi instantané vers un autre portail du réseau."
+ #Singular: ['concept_great_khan'] or §H$concept_great_khan$§!
+ #Plural: -
+ concept_great_khan: "Le Grand Khan"
+ concept_great_khan_desc: "Le Grand Khan est une chaîne d'événements survenant en milieu de partie, au cours de laquelle les tribus disparates des ['concept_marauder_empires',Maraudeurs] sont unies par un chef puissant. Formant alors la Grande Bannière, ils chercheront à conquérir les espaces des autres empires et à les soumettre par la force.$requires_apoc$"
+ #Singular: ['concept_grand_admiral'] or §H$concept_grand_admiral$§!
+ #Plural: -
+ concept_grand_admiral: "$DIFFICULTY_GRAND_ADMIRAL$"
+ concept_grand_admiral_desc: "$DIFFICULTY_GRAND_ADMIRAL_DESC$"
+ #Singular: ['concept_guaranteed_colonies'] or §H$concept_guaranteed_colonies$§!
+ #Plural: -
+ concept_guaranteed_colonies: "$FE_GUARANTEED_COLONIES$"
+ concept_guaranteed_colonies_desc: "Contrôle le nombre de £planet£§Imondes§! habitables de la même classe que le monde natal aux alentours du système de départ. Si l'option n'est pas cochée, il est possible de ne trouver aucun monde habitable à proximité immédiate."
+ #Singular: ['concept_hatchery'] or §H$concept_hatchery$§!
+ #Plural: -
+ concept_hatchery: "$sm_hatchery$"
+ concept_hatchery_desc: "Les §Yécloseries§! nous permettent d'incuber le £genetic_material£['concept_dna',matériel génétique] récupéré pour cloner des §Ycréatures spatiales§! afin de les utiliser comme flottes militaires."
+ #Singular: ['concept_hyperlane'] or §H$concept_hyperlane$§!
+ #Plural: ['concept_hyperlanes'] or §H$concept_hyperlanes$§!
+ concept_hyperlane: "Hyperligne"
+ concept_hyperlanes: "Hyperlignes"
+ concept_hyperlanes_desc: "Les §Hhyperlignes§! sont des conduites subspatiales naturelles, formées entre les puits de gravité des étoiles. La première méthode de voyage interstellaire consiste à les emprunter."
+ #Singular: £job£ ['concept_job'] or §H$concept_job$§!
+ #Plural: £job£ ['concept_jobs'] or §H$concept_jobs$§!
+ concept_job: "Emploi"
+ concept_jobs: "Emplois"
+ concept_job_desc: "Les £job£§Hemplois§! représentent les rôles et professions que les £pop£['concept_pops',pops] entreprennent au sein d'un empire. Déterminant la production de ressources, les résultats de la recherche et la fonction sociale, les emplois sont fournis par les £district£['concept_districts',districts], £zone£['concept_district_specializations',spécialisations des districts], £building£['concept_buildings',bâtiments] et autres particularités géographiques. Ils peuvent être de différents types pour répondre aux besoins économiques, scientifiques ou militaires.\n\nLa répartition des §Hemplois§! a des conséquences directes sur la stabilité économique, la dynamique politique et l'efficacité générale de l'empire.\n\nVous pouvez gérer les §Hemplois§! depuis la £interface£['concept_colony_view',vue colonie]."
+ #Singular: £job£ ['concept_job'] or §H$concept_job$§!
+ #-
+ concept_unemployment: "Chômage"
+ concept_unemployment_desc: "£pop£§HLes pops au chômage§! n'ont pas d'£job£['concept_job',emploi]. Elles ne produisent pas de ressources et peuvent réduire la £stability£['concept_stability',stabilité] de la £colony£['concept_colony',colonie]."
+ #Singular: ['concept_l_gate'] or §H$concept_l_gate$§!
+ #Plural: ['concept_l_gates'] or §H$concept_l_gates$§!
+ concept_l_gate: "Porte-L"
+ concept_l_gates: "Portes-L"
+ concept_l_gates_desc: "Un réseau de portes mystérieuses, connectées à un réseau subspatial distinct. Tous ces portails paraissent avoir été désactivés de façon délibérée."
+ #Singular: ['concept_machine_uprising'] or §H$concept_machine_uprising$§!
+ #Plural: -
+ concept_machine_uprising: "Le soulèvement des machines"
+ concept_machine_uprising_desc: "La Soulèvement des machines est une chaîne d'événements survenant en milieu de partie, au cours de laquelle les servants robotiques dotés d'une intelligence artificielle peuvent tenter de se soulever contre l'empire qui les a créés. Cela peut provoquer la formation d'une nouvelle ['authority:auth_machine_intelligence',intelligence mécanique] dans la galaxie.$requires_syn_dawn$"
+ #Singular: ['concept_marauder_empire'] or §H$concept_marauder_empire$§!
+ #Plural: ['concept_marauder_empires'] or §H$concept_marauder_empires$§!
+ concept_marauder_empire: "Empire maraudeur"
+ concept_marauder_empires: "Empires maraudeurs"
+ concept_marauder_empires_desc: "Les empires maraudeurs sont des civilisations spatiales passant le plus clair de leur temps à se déchirer dans des querelles intestines et à lancer des raids dans l'espace des civilisations voisines. Les Maraudeurs peuvent parfois exiger qu'un tribut leur soit versé par d'autres empires."
+ #Singular: £market£ ['concept_market'] or £market£ §H$concept_market$§!
+ #Plural: -
+ concept_market: "$MARKET_VIEW$"
+ concept_market_desc: "Le §Hmarché§! permet aux empires d'acheter et vendre des ressources de façon à adapter leur économie à leurs besoins immédiats, comme à leurs stratégies à long terme. Les transactions peuvent être menées ponctuellement ou sous la forme d'accords £trade_value£['concept_trade',commerciaux] visant à assurer un approvisionnement régulier en matériaux essentiels.\n\nLes prix fluctuent selon l'offre et la demande à travers l'économie galactique, les échanges les plus fréquents influençant les cours du marché. Les empires de négoce ou disposant de structures corporatistes peuvent bénéficier d'avantages supplémentaires lorsqu'ils font du commerce."
+ #Singular: £megastructure£ ['concept_megastructure'] or £megastructure£ §H$concept_megastructure$§!
+ #Plural: £megastructure£ ['concept_megastructures'] or £megastructure£ §H$concept_megastructures$§!
+ concept_megastructure: "$MEGASTRUCTURE$"
+ concept_megastructures: "$megastructures$"
+ concept_megastructure_desc: "Les £megastructure£§Hmégastructures§! sont d'immenses projets d'ingénierie qui mettent en valeur les prouesses technologiques et économiques d'un empire prospère. Généralement bâties en plusieurs phases, elles servent des objectifs stratégiques, scientifiques ou économiques.\n\nLa construction de §Hmégastructures§! nécessite des investissements massifs, une recherche avancée et une fondation logistique stable. Leur initiation se fait par l'intermédiaire d'un £construction_ship£['concept_construction_ship',vaisseau de construction], généralement dans des lieux précis.\n\nUne fois terminées, ces vastes installations métamorphosent la carte galactique, représentant l'ambition sous la forme de monuments durables à l'échelle cosmique."
+ #Singular: -
+ #Plural: £minerals£ ['concept_minerals'] or £minerals£ §H$concept_minerals$§!
+ concept_minerals: "Minéraux"
+ concept_minerals_desc: "[GetConceptMinerals]"
+ concept_minerals_desc_start: "Les £minerals£§Hminéraux§! sont les ressources de base utilisées pour la construction.\n\nIls sont nécessaires pour la construction des £building£['concept_buildings',bâtiments] et des £mining_station£ £science_ship£['concept_civilian_space_stations',stations spatiales civiles]. Ils peuvent être raffinés en £alloys£['concept_alloys',alliages]"
+ concept_minerals_desc_end: "$tt_gain$- Construire des £district£['concept_mining_districts',disctricts miniers].\n- Construire des £mining_station£['concept_mining_stations',stations minières] sur des ['concept_celestial_objects',objets célestes] riches en minéraux.\n- $tt_market$"
+ concept_minerals_desc_regular: "$concept_minerals_desc_start$ ou en £consumer_goods£['concept_consumer_goods',biens de consommation].$concept_minerals_desc_end$"
+ concept_minerals_desc_hive: "$concept_minerals_desc_start$.$concept_minerals_desc_end$"
+ #Singular: £mining_station£ ['concept_mining_station'] or £mining_station£ §H$concept_mining_station$§!
+ #Plural: £mining_station£ ['concept_mining_stations'] or £mining_station£ §H$concept_mining_stations$§!
+ concept_mining_station: "$mining_station$"
+ concept_mining_stations: "$mining_station_plural$"
+ concept_mining_station_desc: "Une £mining_station£§Hstation minière§! est un complexe orbital qui extrait des ressources précieuses des corps célestes, comme de l'£energy£['concept_energy',énergie], des £minerals£['concept_minerals',minéraux] ou des £alloys£['concept_alloys',alliages].$tt_gain$- En construire à l'aide de £construction_ship£['concept_construction_ships',vaisseaux de construction] à proximité d'['concept_celestial_objects',objets célestes] riches en ressources."
+ #Reusable snippets
+ tt_build_research_stations: "Utiliser des £construction_ship£['concept_construction_ships',vaisseaux de construction] pour construire des £science_ship£['concept_research_stations',stations de recherche] à proximité d'['concept_celestial_objects',objets célestes] propices à la recherche."
+ tt_research_gain: "$tt_gain$- Utiliser certains £job£['concept_jobs',emplois], comme ceux des £building£['building:building_research_lab_1',laboratoires de recherche].\n- $tt_build_research_stations$"
+ concept_research_shared: "\n\nLa §Hrecherche stockée§! est obtenue via certains événements ou si aucune recherche active n'est sélectionnée. Chaque mois, la §Hrecherche stockée§! est utilisée à hauteur du §Hgain mensuel§! pour augmenter la vitesse de recherche.$tt_research_gain$"
+ #Singular: £physics£ ['concept_physics_research'] or £physics£ §H$concept_physics_research$§!
+ #Plural: -
+ concept_physics_research: "Recherche physique"
+ concept_physics_research_desc: "Le domaine de la £physics£§Hphysique§! est l'un des trois champs d'étude technologiques, incluant des branches telles que l'§Hinformatique§!, la §Hmanipulation des champs§! ou les §Hparticules§!. $concept_research_shared$"
+ #Singular: £society£ ['concept_society_research'] or £society£ §H$concept_society_research$§!
+ #Plural: -
+ concept_society_research: "Recherche sociétale"
+ concept_society_research_desc: "Le domaine £society£§Hsociétal§! est l'un des trois champs d'étude technologiques, incluant des branches telles que la §Hbiologie§!, les §Harts politiques§! ou les §Hnouveaux mondes§!. $concept_research_shared$"
+ #Singular: £engineering£ ['concept_engineering_research'] or £engineering£ §H$concept_engineering_research$§!
+ #Plural: -
+ concept_engineering_research: "Recherche en ingénierie"
+ concept_engineering_research_desc: "Le domaine de l'£engineering£§Hingénierie§! est l'un des trois champs d'étude technologiques, incluant de branches telles que l'§Hindustrie§!, la §Hpropulsion§! ou la §Hmaîtrise du vide§!. $concept_research_shared$"
+ #Singular: ['concept_policy'] or §H$concept_policy$§!
+ #Plural: ['concept_policies'] or §H$concept_policies$§!
+ concept_policies: "Politiques"
+ concept_policy: "Politique"
+ concept_policies_desc: "Les §Hpolitiques§! définissent la posture d'un ['concept_empire',empire] à l'égard des autres empires, la façon dont il traite ses £pop£['concept_pops',pops] et les comportements qu'il autorise.\n\nVous pouvez les gérer depuis l'onglet §H$government_view_tab_policies_and_edicts$§! de la £interface£['concept_government_view',vue gouvernement]."
+ #Singular: £pop£ ['concept_pop'] or £pop£ §H$concept_pop$§!
+ #Plural: £pop£ ['concept_pops'] or £pop£ §H$concept_pops$§!
+ concept_pop: "Pop"
+ concept_pops: "Pops"
+ concept_pop_desc: "Une £pop£§Hpop§! est un groupe d'individus d'une ['concept_species',espèce] partageant le même £job£['concept_job',emploi] et la même ['concept_ethic',éthique].$tt_gain$- Développer des £pop£§Hpops biologiques§! et assembler des £pop£§Hpops mécaniques§!.\n- Acheter des §Hpops§! sur le £market£§Hmarché aux esclaves§!.\n- Recevoir des §Hpops§! via certains événements."
+ #Singular: -
+ #Plural: ['concept_preftl_civilizations'] or §H$concept_preftl_civilizations$§!
+ concept_preftl_civilizations: "Civilisations pré-PRL"
+ concept_preftl_civilizations_desc: "Les civilisations pré-PRL sont des sociétés n'ayant pas encore accédé au voyage PRL, plus rapide que la lumière. Au niveau technologique, elles se trouvent entre l'âge de pierre et l'aube de l'ère spatiale, et généralement elles ne perçoivent pas l'existence d'une vie alien."
+ #Singular: ['concept_presapient_species'] or §H$concept_concept_presapient_speciespolicies$§!
+ #Plural: ['concept_presapient_species'] or §H$concept_concept_presapient_speciespolicies$§!
+ concept_presapient_species: "Espèces préconscientes"
+ concept_presapient_species_desc: "Les espèces préconscientes sont des créatures relativement intelligentes, sur le point d'accéder à la sapience. Avec les technologies ['concept_society_research',£society£sociétales] appropriées, elles peuvent être provoluées pour atteindre le stade de la conscience, ou préservées dans des ['concept_alien_zoo',£building£xénozoos]."
+ #Singular: ['concept_galaxy_shape'] or §H$concept_galaxy_shape$§!
+ #Plural: -
+ concept_shape: "Forme"
+ concept_galaxy_shape: "Forme de la galaxie"
+ concept_galaxy_shape_desc: "- §I$elliptical$§! : une galaxie ronde et simple, où les étoiles sont distribuées de manière homogène.\n- §I$ring$§! : une galaxie ronde où le coeur de la galaxie, sans étoiles, est beaucoup plus vaste.\n- §ISpirales§! : ces galaxies ont de deux à six branches incurvées autour du coeur de la galaxie.\n- §I$bar$§! : la galaxie est divisée en deux larges bras en spirale, reliés entre eux par quelques ['concept_hyperlane',hyperlignes] seulement.\n- §I$starburst$§! : plusieurs bras parallèles, enroulés autour du coeur de la galaxie.\n- §I$cartwheel$§! : plusieurs bras fins font de cette galaxie un hybride entre la spirale et l'anneau.\n- §I$spoked$§! : cette galaxie est divisée entre des régions rayonnant depuis le coeur et nettement distinctes les unes des autres."
+ #Singular: ['concept_ship'] or §H$concept_ship$§!
+ #Plural: ['concept_ships'] or §H$concept_ships$§!
+ concept_ship: "Vaisseau"
+ concept_ships: "Vaisseaux"
+ concept_ship_desc: "Les §Hvaisseaux§! sont des engins spatiaux aux rôles variés, allant de l'exploration à la guerre, regroupant à la fois les ['concept_civilian_ships',vaisseaux civils] et les ['concept_military_ships',vaisseaux militaires]."
+ #Singular: ['concept_civilian_ship'] or §H$concept_civilian_ship$§!
+ #Plural: ['concept_civilian_ships'] or §H$concept_civilian_ships$§!
+ concept_civilian_ship: "Vaisseau civil"
+ concept_civilian_ships: "Vaisseaux civils"
+ concept_civilian_ship_desc: "Les §Hvaisseaux civils§! sont construits dans les ['concept_starbases',bases stellaires]. Ils permettent de bâtir des structures spatiales, d'explorer l'inconnu et de coloniser de nouveaux mondes.\n\nLes £construction_ship£['concept_construction_ships',vaisseaux de construction], les £science_ship£['concept_science_ships',vaisseaux scientifiques] et les £colony_ship£['concept_colony_ships',vaisseaux coloniaux] en font partie."
+ #Singular: ['concept_military_ship'] or §H$concept_military_ship$§!
+ #Plural: ['concept_military_ships'] or §H$concept_military_ships$§!
+ concept_military_ship: "Vaisseau militaire"
+ concept_military_ships: "Vaisseaux militaires"
+ concept_military_ship_desc: "Les §Hvaisseaux militaires§! sont construits dans les ['concept_starbases',bases stellaires]. Ils permettent de combattre les ['concept_empires',empires] ennemis et les ['concept_space_fauna',créatures spatiales] hostiles.\n\nRegroupés en ['concept_fleets',flottes], ils existent en différentes tailles, chacune ayant ses propres forces et avantages stratégiques.\n\nVous pouvez les concevoir dans l'onglet §H$SHIP_DESIGNER$§! de la £interface£['concept_fleet_management_view',vue gestion des flottes]."
+ #Singular: ['concept_fleet'] or §H$concept_fleet$§!
+ #Plural: ['concept_fleets'] or §H$concept_fleets$§!
+ concept_fleet: "Flotte"
+ concept_fleets: "Flottes"
+ concept_fleet_desc: "Les §Hflottes§! sont des groupes dans lesquels les ['concept_military_ships',vaisseaux militaires] se rassemblent pour mener des activités communes. La somme de la taille des §H['concept_ships',vaisseaux]§! représente la ['concept_fleet_size',taille de la flotte].\n\nUne §Hflotte§! dirigée par un £commander£['concept_commander',commandant] peut recevoir des bonus ou des pénalités en fonction des ['concept_leader_traits',traits] de celui-ci.\n\nVous pouvez les concevoir dans l'onglet §H$FLEET_MANAGER_VIEW$§! de la £interface£['concept_fleet_management_view',vue gestion des flottes]."
+ #Singular: ['concept_fleet_size'] or §H$concept_fleet_size$§!
+ #Plural: -
+ concept_fleet_size: "Taille de la flotte"
+ concept_fleet_size_desc: "La §Htaille de la flotte§! est la somme de la taille des ['concept_military_ships',vaisseaux militaires] qui composent une ['concept_fleet',flotte].\n\nLa §Htaille§! maximale par §Hflotte§! est définie par la ['concept_command_limit',limite de commandement].\n\nLa §Htaille§! totale (toutes §Hflottes§! confondues) qu'un ['concept_empire',empire] peut maintenir dépend de sa ['concept_naval_capacity',capacité navale]."
+ #Singular: ['concept_command_limit'] or §H$concept_command_limit$§!
+ #Plural: -
+ concept_command_limit: "Limite de commandement"
+ concept_command_limit_desc: "La §Hlimite de commandement§! détermine la taille maximale par ['concept_fleet',flotte] (somme de la taille des ['concept_military_ships',vaisseaux militaires]).\n\nLa §Hlimite de commandement§! peut être augmentée via, entre autres, des ['concept_technologies',technologies], certaines ['concept_traditions',traditions] ou des ['concept_civics',civismes]."
+ #Singular: ['concept_ship_upkeep'] or §H$concept_ship_upkeep$§!
+ #Singular: ['concept_logistics_upkeep'] or §H$concept_logistics_upkeep$§!
+ #Plural: -
+ concept_ship_upkeep: "Maintenance des vaisseaux"
+ concept_logistics_upkeep: "Maintenance logistique"
+ concept_ship_upkeep_desc: "La §Hmaintenance des vaisseaux§! correspond aux ressources nécessaires pour entretenir les vaisseaux, qu'ils soient civils ou militaires.\n\nL'entretien de la plupart des vaisseaux nécessite une diversité de ressources, et les coûts dépendent alors de la classe du vaisseau et des composants équipés. Cependant, le dépassement de la ['concept_naval_capacity',capacité navale] d'un empire augmente considérablement l'entretien requis pour l'ensemble des vaisseaux."
+ #Singular: ['concept_colony_upkeep'] or §H$concept_colony_upkeep$§!
+ #Plural: -
+ concept_colony_upkeep: "Maintenance des colonies"
+ concept_colony_upkeep_desc: "La §Hmaintenance des colonies§! désigne les ressources nécessaires au fonctionnement des infrastructures et de la population d'une £colony£['concept_colony',colonie]. Cela inclut l'entretien des £district£['concept_districts',districts], des £building£['concept_buildings',bâtiments] et des £job£['concept_jobs',emplois], mais aussi les besoins quotidiens de la population. Une gestion efficace de la maintenance est essentielle pour assurer la stabilité, éviter les pénuries et assurer le rendement économique à travers tout l'empire. Vous pouvez consulter la maintenance d'une colonie donnée dans l'onglet $colony_view_tab_planet_summary$ de la £interface£['concept_colony_view',vue colonie]."
+ #Singular: ['concept_species'] or §H$concept_species$§!
+ #Plural: ['concept_species'] or §H$concept_species$§!
+ concept_species: "Espèce"
+ concept_species_desc: "Les §Hespèces§! désignent des groupes distincts d'entités biologiques ou mécaniques partageant des origines, adaptations physiques et ['concept_species_traits',traits] communs.\n\nLes ['concept_technologies',technologies] avancées ou ['concept_policies',politiques] spécifiques peuvent permettre aux empires de modifier génétiquement leurs espèces en vue d'une spécialisation avancée ou d'une transformation radicale réalisée au fil du temps. Pour gérer les espèces d'un empire, rendez-vous dans la £interface£['concept_species_view',vue espèces]."
+ #Singular: ['concept_species_class'] or §H$concept_species_class$§!
+ #Plural: -
+ concept_species_class: "Classe d'espèce"
+ concept_species_class_desc: "La classe de l'espèce décrit le type d'§Iespèce§!, par exemple les aviaires, les reptiliens, les fongoïdes, etc."
+ #Singular: ['concept_species_trait'] or §H$concept_species_trait$§!
+ #Plural: ['concept_species_traits'] or §H$concept_species_traits$§!
+ concept_species_trait: "Trait d'espèce"
+ concept_species_traits: "Traits d'espèce"
+ concept_species_trait_desc: "Les §Htraits d'espèce§! définissent les caractéristiques biologiques ou mécaniques inhérentes d'une ['concept_species',espèce]. Ces dernières influencent son comportement, ses capacités, mais aussi son degré d'adaptation à diverses tâches ou différents environnements.\n\nLes traits peuvent être modifiés grâce à la modification génétique ou à d'autres ['concept_technologies',technologies] avancées."
+ #Singular 1: ['concept_starbase'] or §H$concept_starbase$§!
+ #Plural 1: ['concept_starbases'] or §H$concept_starbases$§!
+ #Singular 2: ['concept_military_space_station'] or §H$concept_military_space_station$§!
+ #Plural 2: ['concept_military_space_stations'] or §H$concept_military_space_stations$§!
+ concept_starbase: "$station_generic_01$"
+ concept_starbases: "$station_generic_01_plural$"
+ concept_military_space_station: "Station spatiale militaire"
+ concept_military_space_stations: "Stations spatiales militaires"
+ concept_starbase_desc: "Les §Hbases stellaires§! sont des installations militaires qui peuvent être améliorées et marquent notre contrôle sur les systèmes.\n\nElles sont créées en améliorant des ['concept_outposts',avant-postes] et peuvent être équipées de §Hmodules§! et de §Hbâtiments§! pour les spécialiser dans différents domaines. Par exemple, le module de ['concept_shipyard',chantier spatial] permet de construire des ['concept_ships',vaisseaux].\n\nLes ['concept_defense_platforms',plateformes de défense] leur permettent de mieux se défendre contre les attaques. Ce sont aussi des centres de recrutement d'['concept_armies',armées].\n\nLe nombre de §Hbases stellaires§! améliorées dont un empire peut disposer dépend de sa ['concept_starbase_capacity',capacité en bases stellaires].\n\nVous pouvez gérer une §Hbase stellaire§! depuis la £interface£['concept_starbase_view',vue base stellaire]."
+ #Singular: ['concept_technology'] or §H$concept_technology$§!
+ #Plural: ['concept_technologies'] or §H$concept_technologies$§!
+ concept_technology: "Technologie"
+ concept_technologies: "Technologies"
+ concept_technology_desc: "Déverrouiller des technologies grâce à la recherche est l'une des manières principales d'accroître la puissance d'un empire.\n\nCes technologies relèvent de trois champs d'études distincts :\n$t$£physics£['concept_physics_research']\n$t$£society£['concept_society_research']\n$t$£engineering£['concept_engineering_research']"
+ #Singular: ['concept_tradition'] or §H$concept_tradition$§!
+ #Plural: ['concept_traditions'] or §H$concept_traditions$§!
+ concept_tradition: "Tradition"
+ concept_traditions: "Traditions"
+ concept_traditions_desc: "Les §Htraditions§! fournissent des avantages s'étendant à l'ensemble de l'empire. Elles sont organisées autour d'§Harbres de traditions§!.\n\nN'importe laquelle de ces §Htraditions§! peut être choisie aussitôt que l'empire a cumulé suffisamment d'['concept_unity',£unity£unité] pour ce faire. Une fois toutes les §Htraditions§! d'un arbre adoptées, un ['concept_ascension_perks',atout de l'ascension] peut alors être choisi.\n\nVous pouvez les gérer dans l'onglet §H$traditions$§! de la £interface£['concept_society_management_view',vue gestion sociétale]."
+ #Singular: ['concept_vivarium'] or §H$concept_vivarium$§!
+ #Plural: -
+ concept_vivarium: "$vivarium$"
+ concept_vivarium_desc: "Le §Yvivarium§! nous permet de voir les §Ycréatures spatiales§! captives. Celles-ci peuvent être disséquées pour être étudiées et en extraire des ressources, ou être autorisées à se reproduire pour donner naissance à des nouveaux organismes."
+ #Singular: ['concept_war_in_heaven'] or §H$concept_war_in_heaven$§!
+ #Plural: -
+ concept_war_in_heaven: "La Guerre dans les cieux"
+ concept_war_in_heaven_desc: "Deux ['concept_fallen_empires',empires déchus], anciens ennemis, peuvent s'['concept_awaken',éveiller] et s'affronter pour disposer de la suprématie sur l'ensemble de la galaxie.$requires_leviathans$"
+ #Singular: ['concept_wormhole'] or §H$concept_wormhole$§!
+ #Plural: ['concept_wormholes'] or §H$concept_wormholes$§!
+ concept_wormhole_pairs: "Couples de trous de ver"
+ concept_wormhole: "Trou de ver"
+ concept_wormholes: "Trous de ver"
+ concept_wormholes_desc: "Les trous de ver sont des déchirures naturelles dans l'espace-temps. Une fois stabilisés, ils permettent le passage vers une destination précise."
+ #Singular: ['concept_xeno_compatibility'] or §H$concept_xeno_compatibility$§!
+ #Plural: -
+ concept_xeno_compatibility: "$ap_xeno_compatibility$"
+ concept_xeno_compatibility_desc: "$allow_crossbreeding$\n\n§L$ap_xeno_compatibility_desc$§!"
+ #Singular: -
+ #Plural: ['concept_cutholoids'] or §H$concept_cutholoids$§!
+ concept_cutholoids: "$cutholoids_plural$"
+ concept_cutholoids_desc: "$cutholoid_desc$"
+ #Singular: -
+ #Plural: ['concept_voidworms'] or §H$concept_voidworms$§!
+ concept_voidworms: "$voidworms_plural$"
+ concept_voidworms_desc: "$voidworm_desc$"
+ #Singular: £influence£ ['concept_influence'] or £influence£ §H$concept_influence$§!
+ #Plural: -
+ concept_influence: "Influence"
+ concept_influence_desc: "[GetConceptInfluence]"
+ concept_influence_desc_shared: "Elle est utilisée pour les opérations stratégiques, telles que la construction d'['concept_outposts',avant-postes], l'affirmation de ['concept_claims',revendications] et le maintien de ['concept_diplomatic_pacts',pactes diplomatiques]. La génération d'§Hinfluence§! reste assez constante, mais peut être accrue.$tt_gain$- Faire d'autres empires nos ['concept_rivals',rivaux].\n- Augmenter la ['concept_power_projection',projection de nos forces] en ayant un nombre de vaisseaux important comparé à l'£empire_sprawl£['concept_empire_size',extension de l'empire]."
+ concept_influence_desc_regular: "L'£influence£§Hinfluence§! représente le poids politique.\n\n$concept_influence_desc_shared$"
+ concept_influence_desc_hive: "L'£influence£§Hinfluence§! représente la capacité de la ['authority:auth_hive_mind',conscience collective] à contrôler la galaxie.\n\n$concept_influence_desc_shared$"
+ concept_influence_desc_machine: "L'£influence£§Hinfluence§! représente la capacité de l'['authority:auth_machine_intelligence',intelligence mécanique] principale à détourner une partie de la puissance de traitement pour assurer son contrôle sur la galaxie.\n\n$concept_influence_desc_shared$"
+ #Singular: ['concept_outpost'] or §H$concept_outpost$§!
+ #Plural: ['concept_outposts'] or §H$concept_outposts$§!
+ concept_outpost: "$starbase_outpost$"
+ concept_outposts: "$starbase_outpost_plural$"
+ concept_outpost_desc: "Les §Havant-postes§! sont de petites ['concept_starbases',bases stellaires] construites dans le but d'étendre l'espace d'un ['concept_empire',empire] dans les £system£['concept_systems',systèmes] non possédés.\n\nLe nombre d'§Havant-postes§! n'est pas limité par la ['concept_starbase_capacity',capacité en bases stellaires] de l'empire.\n\nVous pouvez améliorer un §Havant-poste§! en §Hbase stellaire§! plus performante depuis la £interface£['concept_starbase_view',vue base stellaire]."
+ #Singular: ['concept_claim'] or §H$concept_claim$§!
+ #Plural: ['concept_claims'] or §H$concept_claims$§!
+ concept_claim: "Revendication"
+ concept_claims: "Revendications"
+ concept_claim_desc: "Les §Hrevendications§! constituent les exigences territoriales sur les systèmes stellaires appartenant à un espace étranger. Les revendications sont principalement utilisées pour justifier les ['concept_wars',guerres] de conquête, ce qui permet à un empire de s'emparer des systèmes disputés lors d'une victoire.\n\nLes revendications s'établissent en dépensant de l'£influence£['concept_influence',influence]. Le coût augmente selon la distance du système, sa valeur stratégique et l'existence éventuelle de §Hrevendications§! d'autres empires, mais aussi durant une guerre offensive. Les empires les plus malins émettront donc leurs revendications avant la déclaration de guerre.\n\nLa gestion des revendications s'effectue dans la £interface£['concept_claims_view',vue des revendications]."
+ #Singular: ['concept_research_agreement'] or §H$concept_research_agreement$§!
+ #Plural: ['concept_research_agreements'] or §H$concept_research_agreements$§!
+ concept_research_agreement: "Convention de recherche"
+ concept_research_agreements: "Conventions de recherche"
+ concept_research_agreement_desc: "Les §Hconventions de recherche§! sont des traités diplomatiques accordant aux empires qui les rejoignent des avantages de £physics£ £society£ £engineering£['concept_research',recherche] pour les ['concept_technologies',technologies] qui sont déjà entre les mains de leurs homologues. Elles sont donc particulièrement précieuses pour accélérer les avancées scientifiques.\n\nLes §Hconventions de recherche§! peuvent être établies grâce à la diplomatie et elles sont souvent comprises dans des alliances coopératives plus larges ou des arrangements de ['concept_federation',fédération]. Elles figurent dans l'onglet $contacts_view_tab_contacts$ de la £interface£['concept_contacts_view',vue contacts]."
+ #Singular: ['concept_rival'] or §H$concept_rival$§!
+ #Plural: ['concept_rivals'] or §H$concept_rivals$§!
+ concept_rival: "Rival"
+ concept_rivals: "Rivaux"
+ concept_rival_desc: "Les §Hrivaux§! sont des adversaires stratégiques et politiques désignés de façon officielle. La déclaration d'un §Hrival§! augmente la génération d'£influence£['concept_influence',influence] et peut améliorer les relations avec d'autres empires partageant les mêmes inimitiés. Toutefois, cela compliquera encore davantage les relations diplomatiques avec le rival et pourra même entraîner l'aggravation des tensions jusqu'au conflit ouvert.\n\nLes rivalités ne peuvent être déclarées qu'à l'encontre d'empires disposant d'un pouvoir comparable. Elles constituent un véritable atout pour affirmer sa domination, forger des alliances et justifier des hostilités. Pour les déclarer, rendez-vous dans l'onglet $contacts_view_tab_contacts$ de la £interface£['concept_contacts_view',vue contacts]."
+ #Singular: ['concept_power_projection'] or §H$concept_power_projection$§!
+ #Plural: -
+ concept_power_projection: "Projection des forces"
+ concept_power_projection_desc: "La §Hprojection des forces§! mesure de quelle manière la force militaire d'un empire contribue à son statut politique. Elle reflète la taille et la maintenance de ses ['concept_fleets',flottes], et constitue ainsi un indicateur visible du poids stratégique d'un empire sur la scène galactique.\n\nUne flotte proche de sa §Hcapacité navale§! ou supérieure à celle-ci augmentera la projection des forces et améliorera la génération d'£influence£['concept_influence',influence]."
+ #Singular: ['concept_navy_size'] or §H$concept_navy_size$§!
+ #Plural: -
+ concept_navy_size: "Taille de la flotte"
+ concept_navy_size_desc: "La §Htaille de la flotte§! représente le nombre total de ['concept_military_ships',vaisseaux militaires] que possède un empire. Bien qu'il n'existe pas de limite stricte à la taille d'une flotte, le dépassement de la ['concept_naval_capacity',capacité navale] d'un empire entraîne une augmentation de la ['concept_ship_upkeep',maintenance des vaisseaux].\n\nL'entretien d'une flotte bien équilibrée est cruciale pour la défense de vos territoires et la projection de vos forces à travers la galaxie."
+ #Singular: £empire_sprawl£ ['concept_empire_size'] or £empire_sprawl£ §H$concept_empire_size$§!
+ #Plural: -
+ concept_empire_size: "Extension de l'empire"
+ concept_empire_size_desc: "L'£empire_sprawl£§Hextension de l'empire§! mesure l'expansion territoriale en dénombrant les £district£['concept_districts',districts], les £system£['concept_systems',systèmes], les £colony£['concept_colonies',colonies] et les £pop£['concept_pops',pops].\n\nUne §Hextension§! trop importante pèse sur la capacité administrative de l'empire, et accroît donc le coût des ['concept_technologies',technologies], des ['concept_traditions',traditions] et des ['concept_edicts',décrets], tout en facilitant l'infiltration d'agents hostiles."
+ #Singular: £unity£ ['concept_unity'] or £unity£ §H$concept_unity$§!
+ #Plural: -
+ concept_unity: "Unité"
+ concept_unity_desc: "[GetConceptUnity]"
+ concept_unity_desc_regular: "L'£unity£§Hunité§! reflète la détermination collective et la force idéologique d'une société. Elle incarne l'objectif commun qui unit un peuple et guide ses institutions et son gouvernement.$concept_unity_desc_end$\n- Améliorer l'['concept_approval',approbation] et le ['concept_support',soutien] des ['concept_factions',factions].\n- Adopter la tradition de ['tradition_category:tradition_mercantile',négoce] ['tradition:tr_mercantile_adaptive_economic_policies'] et modifier la ['concept_policy',politique commerciale]."
+ concept_unity_desc_hive: "L'£unity£§Hunité§! reflète la détermination et l'objectif unique de la ['authority:auth_hive_mind',conscience collective]. Elle incarne la volonté collective qui guide la Conscience, ses nœuds et ses drones distants.$concept_unity_desc_end$"
+ concept_unity_desc_machine: "L'£unity£§Hunité§! reflète la détermination et la cohérence procédurale de l'['authority:auth_machine_intelligence',intelligence mécanique]. Elle incarne l'objectif calculé qui guide la machine, ses nœuds et ses drones distants.$concept_unity_desc_end$"
+ concept_unity_desc_end: "\n\nElle est indispensable pour les affaires internes, notamment pour déverrouiller de nouvelles ['concept_traditions',traditions], recruter des ['concept_leaders',personnalités], augmenter le niveau d'ascension des £colony£['concept_colonies',colonies], promulguer des ['concept_edicts',décrets] et gérer la ['concept_resettlement',réimplantation].$tt_gain$- Construire des £building£['concept_buildings',bâtiments] ayant des £job£['concept_jobs',emplois] qui produisent de l'§Hunité§!."
+ #Singular: ['concept_leader'] or §H$concept_leader$§!
+ #Plural: ['concept_leaders'] or §H$concept_leaders$§!
+ concept_leader: "Personnalité"
+ concept_leaders: "Personnalités"
+ concept_leader_desc: "Les §Hpersonnalités§! peuvent être nommées en tant que ['concept_governors',gouverneurs] ou affectées à la direction de ['concept_fleets',flottes] et à la réalisation des ['concept_research',recherches].\n\nLes §Hpersonnalités§! remportent de l'expérience au fil du temps, ce qui améliore leur efficacité et déverrouille de puissants ['concept_leader_traits',traits de personnalité]. Cependant, avec l'âge, elles peuvent finir par se retirer ou périr.\n\nPour recruter ou renvoyer des personnalités, consultez la £interface£['concept_leaders_view',vue personnalités]."
+ #Singular: ['concept_leader_trait'] or §H$concept_leader_trait$§!
+ #Plural: ['concept_leader_traits'] or §H$concept_leader_traits$§!
+ concept_leader_trait: "Trait de personnalité"
+ concept_leader_traits: "Traits de personnalité"
+ concept_leader_trait_desc: "Les §Htraits de personnalité§! sont des attributs spéciaux qui définissent les forces, faiblesses et domaines d'expertise d'une ['concept_leader',personnalité]. Ces traits influencent l'efficacité d'une personnalité, lui apportant selon les cas des avantages pour la ['concept_research',recherche], pour son travail de ['concept_governor',gouverneur], ou encore pour la direction des ['concept_fleets',flottes].\n\nCertains traits ne peuvent être mobilisés que si une personnalité siège au ['concept_council',Conseil]. Certains sont positifs, améliorant l'efficacité, quand d'autres pourront entraver la performance. Le choix et le développement d'une personnalité constituent donc un aspect essentiel de la gestion d'un empire."
+ #Singular: ['concept_leader_class'] or §H$concept_leader_class$§!
+ #Plural: -
+ concept_leader_class: "Classe de personnalité"
+ concept_leader_class_desc: "La §Hclasse§! détermine le rôle d'une ['concept_leader',personnalité] :\n\n- £official£['concept_official']\n- £commander£['concept_commander']\n- £scientist£['concept_scientist']"
+ #Singular: £official£ ['concept_official'] or £official£ §H$concept_official$§!
+ #Plural: £official£ ['concept_officials'] or £official£ §H$concept_officials$§!
+ concept_official: "$official$"
+ concept_officials: "$official_plural$"
+ concept_official_desc: "Les £official£§Hofficiels§! sont des ['concept_leaders',personnalités] administratives qui supervisent la gouvernance et la mise en oeuvre des politiques au sein d'un empire. Lorsqu'ils occupent un poste de ['concept_governor',gouverneur], ils jouent un rôle crucial dans le maintien de la £stability£['concept_stability',stabilité], l'application des lois et l'optimisation de la gestion des £colony£['concept_colony',colonies] ou des £sector£['concept_sector',secteurs]. Ils peuvent également oeuvrer à l'amélioration de la cohésion dans le cadre d'une ['concept_federation',fédération] interstellaire.\n\nLes ['concept_leader_traits',traits de personnalité] ou d'autres facteurs peuvent influencer l'efficacité des §Hofficiels§!. Leur gestion constitue donc un facteur primordial pour le maintien d'une administration opérante."
+ #Singular: £commander£ ['concept_commander'] or £commander£ $concept_commander$§!
+ #Plural: £commander£ ['concept_commanders'] or £commander£ $concept_commanders$§!
+ concept_commander: "$commander$"
+ concept_commanders: "$commander_plural$"
+ concept_commander_desc: "Les £commander£§Hcommandants§! sont des ['concept_leaders',personnalités] militaires en charge des ['concept_fleets',flottes] et de la supervision des opérations navales. Ils jouent un rôle essentiel dans le combat spatial et la planification stratégique.\n\nLes ['concept_leader_traits',traits de personnalité] ou d'autres facteurs peuvent influencer l'efficacité des §Hcommandants§!. Une affectation optimale des commandants pourra donc augmenter de façon considérable la performance d'une flotte et sa force militaire. En outre, nommés au poste de ['concept_governor',gouverneur], les commandants apporteront une contribution bénéfique à l'administration planétaire."
+ #Singular: £scientist£ ['concept_scientist'] or £scientist£ $concept_scientist$§!
+ #Plural: £scientist£ ['concept_scientists'] or £scientist£ $concept_scientists$§!
+ concept_scientist: "$scientist$"
+ concept_scientists: "$scientist_plural$"
+ concept_scientist_desc: "Les £scientist£§Hscientifiques§! sont des ['concept_leaders',personnalités] dont le dévouement à la recherche permet de faire avancer la science, l'exploration et l'innovation technologique d'un empire. Ils impriment l'effort de ['concept_research',recherche], commandent les £science_ship£['concept_science_ships',vaisseaux scientifiques] et analysent les £anomaly£['concept_anomalies',anomalies] et £archaeology£['concept_archaeology_site',sites archéologiques] de la galaxie tout entière.\n\nLes ['concept_leader_traits',traits de personnalité], le niveau d'expérience et le domaine d'expertise peuvent influencer l'efficacité des §Hscientifiques§!. L'affectation d'experts à des missions d'exploration pourra en accélérer la progression. Par ailleurs, au poste de ['concept_governor',gouverneur], les scientifiques apporteront une contribution bénéfique à l'administration planétaire."
+ #Singular: ['concept_star'] or §H$concept_star$§!
+ #Plural: ['concept_stars'] or §H$concept_stars$§!
+ concept_star: "Étoile"
+ concept_stars: "Étoiles"
+ concept_star_desc: "Une §Hétoile§! est un corps massif, généralement gazeux, situé au centre d'un £system£['concept_system',système].\n\nDes £planet£['concept_planets',mondes] ou des §Hastéroïdes§! exploitables peuvent se trouver autour d'elle. Toutes les ressources liées à l'§Hétoile§! peuvent être extraites en construisant une £mining_station£['concept_mining_station',station minière] ou une £science_ship£['concept_research_station',station de recherche]."
+ #Singular: £planet£ ['concept_planet'] or £planet£ §H$concept_planet$§!
+ #Plural: £planet£ ['concept_planets'] or £planet£ §H$concept_planets$§!
+ concept_planet: "Monde"
+ concept_planets: "Mondes"
+ concept_planet_desc: "Un £planet£§H['concept_planet',monde]§! est un grand corps rond qui tourne autour d'une ['concept_star',étoile] et peut avoir ses propres §Hlunes§!.\n\nIl existe neuf types de §Hmondes habitables§! de base, qui peuvent être transformés en £colony£['concept_colonies',colonies].\n\nCertains §Hmondes inhabitables§! peuvent être ['concept_terraforming',terraformés], ou utilisés comme sources de ressources en y construisant une £mining_station£['concept_mining_station',station minière] ou une £science_ship£['concept_research_station',station de recherche]."
+ #Singular: £sector£ ['concept_sector'] or £sector£ §H$concept_sector$§!
+ #Plural: £sector£ ['concept_sectors'] or £sector£ §H$concept_sectors$§!
+ concept_sector: "Secteur"
+ concept_sectors: "Secteurs"
+ concept_sector_desc: "Les §Hsecteurs§! désignent les différentes régions administratives d'un empire, regroupant de multiples £colony£['concept_colonies',colonies] sous une structure de gouvernement centralisé. Les secteurs contribuent à la gestion du développement planétaire, la distribution des ressources et l'automatisation des économies locales.\n\nUn ['concept_governor',gouverneur] pourra être placé à la tête de chaque secteur, ses compétences et ['concept_leader_traits',traits de personnalité] pouvant influencer son efficacité. La gestion efficace d'un secteur garantit la stabilité économique et réduit le fardeau administratif d'un empire en pleine croissance."
+ #Singular: ['concept_resettlement'] or §H$concept_resettlement$§!
+ #Plural: -
+ concept_resettlement: "Réimplantation"
+ concept_resettlement_desc: "La §Hréimplantation§! décrit le processus de déplacement de £pop£['concept_pops',pops] d'une £colony£['concept_colony',colonie] à une autre, ce qui permet aux empires de répartir leur main-d'oeuvre et de gérer la croissance de la population de façon plus efficace.\n\nElle peut être effectuée de manière manuelle ou via des politiques automatisées déplaçant les pops selon les logements et emplois disponibles, ou d'autres critères comme l'habitabilité.\n\nLa réimplantation coûte de l'£energy£['concept_energy',énergie] et peut être restreinte par les ['concept_ethics',éthiques], les ['concept_policies',politiques], les ['concept_civics',civismes] ou les §Hdroits des espèces§!."
+ #Singular: ['concept_diplomatic_pact'] or §H$concept_diplomatic_pact$§!
+ #Plural: ['concept_diplomatic_pacts'] or §H$concept_diplomatic_pacts$§!
+ concept_diplomatic_pact: "Pacte diplomatique"
+ concept_diplomatic_pacts: "Pactes diplomatiques"
+ concept_diplomatic_pact_desc: "Les §Hpactes diplomatiques§! représentent des contrats officiels entre les empires qui façonnent leurs relations diplomatiques et interactions stratégiques. Par ces pactes, les signataires peuvent par exemple s'engager à se défendre mutuellement ou à partager leurs connaissances pour accélérer leur progression technologique.\n\nLes §Hpactes diplomatiques§! peuvent mener à des alliances plus étroites ou à la création d'une ['concept_federation',fédération], mais leur non-respect peut également briser la confiance et provoquer des répercussions diplomatiques. Ils se situent dans l'onglet $contacts_view_tab_contacts$ de la £interface£['concept_contacts_view',vue contacts]."
+ #Singular: £science_ship£ ['concept_research_station'] or £science_ship£ §H$concept_research_station$§!
+ #Plural: £science_ship£ ['concept_research_stations'] or £science_ship£ §H$concept_research_stations$§!
+ concept_research_station: "$research_station$"
+ concept_research_stations: "$research_station_plural$"
+ concept_research_station_desc: "Une £science_ship£§Hstation de recherche§! est une station orbitale qui collecte des £physics£ £society£ £engineering£§Hpoints de recherche§! à des endroits importants de la galaxie.$tt_gain$- $tt_build_research_stations$"
+ #Singular: £system£ ['concept_system'] or £system£ §H$concept_system$§!
+ #Plural: £system£ ['concept_systems'] or £system£ §H$concept_systems$§!
+ concept_system: "Système"
+ concept_systems: "Systèmes"
+ concept_system_desc: "Les £system£§Hsystèmes§! sont ancrés par un objet céleste central doté d'une masse colossale. Il s'agit en général d'une ['concept_star',étoile], autour de laquelle gravitent des £planet£['concept_planet',planètes], ['concept_celestial_objects',objets célestes] et autres phénomènes cosmiques. Des £science_ship£['concept_science_ships',vaisseaux scientifiques] explorent ces systèmes, qui sont placés sous le contrôle d'['concept_outposts',avant-postes].\n\nCertains systèmes contiennent des mondes habitables, capables d'accueillir des £colony£['concept_colonies',colonies], tandis que d'autres recèlent des goulots d'étranglement stratégiques, des gisements précieux ou des mystérieux dangers. Le contrôle des systèmes essentiels est indispensable pour l'expansion territoriale, la défense et la croissance économique."
+ #Singular: ['concept_envoy'] or §H$concept_envoy$§!
+ #Plural: ['concept_envoys'] or §H$concept_envoys$§!
+ concept_envoy: "Émissaire"
+ concept_envoys: "Émissaires"
+ concept_envoy_desc: "Les §Hémissaires§! mènent les ['concept_first_contacts',premiers contacts] avec des aliens inconnus, gèrent des réseaux d'espionnage et entretiennent les ['concept_diplomacy',relations diplomatiques] avec d'autres ['concept_empires',empires].$tt_gain$- Construire une £megastructure£['concept_megastructure',mégastructure] §HAssemblée interstellaire§!.\n- Utiliser certains ['concept_civics',civismes], £building£['concept_buildings',bâtiments] et ['concept_leader_traits',traits de personnalité].\n- Déverrouiller l'atout ['concept_federation',fédéral] §H$extra_envoy_1$§!."
+ #Singular: ['concept_civic'] or §H$concept_civic$§!
+ #Plural: ['concept_civics'] or §H$concept_civics$§!
+ concept_civic: "Civisme"
+ concept_civics: "Civismes"
+ concept_civic_desc: "Les §Hcivismes§! rassemblent les principes fondamentaux et structures sociétales qui définissent un empire. Ils offrent des avantages uniques, sculptent les politiques internes et influencent les interactions diplomatiques avec les autres civilisations.\n\nLes réformes gouvernementales peuvent modifier les civismes via la £interface£['concept_empire_view',vue empire], mais certains sont également régis par l'['concept_authority',autorité] ou les ['concept_ethics',éthiques]."
+ #Singular: ['concept_starbase_capacity'] or §H$concept_starbase_capacity$§!
+ #Plural: -
+ concept_starbase_capacity: "Capacité en bases stellaires"
+ concept_starbase_capacity_desc: "La §Hcapacité en bases stellaires§! indique le nombre de ['concept_starbases',bases stellaires] améliorées pouvant être entretenues de manière efficace, ['concept_outposts',avant-postes] non compris.\n\nDépasser la §Hcapacité en bases stellaires§! accroît leur maintenance.$tt_gain$- Augmenter le nombre de ['concept_owned_systems',systèmes possédés].\n- Utiliser certaines ['concept_technologies',technologies] et ['concept_traditions',traditions]."
+ #Singular: ['concept_starbase_upkeep'] or §H$concept_starbase_upkeep$§!
+ #Plural: -
+ concept_starbase_upkeep: "Maintenance des bases stellaires"
+ concept_starbase_upkeep_desc: "La §Hmaintenance des bases stellaires§! correspond aux ressources nécessaires pour entretenir les bases stellaires. Cet entretien requiert principalement de l'£energy£['concept_energy',énergie], avec des coûts supplémentaires pour l'installation de §Hmodules§! ou §Hbâtiments§!.\n\nLes coûts de maintenance dépendent de l'étendue et du rôle de la base stellaire, l'amélioration à des niveaux supérieurs entraînant une augmentation des exigences d'entretien."
+ #Singular: ['concept_owned_system'] or §H$concept_owned_system$§!
+ #Plural: ['concept_owned_systems'] or §H$concept_owned_systems$§!
+ concept_owned_system: "Système possédé"
+ concept_owned_systems: "Systèmes possédés"
+ concept_owned_system_desc: "Les §Hsystèmes possédés§! sont des £system£['concept_systems',systèmes] stellaires qui se retrouvent sous le contrôle d'un empire, soit par une expansion directe, soit par la conquête. Une fois propriétaire d'un système, un empire pourra y bâtir des ['concept_starbases',bases stellaires], en extraire des ressources ou encore y établir des £colony£['concept_colonies',colonies].\n\nLe maintien de son contrôle sur un système contribue à l'£empire_sprawl£['concept_empire_size',extension de l'empire], le nombre de systèmes possédés influençant l'efficacité administrative et les coûts bureaucratiques."
+ #Singular: ['concept_naval_capacity'] or §H$concept_naval_capacity$§!
+ #Plural: -
+ concept_naval_capacity: "Capacité navale"
+ concept_naval_capacity_desc: "La §Hcapacité navale§! indique le ['concept_fleet_size',nombre de vaisseaux] pouvant être entretenus de manière efficace.\n\nDépasser notre §Hcapacité navale§! accroît la ['concept_ship_upkeep',maintenance des vaisseaux].$tt_gain$- Construire des modules d'§Hancrage§! sur les ['concept_starbases',bases stellaires].\n- Utiliser certains £job£['concept_jobs',emplois], comme ceux des £building£['building:building_stronghold',bastions].\n- Utiliser certaines ['concept_technologies',technologies] et ['concept_traditions',traditions]."
+ #Singular: ['concept_governor'] or §H$concept_governor$§!
+ #Plural: ['concept_governors'] or §H$concept_governors$§!
+ concept_governor: "$governor$"
+ concept_governors: "$governor_plural$"
+ concept_governor_desc: "Un §Hgouverneur§! est une ['concept_leader',personnalité] qui supervise une £colony£['concept_colony',colonie] ou un £sector£['concept_sector',secteur]. Une §Hpersonnalité§! affectée à la capitale d'un secteur en devient le §Hgouverneur§!.\n\nSa ['concept_leader_class',classe] et ses ['concept_leader_traits',traits] déterminent les bonus et les pénalités reçus.\n\nVous pouvez affecter des §Hgouverneurs§! depuis la £interface£['concept_colony_view',vue colonie] ou la £interface£['concept_planets_and_sector_view',vue planètes et secteurs]."
+ #Singular: ['concept_decision'] or §H$concept_decision$§!
+ #Plural: ['concept_decisions'] or §H$concept_decisions$§!
+ concept_decision: "Décision"
+ concept_decisions: "Décisions"
+ concept_decision_desc: "Une §Hdécision§! est une action planétaire permettant de répondre aux besoins spécifiques d'une £colony£['concept_colony',colonie]. Vous pouvez ajouter des £district£['concept_districts',districts], déblayer des £blocker£['concept_blockers',bloqueurs] ou modifier les attributs planétaires.\n\nCertaines décisions demandent un coût d'activation ou des conditions spécifiques pour être adoptées.\n\nVous pouvez les gérer depuis la £interface£['concept_colony_view',vue colonie]."
+ #Singular: ['concept_planetary_ascension'] or §H$concept_planetary_ascension$§!
+ #-
+ concept_planetary_ascension: "Ascension de colonie"
+ concept_planetary_ascension_desc: "Le §Hniveau d'ascension§! d'une £colony£['concept_colony',colonie] renforce les effets de sa ['concept_designation',désignation] et réduit son impact sur l'£empire_sprawl£['concept_empire_size',extension de l'empire].\n\nCela peut être fait plusieurs fois par colonie, selon le nombre d'['concept_ascension_perks',atouts de l'ascension] débloqués, mais le coût en £unity£['concept_unity',unité] s'accroît aussi en fonction du total des §Hniveaux d'ascension§! dans l'['concept_empire',empire].\n\nEnfin, adopter tous les §Hatouts de l'ascension§! relève encore le §Hmaximum de l'ascension des colonies§! de §G$COMPLETION_BONUS$§!."
+ #Singular: ['concept_designation'] or §H$concept_designation$§!
+ #Plural: -
+ concept_designation: "Désignation"
+ concept_designation_desc: "La §Hdésignation§! d'une £colony£['concept_colony',colonie] définit son rôle principal, par exemple en améliorant la vitesse de construction de certains districts ou la production de certains emplois.\n\nSi la §Hdésignation§! n'est pas définie manuellement, elle est attribuée automatiquement en fonction des districts ou bâtiments disponibles."
+ #Singular: ['concept_planet_automation'] or §H$concept_planet_automation$§!
+ #Plural: -
+ concept_planet_automation: "Automatisation planétaire"
+ concept_planet_automation_desc: "L'§Hautomatisation planétaire§! permet à une £colony£['concept_colony',colonie] de se développer automatiquement en fonction des §Hparamètres d'automatisation planétaire§! sélectionnés."
+ #Singular: ['concept_devastation'] or §H$concept_devastation$§!
+ #Plural: -
+ concept_devastation: "Dévastation"
+ concept_devastation_desc: "La §Hdévastation§! correspond à la quantité de dégâts qu'une £colony£['concept_colony',colonie] a subie, généralement à la suite de §Hbombardements orbitaux§!. Une §Hdévastation§! trop importante affecte négativement divers domaines, comme les £housing£['concept_housing',logements], les £amenities£['concept_amenities',services] et la production des £job£['concept_jobs',emplois].\n\nLa §Hdévastation§! diminue à mesure que la £colony£§Hcolonie§! est remise en état.\n\nVous pouvez consulter le niveau de §Hdévastation§! actuel depuis la £interface£['concept_colony_view',vue colonie]."
+ #Singular: ['concept_shipyard'] or §H$concept_shipyard$§!
+ #Plural: ['concept_shipyards'] or §H$concept_shipyards$§!
+ concept_shipyard: "Chantier spatial"
+ concept_shipyards: "Chantiers spatiaux"
+ concept_shipyard_desc: "Un §Hchantier spatial§! est une ['concept_starbase',base stellaire] équipée d'un module de §Hchantier spatial§!, lui permettant de produire des ['concept_civilian_ships',vaisseaux civils] et ['concept_military_ships',militaires].\n\nVous pouvez gérer la construction des vaisseaux depuis la £interface£['concept_starbase_view',vue base stellaire]."
+ #Singular: £anomaly£ ['concept_anomaly'] or £anomaly£ §H$concept_anomaly$§!
+ #Plural: £anomaly£ ['concept_anomalies'] or £anomaly£ §H$concept_anomalies$§!
+ concept_anomaly: "Anomalie"
+ concept_anomalies: "Anomalies"
+ concept_anomaly_desc: "Une £anomaly£§Hanomalie§! est une mystérieuse découverte faite par les £science_ship£['concept_science_ships',vaisseaux scientifiques] lors de la reconnaissance de £system£['concept_systems',systèmes]. Étudier une anomalie peut apporter des récompenses ou révéler des dangers.\n\nPour étudier une §Hanomalie§!, un £scientist£§Hscientifique§! doit y être assigné, la durée de l'étude dépendant de son niveau de compétence et de la difficulté de l'§Hanomalie§!.\n\nElles apparaissent sur la £interface£['concept_galaxy_map',carte de la galaxie] lorsqu'un §Hvaisseau scientifique§! est sélectionné, et sont répertoriées dans l'onglet $situation_log_view_tab_situation_log$ de la £interface£['concept_situation_log_view',vue journal de bord]."
+ #Singular: £archaeology£ ['concept_archaeology_site'] or £archaeology£ §H$concept_archaeology_site$§!
+ #Plural: £archaeology£ ['concept_archaeology_site'] or £archaeology£ §H$concept_archaeology_site$§!
+ concept_archaeology_site: "Site archéologique"
+ concept_archaeology_sites: "Sites archéologiques"
+ concept_archaeology_site_desc: "Les £archaeology£§Hsites archéologiques§! regroupent les vestiges d'anciennes civilisations, les épaves de batailles et d'autres points d'intérêt. Les £science_ship£['concept_science_ships',vaisseaux scientifiques] dotés d'un équipage peuvent les fouiller pour en découvrir les secrets."
+ #Singular: ['concept_empire'] or §H$concept_empire$§!
+ #Plural: ['concept_empires'] or §H$concept_empires$§!
+ concept_empire: "Empire"
+ concept_empires: "Empires"
+ concept_empire_desc: "Un §Hempire§! est une puissance galactique qui contrôle au moins un £system£['concept_system',système] et cherche à étendre son influence dans l'espace. Les ['concept_ethics',éthiques], l'['concept_authority',autorité] et les ['concept_civics',civismes] façonnent sa politique et son comportement.\n\nLes §Hempires§! interagissent entre eux par la diplomatie, le commerce ou les conflits.\n\nL'expansion des §Hempires§! est visible sur la £interface£['concept_galaxy_map',carte de la galaxie].\n\nIls peuvent être contactés via leur drapeau ou l'onglet $contacts_view_tab_contacts$ de la £interface£['concept_contacts_view',vue contacts]."
+ #Singular: ['concept_defense_platform'] or §H$concept_defense_platform$§!
+ #Plural: ['concept_defense_platforms'] or §H$concept_defense_platforms$§!
+ concept_defense_platform: "$military_station_small$"
+ concept_defense_platforms: "$military_station_small_plural$"
+ concept_defense_platform_desc: "Les §Hplateformes de défense§! sont des installations spatiales conçues pour protéger les ['concept_starbases',bases stellaires], notamment en retardant les assaillants jusqu'à l'arrivée d'une ['concept_fleet',flotte] défensive.\n\nLes §Hplateformes de défense§! les plus grandes sont d'énormes structures abritant des milliers d'individus et dotées d'une puissance de feu équivalente à celle d'une flotte. Vous pouvez les concevoir et les personnaliser depuis l'onglet §H$SHIP_DESIGNER$§! de la £interface£['concept_fleet_management_view',vue gestion des flottes]."
+ #Singular: ['concept_army'] or §H$concept_army$§!
+ #Plural: ['concept_armies'] or §H$concept_armies$§!
+ concept_army: "Armée"
+ concept_armies: "Armées"
+ concept_army_desc: "Les §Harmées§! sont des forces au sol utilisées pour défendre des £colony£['concept_colonies',colonies] ou envahir des £planet£['concept_planets',mondes] ennemis.\n\nUne §Harmée§! dirigée par un £commander£['concept_commander',commandant] peut recevoir des bonus ou des pénalités en fonction des ['concept_leader_traits',traits] de celui-ci.\n\nVous pouvez recruter des §Harmées§! depuis le §Hconcepteur d'armées§! d'une ['concept_starbase',base stellaire] ou depuis l'onglet §H$GROUND_COMBAT_TAB$§! d'une §Hcolonie§!."
+ #Singular: ['concept_component'] or §H$concept_component$§!
+ #Plural: ['concept_components'] or §H$concept_components$§!
+ concept_component: "Composant"
+ concept_components: "Composants"
+ concept_component_desc: "Les §Hcomposants§! sont des modules et systèmes individuels qui définissent les capacités dont dispose un ['concept_ship',vaisseau], comme son armement, ses défenses, ses hyperpropulseurs et ses systèmes utilitaires.\n\nIls sont débloqués en découvrant de nouvelles ['concept_technologies',technologies] et peuvent être installés depuis l'onglet §H$SHIP_DESIGNER$§! de la £interface£['concept_fleet_management_view',vue gestion des flottes].\n\nLes £science_ship£['concept_science_ships',vaisseaux scientifiques] sont automatiquement équipés des meilleurs §Hcomposants§! disponibles."
+ #Singular: ['concept_habitat'] or §H$concept_habitat$§!
+ #Plural: ['concept_habitats'] or §H$concept_habitats$§!
+ concept_habitat: "Habitat"
+ concept_habitats: "Habitats"
+ concept_habitat_desc: "Les §Hhabitats§! sont des arcologies spatiales.\n\nIls sont construits en tant que ['concept_megastructures',mégastructures] par les £construction_ship£['concept_construction_ships',vaisseaux de construction], après quoi ils peuvent être transformés en £colony£['concept_colonies',colonies].\n\nLes £district£['concept_districts',districts] disponibles sont déterminés par les §Hgisements de ressources§! dont le £system£['concept_system',système] dispose."
+ #Singular: £housing£ ['concept_housing'] or £housing£ §H$concept_housing$§!
+ #Plural: -
+ concept_housing: "Logements"
+ concept_housing_desc: "Les £housing£§Hlogements§! sont les infrastructures dans lesquelles la population d'une £colony£['concept_colony',colonie] réside. Un monde ne pourvoyant pas aux besoins en §Hlogement§! de sa population subit des pénalités de ['concept_stability',stabilité] et peut être confronté à l'§Hémigration§!.\n\nLe nombre de §Hlogements§! peut être accru en construisant des £district£['concept_districts',districts] et certains £building£['concept_buildings',bâtiments]. Cela accroît la ['concept_planet_capacity',capacité du monde], qui peut affecter la vitesse de développement des pops biologiques.\n\nCertaines £zone£['concept_district_specializations',spécialisations] de §Hdistrict urbain§! peuvent réduire le nombre de §Hlogements§! fournis par chaque §Hdistrict urbain§!."
+ #Singular: ['concept_planet_size'] or §H$concept_planet_size$§!
+ #Plural: -
+ concept_planet_size: "Taille du monde"
+ concept_planet_size_desc: "La §Htaille du monde§! définit le nombre de £district£['concept_districts',districts] qu'une £colony£['concept_colony',colonie] peut abriter. Plus un monde est grand, plus il peut abriter de ['concept_districts',districts], qui peuvent être construits et spécialisés pour fournir des £job£['concept_jobs',emplois]."
+ #Singular: ['concept_planet_capacity'] or §H$concept_planet_capacity$§!
+ #Plural: -
+ concept_planet_capacity: "Capacité du monde"
+ concept_planet_capacity_desc: "La §Hcapacité du monde§! dépend du nombre de £housing£['concept_housing',logements] et de £district£['concept_districts',districts] non développés, et varie selon son habitabilité. Déblayer des £blocker£['concept_blockers',bloqueurs] peut l'accroître davantage.\n\nLe développement des £pop£§Hpops biologiques§! est plus rapide lorsque le monde atteint la moitié de sa capacité, mais ralentit ensuite à mesure qu'il est de plus en plus peuplé."
+ #Singular: £stability£ ['concept_stability'] or £stability£ §H$concept_stability$§!
+ #Plural: -
+ concept_stability: "Stabilité"
+ concept_stability_desc: "La £stability£§Hstabilité§! représente l'équilibre politique d'une £colony£['concept_colony',colonie], principalement influencé par le £happiness£['concept_pop_approval_rating',taux d'approbation des pops].\n\nUne §Hstabilité§! basse peut découler d'un nombre insuffisant de £housing£['concept_housing',logements], du manque de £amenities£['concept_amenities',services] ou d'une £crime£['concept_crime',criminalité] élevée. Cela entraîne des pénalités et augmente le risque d'événements néfastes ou de §Hrévolte§!.\n\nUne §Hstabilité§! élevée accroît la production de ressources."
+ #Singular: -
+ #Plural 1: £amenities£ ['concept_amenities'] or £amenities£ §H$concept_amenities$§!
+ #Plural 2: £amenities_no_happiness£ ['concept_amenities_gestalt'] or £amenities_no_happiness£ §H$concept_amenities_gestalt$§!
+ concept_amenities: "Services"
+ concept_amenities_desc: "[GetConceptAmenities]"
+ concept_amenities_desc_regular: "Les £amenities£§Hservices§! sont les infrastructures et les emplois qui répondent aux besoins quotidiens de la population.\n\nUne £colony£['concept_colony',colonie] manquant de §Hservices§! voit son £happiness£['concept_happiness',bonheur] réduit. Les §Hservices§! peuvent être accrus en allouant des £job£['concept_jobs',emplois] aux £pop£['concept_pops',pops], comme celui d'£job_entertainer£§Hartiste§!."
+ concept_amenities_desc_gestalt: "Les £amenities_no_happiness£§Hservices§! sont les infrastructures et les emplois qui répondent aux besoins fondamentaux de la population de drones.\n\nLe manque de §Hservices§! réduit la £stability£['concept_stability',stabilité]. Ils peuvent être accrus en allouant des £job£['concept_jobs',emplois] aux £pop£['concept_pops',pops], comme celui de £job_maintenance_drone£§Hdrone de maintenance§!."
+ #Singular: £crime£ ['concept_crime'] or £crime£ §H$concept_crime$§!
+ #Plural: -
+ concept_crime: "Criminalité"
+ concept_crime_desc: "La £crime£§H$concept_crime$§!criminalité représente le niveau d'activités criminelles et de non-respect des lois sur une £colony£['concept_colony',colonie].\n\nUne §H$concept_crime$§!criminalité élevée peut susciter des événements néfastes et réduire la £stability£['concept_stability',stabilité].\n\n§H$concept_crime$§!La criminalité est influencée par la taille de la population. Elle peut être réduite en augmentant le £happiness£['concept_happiness',bonheur] des £pop£['concept_pops',pops] ou en leur allouant des £job£['concept_jobs',emplois], comme celui d'£job_enforcer£§H$job_enforcer_plural$§!agent de sécurité."
+ #Singular: £happiness£ ['concept_happiness'] or £happiness£ §H$concept_happiness$§!
+ #Plural: -
+ concept_happiness: "Bonheur"
+ concept_happiness_desc: "Le £happiness£§Hbonheur§! est un indicateur de la satisfaction globale des £pop£['concept_pop',pops], influencé par des facteurs tels que les ['concept_living_standards',conditions de vie], les ['concept_edicts',décrets] et divers ['concept_planet_modifiers',modificateurs planétaires].\n\nUn §Hbonheur§! élevé augmente la £stability£['concept_stability',stabilité], ce qui accroît la production des £job£['concept_jobs',emplois]. Un §Hbonheur§! bas réduit quant à lui la §Hstabilité§!.\n\nAssocié au £political_power£['concept_political_power',poids politique], le §Hbonheur§! détermine le £happiness£['concept_pop_approval_rating',taux d'approbation des pops].\n\nLes §Hpops§! sans §Hbonheur§! sont considérées comme ayant un §Hbonheur§! de §Y50%§!."
+ #Singular: £happiness£ ['concept_pop_approval_rating'] or £happiness£ §H$concept_pop_approval_rating$§!
+ #Plural: -
+ concept_pop_approval_rating: "Taux d'approbation des pops"
+ concept_pop_approval_rating_desc: "Le £happiness£§Htaux d'approbation des pops§! représente le £happiness£['concept_happiness',bonheur] moyen de toutes les £pop£['concept_pops',pops] d'une £colony£['concept_colony',colonie], en tenant compte de leur £political_power£['concept_political_power',poids politique].\n\nLes §Hpops§! disposant d'un §Hpoids politique§! plus important (comme les £pop_cat_ruler£§Hélites§! pour la plupart des conditions de vie) ont une plus grande influence sur ce taux.\n\nUn §Htaux d'approbation des pops§! faible réduit la £stability£['concept_stability',stabilité] et peut accroître la £crime£['concept_crime',criminalité]."
+ #Singular: £political_power£ ['concept_political_power'] or £political_power£ §H$concept_political_power$§!
+ #Plural: -
+ concept_political_power: "Poids politique"
+ concept_political_power_desc: "Le £political_power£§Hpoids politique§! représente l'influence que des £pop£['concept_pops',pops] individuelles exercent à l'intérieur d'un empire. Le §Hpoids politique§! d'une population peut varier selon sa classe et son £job£['concept_job',emploi].\n\nUn §Hpoids politique§! important accorde une plus grande influence dans la ['concept_faction',faction] et les résultats d'une ['concept_democratic_election',élection démocratique]. Certains groupes auront donc davantage d'impact dans l'adoption de politiques. Les empires autoritaristes concentrent souvent leur pouvoir politique aux mains des élites dirigeantes, tandis que les sociétés démocratiques et égalitaristes le répartissent de façon plus uniforme dans leur population."
+ #Singular: ['concept_terraforming'] or §H$concept_terraforming$§!
+ #Plural: -
+ concept_terraforming: "Terraformation"
+ concept_terraforming_desc: "La §Hterraformation§! consiste à transformer un £planet£['concept_planet',monde] situé dans l'espace d'un ['concept_empire',empire] pour le rendre plus habitable.\n\nCela nécessite généralement des ['concept_technologies',technologies] spécifiques et un important investissement en £energy£['concept_energy',énergie].\n\nGrâce aux §Htechnologies§! les plus avancées, même les mondes habités peuvent être terraformés pour mieux correspondre aux climats de prédilection des ['concept_species',espèces] qui y vivent."
+ #Singular: ['concept_space_fauna'] or §H$concept_space_fauna$§!
+ #Plural: -
+ concept_space_fauna: "Créatures spatiales"
+ concept_space_fauna_desc: "Les §Hcréatures spatiales§! sont des êtres n'appartenant à aucun empire que vous pouvez rencontrer dans l'espace.\n\nCertaines sont pacifiques (à moins d'être provoquées), tandis que d'autres sont foncièrement hostiles."
+ #Singular: £blocker£ ['concept_blocker'] or £blocker£ §H$concept_blocker$§!
+ #Plural: £blocker£ ['concept_blockers'] or £blocker£ §H$concept_blockers$§!
+ concept_blocker: "Bloqueur"
+ concept_blockers: "Bloqueurs"
+ concept_blocker_desc: "Un £blocker£§Hbloqueur§! est une particularité géographique qui en bloque d'autres ou empêche la construction de certains £district£['concept_districts',districts] sur une £colony£['concept_colony',colonie].\n\nAvant de pouvoir être déblayés, certains §Hbloqueurs§! requièrent des ressources et parfois des ['concept_technologies',technologies] spécifiques. Vous pouvez les gérer depuis la £interface£['concept_colony_view',vue colonie]."
+ #Singular: ['concept_event_chain'] or §H$concept_event_chain$§!
+ #Plural: ['concept_event_chains'] or §H$concept_event_chains$§!
+ concept_event_chain: "Chaîne d'événements"
+ concept_event_chains: "Chaînes d'événements"
+ concept_event_chain_desc: "Les §Hchaînes d'événements§! sont des séquences d'événements interdépendants qui se succèdent au fil du temps, généralement déclenchés par l'exploration, des £anomaly£['concept_anomalies',anomalies] ou les décisions d'un empire.\n\nParmi les chaînes d'événements, on peut retrouver des découvertes scientifiques, un complot politique ou des mystères galactiques, entraînant parfois des récompenses formidables ou de dangereuses menaces. La prudence est essentielle dans la prise de décision, car de simples choix individuels peuvent avoir des répercussions durables sur l'avenir d'un empire. Les chaînes sont répertoriées dans l'onglet $situation_log_view_tab_situation_log$ de la £interface£['concept_situation_log_view',vue journal de bord]."
+ #Singular: ['concept_special_project'] or §H$concept_special_project$§!
+ #Plural: ['concept_special_projects'] or §H$concept_special_projects$§!
+ concept_special_project: "Projet spécial"
+ concept_special_projects: "Projets spéciaux"
+ concept_special_project_desc: "Les §Hprojets spéciaux§! sont des initiatives de ['concept_research',recherche] uniques qui nécessitent un effort dédié, interrompant temporairement la progression d'un domaine scientifique donné.\n\nLa réalisation de §Hprojets spéciaux§! peut apporter d'immenses avantages. Ils font donc partie intégrante de l'exploration et de l'expansion."
+ #Singular: ['concept_milestone'] or §H$concept_milestone$§!
+ #Plural: ['concept_milestones'] or §H$concept_milestones$§!
+ concept_milestone: "Étape clé"
+ concept_milestones: "Étapes clés"
+ concept_milestone_desc: "Les §Hétapes clés§! constituent des événements et succès majeurs témoignant de moments capitaux pour l'évolution d'un empire. Elles permettent d'établir un relevé chronologique de son expansion, ses découvertes et ses conflits.\n\nLe suivi des §Hétapes clés§! offre un aperçu de la croissance d'un empire et des décisions stratégiques. Vous pouvez les consulter dans la §Hchronologie§! de l'onglet $situation_log_view_tab_timeline$ de la £interface£['concept_situation_log_view',vue journal de bord]."
+ #Singular: ['concept_empire_focus'] or §H$concept_empire_focus$§!
+ #Plural: ['concept_empire_focuses'] or §H$concept_empire_focuses$§!
+ concept_empire_focus: "Objectif de l'empire"
+ concept_empire_focuses: "Objectifs de l'empire"
+ concept_empire_focus_desc: "Les §Hobjectifs de l'empire§! représentent les priorités stratégiques de haut niveau qui guident le développement et les décisions d'un empire.\n\nLes empires peuvent se concentrer sur plusieurs ambitions, comme l'§Hexploration§! pour la découverte et le progrès scientifique, la §Hconquête§! pour la domination militaire et le §Hdéveloppement§! pour la croissance économique et diplomatique. La réalisation de §Htâches§! fera progresser l'objectif correspondant afin d'atteindre de nouvelles ['concept_technologies',technologies] garanties.\n\nLes tâches et objectifs sont disponibles dans l'onglet $situation_log_view_tab_timeline$ de la £interface£['concept_situation_log_view',vue journal de bord]."
+ #Singular: ['concept_scoreboard'] or §H$concept_scoreboard$§!
+ #Plural: -
+ concept_scoreboard: "Tableau"
+ concept_scoreboard_desc: "Le §Htableau§! propose une évaluation générale du statut d'un empire au sein des étoiles, reflétant les succès dans les domaines de la science, l'économie, la force militaire ou encore l'influence diplomatique.\n\nBien qu'il ne soit pas définitif, il fournit une estimation de l'ambition interstellaire et permet de déterminer qui sont les plus prospères, les plus laborieux et les plus instables. Dans les coulisses du pouvoir, ces comparaisons ne restent jamais sans conséquence."
+ #Singular: ['concept_living_standard'] or §H$concept_living_standard$§!
+ #Plural: ['concept_living_standards'] or §H$concept_living_standards$§!
+ concept_living_standard: "Condition de vie"
+ concept_living_standards: "Conditions de vie"
+ concept_living_standard_desc: "Les §Hconditions de vie§! déterminent la qualité de vie des différentes £pop£['concept_pops',pops] d'un empire. Elles influencent leur £happiness£['concept_happiness',bonheur] et leur £political_power£['concept_political_power',poids politique] global. Les §Hconditions de vie§! sont dictées par les ['concept_policies',politiques] gouvernementales et peuvent varier selon la classification des ['concept_species',espèces], les ['concept_ethics',éthiques] et les priorités économiques.\n\nDes investissements supérieurs en ressources seront nécessaires pour des conditions de vie élevées, et à l'inverse, des conditions de vie plus modestes réduiront les coûts de maintenance aux dépens de la £stability£['concept_stability',stabilité] et de la satisfaction ouvrière. Vous pouvez les définir dans la £interface£['concept_species_view',vue des espèces]."
+ #Singular: ['concept_celestial_object'] or §H$concept_celestial_object$§!
+ #Plural: ['concept_celestial_objects'] or §H$concept_celestial_objects$§!
+ concept_celestial_object: "Objet céleste"
+ concept_celestial_objects: "Objets célestes"
+ concept_celestial_object_desc: "Les §Hobjets célestes§! sont de grands corps qui composent un £system£['concept_system',système], comme les ['concept_stars',étoiles], les £planet£['concept_planets',mondes], les §Hlunes§! et les §Hastéroïdes§!."
+ #Singular: £district£ ['concept_city_district'] or £district£ §H$concept_city_district$§!
+ #Plural: £district£ ['concept_city_districts'] or £district£ §H$concept_city_districts$§!
+ concept_city_district: "$district_city$"
+ concept_city_districts: "$district_city_plural$"
+ concept_city_district_desc: "- £housing£['concept_housing'] : §G+500§!\n- Emplacements de £building£['concept_building',construction] : §G+1§!\n- Emplois d'£mod_job_clerk_add£['concept_clerk',administratifs] : §G+100§!\n\n§L$district_city_desc$§!"
+ #Singular: £district£ ['concept_hive_district'] or £district£ §H$concept_hive_district$§!
+ #Plural: £district£ ['concept_hive_districts'] or £district£ §H$concept_hive_districts$§!
+ concept_hive_district: "$district_hive$"
+ concept_hive_districts: "$district_hive_plural$"
+ concept_hive_district_desc: "- £housing£['concept_housing'] : §G+600§!\n- Emplacements de £building£['concept_building',construction] : §G+1§!\n- Emplois de [maintenance_drone.GetName_lower] : §G+300§!\n\n§L$district_hive_desc$§!"
+ #Singular: £district£ ['concept_nexus_district'] or £district£ §H$concept_nexus_district$§!
+ #Plural: £district£ ['concept_nexus_districts'] or £district£ §H$concept_nexus_districts$§!
+ concept_nexus_district: "$district_nexus$"
+ concept_nexus_districts: "$district_nexus_plural$"
+ concept_nexus_district_desc: "- £housing£['concept_housing'] : §G+500§!\n- Emplacements de £building£['concept_building',construction] : §G+1§!\n- Emplois de [maintenance_drone.GetName_lower] : §G+300§!\n\n§L$district_nexus_desc$§!"
+ #Singular: £district£ ['concept_industrial_district'] or £district£ §H$concept_industrial_district$§!
+ #Plural: £district£ ['concept_industrial_districts'] or £district£ §H$concept_industrial_districts$§!
+ concept_industrial_district: "$district_industrial$"
+ concept_industrial_districts: "$district_industrial_plural$"
+ concept_industrial_district_desc: "- £housing£['concept_housing'] : §G+200§!\n- Emplois d'£mod_job_artisan_add£['concept_artisan',artisans] : §G+100§!\n- Emplois de £mod_job_foundry_add£['concept_metallurgist',métallurgistes] : §G+100§!\n\n§L$district_industrial_desc$§!"
+ #Singular: £district£ ['concept_generator_district'] or £district£ §H$concept_generator_district$§!
+ #Plural: £district£ ['concept_generator_districts'] or £district£ §H$concept_generator_districts$§!
+ concept_generator_district: "$district_generator$"
+ concept_generator_districts: "$district_generator_plural$"
+ concept_generator_district_desc: "- £housing£['concept_housing'] : §G+200§!\n- Emplois de £mod_job_technician_add£['concept_technicians',techniciens] : §G+200§!\n\n§L$district_generator_desc$§!"
+ #Singular: £district£ ['concept_mining_district'] or £district£ §H$concept_mining_district$§!
+ #Plural: £district£ ['concept_mining_districts'] or £district£ §H$concept_mining_districts$§!
+ concept_mining_district: "$district_mining$"
+ concept_mining_districts: "$district_mining_plural$"
+ concept_mining_district_desc: "- £housing£['concept_housing'] : §G+200§!\n- Emplois de £mod_job_miner_add£['concept_miner',mineurs] : §G+200§!\n\n§L$district_mining_desc$§!"
+ #Singular: £district£ ['concept_farming_district'] or £district£ §H$concept_farming_district$§!
+ #Plural: £district£ ['concept_farming_districts'] or £district£ §H$concept_farming_districts$§!
+ concept_farming_district: "$district_farming$"
+ concept_farming_districts: "$district_farming_plural$"
+ concept_farming_district_desc: "- £housing£['concept_housing'] : §G+200§!\n- Emplois de £mod_job_farmer_add£['concept_farmer',fermiers] : §G+200§!\n\n§L$district_farming_desc$§!"
+ #Singular: ['concept_debris'] or §H$concept_debris$§!
+ #Plural: -
+ concept_debris: "Débris"
+ concept_debris_desc: "Les §Hdébris§! désignent les épaves à la dérive et autres coques de vaisseaux en lambeaux. Ces échos muets de batailles spatiales peuvent être étudiés en tant que ['concept_special_project',projets spéciaux] en temps limité.\n\nConfier l'étude à un £science_ship£['concept_science_ship',vaisseau scientifique] peut conduire à la découverte de nouvelles ['concept_technologies',technologies]."
+ #Singular: ['concept_council'] or §H$concept_council$§!
+ #Plural: -
+ concept_council: "Conseil"
+ concept_council_desc: "Le §HConseil§! représente la direction de l'['concept_empire',empire] et se compose du §Hdirigeant§! et de cinq §Hconseillers§! maximum. Chaque poste au Conseil peut être occupé par une ['concept_leader',personnalité], certains ['concept_leader_traits',traits de personnalité] donnant des bonus à l'échelle de l'empire.\n\nLe §HConseil§! a également la capacité d'imposer des ['concept_agendas',priorités].\n\nVous pouvez le gérer depuis l'onglet §HConseil§! de la £interface£['concept_government_view',vue gouvernement]."
+ #Singular: ['concept_agenda'] or §H$concept_agenda$§!
+ #Plural: ['concept_agendas'] or §H$concept_agendas$§!
+ concept_agenda: "Priorité"
+ concept_agendas: "Priorités"
+ concept_agenda_desc: "Une §Hpriorité§! représente l'axe stratégique actuel du ['concept_council'], qui définit les objectifs à long terme de l'empire. Les priorités confèrent des bonus mineurs pendant leur préparation qui augmentent une fois lancées.\n\nLes §Hpriorités§! disponibles et leurs effets dépendent de l'['concept_authority',autorité] dirigeante, des ['concept_traditions',traditions] adoptées et d'autres facteurs.\n\nVous pouvez les gérer depuis l'onglet §HConseil§! de la £interface£['concept_government_view',vue gouvernement]."
+ #Singular: £research£ ['concept_research'] or £research£ §H$concept_research$§!
+ #Plural: -
+ concept_research: "Recherche"
+ concept_research_desc: "La £research£§Hrecherche§! correspond au processus d'avancement des connaissances scientifiques dans trois domaines principaux : la £physics£['concept_physics_research',recherche physique], la £society£['concept_society_research',recherche sociétale] et la £engineering£['concept_engineering_research',recherche en ingénierie]. Chaque spécialité se développe indépendamment, donnant lieu à de nouvelles ['concept_technologies',technologies].\n\nLa vitesse de la recherche peut être influencée par certaines conditions dépendant de l'empire, des ['concept_leader_traits',traits de personnalité] ou des facteurs externes comme les ['concept_diplomatic_pacts',conventions de recherche]."
+ concept_research_tooltip: "$concept_research_desc$\n\n§GCliquer sur ['concept_research'] pour ouvrir la banque de données.\nCliquer sur £research£ dans le menu pour ouvrir la liste.§!"
+ #Singular 1: ['concept_modifier'] or §H$concept_modifier$§!
+ #Plural 1: ['concept_modifiers'] or §H$concept_modifiers$§!
+ #Singular 2: ['concept_empire_modifier'] or §H$concept_empire_modifier$§!
+ #Plural 2: ['concept_empire_modifiers'] or §H$concept_empire_modifiers$§!
+ #Singular 3: ['concept_planet_modifier'] or §H$concept_planet_modifier$§!
+ #Plural 3: ['concept_planet_modifiers'] or §H$concept_planet_modifiers$§!
+ concept_modifier: "Modificateur"
+ concept_modifiers: "Modificateurs"
+ concept_empire_modifier: "Modificateur d'empire"
+ concept_empire_modifiers: "Modificateurs d'empire"
+ concept_planet_modifier: "Modificateur planétaire"
+ concept_planet_modifiers: "Modificateurs planétaires"
+ concept_modifier_desc: "Les §Hmodificateurs§! sont des bonus ou pénalités qui résultent généralement des décisions prises lors des ['concept_event_chains',chaînes d'événements] ou de la découverte d'£anomaly£['concept_anomalies',anomalies].\n\nIls peuvent être temporaires ou permanents et affecter soit l'ensemble de l'empire soit des parties de celui-ci, comme un monde.\n\nLes §Hmodificateurs§! qui concernent l'ensemble de l'empire sont affichés dans l'onglet §H$empire_view_tab_empire$§! de la £interface£['concept_empire_view',vue empire], tandis que ceux qui ne concernent que des mondes spécifiques apparaissent dans la £interface£['concept_colony_view',vue colonie]."
+ #Singular: ['concept_diplomacy'] or §H$concept_diplomacy$§!
+ #Plural: -
+ concept_diplomacy: "Diplomatie"
+ concept_diplomacy_desc: "La §Hdiplomatie§! régit les interactions entre les empires, que ce soit les accords commerciaux ou les alliances, mais aussi les ['concept_rivals',rivaux] et les ['concept_wars',guerres]. Les actions diplomatiques dépendent de facteurs tels que les ['concept_ethics',éthiques], les ['concept_authorities',autorités], la puissance relative et les intérêts mutuels.\n\nLes empires peuvent améliorer leurs relations via l'envoi d'['concept_envoys',émissaires], la conclusion de ['concept_diplomatic_pacts',pactes diplomatiques] ou l'engagement dans les politiques galactiques à travers une ['concept_federation',fédération] et la ['concept_galactic_community',Communauté galactique]."
+ #Singular: ['concept_subject_agreement'] or §H$concept_subject_agreement$§!
+ #Plural: ['concept_subject_agreements'] or §H$concept_subject_agreements$§!
+ concept_subject_agreement: "Contrat de dépendance"
+ concept_subject_agreements: "Contrats de dépendance"
+ concept_subject_agreement_desc: "Les §Hcontrats de dépendance§! permettent de définir les conditions de sujétion entre un suzerain et son vassal, déterminant les niveaux d'autonomie, de contribution en ressources et d'obligations militaires. Ces contrats peuvent être personnalisés, allant d'un contrôle étroit sur les dépendances, à un accord entre alliés semi-indépendants.\n\nPour la négociation des §Hcontrats de dépendance§!, rendez-vous dans l'onglet $contacts_view_tab_agreements$ de la £interface£['concept_contacts_view',vue contacts]."
+ #Singular: ['concept_relic'] or §H$concept_relic$§!
+ #Plural: ['concept_relics'] or §H$concept_relics$§!
+ concept_relic: "Relique"
+ concept_relics: "Reliques"
+ concept_relic_desc: "Les §Hreliques§! sont de puissants artefacts hérités des civilisations anciennes qui accordent des avantages uniques à leurs propriétaires.\n\nLeur découverte peut se faire sur des £archaeology£['concept_archaeology_site',sites archéologiques], mais vous pouvez aussi les obtenir en réalisant des ['concept_event_chains',chaînes d'événements] majeures ou en vainquant les empires qui les possèdent.\n\nLes §Hreliques§! offrent des effets passifs constants et leur activation permet de débloquer encore davantage d'effets puissants temporaires. Vous pourrez les gérer à partir de l'onglet $discoveries_view_tab_relics$ de la £interface£['concept_discoveries_view',vue découvertes]."
+ #Singular: ['concept_astral_action'] or §H$concept_astral_action$§!
+ #Plural: ['concept_astral_actions'] or §H$concept_astral_actions$§!
+ concept_astral_action: "Action astrale"
+ concept_astral_actions: "Actions astrales"
+ concept_astral_action_desc: "Les §Hactions astrales§! sont des capacités spécialisées permettant aux empires d'interagir avec la trame spatiale, exploitant souvent des phénomènes astraux en vue d'obtenir un avantage stratégique.\n\nLes §Hactions astrales§! se débloquent généralement lors de l'exploration de ['concept_astral_rifts',déchirures astrales]."
+ #Singular: ['concept_minor_artifact'] or §H$concept_minor_artifact$§!
+ #Plural: ['concept_minor_artifacts'] or §H$concept_minor_artifacts$§!
+ concept_minor_artifact: "Artefact mineur"
+ concept_minor_artifacts: "Artefacts mineurs"
+ concept_minor_artifact_desc: "Les §Hartefacts mineurs§! sont des vestiges de civilisations anciennes généralement obtenus par la fouille de £archaeology£['concept_archaeology_site',sites archéologiques]. Bien qu'ils soient individuellement moins puissants que les §Hreliques§!, vous pouvez les utiliser de nombreuses façons, par exemple en activant des avantages uniques pour votre empire ou en les échangeant contre de précieuses ressources.\n\nL'utilité des artefacts mineurs dépend de la progression technologique d'un empire et de ses politiques. Certains chemins permettent leur reconversion pour l'enrichissement culturel, les avancées scientifiques ou même des applications militaires. Leur gestion se fait depuis la £interface£['concept_discoveries_view',vue découvertes]."
+ #Singular: ['concept_crisis'] or §H$concept_crisis$§!
+ #Plural: -
+ concept_crisis: "Crise"
+ concept_crisis_desc: "Une §Hcrise§! marque le passage d'un empire à travers une période particulièrement troublée, où il subit la menace d'une force existentielle nourrie par un pouvoir interdit et une technologie apocalyptique.\n\nLa survenue d'un tel événement invite la galaxie à faire front uni dans un moment décisif."
+ #Singular: ['concept_overlord_holding'] or §H$concept_overlord_holding$§!
+ #Plural: ['concept_overlord_holdings'] or §H$concept_overlord_holdings$§!
+ concept_overlord_holding: "Possession de la suzeraine"
+ concept_overlord_holdings: "Possessions de la suzeraine"
+ concept_overlord_holding_desc: "Les §Hpossessions de la suzeraine§! sont des installations spécialisées établies par les empires suzerains sur le monde de leurs dépendances. Ces structures permettent de projeter de l'influence, mais aussi d'extraire des ressources ou de fournir des services, de façon à renforcer l'autorité de la suzeraine.\n\nLe type de §Hpossessions§! et leur nombre sont déterminés par les clauses du ['concept_subject_agreement',contrat de dépendance], et leurs effets varient selon les ['concept_civics',civismes], ['concept_ethics',éthiques] et priorités stratégiques de la suzeraine. Malgré les profits qu'elles apportent, les possessions peuvent susciter le mécontentement des sujets s'ils les perçoivent comme oppressives ou intrusives."
+ #Singular: ['concept_branch_office'] or §H$concept_branch_office$§!
+ #Plural: ['concept_branch_offices'] or §H$concept_branch_offices$§!
+ concept_branch_office: "$BRANCH_OFFICE$"
+ concept_branch_offices: "$BRANCH_OFFICES$"
+ concept_branch_office_desc: "Les §Hsuccursales§! offrent au propriétaire d'une firme un pourcentage du £trade_value£['concept_trade',commerce] du monde de la cible sous forme d'£energy£['concept_energy'].\n\nAu maximum, vous pouvez décider la construction de §Y4§! bâtiments de succursale dans la £interface£['concept_colony_view',vue colonie] du monde de la cible. Des emplacements supplémentaires pourront être débloqués grâce à des améliorations de la capitale."
+ #Singular 1: ['concept_war'] or §H$concept_war$§!
+ #Plural 1: ['concept_wars'] or §H$concept_wars$§!
+ #Singular 2: ['concept_subjugation_war'] or §H$concept_subjugation_war$§!
+ #Plural 2: -
+ #Singular 3: ['concept_total_war'] or §H$concept_total_war$§!
+ #Plural 3: -
+ concept_war: "Guerre"
+ concept_wars: "Guerres"
+ concept_subjugation_war: "Guerre d'assujettissement"
+ concept_total_war: "Guerre totale"
+ concept_war_desc: "La §Hguerre§! constitue l'état officiel de conflit armé entre les empires. Il est adopté en vue de poursuivre des objectifs spécifiques, que ce soit pour concrétiser des ['concept_claims',revendications], résoudre des différends ou réorganiser l'ordre galactique. La guerre est justifiée par un §Hcasus belli§! qui détermine son but et les résultats possibles.\n\nLes guerres peuvent se conclure par une reddition, au cours de laquelle l'un des adversaires accepte les conditions de l'autre, ou par une ['concept_peace',paix] par §Hstatu quo§! dont les gains seront limités aux systèmes occupés au moment de la conclusion de l'accord. Plus le conflit dure, plus la §Hlassitude de guerre§! s'accumule, accentuant la pression pour mettre fin aux hostilités. Malgré son coût élevé, la guerre reste un outil décisif pour façonner le destin des empires."
+ #Singular: ['concept_peace'] or §H$concept_peace$§!
+ #Plural: -
+ concept_peace: "Paix"
+ concept_peace_desc: "La §Hpaix§! est la cessation officielle des hostilités entre des empires, résultant généralement en l'obtention des buts de guerre, l'échange de territoires ou l'imposition de nouveaux arrangements politiques. La paix peut être appliquée suite à une reddition ou découler d'une lassitude mutuelle.\n\nLes conditions de la paix déterminent l'ordre de l'après-guerre, établissant des frontières, soumettant des empires ou créant les conditions d'un futur conflit."
+ #Singular: ['concept_galactic_community'] or §H$concept_galactic_community$§!
+ #Plural: -
+ concept_galactic_community: "Communauté galactique"
+ concept_galactic_community_desc: "La §H$concept_galactic_community$§! est un corps législatif pangalactique formé par les empires qui en sont membres de façon à promouvoir la coopération, établir des normes interstellaires et faire face aux menaces communes. La communauté joue surtout un rôle prescripteur en proposant au vote des résolutions pour réguler la ['concept_war',guerre], le commerce et les valeurs de la société à l'échelle galactique.\n\nLes empires peuvent obtenir de l'influence au sein de la communauté en affectant des ['concept_envoys',émissaires] et en accroissant leur ['concept_diplomatic_weight',poids diplomatique]. Bien que son ambition affichée soit d'être un forum pour l'unité, la communauté est souvent le théâtre de rivalités internes, de négociations clandestines et de convoitises hégémoniques sous l'apparence de la gouvernance collective."
+ #Singular: ['concept_galactic_council'] or §H$concept_galactic_council$§!
+ #Plural: -
+ concept_galactic_council: "Conseil galactique"
+ concept_galactic_council_desc: "Le §H$concept_galactic_council$§! est une instance d'élite existant au sein de la ['concept_galactic_community']. Elle se compose des empires les plus puissants tels que mesurés par leur ['concept_diplomatic_weight',poids diplomatique]. Les membres du Conseil disposent de privilèges, parmi lesquels la capacité de proposer des mesures d'urgence, d'opposer leur veto à des résolutions et celle d'orienter les priorités galactiques.\n\nLe nombre de sièges est limité et leurs occupants sont sujets à changement selon leur pouvoir diplomatique relatif. Initialement voué à protéger l'ordre galactique, le Conseil n'est cependant pas à l'abri des ambitions, les plus forts exerçant leur domination et les plus faibles conspirant pour la renverser."
+ #Singular: ['concept_favor'] or §H$concept_favor$§!
+ #Plural: ['concept_favors'] or §H$concept_favors$§!
+ concept_favor: "Faveur"
+ concept_favors: "Faveurs"
+ concept_favor_desc: "Les §Hfaveurs§! sont des instruments diplomatiques représentant une dette d'influence contractée par un empire envers un autre, en général lors de leur participation à des événements galactiques. Elles servent plus ou moins de monnaie politique dans le cadre de la §H$concept_galactic_community$§! et du paysage diplomatique au sens large.\n\nLes faveurs peuvent être utilisées pour faire basculer un vote, renforcer des propositions diplomatiques ou obtenir un argument supplémentaire lors de négociations."
+ #Singular: ['concept_diplomatic_weight'] or §H$concept_diplomatic_weight$§!
+ #Plural: -
+ concept_diplomatic_weight: "Poids diplomatique"
+ concept_diplomatic_weight_desc: "Le §Hpoids diplomatique§! mesure l'influence d'un empire au sein de la ['concept_galactic_community'], déterminant la force de son vote sur des résolutions et son éligibilité pour rejoindre ou non le ['concept_galactic_council']. Ce poids est calculé à partir du pouvoir économique, technologique et militaire d'un empire, ainsi que du nombre d'['concept_envoys',émissaires] affectés à la communauté.\n\nLe poids diplomatique peut fluctuer au fil du temps, reflétant le statut d'un empire tout en lui servant d'outil pour faire progresser ses intérêts."
+ #Singular: ['concept_first_contact'] or §H$concept_first_contact$§!
+ #Plural: ['concept_first_contacts'] or §H$concept_first_contacts$§!
+ concept_first_contact: "Premier contact"
+ concept_first_contacts: "Premiers contacts"
+ concept_first_contact_desc: "Un §Hpremier contact§! marque la rencontre initiale entre des civilisations qui ne se connaissent pas encore. Ce moment fatidique peut mener à de la ['concept_diplomacy',diplomatie], de la suspicion ou même un conflit selon l'attitude et la disposition des différentes parties.\n\nLe processus de §Hpremier contact§! implique de décoder les communications aliens, de gérer les incidents éventuels, mais aussi de déterminer la posture d'un empire face à l'inconnu."
+ #Singular: ['concept_workforce'] or §H$concept_workforce$§!
+ #Plural: -
+ concept_workforce: "Main-d'oeuvre"
+ concept_workforce_desc: "La §Hmain-d'oeuvre§! représente la capacité collective de travail d'une £colony£['concept_colony',colonie]. Elle reflète le nombre d'individus disponibles pour accomplir diverses tâches essentielles au fonctionnement de l'empire.\n\nLes £pop£['concept_pops',pops] sont organisées en groupes d'après leurs caractéristiques partagées telles que leur ['concept_species',espèce], leur classe sociale et leurs ['concept_ethics',éthiques]. Chaque groupe contribue à la §Hmain-d'oeuvre§! de la planète, qui est ensuite répartie pour occuper les £job£['concept_jobs',emplois] disponibles."
+ #Singular: £zone£ ['concept_district_specialization'] or £zone£ §H$concept_district_specialization$§!
+ #Plural: £zone£ ['concept_district_specializations'] or £zone£ §H$concept_district_specializations$§!
+ concept_district_specialization: "$planet_zone$"
+ concept_district_specializations: "$planet_zones$"
+ concept_district_specialization_desc: "Les spécialisations des districts déterminent les £job£['concept_jobs',emplois] fournis par chaque £district£['concept_district',district]. La plupart ajoutent de l'espace pour construire des £building£['concept_buildings',bâtiments] supplémentaires."
+ concept_district_specializations_desc: "$concept_district_specialization_desc$"
+ #Singular: -
+ #Plural: £strategic_resource£ ['concept_strategic_resources'] or £strategic_resource£ §H$concept_strategic_resources$§!
+ concept_strategic_resources: "Ressources stratégiques"
+ concept_strategic_resources_desc: "Les £strategic_resource£§Hressources stratégiques§! sont des substances rares et puissantes, essentielles pour les technologies avancées, les infrastructures, et les systèmes des vaisseaux.\n\nElles regroupent notamment les £volatile_motes£§Hparticules volatiles§!, les £exotic_gases£§Hgaz exotiques§!, et les £rare_crystals£§Hcristaux rares§!.\n\nLes §Hressources rares§! sont des substances encore plus précieuses ou ésotériques, dont les applications sont particulièrement avancées. Les ressources stratégiques et rares sont notamment utilisées pour construire des ['concept_civilian_ships',vaisseaux civils], des ['concept_military_ships',vaisseaux militaires], des ['concept_starbases',bases stellaires], et des ['concept_megastructures'mégastructures].$tt_gain$- Construire des £zone£§Hzones industrielles§! ou des £zone£§Hzones métallurgiques§!\n- Construire des bâtiments associés\n- $tt_market$"
+ concept_strategic_resources_tooltip: "$concept_strategic_resources_desc$\n\n§GCliquer sur ['concept_strategic_resources'] pour ouvrir la banque de données.\nCliquer sur £strategic_resource£ dans le menu pour ouvrir la liste.§!"
+ POLICY_OPTION_CONCEPT_BODY: "- ['policy:$POLICY$:$OPTION$',$OPTION_NAME$]"

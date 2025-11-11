@@ -1,0 +1,5 @@
+﻿l_braz_por:
+ #Sequential name formats
+ GDF_GDFFLEET: "$ORD$ Frota da FDG"
+ #Obsolete sequentials (for backwards compatibility)
+ GDF_xxGDFFLEET_ORD: "Frota da FDG ($O$)"

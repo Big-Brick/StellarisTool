@@ -1,0 +1,537 @@
+﻿l_korean:
+ #See also: english\random_names\random_names_l_english.yml, which contains the names used for randomly-generated stars. The stars named in this file belong to particular, scripted star systems.
+ ######################
+ #PRESCRIPTED SYSTEMS
+ ######################
+ #United Nations of Earth
+ NAME_United_Nations_of_Earth: "지구 국제 연합"
+ NAME_Sol: "태양"
+ NAME_1_Ceres: "1 세레스"
+ NAME_2_Pallas: "2 팔라스"
+ NAME_3_Juno: "3 유노"
+ NAME_4_Vesta: "4 베스타"
+ NAME_Mercury: "수성"
+ NAME_Venus: "금성"
+ NAME_Earth: "지구"
+ NAME_Luna: "달"
+ NAME_Mars: "화성"
+ NAME_Jupiter: "목성"
+ NAME_Io: "이오"
+ NAME_Europa: "유로파"
+ NAME_Ganymede: "가니메데"
+ NAME_Callisto: "칼리스토"
+ NAME_Saturn: "토성"
+ NAME_Titan: "타이탄"
+ NAME_Uranus: "천왕성"
+ NAME_Neptune: "해왕성"
+ NAME_Triton: "트리톤"
+ NAME_134340_Pluto: "134340 플루토(명왕성)"
+ #Alternative names used
+ NAME_Demeter: "데메테르" #Greek equivalent of Ceres
+ NAME_Athena: "아테나" #Athena adopted Pallas's name
+ NAME_Hera: "헤라" #Greek equivalent of Juno
+ NAME_Hestia: "헤스티아" #Greek equivalent of Vesta
+ NAME_Hermes: "헤르메스" #Greek equivalent of Mercury
+ NAME_Aphrodite: "아프로디테" #Greek equivalent of Venus
+ NAME_Gaia: "가이아" #Greek equivalent of Terra
+ NAME_Selene: "셀레네" #Greek equivalent of Luna
+ NAME_Ares: "아레스" #Greek equivalent of Mars
+ NAME_Zeus: "제우스" #Greek equivalent of Jupiter
+ NAME_Phoronis: "포로니스" #Io was also known as Phoronis
+ NAME_Astarte: "아스타르테" #Europa may have her origin as Aštart
+ NAME_Catamitus: "카타미투스" #Latinized form of Ganymede
+ NAME_Themisto: "테미스토" #Mother of Arcas in other accounts
+ NAME_Cronus: "크로노스" #Greek equivalent of Saturn
+ NAME_Orpheus: "오르페우스" #Titans were important in Orphic tales
+ NAME_Caelus: "카일루스" #Latin equivalent of Uranus
+ NAME_Poseidon: "포세이돈" #Greek equivalent of Neptune
+ NAME_Rhodos: "로도스" #Sibling of Triton
+ NAME_Hades: "하데스" #Greek equivalent of Pluto
+ NAME_Tane: "타네" #Makemake appeared to be a version of the Polynesian god Tāne
+ NAME_Papa: "파파하노모쿠" #Papahānaumoku alternative name for Haumea
+ NAME_Prachetas: "프라체타스" #An epithet of Varuna
+ #UNE neighboring systems
+ NAME_Alpha_Centauri: "알파 센타우리"
+ NAME_Alpha_Centauri_A: "알파 센타우리 A"
+ NAME_Alpha_Centauri_B: "알파 센타우리 B"
+ NAME_Alpha_Centauri_B_I: "알파 센타우리 B I"
+ NAME_Alpha_Centauri_B_II: "알파 센타우리 B II"
+ NAME_Alpha_Centauri_B_III: "알파 센타우리 B III"
+ NAME_Barnards_Star: "바너드별"
+ NAME_Polaris: "폴라리스"
+ NAME_PolarisAa: "폴라리스 Aa"
+ NAME_PolarisAb: "폴라리스 Ab"
+ NAME_PolarisB: "폴라리스 B"
+ NAME_Procyon: "프로시온"
+ NAME_Procyon_A: "프로시온 A"
+ NAME_Procyon_B: "프로시온 B"
+ NAME_Proxima_Centauri: "프록시마 센타우리"
+ NAME_Proxima_Centauri_b: "프록시마 센타우리 b"
+ NAME_Proxima_Centauri_c: "프록시마 센타우리 c"
+ NAME_Sirius: "시리우스"
+ NAME_Sirius_A: "시리우스 A"
+ NAME_Sirius_B: "시리우스 B"
+ NAME_136472_Makemake: "136472 마케마케"
+ NAME_136108_Haumea: "136108 하우메아"
+ NAME_20000_Varuna: "20000 바루나"
+ #Deneb (Commonwealth of Man/UNE)
+ NAME_Deneb: "데네브" #star
+ NAME_Inferno: "인페르노" #planet
+ NAME_DT4-298: "DT4-298" #asteroid
+ NAME_LR-2129: "LR-2129" #asteroid
+ NAME_GR-345: "GR-345" #asteroid
+ NAME_Olympus: "올림푸스" #planet
+ NAME_New_Luna: "신세계의 달" #moon, as in 'NAME_Luna'
+ NAME_Unity: "유니티" #moon
+ NAME_Marble: "마블" #planet
+ NAME_Hyperion: "히페리온" #planet
+ NAME_Helios: "헬리오스" #moon
+ NAME_Tumbleweed: "텀블위드" #planet
+ NAME_Jackson's_Planet: "잭슨의 행성" #planet
+ #Sol (Void Dweller origin)
+ NAME_Sol_Void_Dweller: "태양계(공허 거주자)" #system
+ NAME_Old_Earth: "옛 지구" #planet
+ NAME_Earth_Habitat: "지구 거주지"
+ NAME_Mars_Habitat: "화성 거주지"
+ NAME_Saturn_Habitat: "토성 거주지"
+ #Titawin (Federated Theian Preservers)
+ titawin_init_NAME: "$NAME_Titawin$"
+ titawin_init_DESC: "테이안 보전자 연합의 시작 성계입니다.\n\n$system_initializer_DESC$"
+ NAME_Titawin: "티타윈" #Upsilon Andromedae
+ NAME_Titawin_A: "티타윈 A" #F-Type Star
+ NAME_Titawin_B: "티타윈 B" #Red Dwarf Star
+ NAME_Saffar: "사파" #Gas Giant
+ NAME_Samh: "사므" #Gas Giant
+ NAME_Majriti: "마즈리티" #Gas Giant
+ NAME_Curiel: "큐리엘" #Gas Giant
+ NAME_Theia: "테이아" #Homeworld
+ NAME_Akal_Amectuh: "아칼 아멕" #Moon
+ NAME_Yessefsi: "예세프" #Molten World
+ NAME_PHS_01: "PHS-01" #Asteroid
+ NAME_PHS_02: "PHS-02" #Asteroid
+ NAME_PHS_03: "PHS-03" #Asteroid
+ NAME_PHS_04: "PHS-04" #Asteroid
+ #Sol (Knights of the Toxic God)
+ NAME_Luna_Habitat: "태양 거주지 복합 단지"
+ #Sol (Blooms of Gaea)
+ NAME_Gaea: "가이아" #Homeworld
+ #L-Cluster
+ NAME_Final_Egress: "최종 출구" #star
+ NAME_Sel-Ufaan: "셀-우판"
+ NAME_Ten-Aard-Shel: "텐-아드-셸"
+ NAME_Diim-Fu-Rem: "디임-푸-렘"
+ NAME_Dora-Fu-Rem: "도라-푸-렘"
+ NAME_Naal-Di-Kor: "나알-디-코르"
+ NAME_Tao-Enar-Vi: "타오-에나르-비"
+ NAME_Tao-Fun-Vi: "타오-푼-비"
+ NAME_Tao-Arl-Vi: "타오-아를-비"
+ NAME_Tao-Got-Vi: "타오-고트-비"
+ NAME_Gol-Unda-Fiir: "골-운다-피이르"
+ NAME_Dora-Enar-Fiir: "도라-에나르-피이르"
+ NAME_Dora-Fun-Fiir: "도라-푼-피이르"
+ NAME_Dora-Arl-Fiir: "도라-아를-피이르"
+ NAME_Dora-Got-Fiir: "도라-고트-피이르"
+ NAME_Gol-Umn-Toor: "골-움-투르"
+ NAME_Dora-Enar-Toor: "도라-에나르-투르"
+ NAME_Gol-Salm-Ri: "골-샘-리"
+ NAME_Gol-Mel-Rood: "골-멜-루드"
+ NAME_Dora-Enar-Rood: "도라-에나르-루드"
+ ##############
+ #CARAVANEERS
+ ##############
+ #Ship names
+ NAME_Caravaneer_Starbase: "대상단 신호기"
+ ###########
+ #ENCLAVES
+ ###########
+ #Artisans
+ NAME_Artisan_Troupe: "예술가 단체" #empire
+ NAME_Artisan_adj: "예술가" #empire, e.g. 'an Artisan starbase'
+ NAME_Ars_Artem: "아스 아르템"
+ #Curators
+ NAME_Curator_Order: "큐레이터 집단" #empire
+ NAME_Curator_adj: "큐레이터" #empire, e.g. 'a Curator starbase'
+ NAME_Curator_Alpha_Enclave: "큐레이터 알파 엔클레이브" #starbase
+ NAME_Curator_Lambda_Enclave: "큐레이터 람다 엔클레이브" #starbase
+ NAME_Curator_Sigma_Enclave: "큐레이터 시그마 엔클레이브" #starbase
+ #Traders
+ NAME_Muutagan_Merchant_Guild: "무우타간 상인 조합" #empire
+ NAME_Muutagan_adj: "무우타간" #empire
+ NAME_Muutagan: "무우타간" #species
+ NAME_Muutagan_plural: "무우타간"
+ NAME_Muutag_Station: "무우타간 기지" #starbase
+ NAME_Riggan_Commerce_Exchange: "리간 상거래소" #empire
+ NAME_Riggan_adj: "리간" #empire
+ NAME_Riggan: "리간" #species
+ NAME_Riggan_plural: "리간"
+ NAME_Grand_Bazaar: "대시장" #starbase
+ NAME_XuraCorp: "주라 상사" #empire
+ NAME_XuraCorp_adj: "주라 상사" #empire
+ NAME_Xuri: "주리" #species
+ NAME_Xuri_plural: "주리"
+ NAME_XuraCorp_HQ: "주라 상사 본부" #starbase
+ #Salvagers
+ NAME_Asters_Workshop: "애스터의 작업실" #starbase
+ #Shroudwalkers
+ NAME_Shroud_Teachers: "장막의 중심지" #starbase
+ #################
+ #FALLEN EMPIRES
+ #################
+ #See also: entries in event_names_l_<language>.yml, which pertain to Awakened Empires.
+ #Star system names
+ NAME_Alpha_Refuge: "알파 피난처"
+ NAME_Beta_Refuge: "베타 피난처"
+ NAME_Gamma_Refuge: "감마 피난처"
+ NAME_Delta_Refuge: "델타 피난처"
+ NAME_Great_Nexus: "지식의 보고"
+ NAME_Custodian_Nexus: "중앙 처리부"
+ #Planet names
+ NAME_Apostasy: "배교"
+ NAME_Boundary: "경계"
+ NAME_Brother: "형제"
+ NAME_Celestial_Throne: "천상 왕좌"
+ NAME_The_Core: "코어"
+ NAME_Cradle: "요람"
+ NAME_The_Mistake: "실수"
+ NAME_Mother: "어머니"
+ NAME_The_Preserve: "보호 구역"
+ NAME_Pristine_Jewel: "순결한 보석"
+ NAME_Prophets_Retreat: "예언자의 은거처"
+ NAME_Sister: "자매"
+ NAME_Sky_Father: "하늘 아버지"
+ NAME_Sky_Temple: "하늘 신전"
+ NAME_Walled_Garden: "벽 두른 정원"
+ NAME_Wanderer: "방랑자"
+ NAME_Alpha_Complex: "알파 복합 시설"
+ NAME_The_Archives: "아카이브"
+ NAME_Production_Unit: "생산 유닛"
+ NAME_Processing_Unit: "처리 유닛"
+ NAME_Circuit_I: "회로 I" #ringworld segment
+ NAME_Circuit_II: "회로 II" #ringworld segment
+ NAME_Circuit_III: "회로 III" #ringworld segment
+ NAME_Superstructure_I: "상부 구조물 I" #ringworld segment
+ NAME_Superstructure_II: "상부 구조물 II" #ringworld segment
+ NAME_Superstructure_III: "상부 구조물 III" #ringworld segment
+ #Species names
+ NAME_Dead_Species: "죽은 종족"
+ NAME_Synthetic: "합성체" #servant robot
+ NAME_Synthetic_plural: "합성체"
+ #Ship names
+ NAME_Adjuster: "조정자"
+ NAME_Alpha: "알파"
+ NAME_Archivist: "기록 관리자"
+ NAME_Avatar: "아바타"
+ NAME_Benevolence: "박애"
+ NAME_Beta: "베타"
+ NAME_Cleanser: "정화자"
+ NAME_Cloaker: "은신체"
+ NAME_Delta: "델타"
+ NAME_Enforcer: "집행관"
+ NAME_Librarian: "사서"
+ NAME_Sage: "현자"
+ NAME_Savant: "석학"
+ NAME_Scholar: "학자"
+ NAME_Seeker: "수색자"
+ NAME_Epsilon: "엡실론"
+ NAME_Gamma: "감마"
+ NAME_Omega: "오메가"
+ NAME_Progress: "진보"
+ NAME_Surplus_I: "잉여"
+ NAME_Surplus_II: "$NAME_Surplus_I$"
+ NAME_Surplus_III: "$NAME_Surplus_I$"
+ NAME_Tau: "타우"
+ NAME_Theta: "세타"
+ ###########################
+ #LEVIATHANS & SPACE FAUNA
+ ###########################
+ #See also: event_names_l_english.yml, which caontains names used for when additional entities spawn, typically around mid-game.
+ #Guardians/Leviathans
+ NAME_Automated_Dreadnought: "자동화 드레드노트" #fleet
+ NAME_JuukTidir: "주우크'티디르" #ship/entity
+ NAME_Enigmatic_Fortress: "알 수 없는 요새"
+ NAME_Infinity_Machine: "무한 기계" #empire, ship design
+ NAME_I_O: "I-O" #ship/entity
+ NAME_The_Infinity_Machine: "무한 기계" #fleet
+ NAME_Gargantua: "가르강튀아" #black hole
+ NAME_Voidwyrm: "공허웜" #empire
+ NAME_Ether_Drake: "에테르 드레이크" #fleet
+ NAME_Avice: "아비스" #ship/entity (named dragon)
+ NAME_Grand_Dragon: "위대한 드래곤" #'ship' type
+ NAME_Dragons_Hoard: "드래곤의 보물" #planet
+ #Ancient Mining Drones
+ NAME_Mineral_Extraction_Operation: "광물 추출 사업부" #empire
+ NAME_Central_Processing: "중앙 처리부" #planet
+ NAME_Ore_Grinder: "광석 분쇄소" #planet
+ NAME_Asset_Protection_Unit: "자산 보호 유닛" #fleet
+ NAME_Mining_Corps: "채굴단" #fleet
+ #Space Amoebae
+ NAME_Spaceborne_Organics: "우주 유기체" #empire
+ NAME_Space_Amoebas_United: "우주 아메바 집회" #empire
+ NAME_Amor_Alveo: "아모르 알베오" #star
+ NAME_Amor_Toreo: "아모르 토레오" #planet
+ NAME_Amor_Dareetheo: "아모르 다리테오" #planet
+ NAME_Veronax: "베로낙스" #planet
+ NAME_Evor_Aras: "에보르 아라스" #planet
+ NAME_Evor_Tomos: "에보르 토모스" #planet
+ NAME_Eberax: "에버랙스" #planet
+ NAME_Tharonax: "타로낙스" #planet
+ NAME_Narnax: "나르낙스" #planet
+ NAME_Tior: "티오르" #planet
+ NAME_Lemior: "레미오르" #planet
+ NAME_Isior: "이시오르" #planet
+ NAME_Selor: "셀로르" #planet
+ NAME_Theresior: "테레시오르" #planet
+ NAME_Pesior: "페시오르" #planet
+ NAME_Amoeba_Swarm: "아메바 무리" #fleet
+ NAME_Amoeba_Swarm_seed: "아메바 무리(£seed_pod£)" #fleet carrying seeds (Fruitful Origin)
+ NAME_Space_Amoeba_Hunters: "우주 아메바 사냥꾼" #fleet
+ NAME_Space_Amoeba_Hunters_seed: "우주 아메바 사냥꾼(£seed_pod£)" #fleet carrying seeds (Fruitful Origin)
+ #Space Crystals
+ NAME_Prism: "프리즘" #empire
+ NAME_Crystal_Nidus: "크리스탈 둥지" #ship
+ NAME_Kappa: "카파" #ship
+ NAME_Shardlings: "파편체" #fleet
+ NAME_Shardling: "파편체" #ship
+ NAME_Emerald_Guardians: "에메랄드 수호자" #fleet
+ NAME_Emerald_Mausoleum: "에메랄드 영묘" #planet
+ NAME_Emerald_Roamers: "에메랄드 배회자" #fleet
+ NAME_Ruby_Guardians: "루비 수호자" #fleet
+ NAME_Ruby_Stack: "루비 정렬체" #fleet
+ NAME_Ruby_Swarm: "루비 무리" #fleet
+ NAME_Sapphire_Guardians: "사파이어 수호자" #fleet
+ NAME_Sapphire_Lurkers: "사파이어 잠복자" #fleet
+ NAME_Topaz_Guardians: "토파즈 수호자" #fleet
+ NAME_Shards_of_Diamond: "다이아몬드 조각" #fleet
+ NAME_Shards_of_Obsidian: "옵시디언 조각" #fleet
+ NAME_Shards_of_Onyx: "오닉스 조각" #fleet
+ NAME_Shards_of_Sapphire: "사파이어 조각" #fleet
+ NAME_Yormak's_Belly: "요르막의 배" #planet
+ NAME_Yormak's_Eye: "요르막의 눈" #planet
+ NAME_Yormak's_Fist: "요르막의 주먹" #planet
+ NAME_Yormak's_Heart: "요르막의 심장" #planet
+ NAME_Yormak's_Snout: "요르막의 코" #planet
+ NAME_Yormak's_Tail: "요르막의 꼬리" #planet
+ NAME_Yormak's_Tongue: "요르막의 혀" #planet
+ NAME_Yormak's_Tusk: "요르막의 엄니" #planet
+ #Tiyanki
+ NAME_Placid_Leviathans: "얌전한 레비아탄" #empire
+ NAME_Tiyanki_Space_Whale: "티얀키 우주 고래" #fleet
+ NAME_Tiyanki_Space_Whale_seed: "티얀키 우주 고래(£seed_pod£)" #fleet carrying seeds (Fruitful Origin)
+ NAME_Tiyanki_Bull: "티얀키 수컷"
+ NAME_Tiyanki_Cow: "티얀키 암컷"
+ NAME_Tiyanki_Hatchling: "티얀키 유체"
+ NAME_Tiyanki_Ox: "티얀키 아종"
+ NAME_Tiyana_Vek: "티야나 벡" #star
+ NAME_Zathika_Mev: "자티카 메브" #planet
+ NAME_Surribzha: "수리브'자" #planet
+ NAME_Yllarv: "일라르브" #planet
+ NAME_Khetzhavu: "케트'자부" #planet
+ NAME_Dulna: "둘나" #planet
+ NAME_Valzhuva: "발'주'바" #planet
+ NAME_Tiyun_Ort: "티윤 오르트" #star
+ NAME_Ghanek: "가넥" #planet
+ NAME_Zhaduva: "자두바" #planet
+ NAME_Orek_Vuul: "오렉 부울" #planet
+ #Void Clouds
+ NAME_Enigmatic_Energy: "알 수 없는 에너지" #empire
+ NAME_Great_Wound: "거대한 상처" #star/black hole
+ NAME_Subspace_Rupture_1: "아공간 파열 F-49" #black hole
+ NAME_Subspace_Rupture_2: "아공간 파열 RX-199" #black hole
+ NAME_Subspace_Rupture_3: "아공간 파열 G-12" #black hole
+ NAME_Subspace_Rupture_4: "아공간 파열 NL-889" #black hole
+ NAME_Subspace_Rupture_5: "아공간 파열 QX-3" #black hole
+ NAME_Subspace_Rupture_6: "아공간 파열 NGR-412" #black hole
+ NAME_Subspace_Rupture_7: "아공간 파열 ZT-34" #black hole
+ NAME_Subspace_Rupture_8: "아공간 파열 F-311" #black hole
+ NAME_Subspace_Rupture_9: "아공간 파열 SX-77" #black hole
+ NAME_Subspace_Rupture_10: "아공간 파열 PL-4499" #black hole
+ ##################
+ #PRE-FTL SPECIES
+ ##################
+ #See also: entries in event_names_l_<language>.yml
+ #Earth
+ NAME_Human: "인간" #species
+ NAME_Human_plural: "인간" #species
+ NAME_ISS_II: "ISS II" #International Space Station (2nd generation)
+ NAME_British_Armed_Forces: "영국군" #army
+ NAME_Chinese_PLA: "중국 인민해방군" #People's Liberation Army
+ NAME_EU_Combined_Forces: "EU 연합군" #European Union army
+ NAME_Feudal_Levies: "봉건 징집군" #army
+ NAME_German_Wehrmacht: "독일 국방군" #army
+ NAME_Imperial_Japanese_Forces: "일본 제국군" #army
+ NAME_Russian_Armed_Forces: "러시아 연방군" #army
+ NAME_Soviet_Red_Army: "소련 붉은 군대" #army
+ NAME_US_Armed_Forces: "미합중국 군대" #army
+ NAME_US_Armed_Forces_East: "미합중국 군대 동부" #army
+ NAME_US_Armed_Forces_West: "미합중국 군대 서부" #army
+ NAME_Sol_III: "솔 III" #star
+ ################
+ #OTHER CONTENT
+ ################
+ #Guardians of Zanaam
+ NAME_Guardians_of_Zanaam: "자남의 수호자" #country, fleet
+ NAME_Zanaam: "자남" #planet
+ NAME_Defensive_Alpha: "방위함 알파" #ship
+ NAME_Defensive_Beta: "방위함 베타" #ship
+ NAME_Defensive_Chi: "방위함 카이" #ship
+ NAME_Defensive_Delta: "방위함 델타" #ship
+ NAME_Defensive_Epsilon: "방위함 엡실론" #ship
+ NAME_Defensive_Eta: "방위함 에타" #ship
+ NAME_Defensive_Gamma: "방위함 감마" #ship
+ NAME_Defensive_Iota: "방위함 이오타" #ship
+ NAME_Defensive_Kappa: "방위함 카파" #ship
+ NAME_Defensive_Ksi: "방위함 크사이" #ship
+ NAME_Defensive_Lambda: "방위함 람다" #ship
+ NAME_Defensive_Mu: "방위함 뮤" #ship
+ NAME_Defensive_Nu: "방위함 뉴" #ship
+ NAME_Defensive_Omega: "방위함 오메가" #ship
+ NAME_Defensive_Omicron: "방위함 오미크론" #ship
+ NAME_Defensive_Phi: "방위함 피" #ship
+ NAME_Defensive_Pi: "방위함 파이" #ship
+ NAME_Defensive_Psi: "방위함 프사이" #ship
+ NAME_Defensive_Rho: "방위함 로" #ship
+ NAME_Defensive_Sigma: "방위함 시그마" #ship
+ NAME_Defensive_Tau: "방위함 타우" #ship
+ NAME_Defensive_Theta: "방위함 세타" #ship
+ NAME_Defensive_Upsilon: "방위함 입실론" #ship
+ NAME_Defensive_Zeta: "방위함 제타" #ship
+ #The Sanctuary
+ NAME_Sanctuary: "보존소" #star
+ NAME_Administrator: "관리함" #ship
+ NAME_Sanctuary_Core: "보존소 코어" #ship design/type
+ NAME_Sanctuary_A: "보존소-A" #ringworld section
+ NAME_Sanctuary-B: "보존소-B" #ringworld section
+ NAME_Sanctuary-C: "보존소-C" #ringworld section
+ NAME_Sanctuary-D: "보존소-D" #ringworld section
+ NAME_Sanctuary-E: "보존소-E" #ringworld section
+ NAME_Sanctuary-F: "보존소-F" #ringworld section
+ NAME_Sanctuary-G: "보존소-G" #ringworld section
+ NAME_Sanctuary-H: "보존소-H" #ringworld section
+ NAME_Sanctuary-I: "보존소-I" #ringworld section
+ NAME_Sanctuary-J: "보존소-J" #ringworld section
+ NAME_Sanctuary-K: "보존소-K" #ringworld section
+ NAME_Sanctuary-L: "보존소-L" #ringworld section
+ #Trappist system
+ NAME_Trappist: "트래피스트" #system
+ #Ratling systems
+ NAME_Decayed_Hub: "무너진 허브" #planet
+ #Hauer system (Rutger Hauer tribute)
+ NAME_Hauer: "하우어" #star
+ NAME_Aureyon: "아우'레욘" #planet
+ NAME_Baage: "바아지" #planet
+ NAME_Baelte: "밸'테" #planet
+ NAME_Bhete: "베테" #planet
+ NAME_Snaaraa: "팡게" #planet
+ NAME_Floe: "플로에" #planet
+ NAME_Piyhl: "피'일" #planet
+ NAME_Snaara: "스나아라" #planet
+ NAME_Straeng: "스트랭" #planet
+ NAME_Stykkia: "스틱키아" #planet
+ #Kept Grounds (Wenkwort Artem)
+ NAME_Fruitful: "아우돈 관리인" #empire
+ NAME_Wenkwort_Keeper: "아우돈 관리원" #species
+ NAME_Wenkwort_Keeper_plural: "아우돈 관리원" #species
+ NAME_Warder_of_the_Ruins: "폐허의 교도관" #ship
+ NAME_Wenkwort: "웬크워트" #star
+ NAME_wenkwort_prime: "웬크워트 아르템" #planet
+ NAME_wenkwort_moon: "밀포드" #planet
+ NAME_wenkwort_2: "렐라이트" #planet
+ NAME_wenkwort_3: "뷰레이브" #planet
+ NAME_wenkwort_4: "마크렌" #planet
+ NAME_wenkwort_asteroid: "트루인" #planet
+ NAME_Gardener_Drone: "아우돈 관리 유닛" #ship
+ NAME_Gardener_Drone_plural: "관리부 14-WW" #fleet
+ NAME_Gardeners: "정원사"
+ NAME_Gardener1: "CT 페르톤" #ship
+ NAME_Gardener2: "CT 스파르톤 브론" #ship
+ NAME_Gardener3: "CT 휘센톤" #ship
+ NAME_Wenkwort_Enforcer: "아우돈 순양함" #ship design
+ NAME_Wenkwort_Enforcer_plural: "집행부 61-VL" #fleet
+ #Ruins of Shallash
+ NAME_Darad: "다라드" #planet
+ NAME_Shallash: "셜라시" #planet
+ NAME_Shallasha: "셜라시 a" #moon
+ NAME_Shallashb: "셜라시 b" #moon
+ NAME_Shallashc: "셜라시 c" #moon
+ NAME_Shallashd: "셜라시 d" #moon
+ NAME_Shallashe: "셜라시 e" #moon
+ NAME_Shallashf: "셜라시 f" #moon
+ NAME_Parvus: "파르부스" #planet
+ #Fumongus
+ NAME_Fumongus_System: "오르발" #star
+ NAME_Grazing_Tiyanki: "포식 중인 티얀키" #fleet
+ NAME_Grazing_Tiyanki_seed: "포식 중인 티얀키(£seed_pod£)" #fleet carrying seeds (Fruitful Origin)
+ NAME_Fumongus_Star: "코즈모그-1" #star (also a personality/vanity system)
+ NAME_Fumongus_Planet01: "블렘-셀"
+ NAME_Fumongus_Planet02: "개-미그"
+ NAME_Fumongus_Planet02a: "개-미그 a"
+ NAME_Fumongus_PlanetDig: "무르-흐스레투"
+ NAME_Fumongus_Planet03: "안-마이"
+ NAME_Fumongus_Planet03a: "안-마이 a"
+ #Ghost Ship
+ NAME_Hillos: "힐로스" #system
+ NAME_Hillos_Star: "$NAME_Hillos$" #star
+ NAME_HillosA: "$NAME_Hillos$ I"
+ NAME_HillosB: "$NAME_Hillos$ II"
+ NAME_HillosC: "$NAME_Hillos$ III"
+ NAME_HillosA_moon: "쉬르자"
+ #Surveillance Supercomputer
+ NAME_Ultima_Vigilis: "울티마 비질리스"
+ NAME_Observation_Terminal: "관측 터미널"
+ NAME_Repurposed_Surveillance_Network: "개조 감시망"
+ #Larionessi Refuge
+ NAME_Unique_System_1: "연방의 끝" #star
+ NAME_Unique_System_2: "라리오네시 피난처" #star
+ NAME_Unique_System_2_Planet: "라리온"
+ #Zevox (Shrouded planet)
+ NAME_Unique_System_3: "제복스" #star
+ NAME_Unique_System_3_Planet: "제로원"
+ NAME_Unique_System_3_Moon: "제로투"
+ #Ancient Battlefields
+ NAME_Unique_System_4: "펜락스의 저항" #star
+ NAME_Unique_System_5: "잔록스의 안식" #star
+ NAME_Unique_System_6: "아파리" #star
+ #Triple Planet systems
+ NAME_Unique_System_7: "트라귤라의 십자가"
+ NAME_Unique_System_8: "트린의 약속"
+ NAME_Unique_System_9: "로"
+ #Lost Swarm System
+ NAME_Lost_Swarm_System: "우보글릴트"
+ NAME_Ubogleelt: "우보글릴트"
+ NAME_UbogleeltA: "우보글릴트 I"
+ NAME_UbogleeltB: "우보글릴트 II"
+ NAME_UbogleeltC: "우보글릴트 III"
+ NAME_UbogleeltD: "우보글릴트 IV"
+ NAME_UbogleeltE: "우보글릴트 V"
+ NAME_Lost_Swarm: "곤충 무리"
+ NAME_Lost_Swarm_Ship: "곤충 떼"
+ NAME_Lost_Swarm_Adult: "곤충 떼"
+ #Holibrae
+ NAME_Holibrae: "홀리브라이"
+ NAME_Holibrae_Corps: "홀리브라이 군단" #fleet
+ NAME_Holibrae_Destroyer: "홀리브라이 구축함" #ship type
+ #Star Mall
+ NAME_Parking_Orbit_White_Dwarf: "주차 궤도: 백색 왜성 구역"
+ NAME_Parking_Orbit_Main_Sequence: "주차 궤도: 메인 시퀀스 구역"
+ NAME_Star_Mall: "스타 몰"
+ NAME_Parking_Orbit_Magnetar: "주차 궤도: 마그네타 구역"
+ NAME_Parking_Orbit_Black_Hole: "주차 궤도: 블랙홀 구역"
+ NAME_Parking_Orbit_Pulsar: "주차 궤도: 펄서 구역"
+ NAME_Parking_Orbit_Brown: "주차 궤도: 갈색 왜성 구역"
+ star_mall_drone: "스타몰 주차 드론"
+ star_mall_drone_plural: "스타몰 주차 드론"
+ NAME_Star_Mall_Parking_Drones: "스타 몰 주차 서비스"
+ NAME_Star_Mall_Parking_Services: "스타 몰 주차 서비스"
+ #Breachsealers
+ NAME_Seddom: "셋돔" #Modders
+ NAME_Ariph: "아리프" #Ariphaos
+ NAME_Hari_XXIV: "하리 XXIV" #Harain & The24thDS
+ NAME_Risasi: "리사시" #Risa
+ NAME_Aridder: "애리더" #alexrider903
+ NAME_E'cho: "에'코" #ECHO
+ NAME_Rover: "로버" #Roverstorm
+ NAME_Jasepe: "자세페" #jasonpepe
+ NAME_Blaxe: "블락세" #SirBlackAxe
+ NAME_Glavi: "글라비" #Glavius
+ NAME_Salvold: "살볼드" #Savlor & OldEnt
+ NAME_Frince: "프린스" #Fireprince

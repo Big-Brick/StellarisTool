@@ -1,0 +1,9 @@
+﻿l_french:
+ ENTERING_GAME_LOBBY: "Entrée dans la configuration de partie"
+ SERVER_LAUNCHING_MP: "Lancement du multijoueur"
+ SERVER_NAME: "Nom du serveur : $NAME$"
+ SERVER_PASSWORD: "Mot de passe du serveur : $PASSWORD$"
+ LAUNCHING_GAME: "Lancement de la partie"
+ STANDALONE_WAITING_FOR_PLAYERS: "En attente de $NUM$ joueurs"
+ RECEIVED_GAMESERVER_ID: "ID du serveur reçue : $SERVERID$"
+ RECEIVED_LOBBY_SERVER: "Serveur du salon reçu"

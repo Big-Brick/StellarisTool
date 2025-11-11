@@ -1,0 +1,62 @@
+﻿l_braz_por:
+ #The following names are applied to generic ships, Megastructures, and space creatures ('fauna') which populate the galaxy and are related to features, rather than particular events.
+ #Generic ships
+ NAME_Constructor: "Construtor"
+ #Space Fauna 'countries' (describing e.g. the Tiyanki, Space Crystals, Mining Drones...)
+ #Galactic Imperium
+ NAME_Rebellion: "Coalizão Rebelde" #federation
+ NAME_Loyalists: "Legalistas Imperiais" #federation
+ NAME_The_Civil_War: "A Rebelião Galáctica" #war
+ NAME_Declared_Crisis_War: "[This.MainDefender.GetAdj] Guerra de Crise" #war
+ NAME_Crisis_Star_Eater: "Devorador"
+ NAME_GDF: "Força de Defesa da Galáxia"
+ NAME_Imperial_Crusade_War: "Cruzada Imperial Galáctica" #war
+ #################
+ #MEGASTRUCTURES
+ #################
+ #Ring World sections
+ NAME_Ring_Section_A: "Seção de Anel A"
+ NAME_Ring_Section_B: "Seção de Anel B"
+ NAME_Ring_Section_C: "Seção de Anel C"
+ NAME_Ring_Section_D: "Seção de Anel D"
+ NAME_Ring_Section_E: "Seção de Anel E"
+ NAME_Ring_Section_F: "Seção de Anel F"
+ NAME_Ring_Section_G: "Seção de Anel G"
+ NAME_Ring_Section_H: "Seção de Anel H"
+ NAME_Ring_Section_I: "Seção de Anel I"
+ NAME_Ring_Section_K: "Seção de Anel K"
+ NAME_Ring_Section_L: "Seção de Anel L"
+ NAME_Ring_Section: "Seção de Anel"
+ NAME_Habitable_Section_A: "Seção Habitável A"
+ NAME_Habitable_Section_B: "Seção Habitável B"
+ NAME_Habitable_Section_C: "Seção Habitável C"
+ NAME_Habitable_Section_D: "Seção Habitável D"
+ ##########
+ #ORIGINS
+ ##########
+ #Galactic Doorstep
+ NAME_Galactic_Doorstep: "A Coroa Negra" #megastructure
+ NAME_Gateway_Vermin: "Verme do Portal" #empire
+ #On the Shoulders of Giants
+ NAME_Theros: "Theros" #planet
+ NAME_Melidas: "Melidas" #planet
+ NAME_Koras: "Koras" #planet
+ NAME_Haradas: "Haradas" #planet
+ NAME_Islena: "Islena" #planet
+ #Shattered Ring
+ NAME_Irreparable_Damage: "Dano Catastrófico" #ringworld segment
+ NAME_The_Interloper: "O Intruso" #shattered planet
+ #Here Be Dragons
+ NAME_Sky_Dragon: "Dragão Celeste"
+ NAME_Sky_Dragon_Baby: "Filhote de Dragão Celeste"
+ NAME_Hrozgar_of_the_Endless_Flames: "Hrozgar das Chamas Infinitas"
+ #Imperial Fiefdom
+ NAME_Imperial_Origin_Empire: "Sacro Império [origin_imperial_species.GetAdj]"
+ NAME_Imperial_Origin_Empire_2: "Reino dos [origin_imperial_species_2.GetNamePlural]"
+ NAME_Imperial_Origin_Empire_3: "Príncipe-eleitor dos [origin_imperial_species_3.GetNamePlural]"
+ NAME_Imperial_Origin_Empire_4: "Palatinado dos [origin_imperial_species_4.GetNamePlural]"
+ NAME_Imperial_Origin_Empire_5: "Liga dos [origin_imperial_species_5.GetAdj]"
+ NAME_Aix: "Aix" #planet
+ #Toxic Knights
+ NAME_Sinople: "Sinople"
+ NAME_Syamelle: "Syamelle"

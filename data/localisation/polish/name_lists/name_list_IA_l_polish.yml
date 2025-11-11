@@ -1,0 +1,5 @@
+﻿l_polish:
+ #Sequential name formats
+ IA_IMPERIALARMADA: "$R$ armada imperialna"
+ #Obsolete sequentials (for backwards compatibility)
+ IA_xxIMPERIALARMADA_ROM: "$R$ armada imperialna"

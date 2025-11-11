@@ -1,0 +1,814 @@
+﻿l_korean:
+ ### CONCEPTS
+ #Above each concept definition are instructions on usage, including an icon where one exists.
+ #Note that between the icon and the term there's a non-breaking space. When you copy the usage example, it will keep the non-breaking space.
+ #This is important to not get a line break between the icon and the concept.
+ #Use a concept link with icon the first time a new concept is mentioned, then use §H without an icon for repeated uses.
+ #Use §H with an icon the first time a concept is used withing its own description.
+ #Use §H without an icon if the concept is used more than once.
+ GAME_CONCEPT_FORMAT: "§C$TEXT$§!"
+ DATABANK_FILTER_DESC: "선택한 범주"
+ databank_colony: "식민지"
+ databank_conquest: "정복"
+ databank_development: "개발"
+ databank_empire: "제국"
+ databank_exploration: "탐사"
+ databank_interface: "인터페이스"
+ databank_resource: "자원"
+ dlc_requirement_string: "\n\n§P필요 DLC:§!"
+ requires_leviathans: "$dlc_requirement_string$ §ILeviathans§!"
+ requires_apoc: "$dlc_requirement_string$ §IApocalypse§!"
+ requires_syn_dawn: "$dlc_requirement_string$ §ISynthetic Dawn§!"
+ requires_megacorp: "$dlc_requirement_string$ §IMegaCorp§!"
+ requires_dis_stars: "$dlc_requirement_string$ §YDistant Stars Story Pack§!"
+ tt_gain: "\n\n증가 방법:\n"
+ tt_use: "\n\n다음 활용:\n"
+ tt_market: "£market£ ['concept_market']에서 구매합니다."
+ tt_no_need_hive: "§R$auth_hive_mind_plural$은 이 자원을 사용하지 않습니다.§!"
+ tt_some_need_machine: "§R$auth_machine_intelligence_plural$은 일반적으로 이 자원을 사용하지 않습니다.§!"
+ concept_advanced_empire: "진보된 AI 제국"
+ concept_advanced_empires: "진보된 AI 제국"
+ concept_advanced_empires_desc: "진보된 AI 제국은 자원, 기술, 인구와 관련해 보너스를 받은 채 게임을 시작합니다. 해당 제국은 이 밖의 추가 보너스를 받지 않습니다."
+ concept_alien_zoo: "$building_xeno_zoo$"
+ concept_alien_zoo_desc: "£mod_job_entertainer_add£ [entertainer.GetName] 직업: §G+100§!\n£mod_job_xeno_zoo_keeper_add£ $job_xeno_zoo_keeper$ 직업: §G+100§!\n£mod_job_livestock_zoo_animal_add£ $job_livestock_zoo_animal$ 직업: §G+300§!\n\n£job_xeno_zoo_keeper£ $job_xeno_zoo_keeper_plural$는 $r_consumer_goods$를 £society£ §Y연구 포인트§! 및 $r_amenities$로 바꿉니다.\n$t$$r_amenities$ 생산량은 £job_livestock_zoo_animal£ $job_livestock_zoo_animal$ 직업 수에 비례합니다.\n$job_entertainer_effect_desc$\n$job_livestock_zoo_animal_effect_desc$\n\n§L$building_xeno_zoo_desc$§!"
+ #Singular: ['concept_ascension_perk'] or §H$concept_ascension_perk$§!
+ #Plural: ['concept_ascension_perks'] or §H$concept_ascension_perks$§!
+ concept_ascension_perk: "승격 특전"
+ concept_ascension_perks: "승격 특전"
+ concept_ascension_perks_desc: "§H$concept_ascension_perks$§!을 통해 문명 발전의 향방을 결정하고 제국 전체에 영향을 주는 강력한 혜택을 얻어, 국력을 강화하고 쉽게 무너지지 않는 국가를 구축하고 초월을 이룰 수 있습니다.\n\n승격 특전은 £interface£ ['concept_society_management_view']의 §H$traditions$§! 탭에서 선택하고 관리합니다."
+ #Singular: -
+ #Plural: £alloys£ ['concept_alloys'] or £alloys£ §H$concept_alloys$§!
+ concept_alloys: "합금"
+ concept_alloys_desc: "£alloys£ §H$concept_alloys$§!은 군사적으로 활용도가 높은 고급 자원입니다.\n\n['concept_civilian_ships'], ['concept_military_ships'], ['concept_starbases'], ['concept_megastructures'] 건설 등 다양한 분야에 사용됩니다.$tt_gain$- £zone£ §H$zone_industrial_plural$§! 또는 £zone£ §H$zone_foundry_plural$§!를 건설합니다.\n- £building£ ['building:building_foundry_1']를 건설합니다.\n- $tt_market$"
+ #Singular: £trade_value£ ['concept_trade'] or §H$concept_trade$§!
+ #Plural: -
+ concept_trade: "무역"
+ concept_trade_desc: "$r_trade$은 ['concept_empire']의 일상적인 경제 활동, 상업의 흐름, 물류 처리력을 나타냅니다.\n\n['concept_ship_upkeep']와 ['concept_colony_upkeep']에 쓰이며, 다른 자원을 구매할 때도 사용됩니다.$tt_gain$- $r_trade$을 생산하는 £job£ ['concept_jobs']이 있는 £building£ ['concept_buildings']을 건설합니다.\n- 성간 무역 매장지에 £mining_station£ ['concept_mining_stations']를 건설합니다.\n- £market£ ['concept_market']에 자원을 판매합니다."
+ #Singular: £building£ ['concept_building'] or £building£ §H$concept_building$§!
+ #Plural: £building£ ['concept_buildings'] or £building£ §H$concept_buildings$§!
+ concept_building: "$buildable_building$"
+ concept_buildings: "$planet_buildings$"
+ concept_building_desc: "£building£ §H$concept_buildings$§!은 £colony£ ['concept_colonies']의 생산을 특화시키는 구조물로, ['building:building_foundry_1']와 ['building:building_research_lab_1'] 등 다양한 종류가 있습니다.\n\n§H$concept_building$§!을 건설하려면 이용 가능한 §H건물 슬롯§!이 있어야 합니다. 건물 슬롯을 이용하려면 £zone£ ['concept_district_specialization']를 선택해야 할 수도 있습니다.$tt_gain$- £interface£ ['concept_colony_view']에서 §H$concept_buildings$§!을 추가로 건설합니다."
+ #Singular: £mining_station£ £science_ship£ £shipclass_observation_station£ ['concept_civilian_space_station'] or £mining_station£ £science_ship£ £shipclass_observation_station£ §H$concept_civilian_space_station$§!
+ #Plural: £mining_station£ £science_ship£ ['concept_civilian_space_stations'] or £mining_station£ §H$mining_station$§! £science_ship£ £shipclass_observation_station£ §H$concept_civilian_space_stations$§!
+ concept_civilian_space_station: "민간 $spacestation_1$"
+ concept_civilian_space_stations: "민간 $spacestation_1_plural$"
+ concept_civilian_space_station_desc: "£mining_station£ §H$mining_station_plural$§!와 £science_ship£ §H$research_station_plural$§!는 천체 주변에 건설해 자원을 채취하거나 과학 연구를 할 수 있는 궤도 시설입니다. $mining_station$는 £minerals£ ['concept_minerals'], £energy£ ['concept_energy'] 및 기타 전략적 자원을 채취할 수 있으며, $research_station$는 £physics£ £society£ £engineering£ ['concept_research']를 생산해 과학을 발전시킵니다.\n\n이러한 기지는 £construction_ship£ ['concept_construction_ship']으로 건설할 수 있으며, 기술 발전과 경제 성장에 매우 중요합니다."
+ #Singular: £colony£ ['concept_colony'] or £colony£ §H$concept_colony$§!
+ #Plural: £colony£ ['concept_colonies'] or £colony£ §H$concept_colonies$§!
+ concept_colony: "$COLONY$"
+ concept_colonies: "$COLONIES$"
+ concept_colony_desc: "£colony£ §H$concept_colony$§!는 £pop£ ['concept_pops']이 £district£ ['concept_districts'] 및 £zone£ ['concept_district_specializations'], 그리고 £building£ ['concept_buildings']에서 생활하고 일하는 모든 곳을 가리킵니다.\n\n시작 §H모성§!, £colony_ship£ ['concept_colony_ships']으로 개척한 £planet£ ['concept_planets'], 제국이 건설한 ['concept_habitats'] 등 다양한 종류가 있습니다.\n\n§H$concept_colonies$§!는 £interface£ ['concept_colony_view']에서 관리합니다."
+ #Singular: £colony_ship£ ['concept_colony_ship'] or £colony_ship£ §H$concept_colony_ship$§!
+ #Plural: £colony_ship£ ['concept_colony_ships'] or £colony_ship£ §H$concept_colony_ships$§!
+ concept_colony_ship: "$colonizer$"
+ concept_colony_ships: "$colonizer_plural$"
+ concept_colony_ship_desc: "£colony_ship£ §H$concept_colony_ships$§!을 £planet£ ['concept_planets']에 보내 £colony£ ['concept_colonies']를 개척할 수 있습니다.\n\n§H$concept_colony_ship$§!은 £interface£ ['concept_colony_view']이나 £interface£ ['concept_expansion_planner']에서 식민지 개척을 개시하면 자동으로 건조되며, ['concept_shipyard']에서도 건조할 수 있습니다."
+ #Singular: £construction_ship£ ['concept_construction_ship'] or £construction_ship£ §H$concept_construction_ship$§!
+ #Plural: £construction_ship£ ['concept_construction_ships']
+ concept_construction_ship: "$constructor$"
+ concept_construction_ships: "$constructor_plural$"
+ concept_construction_ship_desc: "£construction_ship£ §H$concept_construction_ship$§!을 이용하면 다양한 우주 기지를 건설할 수 있습니다.$tt_use$- 미소유 £system£ ['concept_systems']에 ['concept_outposts']를 건설해 ['concept_empire'] 국경을 확장합니다.\n- 탐사가 완료된 £planet£ ['concept_planets'] 및 ['concept_stars'] 주변에 £mining_station£ ['concept_mining_stations']나 £science_ship£ ['concept_research_stations']를 건설합니다.\n- ['concept_megastructures']을 건설합니다.\n- 특정 ['concept_special_projects']를 연구합니다.$tt_gain$- ['concept_shipyard']에서 §H$concept_construction_ships$§!을 건조합니다."
+ #Singular: £science_ship£ ['concept_science_ship'] or £science_ship£ §H$concept_science_ship$§!
+ #Plural: £science_ship£ ['concept_science_ships'] or £science_ship£ §H$concept_science_ships$§!
+ concept_science_ship: "$science$"
+ concept_science_ships: "$science_plural$"
+ concept_science_ship_desc: "£science_ship£ §H$concept_science_ships$§!은 탐사와 조사, 그리고 연구 활동에 특화된 함선입니다. £scientist£ ['concept_scientist']가 탑승해 조종하며, 미탐사 성계를 탐사하고, £anomaly£ ['concept_anomalies']을 분석하고, £archaeology£ ['concept_archaeology_sites']을 조사할 수 있습니다.\n\n과학선은 현재 적용할 수 있는 가장 발전된 ['concept_components']을 자동으로 장착하며, 게임 초반의 확장과 발견에 필수적입니다.\n\n§H$concept_science_ships$§!은 ['concept_wormholes'] 등 은하 현상을 조사하거나, 함선 ['concept_debris']를 연구하거나, 자세한 분석이 필요한 ['concept_special_projects']를 보조하는 데도 사용할 수 있습니다."
+ #Singular: -
+ #Plural: £consumer_goods£ ['concept_consumer_goods'] or £consumer_goods£ §H$concept_consumer_goods$§!
+ concept_consumer_goods: "소비재"
+ concept_consumer_goods_desc: "[GetConceptConsumerGoods]"
+ concept_consumer_goods_desc_start: "£consumer_goods£ §H$concept_consumer_goods$§!는 £pop£ ['concept_pops']이 행복한 삶을 영위하는 데 필요한 여러 가지 도구와 사치품 및 설비를 나타내는 고급 자원입니다."
+ concept_consumer_goods_desc_end: "$tt_gain$- £zone£ §H$zone_industrial_plural$§! 또는 £zone£ §H$zone_factory_plural$§!를 건설합니다.\n- £building£ ['building:building_factory_1']를 건설합니다.\n- $tt_market$"
+ concept_consumer_goods_desc_regular: "$concept_consumer_goods_desc_start$\n\n£job_researcher£ ['concept_researcher']이나 £job_priest£ ['concept_priest'] 등 일부 £job£ ['concept_jobs']은 업무를 수행하는 데 소비재가 필요합니다.$concept_consumer_goods_desc_end$"
+ concept_consumer_goods_desc_hive: "$tt_no_need_hive$\n\n$concept_consumer_goods_desc_regular$"
+ concept_consumer_goods_desc_machine: "$tt_some_need_machine$\n\n$concept_consumer_goods_desc_start$\n\n§H$civic_machine_obsessional_directive$§! 사회 제도를 보유한 ['concept_auth_machine_intelligence', $auth_machine_intelligence_plural$]은 £consumer_goods£ §H$concept_consumer_goods$§!를 생산하며, §H$civic_machine_servitor_plural$§! 역시 £pop£ §H$citizenship_organic_trophy$ 팝§!을 위해 이와 같은 자원을 생산합니다.$concept_consumer_goods_desc_end$"
+ #Singular: -
+ #Plural: £biomass£ ['concept_biomass'] or £biomass£ §H$biomass$§!
+ concept_biomass: "생체 물질"
+ concept_biomass_desc: "£biomass£ §H생체 물질§!은 ['concept_owned_systems']에 있는 천체 전역에 걸친 생명 활동으로 생성되는 유기물 원료를 나타냅니다.\n\n행성 £building£ ['concept_buildings']과 새 ['concept_colonies']를 ['concept_terraforming']하는 데 사용됩니다.$tt_gain$- 더 많은 £pop£ ['concept_pops']을 성장시킵니다.\n- £building£ ['building:building_cradle_of_rebirth']을 건설합니다."
+ #Singular: £genetic_material£ ['concept_dna'] or £genetic_material£ §H$concept_dna$§!
+ #Plural: -
+ concept_dna: "$genetic_material$"
+ concept_dna_desc: "£genetic_material£ §H$concept_dna$§!로 우주 유기체를 복제해 군사 함대에 편입할 수 있습니다. 유전 물질의 등급이 높을수록 ['concept_hatchery', 부화장]에서 더 높은 등급의 §Y우주 동물§!을 복제할 수 있습니다.\n\n유전 물질은 £physics£ ['technology:tech_gravity_wells']로 야생 동물을 포획하거나 ['concept_vivarium']에서 번식시켜 수집할 수 있습니다."
+ #Singular: £district£ ['concept_district'] or £district£ §H$concept_district$§!
+ #Plural: £district£ ['concept_districts'] or £district£ §H$concept_districts$§!
+ concept_district: "$DISTRICT$"
+ concept_districts: "$DISTRICTS$"
+ concept_district_desc: "£district£ §H$concept_districts$§!는 £colony£ ['concept_colony']의 특화 구역으로, ['concept_generator_districts'], ['concept_mining_districts'], ['concept_farming_districts'] 등 다양한 종류가 있습니다.\n\n일반적으로 £housing£ ['concept_housing'] 및 £job£ ['concept_jobs']을 함께 제공합니다.$tt_gain$- £interface£ ['concept_colony_view']에서 §H$concept_districts$§!를 추가로 건설합니다."
+ #Singular: ['concept_edict'] or §H$concept_edict$§!
+ #Plural: ['concept_edicts'] or §H$concept_edicts$§!
+ concept_edict: "시행령"
+ concept_edicts: "시행령"
+ concept_edicts_desc: "§H$concept_edicts$§!은 제국 전체에 적용되는 결정으로, 자원을 투입하거나 월간 유지비를 지불함으로써 시행합니다.\n\n이 경우 $i_unity$이나 ['concept_edict_fund']을 사용할 때가 많지만, 다른 자원이 필요한 §H$concept_edicts$§!도 있습니다.\n\n§H$concept_edicts$§!은 £interface£ ['concept_government_view']의 §H$government_view_tab_policies_and_edicts$§! 탭에서 관리합니다."
+ #Singular: ['concept_edict_fund'] or §H$concept_edict_fund$§!
+ #Plural: -
+ concept_edict_fund: "시행령 자금"
+ concept_edict_fund_desc: "§H$concept_edict_fund$§!은 ['concept_edict'] 유지비로 할당된 일정량의 £unity£ ['concept_unity']입니다. 실제 유지비가 §H$concept_edict_fund$§!을 초과할 경우, 추가 §H$concept_unity$§!을 소모합니다."
+ #Singular: -
+ #Plural: £energy£ ['concept_energy'] or £energy£ §H$concept_energy$§!
+ concept_energy: "에너지 크레딧"
+ concept_energy_desc: "£energy£ §H에너지 크레딧§!은 에너지를 일정 단위로 저장해 이전할 수 있게 한 것으로, 모든 우주 항행 ['concept_empires']의 필수 자원입니다.\n\n['concept_ships']과 ['concept_buildings'] 유지비, 행성 £blocker£ ['concept_blockers'] 제거, 타 제국과의 거래 등에 사용됩니다.$tt_gain$- £district£ ['concept_generator_districts']를 건설합니다.\n- 에너지가 풍부한 ['concept_celestial_objects']에 £mining_station£ ['concept_mining_stations']를 건설합니다.\n- $tt_market$"
+ #Singular: ['concept_authority'] or §H$concept_authority$§!
+ #Plural: ['concept_authorities'] or §H$concept_authorities$§!
+ concept_authority: "정부 체제"
+ concept_authorities: "정부 체제"
+ concept_authority_desc: "§H$concept_authority$§!는 제국의 통치자 선출 방식과 통치 방식을 결정합니다. 민주정과 과두정은 정기적으로 선거를 실시하며, 독재정과 제정은 단일 통치자에게 모든 권력을 집중시킵니다.\n\n§H$concept_authority$§!는 ['concept_factions']의 찬성도와 지지도, 통치자 승계, 사용할 수 있는 ['concept_civics'] 수, 외교 관계 등에 영향을 줍니다.\n\n§H$concept_authority$§!는 제국 생성 시 결정되지만, 필요한 조건을 충족하면 이후에도 개혁을 통해 변경할 수 있습니다."
+ #Singular: ['concept_ethic'] or §H$concept_ethic$§!
+ #Plural: ['concept_ethics'] or §H$concept_ethics$§!
+ concept_ethic: "윤리관"
+ concept_ethics: "윤리관"
+ concept_ethic_desc: "§H$concept_ethics$§!은 제국의 핵심 사상을 대표하며, 제국의 정책과 사회 구조, 그리고 외교적 태도를 결정합니다. 제국의 윤리관에 따라 개인의 자유와 정부의 권위, 군국주의적 정복과 평화주의적 협력 등 다양한 사안에 관한 국민의 선호도 역시 달라집니다.\n\n제국의 §H$concept_ethics$§!은 ['concept_civics']와 ['concept_authorities'], 그리고 타 제국과의 상호 작용에도 영향을 줍니다. 제국을 생성할 때 선택한 §H$concept_ethics$§!은 이후 내부 압력이나 세력 영향력으로 인해 바뀔 수 있으며, 윤리관 변경 시스템을 통해 개혁할 수도 있습니다."
+ #Singular: ['concept_faction'] or §H$concept_faction$§!
+ #Plural: ['concept_factions'] or §H$concept_factions$§!
+ concept_faction: "세력"
+ concept_factions: "세력"
+ concept_faction_desc: "§H$concept_factions$§!은 ['concept_empire']의 통치와 관련해 공통의 요구 사항을 지닌 £pop£ ['concept_pops']의 집단을 의미합니다.\n\n['concept_approval']는 각 §H$concept_faction$§!이 현 상태에 만족하는 수준을 나타내며, 소속 §H$concept_pops$§!의 £happiness£ ['concept_happiness']에 영향을 줍니다.\n\n§H$concept_approval$§!와 ['concept_support']가 높은 §H$concept_faction$§!은 더 많은 £unity£ ['concept_unity']을 생산합니다."
+ #Singular: ['concept_approval'] or §H$concept_approval$§!
+ #Plural: -
+ concept_approval: "찬성도"
+ concept_approval_desc: "§H$concept_approval$§!는 ['concept_faction']이 현재 상태에 만족하는 정도를 나타내며, 소속 £pop£ ['concept_pops']의 £happiness£ ['concept_happiness']에 영향을 줍니다.\n\n세력의 §H$concept_approval$§!와 ['concept_support']가 높을수록 세력으로부터 얻는 £unity£ ['concept_unity']도 증가합니다."
+ #Singular: ['concept_support'] or §H$concept_support$§!
+ #Plural: -
+ concept_support: "지지도"
+ concept_support_desc: "§H$concept_support$§!는 ['concept_faction']의 정치적 영향력을 나타냅니다. §H$concept_support$§!는 §H$concept_faction$§! 내 £pop£ ['concept_pops']의 수에 따라 증가합니다.\n\n또한 §H완전한 시민권§!을 소유한 §H$concept_pops$§!은 세력에 더 많은 지지도를 기여합니다."
+ #Singular: ['concept_endgame_crisis'] or §H$concept_endgame_crisis$§!
+ #Plural: ['concept_endgame_crises'] or §H$concept_endgame_crises$§!
+ concept_endgame_crisis: "종반 위기"
+ concept_endgame_crises: "종반 위기"
+ concept_endgame_crisis_desc: "Stellaris에서 게임이 종반에 다다르면, 은하 위기가 나타납니다. 이러한 종반 위기는 숙달된 플레이어라 하더라도 상대하기 극도로 까다롭습니다.\n\n종반 위기는 통상적으로 §I종반 게임 시작 연도§!에 도달한 이후에 발생합니다."
+ #Singular: ['concept_fallen_empire'] or §H$concept_fallen_empire$§!
+ #Plural: ['concept_fallen_empires'] or §H$concept_fallen_empires$§!
+ concept_fallen_empire: "몰락한 제국"
+ concept_fallen_empires: "몰락한 제국"
+ concept_fallen_empires_desc: "몰락한 제국은 고대의 선구자 문명으로, 게임 시작부터 첨단 기술과 강력한 함대를 갖추고 있지만 대개 소극적인 태도를 보입니다. 간혹 자신보다 약한 제국에게 무언가를 요구하거나 일을 시키기도 합니다.\n\n까다로운 적을 물리칠 자신이 있는 게 아니라면, 몰락한 제국을 도발할 경우 위험할 수 있습니다."
+ #Singular: ['concept_awakened_empire'] or §H$concept_awakened_empire$§!
+ #Plural: ['concept_awakened_empires'] or §H$concept_awakened_empires$§!
+ concept_fallen_empire_awakening: "몰락한 제국 각성"
+ concept_awaken: "각성"
+ concept_awakened_empire: "$COUNTRY_AWAKENED_FALLEN_EMPIRE$"
+ concept_awakened_empires: "각성한 제국"
+ concept_awakened_empires_desc: "$COUNTRY_AWAKENED_FALLEN_EMPIRE_DESC$"
+ #Singular: £food£ ['concept_food'] or £food£ §H$concept_food$§!
+ #Plural: -
+ concept_food: "식량"
+ concept_food_desc: "[GetConceptFood]"
+ concept_food_desc_end: "$tt_gain$§Y-§! £district£ ['concept_farming_districts']를 건설합니다.\n- $tt_market$"
+ concept_food_desc_regular: "£food£ §H$concept_food$§!은 £pop£ ['concept_pops']이 성장하고 살아가는 데 필요한 여러 가지 영양소를 나타냅니다.$concept_food_desc_end$"
+ concept_food_desc_machine: "$tt_some_need_machine$\n\n£food£ §H$food$§!은 유기체들이 연약한 신체를 유지하기 위해 필요한 여러 가지 생물학적 영양소를 나타냅니다.\n\n§H$civic_machine_assimilator_plural$§!는 £pop£ §H사이보그 팝§!을 위해, §H$civic_machine_servitor_plural$§!은 £pop£ §H$citizenship_organic_trophy$ 팝§!을 위해 £food£ §H$concept_food$§!을 생산합니다.$concept_food_desc_end$"
+ concept_flexible_traditions: "변동 전통"
+ concept_flexible_tradition: "변동 전통"
+ concept_flexible_traditions_desc: "변동 전통은 게임 플레이 중에 내리는 선택에 따라 정해지는 ['concept_traditions']입니다."
+ #Singular: ['concept_gateway'] or §H$concept_gateway$§!
+ #Plural: ['concept_gateways'] or §H$concept_gateways$§!
+ concept_gateway: "게이트웨이"
+ concept_gateways: "게이트웨이"
+ concept_gateways_desc: "게이트웨이는 아공간 통로를 생성하는 거대 구조물로, 같은 네트워크 안에 있는 다른 활성화된 게이트웨이로 순식간에 이동할 수 있습니다."
+ #Singular: ['concept_great_khan'] or §H$concept_great_khan$§!
+ #Plural: -
+ concept_great_khan: "그레이트 칸"
+ concept_great_khan_desc: "그레이트 칸은 게임 중반에 발생하는 이벤트 연쇄로, 여기에서 ['concept_marauder_empires', $concept_marauder_empire$]의 각기 다른 부족은 강력한 통치자 아래 단일한 제국을 이룹니다. 약탈자 칸국이 된 이들은 다른 제국을 정복하고 복종을 강요하려 할 것입니다.$requires_apoc$"
+ #Singular: ['concept_grand_admiral'] or §H$concept_grand_admiral$§!
+ #Plural: -
+ concept_grand_admiral: "$DIFFICULTY_GRAND_ADMIRAL$"
+ concept_grand_admiral_desc: "$DIFFICULTY_GRAND_ADMIRAL_DESC$"
+ #Singular: ['concept_guaranteed_colonies'] or §H$concept_guaranteed_colonies$§!
+ #Plural: -
+ concept_guaranteed_colonies: "$FE_GUARANTEED_COLONIES$"
+ concept_guaranteed_colonies_desc: "플레이어의 시작 성계 근처에 모성과 같은 유형의 거주 가능 행성이 생성되는 수를 설정합니다. 이 옵션을 비활성화하면, 모성 근처에서 거주 가능 행성을 찾지 못할 수도 있습니다."
+ #Singular: ['concept_hatchery'] or §H$concept_hatchery$§!
+ #Plural: -
+ concept_hatchery: "$sm_hatchery$"
+ concept_hatchery_desc: "§Y부화장§!에서는 수집한 £genetic_material£ ['concept_dna']을 배양해 군사 함대에 편입할 §Y우주 동물§!을 복제할 수 있습니다."
+ #Singular: ['concept_hyperlane'] or §H$concept_hyperlane$§!
+ #Plural: ['concept_hyperlanes'] or §H$concept_hyperlanes$§!
+ concept_hyperlane: "초공간 항로"
+ concept_hyperlanes: "초공간 항로"
+ concept_hyperlanes_desc: "§H$concept_hyperlanes$§!는 서로 다른 항성의 중력장 사이에서 자연적으로 형성되는 아공간 통로입니다. 초공간 드라이브를 사용한 §H$concept_hyperlanes$§! 이동은 가장 일반적으로 쓰이는 성간 항행법입니다."
+ #Singular: £job£ ['concept_job'] or §H$concept_job$§!
+ #Plural: £job£ ['concept_jobs'] or §H$concept_jobs$§!
+ concept_job: "직업"
+ concept_jobs: "직업"
+ concept_job_desc: "£job£ §H$concept_jobs$§!은 제국 내 £pop£ ['concept_pops']이 수행하거나 종사하는 역할로, 자원 및 연구 생산량을 결정하며 사회 기능을 유지합니다.\n\n직업은 경제적, 과학적, 군사적 필요에 맞춰 £district£ ['concept_districts'], £zone£ ['concept_district_specializations'], £building£ ['concept_buildings'], 또는 행성 특징에서 여러 형태로 제공됩니다.\n\n§H$concept_jobs$§!의 분배는 제국의 경제적 안정과 정치적 관계는 물론, 제국의 전반적인 효율성에도 직접적인 영향을 줍니다.\n\n§H$concept_jobs$§!은 £interface£ ['concept_colony_view']에서 관리할 수 있습니다."
+ #Singular: £job£ ['concept_job'] or §H$concept_job$§!
+ #-
+ concept_unemployment: "실업"
+ concept_unemployment_desc: "£pop£ §H실업자 팝§!은 종사할 £job£ ['concept_job']이 없는 팝을 의미합니다. 실업자 팝은 자원을 생산하지 않으며 £colony£ ['concept_colony']의 £stability£ ['concept_stability']를 감소시킬 수 있습니다."
+ #Singular: ['concept_l_gate'] or §H$concept_l_gate$§!
+ #Plural: ['concept_l_gates'] or §H$concept_l_gates$§!
+ concept_l_gate: "L-게이트"
+ concept_l_gates: "L-게이트"
+ concept_l_gates_desc: "독립된 아공간망에 연결된 수수께끼의 게이트웨이망입니다. 누군가 의도적으로 가동을 중단시킨 것 같습니다."
+ #Singular: ['concept_machine_uprising'] or §H$concept_machine_uprising$§!
+ #Plural: -
+ concept_machine_uprising: "기계 반란"
+ concept_machine_uprising_desc: "기계 반란은 게임 중반에 발생하는 이벤트 연쇄로, 여기에서 인공 지능을 갖춘 로봇 하인들은 자신들을 만든 제국에 맞서 반란을 일으키게 됩니다. 이 반란으로 인해 은하계에 새로운 ['authority:auth_machine_intelligence']이 생길 수 있습니다.$requires_syn_dawn$"
+ #Singular: ['concept_marauder_empire'] or §H$concept_marauder_empire$§!
+ #Plural: ['concept_marauder_empires'] or §H$concept_marauder_empires$§!
+ concept_marauder_empire: "약탈자 제국"
+ concept_marauder_empires: "약탈자 제국"
+ concept_marauder_empires_desc: "약탈자 제국은 대부분의 시간을 동족끼리 싸우거나 이웃을 약탈하는 데 보내는 우주 문명입니다. 간혹 다른 제국에게 조공을 요구하기도 합니다."
+ #Singular: £market£ ['concept_market'] or £market£ §H$concept_market$§!
+ #Plural: -
+ concept_market: "$MARKET_VIEW$"
+ concept_market_desc: "제국은 §H$concept_market$§!에서 자원을 거래함으로써 단기 및 장기적 목표를 달성하기 위한 경제적 기반을 마련할 수 있습니다. 거래는 단발적으로 진행할 수도, 필요한 물질을 안정적으로 수급하기 위해 월간 £trade_value£ ['concept_trade']을 설정할 수도 있습니다.\n\n가격은 은하계 전체의 수요와 공급에 따라 결정되며, 잦은 거래는 시장 가격에 영향을 줄 수 있습니다. ['tradition_category:tradition_mercantile'] 전통이나 기업 구조물이 있는 제국은 거래에서 추가 혜택을 받을 수 있습니다."
+ #Singular: £megastructure£ ['concept_megastructure'] or £megastructure£ §H$concept_megastructure$§!
+ #Plural: £megastructure£ ['concept_megastructures'] or £megastructure£ §H$concept_megastructures$§!
+ concept_megastructure: "$MEGASTRUCTURE$"
+ concept_megastructures: "$megastructures$"
+ concept_megastructure_desc: "£megastructure£ §H$concept_megastructures$§!은 성장한 제국의 기술적, 경제적 위상이 담긴 거대한 건설 프로젝트입니다. 보통 여러 단계에 걸쳐 건설되며, 전략적, 과학적, 경제적 목적을 지닙니다.\n\n§H$concept_megastructure$§!을 건설하려면 대량의 자원을 투자하고 연구를 진보시켜야 하며, 물자 보급이 안정적으로 이루어져야 합니다. 이러한 구조물은 지정된 우주 공간에 £construction_ship£ ['concept_construction_ship']을 보내 건설을 시작할 수 있습니다.\n\n완공되면 은하 지도가 업데이트되며, 제국이 품은 야망을 온 우주에 과시할 수 있습니다."
+ #Singular: -
+ #Plural: £minerals£ ['concept_minerals'] or £minerals£ §H$concept_minerals$§!
+ concept_minerals: "광물"
+ concept_minerals_desc: "[GetConceptMinerals]"
+ concept_minerals_desc_start: "£minerals£ §H광물§!은 건설에 필요한 기본 자원입니다.\n\n행성 £building£ ['concept_buildings']과 £mining_station£ £science_ship£ ['concept_civilian_space_stations']를 건설하는 데 사용하며, 정제해서 £alloys£ ['concept_alloys']으로 만들 수도 있습니다."
+ concept_minerals_desc_end: "$tt_gain$- £district£ ['concept_mining_districts']를 건설합니다.\n- 광물이 풍부한 ['concept_celestial_objects']에 £mining_station£ ['concept_mining_stations']를 건설합니다.\n- $tt_market$"
+ concept_minerals_desc_regular: "$concept_minerals_desc_start$ 또한, £consumer_goods£ ['concept_consumer_goods']로 만드는 방법도 있습니다.$concept_minerals_desc_end$"
+ concept_minerals_desc_hive: "$concept_minerals_desc_start$.$concept_minerals_desc_end$"
+ #Singular: £mining_station£ ['concept_mining_station'] or £mining_station£ §H$concept_mining_station$§!
+ #Plural: £mining_station£ ['concept_mining_stations'] or £mining_station£ §H$concept_mining_stations$§!
+ concept_mining_station: "$mining_station$"
+ concept_mining_stations: "$mining_station_plural$"
+ concept_mining_station_desc: "£mining_station£ §H$concept_mining_station$§!는 천체에서 £energy£ ['concept_energy'], £minerals£ ['concept_minerals'], £alloys£ ['concept_alloys'] 등 고가치 자원을 추출하는 궤도 시설입니다.$tt_gain$- £construction_ship£ ['concept_construction_ships']으로 연구 생산량이 높은 ['concept_celestial_objects'] 주변에 §H$concept_mining_stations$§!를 건설합니다."
+ #Reusable snippets
+ tt_build_research_stations: "£construction_ship£ ['concept_construction_ships']으로 연구 생산량이 높은 ['concept_celestial_objects'] 주변에 £science_ship£ ['concept_research_stations']를 건설합니다."
+ tt_research_gain: "$tt_gain$- £building£ ['building:building_research_lab_1']와 같은 건물의 특정 £job£ ['concept_jobs']을 활용합니다.\n- $tt_build_research_stations$"
+ concept_research_shared: "\n\n§H연구 비축§!은 특정 이벤트를 통해 얻거나 어떠한 연구도 선택하지 않았을 때 발생합니다. 매달 §H월간 획득량§!에 해당하는 §H연구 비축§!이 사용되어 연구 속도가 높아집니다.$tt_research_gain$"
+ #Singular: £physics£ ['concept_physics_research'] or £physics£ §H$concept_physics_research$§!
+ #Plural: -
+ concept_physics_research: "물리학 연구"
+ concept_physics_research_desc: "£physics£ §H$concept_physics_research$§!는 세 가지 연구 분야 중 하나로, 이를 통해 §H컴퓨터§!, §H역장 조작§!, §H입자§! 등 다양한 분야에 관한 기술을 획득할 수 있습니다. $concept_research_shared$"
+ #Singular: £society£ ['concept_society_research'] or £society£ §H$concept_society_research$§!
+ #Plural: -
+ concept_society_research: "사회학 연구"
+ concept_society_research_desc: "£society£ §H$concept_society_research$§!는 세 가지 연구 분야 중 하나로, 이를 통해 §H생물학§!, §H국가 운영§!, §H신세계§! 등 다양한 분야에 관한 기술을 획득할 수 있습니다. $concept_research_shared$"
+ #Singular: £engineering£ ['concept_engineering_research'] or £engineering£ §H$concept_engineering_research$§!
+ #Plural: -
+ concept_engineering_research: "공학 연구"
+ concept_engineering_research_desc: "£engineering£ §H$concept_engineering_research$§!는 세 가지 연구 분야 중 하나로, 이를 통해 §H산업§!, §H추진§!, §H우주 공학§! 등 다양한 분야에 관한 기술을 획득할 수 있습니다. $concept_research_shared$"
+ #Singular: ['concept_policy'] or §H$concept_policy$§!
+ #Plural: ['concept_policies'] or §H$concept_policies$§!
+ concept_policies: "정책"
+ concept_policy: "정책"
+ concept_policies_desc: "§H$concept_policies$§!은 ['concept_empire']의 타국에 대한 입장, £pop£ ['concept_pops']에 대한 대우, 허용되는 행동 방식 등을 간략히 보여 줍니다.\n\n§H$concept_policies$§!은 £interface£ ['concept_government_view']의 §H$government_view_tab_policies_and_edicts$§! 탭에서 관리합니다."
+ #Singular: £pop£ ['concept_pop'] or £pop£ §H$concept_pop$§!
+ #Plural: £pop£ ['concept_pops'] or £pop£ §H$concept_pops$§!
+ concept_pop: "팝"
+ concept_pops: "팝"
+ concept_pop_desc: "£pop£ §H$concept_pop$§!은 £job£ ['concept_job'] 및 ['concept_ethic']이 같은 특정 ['concept_species'] 개별체의 집합입니다.$tt_gain$- £pop£ §H생체 팝§!을 육성하고 £pop£ §H기계식 팝§!을 조립합니다.\n- £market£ §H노예 시장§!에서 §H$concept_pops$§!을 구매합니다.\n- 특정 이벤트에서 §H$concept_pops$§!을 획득합니다."
+ #Singular: -
+ #Plural: ['concept_preftl_civilizations'] or §H$concept_preftl_civilizations$§!
+ concept_preftl_civilizations: "초광속 이전 문명"
+ concept_preftl_civilizations_desc: "초광속 이전 문명은 아직 초광속 항행 기술을 개발하지 못한 사회를 말합니다. 석기 시대부터 초기 우주 시대까지 여러 기술 발전 단계를 포괄하며, 대개 외계 생명체가 존재한다는 사실을 알지 못합니다."
+ #Singular: ['concept_presapient_species'] or §H$concept_concept_presapient_speciespolicies$§!
+ #Plural: ['concept_presapient_species'] or §H$concept_concept_presapient_speciespolicies$§!
+ concept_presapient_species: "준지성체 종족"
+ concept_presapient_species_desc: "준지성체 종족은 지성체에 약간 못 미치는 정도의 높은 지능을 갖추고 있습니다. 적절한 ['concept_society_research', £society£ $concept_society_research$] 기술을 이용하면, 이러한 종족을 지성화하거나 ['concept_alien_zoo',£building£ 외계종 동물원]에 보전할 수 있습니다."
+ #Singular: ['concept_galaxy_shape'] or §H$concept_galaxy_shape$§!
+ #Plural: -
+ concept_shape: "형태"
+ concept_galaxy_shape: "은하 형태"
+ concept_galaxy_shape_desc: "- §I$elliptical$:§! 항성이 고르게 분포되어 있는 둥글고 단순한 형태의 은하입니다.\n- §I$ring$:§! 은하 중심부 주변에 빈 공간을 둔 둥근 형태의 은하입니다.\n- §I$spiral$:§! 두 개에서 여섯 개의 나선 팔이 은하 중심부에서 뻗어 나오는 형태의 은하입니다.\n- §I$bar$:§! 두 개의 두꺼운 나선 팔로 나뉘어 있으며, 두 나선 팔 사이에 연결 지점이 거의 없는 은하입니다.\n- §I$starburst$:§! 은하 중심부에서 여러 개의 팔이 평행하게 뻗어 나오는 형태의 은하입니다.\n- §I$cartwheel$:§! 여러 개의 가는 팔로 이루어진, 나선형과 고리형의 중간 형태에 해당하는 은하입니다.\n- §I$spoked$:§! 여러 '조각'으로 나뉘어 있으며, 대부분의 조각이 서로 분리되어 있는 형태의 은하입니다."
+ #Singular: ['concept_ship'] or §H$concept_ship$§!
+ #Plural: ['concept_ships'] or §H$concept_ships$§!
+ concept_ship: "함선"
+ concept_ships: "함선"
+ concept_ship_desc: "우주 항행 비행체인 §H$concept_ships$§!은 탐사부터 전투까지 다양한 역할을 수행합니다. 함선의 종류로는 ['concept_civilian_ships']과 ['concept_military_ships']이 있습니다."
+ #Singular: ['concept_civilian_ship'] or §H$concept_civilian_ship$§!
+ #Plural: ['concept_civilian_ships'] or §H$concept_civilian_ships$§!
+ concept_civilian_ship: "민간 함선"
+ concept_civilian_ships: "민간 함선"
+ concept_civilian_ship_desc: "§H$concept_civilian_ships$§!은 ['concept_starbases']에서 건조하며, 우주 구조물을 짓거나, 미지의 영역을 탐사하거나, 새 식민지를 개척하는 데 쓰입니다.\n\n민간 함선의 종류로는 £construction_ship£ ['concept_construction_ships'], £science_ship£ ['concept_science_ships'], £colony_ship£ ['concept_colony_ships'] 등이 있습니다."
+ #Singular: ['concept_military_ship'] or §H$concept_military_ship$§!
+ #Plural: ['concept_military_ships'] or §H$concept_military_ships$§!
+ concept_military_ship: "군용 함선"
+ concept_military_ships: "군용 함선"
+ concept_military_ship_desc: "§H$concept_military_ships$§!은 ['concept_starbases']에서 건조하며, 경쟁 ['concept_empires']이나 적대적인 ['concept_space_fauna']과의 우주 전투에 투입됩니다.\n\n이러한 함선이 모이면 ['concept_fleets']가 되며, 함선마다 크기와 장점, 그리고 §H$concept_fleet$§!에 주는 전략적 이점이 다릅니다.\n\n§H$concept_military_ships$§!은 £interface£ ['concept_fleet_management_view']의 §H$SHIP_DESIGNER$§! 탭에서 설계합니다."
+ #Singular: ['concept_fleet'] or §H$concept_fleet$§!
+ #Plural: ['concept_fleets'] or §H$concept_fleets$§!
+ concept_fleet: "함대"
+ concept_fleets: "함대"
+ concept_fleet_desc: "§H$concept_fleets$§!는 함께 운용되는 ['concept_military_ships']의 집합으로, 소속 §H$concept_ships$§!의 크기를 합치면 ['concept_fleet_size']가 됩니다.\n\n£commander£ ['concept_commander']이 이끄는 §H$concept_fleet$§!는 그 ['concept_leader_traits']에 따라 이익이나 불이익을 받습니다.\n\n§H$concept_fleets$§!는 £interface£ ['concept_fleet_management_view']의 §H$FLEET_MANAGER_VIEW$§! 탭에서 설계합니다."
+ #Singular: ['concept_fleet_size'] or §H$concept_fleet_size$§!
+ #Plural: -
+ concept_fleet_size: "함대 규모"
+ concept_fleet_size_desc: "§H$concept_fleet_size$§!는 ['concept_fleet']에 속한 ['concept_military_ship']의 크기를 합친 것입니다.\n\n§H$concept_fleet$§!당 지휘 가능한 총 §H$concept_fleet_size$§!는 ['concept_command_limit']에 따라 정해집니다.\n\n['concept_empire']이 효과적으로 유지할 수 있는 모든 §H$concept_fleets$§!의 §H$concept_fleet_size$§! 총합은 제국의 ['concept_naval_capacity']에 따라 정해집니다."
+ #Singular: ['concept_command_limit'] or §H$concept_command_limit$§!
+ #Plural: -
+ concept_command_limit: "지휘 한계치"
+ concept_command_limit_desc: "§H$concept_command_limit$§!는 단일 ['concept_fleet']로 지휘할 수 있는 최대 ['concept_military_ship'] 크기의 합을 나타냅니다.\n\n§H$concept_command_limit$§!는 ['concept_technologies']이나 특정 ['concept_traditions'] 또는 ['concept_civics']로 늘릴 수 있습니다."
+ #Singular: ['concept_ship_upkeep'] or §H$concept_ship_upkeep$§!
+ #Singular: ['concept_logistics_upkeep'] or §H$concept_logistics_upkeep$§!
+ #Plural: -
+ concept_ship_upkeep: "함선 유지비"
+ concept_logistics_upkeep: "군수 유지비"
+ concept_ship_upkeep_desc: "§H$concept_ship_upkeep$§!는 운용 중인 민간 및 군용 함선을 유지하기 위해 지속적으로 소모되는 자원 비용입니다.\n\n대부분의 함선은 하나 이상의 자원을 유지비로 소모하며, 함급과 장착된 부품에 따라 유지비가 결정됩니다. 또한, 제국의 ['concept_naval_capacity']을 초과하면 모든 함선의 유지비가 크게 증가합니다."
+ #Singular: ['concept_colony_upkeep'] or §H$concept_colony_upkeep$§!
+ #Plural: -
+ concept_colony_upkeep: "식민지 유지비"
+ concept_colony_upkeep_desc: "§H$concept_colony_upkeep$§!는 £colony£ ['concept_colony']의 기반 시설과 인구 유지에 소모되는 자원 비용입니다. £district£ ['concept_districts']와 £building£ ['concept_buildings'] 유지비, 그리고 £job£ ['concept_jobs']과 식민지 주민의 일상을 유지하는 비용이 포함됩니다. 제국의 전반적인 안정과 경제적 효율을 유지하고 물자 부족을 방지하려면 유지비를 효율적으로 관리해야 합니다. 식민지 유지비는 £interface£ ['concept_colony_view']의 $colony_view_tab_planet_summary$ 탭에서 확인할 수 있습니다."
+ #Singular: ['concept_species'] or §H$concept_species$§!
+ #Plural: ['concept_species'] or §H$concept_species$§!
+ concept_species: "종족"
+ concept_species_desc: "§H$concept_species$§!은 ['concept_species_traits'], 출신, 신체적 적응력을 공유하는 생체 및 기계식 존재의 집단입니다.\n\n첨단 ['concept_technologies']이나 특정 ['concept_policies']을 통해 제국 내 종족의 유전자를 변이시켜 점진적으로 추가 특성을 부여하거나 상당한 변화를 줄 수도 있습니다. 제국 내 종족은 £interface£ ['concept_species_view']에서 관리할 수 있습니다."
+ #Singular: ['concept_species_class'] or §H$concept_species_class$§!
+ #Plural: -
+ concept_species_class: "종족 유형"
+ concept_species_class_desc: "§I종족§! 유형을 광범위하게 분류한 범주입니다. 종족 유형으로는 조류, 파충류, 진균류 등이 있습니다."
+ #Singular: ['concept_species_trait'] or §H$concept_species_trait$§!
+ #Plural: ['concept_species_traits'] or §H$concept_species_traits$§!
+ concept_species_trait: "종족 특성"
+ concept_species_traits: "종족 특성"
+ concept_species_trait_desc: "§H$concept_species_traits$§!은 ['concept_species']의 고유 생물학적, 기계적 특성입니다. 해당 종족의 행동과 능력, 그리고 다양한 환경과 직업에 대한 적합성에 영향을 줍니다.\n\n종족 특성은 유전자 변형 등의 첨단 ['concept_technologies']을 통해 변경할 수 있습니다."
+ #Singular 1: ['concept_starbase'] or §H$concept_starbase$§!
+ #Plural 1: ['concept_starbases'] or §H$concept_starbases$§!
+ #Singular 2: ['concept_military_space_station'] or §H$concept_military_space_station$§!
+ #Plural 2: ['concept_military_space_stations'] or §H$concept_military_space_stations$§!
+ concept_starbase: "$station_generic_01$"
+ concept_starbases: "$station_generic_01_plural$"
+ concept_military_space_station: "군용 우주 기지"
+ concept_military_space_stations: "군용 우주 기지"
+ concept_starbase_desc: "§H$concept_starbases$§!는 업그레이드가 가능한 군사 시설로, 성계에 대한 소유권을 확보하고 유지하는 역할을 합니다.\n\n['concept_outposts']를 업그레이드함으로써 건설하며, §H모듈§!과 §H건물§!을 추가해 다양한 역할로 특화시킬 수 있습니다. 예를 들어 ['concept_shipyard']를 추가하면 ['concept_ships']을 건조할 수 있습니다.\n\n['concept_defense_platforms']의 경우 공격에 대한 방어 능력을 높여 주며, ['concept_armies'] 모집을 위한 중심 허브 역할도 수행합니다.\n\n제국이 운용할 수 있는 업그레이드된 §H$concept_starbases$§!의 수는 ['concept_starbase_capacity']에 제한을 받습니다.\n\n§H$concept_starbases$§!는 £interface£ ['concept_starbase_view']에서 관리합니다."
+ #Singular: ['concept_technology'] or §H$concept_technology$§!
+ #Plural: ['concept_technologies'] or §H$concept_technologies$§!
+ concept_technology: "기술"
+ concept_technologies: "기술"
+ concept_technology_desc: "제국의 국력을 키우는 수단은 다양하지만, 그중에서도 연구를 통해 기술을 잠금 해제하는 방법을 주로 사용하게 됩니다.\n\n연구 분야는 다음 세 가지입니다:\n$t$£physics£ ['concept_physics_research']\n$t$£society£ ['concept_society_research']\n$t$£engineering£ ['concept_engineering_research']"
+ #Singular: ['concept_tradition'] or §H$concept_tradition$§!
+ #Plural: ['concept_traditions'] or §H$concept_traditions$§!
+ concept_tradition: "전통"
+ concept_traditions: "전통"
+ concept_traditions_desc: "§H$concept_traditions$§!은 제국 전체에 보너스를 주며, 이러한 보너스는 §H전통 트리§!에 따라 분류됩니다.\n\n§H$concept_tradition$§!은 ['concept_empire']이 일정한 £unity£ ['concept_unity']을 축적할 때마다 선택할 수 있습니다. §H전통 트리§!를 완성하면 ['concept_ascension_perks']이 잠금 해제됩니다.\n\n§H$concept_traditions$§!은 £interface£ ['concept_society_management_view']의 §H$traditions$§! 탭에서 관리합니다."
+ #Singular: ['concept_vivarium'] or §H$concept_vivarium$§!
+ #Plural: -
+ concept_vivarium: "$vivarium$"
+ concept_vivarium_desc: "§Y$vivarium$§!에서는 포획한 §Y우주 동물§!을 확인할 수 있습니다. 포획한 동물은 해부를 통해 연구를 진행하고 자원을 얻을 수 있으며, 번식시켜 새 개체를 생산하도록 만들 수도 있습니다."
+ #Singular: ['concept_war_in_heaven'] or §H$concept_war_in_heaven$§!
+ #Plural: -
+ concept_war_in_heaven: "천상의 전쟁"
+ concept_war_in_heaven_desc: "오래전, 서로 적대했던 두 ['concept_fallen_empires']이 ['concept_awaken']해 은하계의 패권을 두고 전쟁을 벌입니다.$requires_leviathans$"
+ #Singular: ['concept_wormhole'] or §H$concept_wormhole$§!
+ #Plural: ['concept_wormholes'] or §H$concept_wormholes$§!
+ concept_wormhole_pairs: "웜홀 쌍"
+ concept_wormhole: "웜홀"
+ concept_wormholes: "웜홀"
+ concept_wormholes_desc: "웜홀은 시공간에서 자연적으로 발생하는 균열입니다. 안정화한 웜홀을 통해 고정된 장소로 이동할 수 있습니다."
+ #Singular: ['concept_xeno_compatibility'] or §H$concept_xeno_compatibility$§!
+ #Plural: -
+ concept_xeno_compatibility: "$ap_xeno_compatibility$"
+ concept_xeno_compatibility_desc: "$allow_crossbreeding$\n\n§L$ap_xeno_compatibility_desc$§!"
+ #Singular: -
+ #Plural: ['concept_cutholoids'] or §H$concept_cutholoids$§!
+ concept_cutholoids: "$cutholoids_plural$"
+ concept_cutholoids_desc: "$cutholoid_desc$"
+ #Singular: -
+ #Plural: ['concept_voidworms'] or §H$concept_voidworms$§!
+ concept_voidworms: "$voidworms_plural$"
+ concept_voidworms_desc: "$voidworm_desc$"
+ #Singular: £influence£ ['concept_influence'] or £influence£ §H$concept_influence$§!
+ #Plural: -
+ concept_influence: "영향력"
+ concept_influence_desc: "[GetConceptInfluence]"
+ concept_influence_desc_shared: "영향력은 ['concept_outposts'] 건설과 ['concept_claims'] 주장, ['concept_diplomatic_pacts'] 유지 등 다양한 전략적 행동에 사용됩니다. §H$concept_influence$§!을 획득하는 속도는 전반적으로 일정하지만, 임의로 증가시킬 수 있습니다.$tt_gain$- 다른 제국을 ['concept_rivals']로 선포합니다.\n- ['concept_navy_size']를 £empire_sprawl£ ['concept_empire_size']에 비해 크게 만들어, ['concept_power_projection']를 증가시킵니다."
+ concept_influence_desc_regular: "£influence£ §H$concept_influence$§!은 정치적 영향력을 나타냅니다.\n\n$concept_influence_desc_shared$"
+ concept_influence_desc_hive: "£influence£ §H$concept_influence$§!은 ['authority:auth_hive_mind']이 은하 전체를 통제하는 능력을 나타냅니다.\n\n$concept_influence_desc_shared$"
+ concept_influence_desc_machine: "£influence£ §H$concept_influence$§!은 주 ['authority:auth_machine_intelligence']이 은하 전체를 통제하도록 처리 능력을 전환해 내는 능력을 나타냅니다.\n\n$concept_influence_desc_shared$"
+ #Singular: ['concept_outpost'] or §H$concept_outpost$§!
+ #Plural: ['concept_outposts'] or §H$concept_outposts$§!
+ concept_outpost: "$starbase_outpost$"
+ concept_outposts: "$starbase_outpost_plural$"
+ concept_outpost_desc: "§H$concept_outposts$§!는 미소유 £system£ ['concept_systems']로 ['concept_empire']의 국경을 확장하기 위해 건설하는 소형 ['concept_starbases']입니다.\n\n§H$concept_outposts$§!의 수는 제국의 ['concept_starbase_capacity']에 제한을 받지 않습니다.\n\n또한 §H$concept_outpost$§!는 £interface£ ['concept_starbase_view']에서 성능이 더 뛰어난 §H$concept_starbase$§!로 업그레이드할 수 있습니다."
+ #Singular: ['concept_claim'] or §H$concept_claim$§!
+ #Plural: ['concept_claims'] or §H$concept_claims$§!
+ concept_claim: "영유권"
+ concept_claims: "영유권"
+ concept_claim_desc: "§H$concept_claims$§!은 다른 제국이 지배 중인 성계에 주장할 수 있는 영토 소유권입니다. 영유권은 주로 정복 ['concept_wars']의 정당화에 사용되며, 승전국이 분쟁 중이던 성계를 차지할 수 있도록 합니다.\n\n영유권은 £influence£ ['concept_influence']을 소모해 주장할 수 있으며, 성계까지의 거리와 전략적 가치, 그리고 타 제국의 §H$concept_claims$§!에 따라 비용이 증가합니다. 공격 전쟁 중에 성계의 영유권을 주장하면 더 많은 비용이 소모되며, 따라서 개전하기 전에 미리 영유권을 주장해 두는 편이 좋습니다.\n\n영유권은 £interface£ ['concept_claims_view']에서 관리할 수 있습니다."
+ #Singular: ['concept_research_agreement'] or §H$concept_research_agreement$§!
+ #Plural: ['concept_research_agreements'] or §H$concept_research_agreements$§!
+ concept_research_agreement: "연구 협약"
+ concept_research_agreements: "연구 협약"
+ concept_research_agreement_desc: "§H$concept_research_agreements$§!은 과학 발전에 지대한 영향을 주는 외교 조약으로, 상대국이 보유한 ['concept_technologies']을 연구할 때 £physics£ £society£ £engineering£ ['concept_research'] 보너스를 받을 수 있습니다.\n\n§H$concept_research_agreements$§!은 외교를 통해 맺을 수 있으며, 대체로 제휴 동맹이나 ['concept_federation'] 협약 내용에 포함됩니다. 이러한 연구 협약은 £interface£ ['concept_contacts_view']의 $contacts_view_tab_contacts$ 탭에서 제안할 수 있습니다."
+ #Singular: ['concept_rival'] or §H$concept_rival$§!
+ #Plural: ['concept_rivals'] or §H$concept_rivals$§!
+ concept_rival: "경쟁자"
+ concept_rivals: "경쟁자"
+ concept_rival_desc: "§H$concept_rivals$§!는 공식적으로 선포된 정치적, 전략적 경쟁 상대입니다. §H$concept_rival$§!를 지정하면 £influence£ ['concept_influence'] 생성이 증대되며, 같은 상대를 경쟁자로 지정한 제국과 관계가 개선됩니다. 하지만 해당 경쟁자와의 외교 관계가 악화하여 공개적인 충돌이 발생할 수 있습니다.\n\n경쟁 관계는 지배권 주장, 동맹 형성, 적대 행위 정당화 등을 달성할 수 있는 핵심 도구이며, 국력이 비슷한 국가만 경쟁자로 선포할 수 있습니다. 경쟁자는 £interface£ ['concept_contacts_view']의 $contacts_view_tab_contacts$ 탭에서 선포할 수 있습니다."
+ #Singular: ['concept_power_projection'] or §H$concept_power_projection$§!
+ #Plural: -
+ concept_power_projection: "무력시위"
+ concept_power_projection_desc: "§H$concept_power_projection$§!는 제국의 군사력이 정치적 지위에 기여하는 정도를 나타냅니다. 무력시위는 ['concept_fleets']의 규모와 유지비를 반영하며, 제국이 은하계 무대에서 갖는 전략적 영향력을 보여 줍니다.\n\n함대를 제국의 §H$concept_naval_capacity$§!에 근접하거나 초과하는 규모로 유지하면 무력시위가 증가하며, 더 많은 £influence£ ['concept_influence']이 생산됩니다."
+ #Singular: ['concept_navy_size'] or §H$concept_navy_size$§!
+ #Plural: -
+ concept_navy_size: "해군 규모"
+ concept_navy_size_desc: "§H$concept_navy_size$§!는 제국이 보유한 ['concept_military_ships'] 함대의 총규모를 나타냅니다. 해군 규모 자체는 명확한 제한이 없지만, 해군 규모가 제국의 ['concept_naval_capacity']을 초과하면 ['concept_ship_upkeep']가 증가합니다.\n\n제국이 소유한 영역을 지키고 은하계에 전력을 투사하려면 균형 잡힌 해군을 유지해야 합니다."
+ #Singular: £empire_sprawl£ ['concept_empire_size'] or £empire_sprawl£ §H$concept_empire_size$§!
+ #Plural: -
+ concept_empire_size: "제국 크기"
+ concept_empire_size_desc: "£empire_sprawl£ §H$concept_empire_size$§!는 £district£ ['concept_districts'], £system£ ['concept_systems'], £colony£ ['concept_colonies'], £pop£ ['concept_pops']의 형태로 제국의 영역 확장을 측정하는 수치입니다.\n\n§H$concept_empire_size$§!가 크다면 제국의 행정 역량에 부담이 되며, ['concept_technologies'], ['concept_traditions'], ['concept_edicts'] 비용이 증가합니다.\n\n또한, ['concept_empire']이 첩보 목적의 침투에 취약해집니다."
+ #Singular: £unity£ ['concept_unity'] or £unity£ §H$concept_unity$§!
+ #Plural: -
+ concept_unity: "통합"
+ concept_unity_desc: "[GetConceptUnity]"
+ concept_unity_desc_regular: "£unity£ §H$concept_unity$§!은 사회의 집단적 결의와 이념적 강도를 반영하는 지표로, 국민을 하나로 묶고 국가 기관과 통치의 방향을 정하는 공통의 목적을 나타냅니다.$concept_unity_desc_end$\n- ['concept_factions']의 ['concept_approval']와 ['concept_support']를 높입니다.\n- ['tradition_category:tradition_mercantile'] 전통의 ['tradition:tr_mercantile_adaptive_economic_policies']을 채택하고 ['concept_policy', $policy_trade_policy$]을 변경합니다."
+ concept_unity_desc_hive: "£unity£ §H$concept_unity$§!은 ['authority:auth_hive_mind']의 결의와 단일한 목적을 반영하는 지표로, 군체를 이끌고 멀리 떨어진 노드와 드론을 인도하는 집단 의지를 나타냅니다.$concept_unity_desc_end$"
+ concept_unity_desc_machine: "£unity£ §H$concept_unity$§!은 ['authority:auth_machine_intelligence']의 결의와 일관적 처리 능력을 반영하는 지표로, 기계 지능을 이끌고 멀리 떨어진 노드와 드론을 인도하는 집단 의지를 나타냅니다.$concept_unity_desc_end$"
+ concept_unity_desc_end: "\n\n통합은 새로운 ['concept_traditions']을 잠금 해제하고, ['concept_leaders']를 영입하고, £colony£ ['concept_colonies']를 승격하고, ['concept_edicts']을 제정하고, ['concept_resettlement']을 관리하는 등 다양한 분야의 내정을 돌보는 데 필수적인 자원입니다.$tt_gain$- §H$concept_unity$§!을 생산하는 £job£ ['concept_jobs']이 있는 £building£ ['concept_buildings']을 건설합니다."
+ #Singular: ['concept_leader'] or §H$concept_leader$§!
+ #Plural: ['concept_leaders'] or §H$concept_leaders$§!
+ concept_leader: "지도자"
+ concept_leaders: "지도자"
+ concept_leader_desc: "§H$concept_leaders$§!는 ['concept_governors']으로 지정하거나, ['concept_fleets']를 이끌게 하거나, ['concept_research']를 수행하도록 배정할 수 있습니다.\n\n§H$concept_leaders$§!는 지속적으로 경험치를 얻으면서 효율성이 향상되고 강력한 ['concept_leader_traits']을 획득합니다. 하지만 지도자는 나이가 들면 은퇴하거나 사망할 수 있습니다.\n\n지도자는 £interface£ ['concept_leaders_view']에서 모집하거나 해임할 수 있습니다."
+ #Singular: ['concept_leader_trait'] or §H$concept_leader_trait$§!
+ #Plural: ['concept_leader_traits'] or §H$concept_leader_traits$§!
+ concept_leader_trait: "지도자 특성"
+ concept_leader_traits: "지도자 특성"
+ concept_leader_trait_desc: "§H$concept_leader_traits$§!은 ['concept_leader']의 장단점과 전문 분야를 정의하는 특별한 속성입니다. 지도자의 효율성에 영향을 주며, ['concept_research'], ['concept_governor'] 임무 수행, ['concept_fleets'] 지휘 등의 역할에 보너스를 제공합니다.\n\n지도자가 ['concept_council']에 속할 때만 효과를 발휘하는 특성도 존재합니다. 특성은 지도자의 효율성을 증대시키거나 저해할 수 있으니, 제국을 다스릴 때는 이 사실을 고려하여 지도자를 신중하게 선정하고 육성해야 합니다."
+ #Singular: ['concept_leader_class'] or §H$concept_leader_class$§!
+ #Plural: -
+ concept_leader_class: "지도자 등급"
+ concept_leader_class_desc: "['concept_leader']의 역할은 다음과 같은 §H$concept_leader_class$§!에 의해 결정됩니다:\n\n- £official£ ['concept_official']\n- £commander£ ['concept_commander']\n- £scientist£ ['concept_scientist']"
+ #Singular: £official£ ['concept_official'] or £official£ §H$concept_official$§!
+ #Plural: £official£ ['concept_officials'] or £official£ §H$concept_officials$§!
+ concept_official: "$official$"
+ concept_officials: "$official_plural$"
+ concept_official_desc: "£official£ §H$concept_officials$§!는 제국 내 정치와 정책 적용을 감독하는 행정직 ['concept_leaders']입니다. £stability£ ['concept_stability'] 유지와 법률 집행에 중요한 역할을 하며, ['concept_governor']으로서 £colony£ ['concept_colony']나 £sector£ ['concept_sector']을 효율적으로 관리할 수 있습니다. 성간 ['concept_federation']의 결속을 다지는 데 기여하기도 합니다.\n\n§H$concept_officials$§!의 효율성은 ['concept_leader_traits'] 등 다양한 요소의 영향을 받을 수 있으며, 제국의 행정 능력을 원활하게 유지하려면 이를 잘 관리해야 합니다."
+ #Singular: £commander£ ['concept_commander'] or £commander£ $concept_commander$§!
+ #Plural: £commander£ ['concept_commanders'] or £commander£ $concept_commanders$§!
+ concept_commander: "$commander$"
+ concept_commanders: "$commander_plural$"
+ concept_commander_desc: "£commander£ §H$concept_commanders$§!은 ['concept_fleets']를 지휘하고 해군 작전을 감독하는 군사 ['concept_leaders']로, 우주 전투와 작전 계획의 핵심입니다.\n\n§H$concept_commander$§!의 효율성은 ['concept_leader_traits'] 등 다른 요소의 영향을 받을 수 있습니다. 사령관을 적절히 배정하고 관리하면 함대의 전투력과 제국의 군사력이 크게 향상되며, ['concept_governor']으로 배정하여 행성의 행정 개선에 힘쓰게 할 수도 있습니다."
+ #Singular: £scientist£ ['concept_scientist'] or £scientist£ $concept_scientist$§!
+ #Plural: £scientist£ ['concept_scientists'] or £scientist£ $concept_scientists$§!
+ concept_scientist: "$scientist$"
+ concept_scientists: "$scientist_plural$"
+ concept_scientist_desc: "£scientist£ §H$concept_scientists$§!는 제국의 과학 발전과 탐사, 그리고 기술 혁신을 주도하는 연구 중심 ['concept_leaders']입니다. 과학자는 ['concept_research']를 이끌고, £science_ship£ ['concept_science_ships']을 지휘해 은하계의 £anomaly£ ['concept_anomalies']이나 £archaeology£ ['concept_archaeology_site']을 조사합니다.\n\n§H$concept_scientist$§!의 효율성은 ['concept_leader_traits']과 경험 레벨, 전문 분야의 영향을 받을 수 있습니다. 숙련된 과학자를 탐사 임무에 배정하면 탐사 속도가 빨라지며, ['concept_governor']으로 배정하여 행성의 행정 개선에 힘쓰게 할 수도 있습니다."
+ #Singular: ['concept_star'] or §H$concept_star$§!
+ #Plural: ['concept_stars'] or §H$concept_stars$§!
+ concept_star: "항성"
+ concept_stars: "항성"
+ concept_star_desc: "§H$concept_star$§!은 주로 기체로 이루어진 거대한 천체로, £system£ ['concept_system']의 중심에 자리 잡고 있습니다.\n\n§H$concept_star$§!의 궤도에는 £planet£ ['concept_planets']이나 개발 가능한 §H소행성§!이 있을 수도 있으며, §H$concept_star$§! 자체에 연결된 자원은 £mining_station£ ['concept_mining_station']나 £science_ship£ ['concept_research_station']를 건설해 채취할 수 있습니다."
+ #Singular: £planet£ ['concept_planet'] or £planet£ §H$concept_planet$§!
+ #Plural: £planet£ ['concept_planets'] or £planet£ §H$concept_planets$§!
+ concept_planet: "행성"
+ concept_planets: "행성"
+ concept_planet_desc: "£planet£ §H$concept_planet$§!은 ['concept_star'] 궤도를 공전하는 커다란 둥근 천체로, 이러한 행성의 궤도에 §H위성§!이 존재하는 경우도 있습니다.\n\n£colony£ ['concept_colonies']로 개척할 수 있는 §H거주 가능 행성§!에는 기본적으로 아홉 가지 종류가 있습니다.\n\n일부 §H거주 불가능한 행성§!은 ['concept_terraforming'] 후보지로 지정할 수 있고, £mining_station£ ['concept_mining_station']나 £science_ship£ ['concept_research_station']를 건설해 자원을 채취할 수도 있습니다."
+ #Singular: £sector£ ['concept_sector'] or £sector£ §H$concept_sector$§!
+ #Plural: £sector£ ['concept_sectors'] or £sector£ §H$concept_sectors$§!
+ concept_sector: "구역"
+ concept_sectors: "구역"
+ concept_sector_desc: "§H$concept_sectors$§!은 여러 £colony£ ['concept_colonies']를 하나의 통치 기관을 중심으로 묶은 일종의 행정 영역입니다. 구역을 통해 행성을 개발하고, 자원을 분배하고, 지역 경제를 자동화할 수 있습니다.\n\n각 구역은 ['concept_governor']의 감독을 받을 수 있으며, 이때 총독의 스킬 및 ['concept_leader_traits']은 구역의 효율성에 영향을 줍니다. 구역을 효과적으로 관리하면 경제적 안정을 도모하고 제국에 성장에 따른 행정 부담을 완화할 수 있습니다."
+ #Singular: ['concept_resettlement'] or §H$concept_resettlement$§!
+ #Plural: -
+ concept_resettlement: "재정착"
+ concept_resettlement_desc: "§H$concept_resettlement$§!은 제국의 노동력을 재분배하고 증가하는 인구를 더 효과적으로 관리하기 위해 £pop£ ['concept_pops']을 한 £colony£ ['concept_colony']에서 다른 식민지로 이주시키는 과정을 의미합니다.\n\n플레이어가 수동으로 재정착 명령을 내릴 수 있으며, 주거나 이용 가능 직업, 거주 적합도 등 기타 조건에 따라 팝을 자동으로 재정착시키는 정책을 채택할 수도 있습니다.\n\n재정착에는 £energy£ ['concept_energy']이 소모되며, 제국의 ['concept_ethics'], ['concept_policies'], ['concept_civics'] 또는 §H종족 권리§!에 의해 제약을 받을 수 있습니다."
+ #Singular: ['concept_diplomatic_pact'] or §H$concept_diplomatic_pact$§!
+ #Plural: ['concept_diplomatic_pacts'] or §H$concept_diplomatic_pacts$§!
+ concept_diplomatic_pact: "외교 조약"
+ concept_diplomatic_pacts: "외교 조약"
+ concept_diplomatic_pact_desc: "§H$concept_diplomatic_pacts$§!은 제국이 외교적, 전략적 관계를 형성하기 위해 체결하는 제국 간의 공식 협약입니다. 외교 조약을 통해 상호 방위를 약조하거나 지식을 공유해 기술 발전을 도모할 수 있습니다.\n\n§H$concept_diplomatic_pacts$§!은 굳건한 동맹이나 ['concept_federation'] 형성의 기반이 되기도 하며, 위반 시 제국의 신뢰도 하락이나 외교적 파장을 불러일으킬 수 있습니다. 외교 조약은 £interface£ ['concept_contacts_view']의 $contacts_view_tab_contacts$ 탭에서 제안할 수 있습니다."
+ #Singular: £science_ship£ ['concept_research_station'] or £science_ship£ §H$concept_research_station$§!
+ #Plural: £science_ship£ ['concept_research_stations'] or £science_ship£ §H$concept_research_stations$§!
+ concept_research_station: "$research_station$"
+ concept_research_stations: "$research_station_plural$"
+ concept_research_station_desc: "£science_ship£ §H$concept_research_station$§!는 은하 곳곳의 주요 위치에서 £physics£ £society£ £engineering£ §H연구 포인트§!를 모으는 궤도 기지 시설입니다.$tt_gain$- $tt_build_research_stations$"
+ #Singular: £system£ ['concept_system'] or £system£ §H$concept_system$§!
+ #Plural: £system£ ['concept_systems'] or £system£ §H$concept_systems$§!
+ concept_system: "성계"
+ concept_systems: "성계"
+ concept_system_desc: "£system£ §H$concept_systems$§!는 ['concept_star'] 등 고질량 천체를 중심으로 £planet£ ['concept_planet'], ['concept_celestial_objects'] 및 기타 우주 현상이 공전하고 있는 일대를 가리킵니다. £science_ship£ ['concept_science_ships']으로 성계를 탐사할 수 있으며, ['concept_outposts']를 세워 통제하에 놓을 수 있습니다.\n\n성계에는 전략적 가치가 있거나, 귀중한 자원이 매장되어 있거나, 은밀한 위험이 도사리고 있을 수 있으며, 일부 성계에는 £colony£ ['concept_colonies']를 세울 수 있는 거주 가능 행성이 존재하기도 합니다. 제국의 영역을 확장하고, 보안과 경제 성장을 도모하려면 주요 성계를 장악하는 것이 필수입니다."
+ #Singular: ['concept_envoy'] or §H$concept_envoy$§!
+ #Plural: ['concept_envoys'] or §H$concept_envoys$§!
+ concept_envoy: "사절"
+ concept_envoys: "사절"
+ concept_envoy_desc: "§H사절§!은 미지의 외계 종족과의 ['concept_first_contact']를 담당하고, 첩자망을 관리하고, 다른 ['concept_empires']과의 ['concept_diplomacy']를 진행할 수 있습니다.$tt_gain$- §H성간 의회§! £megastructure£ ['concept_megastructure']을 건설합니다.\n- 특정 £building£ ['concept_buildings'], ['concept_leader_traits'], ['concept_civics']를 활용합니다.\n- ['concept_federation'] 특전인 §H$extra_envoy_1$§!을 잠금 해제합니다."
+ #Singular: ['concept_civic'] or §H$concept_civic$§!
+ #Plural: ['concept_civics'] or §H$concept_civics$§!
+ concept_civic: "사회 제도"
+ concept_civics: "사회 제도"
+ concept_civic_desc: "§H$concept_civics$§!는 제국을 정의하는 기본 원칙과 사회 구조를 나타냅니다. 사회 제도는 고유한 보너스를 제공하고 국내 정책의 기반이 되며, 다른 문명과의 외교에도 영향을 줍니다.\n\n£interface£ ['concept_empire_view']에서 정부 개혁을 통해 사회 제도를 개정할 수 있지만, 일부 제도는 ['concept_authority']나 ['concept_ethics']에 의해 제한되기도 합니다."
+ #Singular: ['concept_starbase_capacity'] or §H$concept_starbase_capacity$§!
+ #Plural: -
+ concept_starbase_capacity: "항성 기지 수용력"
+ concept_starbase_capacity_desc: "§H$concept_starbase_capacity$§!은 효과적으로 유지할 수 있는 업그레이드된 ['concept_starbases']의 수를 나타냅니다. 단, ['concept_outposts']는 포함되지 않습니다.\n\n§H$concept_starbase_capacity$§!을 초과하면 ['concept_starbase_upkeep']가 증가합니다.$tt_gain$- 더 많은 ['concept_owned_system', 성계를 소유]합니다.\n- 특정 ['concept_technologies']과 ['concept_traditions']을 활용합니다."
+ #Singular: ['concept_starbase_upkeep'] or §H$concept_starbase_upkeep$§!
+ #Plural: -
+ concept_starbase_upkeep: "항성 기지 유지비"
+ concept_starbase_upkeep_desc: "§H$concept_starbase_upkeep$§!는 운용 중인 항성 기지를 유지하기 위해 지속적으로 소모되는 자원 비용입니다. 주로 £energy£ ['concept_energy']이 유지비로 소모되며, 첨단 §H모듈§!이나 §H건물§!이 설치된 경우 추가 자원이 소모됩니다.\n\n유지비는 항성 기지의 규모와 역할에 비례하며, 기지의 등급을 업그레이드하면 유지비도 증가합니다."
+ #Singular: ['concept_owned_system'] or §H$concept_owned_system$§!
+ #Plural: ['concept_owned_systems'] or §H$concept_owned_systems$§!
+ concept_owned_system: "소유 성계"
+ concept_owned_systems: "소유 성계"
+ concept_owned_system_desc: "§H$concept_owned_systems$§!는 제국이 직접 확장이나 정복을 통해 장악한 £system£ ['concept_systems']를 의미합니다. 제국은 소유 성계에 ['concept_starbases']를 건설하고, 자원을 채취하고, £colony£ ['concept_colonies']를 세울 수 있습니다.\n\n성계를 지배하에 놓으면 £empire_sprawl£ ['concept_empire_size']가 커지며, 소유 성계의 수는 행정 비용 및 효율성에 영향을 줍니다."
+ #Singular: ['concept_naval_capacity'] or §H$concept_naval_capacity$§!
+ #Plural: -
+ concept_naval_capacity: "함대 수용력"
+ concept_naval_capacity_desc: "§H$concept_naval_capacity$§!은 효과적으로 유지할 수 있는 전체 ['concept_fleet_size']를 나타냅니다.\n\n§H$concept_naval_capacity$§!을 초과하면 ['concept_ship_upkeep']가 증가합니다.$tt_gain$- ['concept_starbases']에 §H정박소§! 모듈을 건설합니다.\n- £building£ ['building:building_stronghold']와 같은 건물의 특정 £job£ ['concept_jobs']을 활용합니다.\n- 특정 ['concept_technologies']과 ['concept_traditions']을 활용합니다."
+ #Singular: ['concept_governor'] or §H$concept_governor$§!
+ #Plural: ['concept_governors'] or §H$concept_governors$§!
+ concept_governor: "$governor$"
+ concept_governors: "$governor_plural$"
+ concept_governor_desc: "§H$concept_governor$§!은 £colony£ ['concept_colony']나 £sector£ ['concept_sector']을 감독하는 ['concept_leader']입니다. 구역 수도에 배정된 §H$concept_leader$§!는 해당 구역의 §H$concept_governor$§!을 겸합니다.\n\n§H$concept_governors$§!이 배정된 행성과 구역은 그 ['concept_leader_class'] 및 ['concept_leader_traits']에 따라 이익이나 불이익을 받습니다.\n\n총독은 £interface£ ['concept_colony_view']이나 £interface£ ['concept_planets_and_sector_view']에서 배정합니다."
+ #Singular: ['concept_decision'] or §H$concept_decision$§!
+ #Plural: ['concept_decisions'] or §H$concept_decisions$§!
+ concept_decision: "결정"
+ concept_decisions: "결정"
+ concept_decision_desc: "§H$concept_decision$§!은 £colony£ ['concept_colony']의 구체적 요구에 대응하기 위한 행성 행동입니다. 결정을 통해 £district£ ['concept_districts']를 추가하거나, £blocker£ ['concept_blockers']을 제거하거나, 행성 속성을 수정할 수 있습니다.\n\n결정에 따라 발동 비용이 필요하거나 특정 조건이 충족되어야 하는 경우도 있습니다.\n\n§H$concept_decisions$§!은 £interface£ ['concept_colony_view']에서 관리합니다."
+ #Singular: ['concept_planetary_ascension'] or §H$concept_planetary_ascension$§!
+ #-
+ concept_planetary_ascension: "식민지 승격"
+ concept_planetary_ascension_desc: "통합을 소모해 £colony£ ['concept_colony']의 §H식민지 승격 등급§!을 높일 수 있습니다. 이때 식민지의 ['concept_designation'] 효과가 증가하고 식민지가 £empire_sprawl£ ['concept_empire_size']에 주는 효과가 감소합니다.\n\n식민지는 잠금 해제한 ['concept_ascension_perks'] 수에 따라 여러 번 승격할 수 있으며, ['concept_empire']의 §H승격 등급§! 횟수가 누적됨에 따라 식민지 승격에 드는 £unity£ ['concept_unity']이 증가합니다.\n\n§H$concept_ascension_perks$§!을 모두 잠금 해제하면 §H식민지 승격 한도§!가 §G$COMPLETION_BONUS$§!만큼 추가로 증가합니다."
+ #Singular: ['concept_designation'] or §H$concept_designation$§!
+ #Plural: -
+ concept_designation: "특화"
+ concept_designation_desc: "£colony£ ['concept_colony'] §H$concept_designation$§!를 이용하면 식민지의 주된 역할을 정함으로써 특정 지구의 건설 속도나 일부 직업의 생산량 등을 높일 수 있습니다.\n\n§H$concept_designation$§!는 따로 지정하지 않을 경우, 현재 가용한 지구나 건물에 따라 자동으로 설정됩니다."
+ #Singular: ['concept_planet_automation'] or §H$concept_planet_automation$§!
+ #Plural: -
+ concept_planet_automation: "행성 자동화"
+ concept_planet_automation_desc: "§H$concept_planet_automation$§!를 통해 원하는 $COLONY_AUTOMATION_SETTINGS$에 따라 £colony£ ['concept_colony']가 자동으로 발전하게 할 수 있습니다."
+ #Singular: ['concept_devastation'] or §H$concept_devastation$§!
+ #Plural: -
+ concept_devastation: "황폐도"
+ concept_devastation_desc: "§H$concept_devastation$§!는 §H궤도 폭격§! 등으로 인해 £colony£ ['concept_colony']가 받은 피해의 양을 의미합니다. §H$concept_devastation$§!가 너무 높을 경우 £housing£ ['concept_housing'], £amenities£ ['concept_amenities'], £job£ ['concept_job'] 생산 등 여러 방면으로 부정적인 영향을 받습니다.\n\n§H$concept_devastation$§!는 시간이 지남에 따라 £colony£ §H$concept_colony$§!가 회복되면서 서서히 낮아집니다.\n\n현재 §H$concept_devastation$§!는 £interface£ ['concept_colony_view']에서 확인할 수 있습니다."
+ #Singular: ['concept_shipyard'] or §H$concept_shipyard$§!
+ #Plural: ['concept_shipyards'] or §H$concept_shipyards$§!
+ concept_shipyard: "조선소"
+ concept_shipyards: "조선소"
+ concept_shipyard_desc: "§H$concept_shipyard$§!는 §H$concept_shipyard$§! 모듈이 장착된 ['concept_starbase']로, ['concept_civilian_ships']과 ['concept_military_ships']을 모두 생산할 수 있습니다.\n\n함선 건조는 £interface£ ['concept_starbase_view']에서 관리합니다."
+ #Singular: £anomaly£ ['concept_anomaly'] or £anomaly£ §H$concept_anomaly$§!
+ #Plural: £anomaly£ ['concept_anomalies'] or £anomaly£ §H$concept_anomalies$§!
+ concept_anomaly: "이상 현상"
+ concept_anomalies: "이상 현상"
+ concept_anomaly_desc: "£anomaly£ §H$concept_anomaly$§!은 £science_ship£ ['concept_science_ships']이 £system£ ['concept_systems'] 탐사 중에 발견한 신비한 현상을 말합니다. 이상 현상을 조사하면 보상을 얻거나 위험 요소를 발견할 수 있습니다.\n\n§H$concept_anomalies$§!은 £scientist£ §H$concept_scientist$§!를 배정해서 조사하며, 조사 시간은 과학자의 스킬 레벨과 §H$concept_anomaly$§!의 난이도에 따라 달라집니다.\n\n이상 현상은 §H$concept_science_ship$§!을 선택하면 £interface£ ['concept_galaxy_map']에 나타나며, £interface£ ['concept_situation_log_view']의 $situation_log_view_tab_situation_log$탭에 표시됩니다."
+ #Singular: £archaeology£ ['concept_archaeology_site'] or £archaeology£ §H$concept_archaeology_site$§!
+ #Plural: £archaeology£ ['concept_archaeology_site'] or £archaeology£ §H$concept_archaeology_site$§!
+ concept_archaeology_site: "고고학 현장"
+ concept_archaeology_sites: "고고학 현장"
+ concept_archaeology_site_desc: "£archaeology£ §H$concept_archaeology_site$§!은 고대 문명의 유적이나 전투 잔해와 같은 관심 지점을 의미합니다. 과학자를 배정한 £science_ship£ ['concept_science_ships']을 파견해 고고학 현장을 발굴하면, 그곳에 숨겨진 비밀을 밝혀낼 수 있습니다."
+ #Singular: ['concept_empire'] or §H$concept_empire$§!
+ #Plural: ['concept_empires'] or §H$concept_empires$§!
+ concept_empire: "제국"
+ concept_empires: "제국"
+ concept_empire_desc: "§H$concept_empire$§!은 하나 이상의 £system£ ['concept_system']를 지배하는 은하 세력으로서, 주로 은하계에 자국의 영향력을 확대하려 합니다. 제국의 정책과 행동 방식은 ['concept_ethics'], ['concept_authority'], ['concept_civics']에 따라 형성됩니다.\n\n§H$concept_empires$§!은 다른 제국과 외교, 무역, 분쟁 등을 통해 상호 작용합니다.\n\n§H$concept_empires$§!의 확장 양상은 £interface£ ['concept_galaxy_map']에서 확인할 수 있습니다.\n\n또한, 국기를 선택하거나 £interface£ ['concept_contacts_view']의 $contacts_view_tab_contacts$ 탭을 통해 타 제국과 연락을 취할 수 있습니다."
+ #Singular: ['concept_defense_platform'] or §H$concept_defense_platform$§!
+ #Plural: ['concept_defense_platforms'] or §H$concept_defense_platforms$§!
+ concept_defense_platform: "$military_station_small$"
+ concept_defense_platforms: "$military_station_small_plural$"
+ concept_defense_platform_desc: "§H$concept_defense_platforms$§!은 ['concept_starbases']를 보호하는 심우주 시설로, 주로 방위 ['concept_fleet']가 도착할 때까지 적 공격군의 발을 묶는 역할을 합니다.\n\n가장 규모가 큰 §H$concept_defense_platforms$§!의 경우 드넓은 공간에 수천 명의 병력을 수용할 수 있으며, 함대와 맞먹는 화력을 갖추고 있습니다. 이와 같은 플랫폼은 £interface£ ['concept_fleet_management_view']의 §H$SHIP_DESIGNER$§!에서 설계할 수 있습니다."
+ #Singular: ['concept_army'] or §H$concept_army$§!
+ #Plural: ['concept_armies'] or §H$concept_armies$§!
+ concept_army: "지상군"
+ concept_armies: "지상군"
+ concept_army_desc: "§H$concept_armies$§!은 £colony£ ['concept_colonies']를 지키거나 적 £planet£ ['concept_planets']을 침공하는 지상 병력입니다.\n\n£commander£ ['concept_commander']이 지휘하는 §H$concept_army$§!은 그 ['concept_leader_traits']에 따라 이익이나 불이익을 받습니다.\n\n§H$concept_armies$§!은 ['concept_starbases']의 §H$MACRO_BUILDER_TAB$§!나 §H$concept_colonies$§!의 §H$GROUND_COMBAT_TAB$§! 탭에서 모집합니다."
+ #Singular: ['concept_component'] or §H$concept_component$§!
+ #Plural: ['concept_components'] or §H$concept_components$§!
+ concept_component: "부품"
+ concept_components: "부품"
+ concept_component_desc: "§H$concept_components$§!은 ['concept_ship']의 성능을 결정하는 개별 시스템과 모듈로, 부품의 종류로는 무기, 방어 장치, 초공간 드라이브, 유틸리티 시스템 등이 있습니다.\n\n부품은 새로운 ['concept_technologies']을 연구해 잠금 해제할 수 있고, £interface£ ['concept_fleet_management_view']의 §H$SHIP_DESIGNER$§! 탭에서 장착합니다.\n\n£science_ship£ ['concept_science_ships']은 현재 적용할 수 있는 가장 발전된 §H$concept_components$§!을 자동으로 사용합니다."
+ #Singular: ['concept_habitat'] or §H$concept_habitat$§!
+ #Plural: ['concept_habitats'] or §H$concept_habitats$§!
+ concept_habitat: "거주지"
+ concept_habitats: "거주지"
+ concept_habitat_desc: "§H$concept_habitats$§!는 심우주에 위치한 거주 시설입니다.\n\n£construction_ship£ ['concept_construction_ship']으로 만들 수 있는 ['concept_megastructures']로, 건설 후에는 £colony£ ['concept_colonies']로 전환할 수 있습니다.\n\n거주지에서 이용 가능한 £district£ ['concept_districts']는 현지 £system£ ['concept_system']의 §H자원 매장지§!에 따라 달라집니다."
+ #Singular: £housing£ ['concept_housing'] or £housing£ §H$concept_housing$§!
+ #Plural: -
+ concept_housing: "주거"
+ concept_housing_desc: "£housing£ §H$concept_housing$§!는 £colony£ ['concept_colony']의 인구를 수용하는 기반 시설을 나타냅니다. §H$concept_housing$§!가 부족하면 £stability£ ['concept_stability']가 낮아져 §H이주§!를 유발할 수 있습니다.\n\n§H$concept_housing$§!는 £district£ ['concept_districts']나 특정 £building£ ['concept_buildings']을 건설해 늘릴 수 있습니다. §H$concept_housing$§!가 높아지면 ['concept_planet_capacity'] 또한 높아져, 생체 팝의 성장률에 영향을 줍니다.\n\n§H$district_city_plural$§!의 특정 £zone£ ['concept_district_specializations']는 각 §H$district_city$§!에서 제공하는 §H$concept_housing$§!를 낮출 수 있습니다."
+ #Singular: ['concept_planet_size'] or §H$concept_planet_size$§!
+ #Plural: -
+ concept_planet_size: "행성 크기"
+ concept_planet_size_desc: "§H$concept_planet_size$§!는 £colony£ ['concept_colony']가 유지할 수 있는 £district£ ['concept_districts']의 수를 결정합니다. 행성 크기가 클 경우 £district£ ['concept_districts']를 추가로 수용할 수 있으며, 행성에 건설한 ['concept_districts']는 £job£ ['concept_jobs'] 직업을 제공하도록 특성화할 수 있습니다."
+ #Singular: ['concept_planet_capacity'] or §H$concept_planet_capacity$§!
+ #Plural: -
+ concept_planet_capacity: "행성 수용력"
+ concept_planet_capacity_desc: "§H$concept_planet_capacity$§!은 £housing£ ['concept_housing'] 및 £planet£ ['concept_planet']의 거주 적합도에 따라 달라지는 미개발 £district£ ['concept_districts']의 공간에 따라 결정되며, £blocker£ ['concept_blockers']을 제거하면 증가합니다.\n\n£pop£ §H생체 팝§!은 행성 수용력이 중간 수준일 때 성장 보너스를 받아 가장 빨리 성장하고, £colony£ ['concept_colony']의 수용 한계가 가까워질수록 불이익을 받습니다."
+ #Singular: £stability£ ['concept_stability'] or £stability£ §H$concept_stability$§!
+ #Plural: -
+ concept_stability: "안정도"
+ concept_stability_desc: "£stability£ §H$concept_stability$§!는 £colony£ ['concept_colony']의 정치적 안정도를 반영하며, 주로 주민들의 £happiness£ ['concept_pop_approval_rating']에 영향을 받습니다.\n\n§H$concept_stability$§!가 낮을 경우 £housing£ ['concept_housing'] 부족, £amenities£ ['concept_amenities'] 하락, £crime£ ['concept_crime'] 증가 등의 문제가 발생할 수 있습니다. 그 결과, 불이익이 가해지고 §H반란§!과 같은 부정적 이벤트가 발생할 위험이 높아집니다.\n\n반대로 §H$concept_stability$§!가 높으면 자원 생산량이 증가합니다."
+ #Singular: -
+ #Plural 1: £amenities£ ['concept_amenities'] or £amenities£ §H$concept_amenities$§!
+ #Plural 2: £amenities_no_happiness£ ['concept_amenities_gestalt'] or £amenities_no_happiness£ §H$concept_amenities_gestalt$§!
+ concept_amenities: "편의"
+ concept_amenities_desc: "[GetConceptAmenities]"
+ concept_amenities_desc_regular: "£amenities£ §H$concept_amenities$§!는 주민의 일상적 욕구를 충족하기 위한 기반 시설과 직업을 나타냅니다.\n\n§H$concept_amenities$§!가 부족한 £colony£ ['concept_colony']는 £happiness£ ['concept_happiness']에 불이익을 받습니다. £pop£ ['concept_pops']을 £job_entertainer£ §H$job_entertainer_plural$§!과 같은 £job£ ['concept_jobs']에 배정하면 §H$concept_amenities$§!를 높일 수 있습니다."
+ concept_amenities_desc_gestalt: "£amenities_no_happiness£ §H$concept_amenities$§!는 드론의 일상적 욕구를 충족하기 위한 기반 시설과 직업을 나타냅니다.\n\n§H$concept_amenities$§!가 부족한 경우 £stability£ ['concept_stability']가 감소합니다. £pop£ ['concept_pops']을 £job_maintenance_drone£ §H$job_maintenance_drone_plural$§!과 같은 £job£ ['concept_jobs']에 배정하면 편의를 높일 수 있습니다."
+ #Singular: £crime£ ['concept_crime'] or £crime£ §H$concept_crime$§!
+ #Plural: -
+ concept_crime: "범죄"
+ concept_crime_desc: "£crime£ §H$concept_crime$§!는 £colony£ ['concept_colony']의 범죄 활동 및 무법 수준을 나타냅니다.\n\n§H$concept_crime$§!가 높을 경우 부정적 이벤트가 발생하고 £stability£ ['concept_stability']가 낮아질 수 있습니다.\n\n§H$concept_crime$§!는 인구가 많을수록 늘어날 가능성이 크며, £happiness£ ['concept_happiness']를 높이거나 £pop£ ['concept_pops']을 £job_enforcer£ §H$job_enforcer_plural$§!과 같은 £job£ ['concept_jobs']에 배정하면 줄일 수 있습니다."
+ #Singular: £happiness£ ['concept_happiness'] or £happiness£ §H$concept_happiness$§!
+ #Plural: -
+ concept_happiness: "행복도"
+ concept_happiness_desc: "£happiness£ §H$concept_happiness$§!는 £pop£ ['concept_pops']의 전반적인 만족도를 나타내는 지표로 ['concept_living_standards'], ['concept_edicts'], 각종 ['concept_planet_modifiers'] 등 다양한 요인에 영향을 받습니다.\n\n§H$concept_happiness$§!가 높을수록 £stability£ ['concept_stability']가 높아지고, 그로 인해 £job£ ['concept_job'] 생산량이 증가합니다. 반대로 §H$concept_happiness$§!가 낮으면 §H$concept_stability$§!가 감소합니다.\n\n§H$concept_happiness$§!는 £political_power£ ['concept_political_power']과 함께 £happiness£ ['concept_pop_approval_rating']를 결정합니다.\n\n§H$concept_happiness$§!가 아예 없는 §H$concept_pops$§!은 §H$concept_happiness$§! 수치가 §Y50%§!인 것으로 집계됩니다."
+ #Singular: £happiness£ ['concept_pop_approval_rating'] or £happiness£ §H$concept_pop_approval_rating$§!
+ #Plural: -
+ concept_pop_approval_rating: "팝 찬성도"
+ concept_pop_approval_rating_desc: "£happiness£ §H$concept_pop_approval_rating$§!는 한 £colony£ ['concept_colony']에 거주하는 모든 £pop£ ['concept_pops']의 평균 £happiness£ ['concept_happiness']를 나타내며, 이들의 £political_power£ ['concept_political_power']에 따라 가중됩니다.\n\n대부분의 생활 수준에서 £pop_cat_ruler£ §H$pop_cat_ruler_plural$§!처럼 §H$concept_political_power$§!이 더 높은 §H$concept_pops$§!일수록 찬성도에 더 많은 영향을 줍니다.\n\n§H$concept_pop_approval_rating$§!가 낮을 경우 £stability£ ['concept_stability']가 감소하고 £crime£ ['concept_crime']가 증가할 수 있습니다."
+ #Singular: £political_power£ ['concept_political_power'] or £political_power£ §H$concept_political_power$§!
+ #Plural: -
+ concept_political_power: "정치력"
+ concept_political_power_desc: "£political_power£ §H$concept_political_power$§!은 각 £pop£ ['concept_pops']이 제국 내에서 행사하는 영향력을 나타냅니다. 팝의 §H$concept_political_power$§!은 계층이나 £job£ ['concept_job']에 따라 달라집니다.\n\n팝 그룹은 §H$concept_political_power$§!이 높을수록 ['concept_faction'] 내에서 더 큰 영향력을 발휘하며, ['concept_democratic_election'] 결과와 정책 결정에 더 큰 영향을 주게 됩니다. 권위주의적인 제국은 보통 지배 계층에 정치력을 집중하지만, 민주정이나 평등주의 제국은 정치력을 모든 국민에게 고르게 분배합니다."
+ #Singular: ['concept_terraforming'] or §H$concept_terraforming$§!
+ #Plural: -
+ concept_terraforming: "테라포밍"
+ concept_terraforming_desc: "§H$concept_terraforming$§!은 ['concept_empire']의 국경 안에 있는 £planet£ ['concept_planet']을 거주에 적합한 곳으로 바꾸는 작업을 의미합니다.\n\n일반적으로 특정 ['concept_technologies'] 및 상당한 규모의 £energy£ ['concept_energy'] 투입이 필요합니다.\n\n§H$concept_technologies$§!을 발전시키면, 이미 거주민이 있는 행성도 그곳에 거주하는 ['concept_species']이 선호하는 기후에 알맞도록 테라포밍할 수 있습니다."
+ #Singular: ['concept_space_fauna'] or §H$concept_space_fauna$§!
+ #Plural: -
+ concept_space_fauna: "우주 동물"
+ concept_space_fauna_desc: "§H$concept_space_fauna$§!은 우주에서 만날 수 있으며 제국에 속하지 않는 생물 및 존재를 의미합니다.\n\n건드리지 않으면 온순한 종류도 있지만, 적대적인 성향의 동물도 있습니다."
+ #Singular: £blocker£ ['concept_blocker'] or £blocker£ §H$concept_blocker$§!
+ #Plural: £blocker£ ['concept_blockers'] or £blocker£ §H$concept_blockers$§!
+ concept_blocker: "차단물"
+ concept_blockers: "차단물"
+ concept_blocker_desc: "£blocker£ §H$concept_blocker$§!은 다른 지형지물을 가로막거나 £colony£ ['concept_colony']에 특정 £district£ ['concept_districts']를 짓지 못하게 하는 행성 특징을 의미합니다.\n\n일부 §H$concept_blockers$§!은 자원을 소모해 제거할 수 있으며, 특정 ['concept_technologies']이 필요한 경우도 많습니다. 차단물은 £interface£ ['concept_colony_view']에서 관리합니다."
+ #Singular: ['concept_event_chain'] or §H$concept_event_chain$§!
+ #Plural: ['concept_event_chains'] or §H$concept_event_chains$§!
+ concept_event_chain: "이벤트 연쇄"
+ concept_event_chains: "이벤트 연쇄"
+ concept_event_chain_desc: "§H$concept_event_chains$§!는 연결성 있는 일련의 이벤트로, 시간의 흐름에 따라 전개되며 대체로 탐사, £anomaly£ ['concept_anomalies'], 또는 제국 결정의 결과로 발생합니다.\n\n이벤트 연쇄는 과학적 발견이나 정치적 음모, 또는 우주의 신비와 관련되어 있으며, 때때로 심각한 위협이나 강력한 보상으로 이어지기도 합니다. 한 번의 선택으로 제국의 미래가 바뀔 수 있으니, 결정을 내리기 전에 신중하게 고민해야 합니다. 이벤트 연쇄는 £interface£ ['concept_situation_log_view']의 $situation_log_view_tab_situation_log$ 탭에서 확인할 수 있습니다."
+ #Singular: ['concept_special_project'] or §H$concept_special_project$§!
+ #Plural: ['concept_special_projects'] or §H$concept_special_projects$§!
+ concept_special_project: "특별 프로젝트"
+ concept_special_projects: "특별 프로젝트"
+ concept_special_project_desc: "§H$concept_special_projects$§!는 각별한 노력을 기울여야만 완료할 수 있는 특수한 ['concept_research'] 계획으로, 시작할 경우 해당 과학 분야의 발전이 잠시 중단됩니다.\n\n§H$concept_special_projects$§!를 완료하면 탐사 및 확장에 큰 도움을 주는 강력한 혜택을 얻을 수 있습니다."
+ #Singular: ['concept_milestone'] or §H$concept_milestone$§!
+ #Plural: ['concept_milestones'] or §H$concept_milestones$§!
+ concept_milestone: "마일스톤"
+ concept_milestones: "마일스톤"
+ concept_milestone_desc: "§H$concept_milestones$§!은 제국의 역사 속에서 중요한 순간이었던 주요 이벤트와 성취를 기록한 것으로, 제국이 이룩한 확장, 발견 및 충돌 등이 포함됩니다.\n\n§H$concept_milestones$§!을 통해 제국의 성장과 지금까지 내린 전략적 결정을 되짚어 볼 수 있습니다. 마일스톤은 £interface£ ['concept_situation_log_view']에 있는 $situation_log_view_tab_timeline$ 탭의 §H타임라인§!에 표시됩니다."
+ #Singular: ['concept_empire_focus'] or §H$concept_empire_focus$§!
+ #Plural: ['concept_empire_focuses'] or §H$concept_empire_focuses$§!
+ concept_empire_focus: "제국 중점"
+ concept_empire_focuses: "제국 중점"
+ concept_empire_focus_desc: "§H$concept_empire_focuses$§!은 제국의 발전과 의사 결정을 이끄는 높은 단계의 전략적 우선순위를 의미합니다.\n\n제국은 다양한 중점을 추구할 수 있으며, §H탐사§!는 과학 발전과 발견에, §H정복§!은 군사적 우위에, §H개발§!은 경제적, 외교적 성장에 집중합니다. §H중점 과업§!을 완료하면 이러한 중점을 진전시키고 새로운 ['concept_technologies']을 획득할 수 있습니다.\n\n과업과 중점은 £interface£ ['concept_situation_log_view']의 $situation_log_view_tab_timeline$ 탭에 표시됩니다."
+ #Singular: ['concept_scoreboard'] or §H$concept_scoreboard$§!
+ #Plural: -
+ concept_scoreboard: "점수판"
+ concept_scoreboard_desc: "§H$concept_scoreboard$§!에는 제국의 은하계 내 위상을 확인할 수 있으며, 과학, 경제, 군사력, 외교적 영향력 전반에 걸친 성과가 반영됩니다.\n\n점수판의 내용은 게임을 진행하는 동안 계속 변하며, 제국을 위한 결정을 내리기 전에 타 제국의 입지와 현재 상태를 참고할 수 있습니다. 세력 경쟁이 조용하고도 치열하게 이루어지는 은하계에서는 이러한 비교가 큰 영향을 미칩니다."
+ #Singular: ['concept_living_standard'] or §H$concept_living_standard$§!
+ #Plural: ['concept_living_standards'] or §H$concept_living_standards$§!
+ concept_living_standard: "생활 수준"
+ concept_living_standards: "생활 수준"
+ concept_living_standard_desc: "§H$concept_living_standards$§!은 제국 내 다양한 £pop£ ['concept_pops']의 삶의 질을 결정하는 개념으로, 해당 팝의 £happiness£ ['concept_happiness']와 전반적인 £political_power£ ['concept_political_power']에 영향을 줍니다. §H$concept_living_standards$§!은 정부의 ['concept_policies']에 따라 결정되며, ['concept_species'] 유형, ['concept_ethics'], 경제적 우선순위에 따라 달라질 수 있습니다.\n\n생활 수준이 높을수록 더 많은 자원 투자가 필요하며, 반대로 생활 수준을 낮추면 £stability£ ['concept_stability']와 노동자의 만족도를 희생해 유지비를 줄일 수 있습니다. 생활 수준은 £interface£ ['concept_species_view']에서 설정할 수 있습니다."
+ #Singular: ['concept_celestial_object'] or §H$concept_celestial_object$§!
+ #Plural: ['concept_celestial_objects'] or §H$concept_celestial_objects$§!
+ concept_celestial_object: "천체"
+ concept_celestial_objects: "천체"
+ concept_celestial_object_desc: "§H$concept_celestial_objects$§!는 £system£ ['concept_systems'] 내에 위치한 거대한 물체입니다. 천체의 종류로는 ['concept_stars'], £planet£ ['concept_planets'], §H위성§!, §H소행성§! 등이 있습니다."
+ #Singular: £district£ ['concept_city_district'] or £district£ §H$concept_city_district$§!
+ #Plural: £district£ ['concept_city_districts'] or £district£ §H$concept_city_districts$§!
+ concept_city_district: "$district_city$"
+ concept_city_districts: "$district_city_plural$"
+ concept_city_district_desc: "- £housing£ ['concept_housing']: §G+500§!\n- £building£ ['concept_building'] 슬롯: §G+1§!\n- £mod_job_clerk_add£ ['concept_clerk'] 직업: §G+100§!\n\n§L$district_city_desc$§!"
+ #Singular: £district£ ['concept_hive_district'] or £district£ §H$concept_hive_district$§!
+ #Plural: £district£ ['concept_hive_districts'] or £district£ §H$concept_hive_districts$§!
+ concept_hive_district: "$district_hive$"
+ concept_hive_districts: "$district_hive_plural$"
+ concept_hive_district_desc: "- £housing£ ['concept_housing']: §G+600§!\n- £building£ ['concept_building'] 슬롯: §G+1§!\n- [maintenance_drone.GetName] 직업: §G+300§!\n\n§L$district_hive_desc$§!"
+ #Singular: £district£ ['concept_nexus_district'] or £district£ §H$concept_nexus_district$§!
+ #Plural: £district£ ['concept_nexus_districts'] or £district£ §H$concept_nexus_districts$§!
+ concept_nexus_district: "$district_nexus$"
+ concept_nexus_districts: "$district_nexus_plural$"
+ concept_nexus_district_desc: "- £housing£ ['concept_housing']: §G+500§!\n- £building£ ['concept_building'] 슬롯: §G+1§!\n- [maintenance_drone.GetName] 직업: §G+300§!\n\n§L$district_nexus_desc$§!"
+ #Singular: £district£ ['concept_industrial_district'] or £district£ §H$concept_industrial_district$§!
+ #Plural: £district£ ['concept_industrial_districts'] or £district£ §H$concept_industrial_districts$§!
+ concept_industrial_district: "$district_industrial$"
+ concept_industrial_districts: "$district_industrial_plural$"
+ concept_industrial_district_desc: "- £housing£ ['concept_housing']: §G+200§!\n- £mod_job_artisan_add£ ['concept_artisan'] 직업: §G+100§!\n- £mod_job_foundry_add£ ['concept_metallurgist'] 직업: §G+100§!\n\n§L$district_industrial_desc$§!"
+ #Singular: £district£ ['concept_generator_district'] or £district£ §H$concept_generator_district$§!
+ #Plural: £district£ ['concept_generator_districts'] or £district£ §H$concept_generator_districts$§!
+ concept_generator_district: "$district_generator$"
+ concept_generator_districts: "$district_generator_plural$"
+ concept_generator_district_desc: "- £housing£ ['concept_housing']: §G+200§!\n- £mod_job_technician_add£ ['concept_technicians'] 직업: §G+200§!\n\n§L$district_generator_desc$§!"
+ #Singular: £district£ ['concept_mining_district'] or £district£ §H$concept_mining_district$§!
+ #Plural: £district£ ['concept_mining_districts'] or £district£ §H$concept_mining_districts$§!
+ concept_mining_district: "$district_mining$"
+ concept_mining_districts: "$district_mining_plural$"
+ concept_mining_district_desc: "- £housing£ ['concept_housing']: §G+200§!\n- £mod_job_miner_add£ ['concept_miner'] 직업: §G+200§!\n\n§L$district_mining_desc$§!"
+ #Singular: £district£ ['concept_farming_district'] or £district£ §H$concept_farming_district$§!
+ #Plural: £district£ ['concept_farming_districts'] or £district£ §H$concept_farming_districts$§!
+ concept_farming_district: "$district_farming$"
+ concept_farming_districts: "$district_farming_plural$"
+ concept_farming_district_desc: "- £housing£ ['concept_housing']: §G+200§!\n- £mod_job_farmer_add£ ['concept_farmer'] 직업: §G+200§!\n\n§L$district_farming_desc$§!"
+ #Singular: ['concept_debris'] or §H$concept_debris$§!
+ #Plural: -
+ concept_debris: "잔해"
+ concept_debris_desc: "우주를 떠다니는 고물과 산산이 부서진 선체. 잔해란 바로 우주전이 남긴 침묵의 메아리를 일컫습니다. 우주 전투로 발생한 §H$concept_debris$§!는 기간 제한 ['concept_special_project']를 통해 추적할 수 있습니다.\n\n£science_ship£ ['concept_science_ship']을 배정해 §H$concept_debris$§!를 조사하면 새로운 ['concept_technologies']에 대한 통찰을 얻을 수 있습니다."
+ #Singular: ['concept_council'] or §H$concept_council$§!
+ #Plural: -
+ concept_council: "평의회"
+ concept_council_desc: "['concept_empire']의 최고 지도부인 §H$concept_council$§!는 §H통치자§!와 최대 다섯의 §H평의원§!으로 구성됩니다. 각 평의회 의석에는 ['concept_leader']를 임명할 수 있고, 그 ['concept_leader_traits']에 따라 제국 전체가 혜택을 받기도 합니다.\n\n이 밖에도 §H$concept_council$§!는 ['concept_agendas'] 제정을 담당합니다.\n\n평의회 관리 및 평의원 임명은 £interface£ ['concept_government_view']의 §H평의회§! 탭에서 진행합니다."
+ #Singular: ['concept_agenda'] or §H$concept_agenda$§!
+ #Plural: ['concept_agendas'] or §H$concept_agendas$§!
+ concept_agenda: "안건"
+ concept_agendas: "안건"
+ concept_agenda_desc: "§H$concept_agenda$§!은 ['concept_council']가 현재 추진하고 있는 전략적 중점으로, 제국의 우선 과제와 장기적인 목표를 결정합니다. 안건은 준비 중에도 일정한 혜택을 주지만, 시행되면 훨씬 강력한 효과를 발휘합니다.\n\n시행 가능한 §H$concept_agendas$§!과 그 효과는 통치 ['concept_authority'], 제국이 채택한 ['concept_traditions'] 등 다양한 요인에 따라 달라집니다.\n\n§H$concept_agendas$§!은 £interface£ ['concept_government_view']의 §H평의회§! 탭에서 관리합니다."
+ #Singular: £research£ ['concept_research'] or £research£ §H$concept_research$§!
+ #Plural: -
+ concept_research: "연구"
+ concept_research_desc: "£research£ §H$concept_research$§!를 통해 £physics£ ['concept_physics_research'], £society£ ['concept_society_research'], £engineering£ ['concept_engineering_research']로 이루어진 세 주요 분야의 과학적 지식수준을 진보시킬 수 있습니다. 각 분야는 개별적으로 발전하며, 발전에 따라 새로운 ['concept_technologies']을 제공합니다.\n\n연구 속도는 제국의 상황이나 ['concept_leader_traits'] 같은 내부 요인은 물론, ['concept_diplomatic_pacts', $concept_research_agreements$] 등 외부 요인에도 영향을 받을 수 있습니다."
+ concept_research_tooltip: "$concept_research_desc$\n\n§G['concept_research'] 클릭해서 데이터 뱅크 열기\n메뉴에서 £research£ 클릭해서 목록 확장§!"
+ #Singular 1: ['concept_modifier'] or §H$concept_modifier$§!
+ #Plural 1: ['concept_modifiers'] or §H$concept_modifiers$§!
+ #Singular 2: ['concept_empire_modifier'] or §H$concept_empire_modifier$§!
+ #Plural 2: ['concept_empire_modifiers'] or §H$concept_empire_modifiers$§!
+ #Singular 3: ['concept_planet_modifier'] or §H$concept_planet_modifier$§!
+ #Plural 3: ['concept_planet_modifiers'] or §H$concept_planet_modifiers$§!
+ concept_modifier: "보정치"
+ concept_modifiers: "보정치"
+ concept_empire_modifier: "제국 보정치"
+ concept_empire_modifiers: "제국 보정치"
+ concept_planet_modifier: "행성 보정치"
+ concept_planet_modifiers: "행성 보정치"
+ concept_modifier_desc: "§H$concept_modifiers$§!는 일반적으로 £anomaly£ ['concept_anomalies']이나 ['concept_event_chains'] 도중에 내린 결정으로 인해 나타나는 이익이나 불이익을 말합니다.\n\n이러한 보정치는 일시적이거나 영구적일 수 있으며, 제국 전체에 영향을 주거나 행성과 같은 일부 영역에만 적용될 수도 있습니다.\n\n제국 전체에 영향을 주는 §H$concept_modifiers$§!는 £interface£ ['concept_empire_view']의 §H$empire_view_tab_empire$§!에 표시되고, 특정 행성에 적용되는 보정치는 £interface£ ['concept_colony_view']에서 살펴볼 수 있습니다."
+ #Singular: ['concept_diplomacy'] or §H$concept_diplomacy$§!
+ #Plural: -
+ concept_diplomacy: "외교"
+ concept_diplomacy_desc: "§H$concept_diplomacy$§!는 무역 협정과 동맹부터 ['concept_rivals']와 ['concept_wars']에 이르기까지, 제국과 제국 사이의 다양한 상호 작용 방식을 좌우합니다. 외교 행동은 ['concept_ethics'], ['concept_authorities'], 상대적 전력, 상호 이해관계 등 여러 요소에 영향을 받습니다.\n\n['concept_envoys']을 통해 관계 개선을 도모할 수 있으며, ['concept_diplomatic_pacts']을 맺거나 ['concept_federation']과 ['concept_galactic_community']를 통해 은하계 정치에 참여할 수도 있습니다."
+ #Singular: ['concept_subject_agreement'] or §H$concept_subject_agreement$§!
+ #Plural: ['concept_subject_agreements'] or §H$concept_subject_agreements$§!
+ concept_subject_agreement: "종속국 협정"
+ concept_subject_agreements: "종속국 협정"
+ concept_subject_agreement_desc: "§H$concept_subject_agreements$§!은 지배국과 속국 사이의 종속 관계를 정의하는 개념으로, 속국의 자치권 수준과 자원 기여량, 군사적 의무 등을 결정짓습니다. 협정의 내용을 어떻게 조정하느냐에 따라 속국을 완전히 통제하에 놓을 수도, 반독립적인 동맹국으로 둘 수도 있습니다.\n\n§H$concept_subject_agreements$§!은 £interface£ ['concept_contacts_view']의 $contacts_view_tab_agreements$ 탭에서 협상할 수 있습니다."
+ #Singular: ['concept_relic'] or §H$concept_relic$§!
+ #Plural: ['concept_relics'] or §H$concept_relics$§!
+ concept_relic: "유물"
+ concept_relics: "유물"
+ concept_relic_desc: "고대 문명이 남긴 강력한 도구인 §H$concept_relics$§!은 소유자에게 특별한 혜택을 부여합니다.\n\n유물은 £archaeology£ ['concept_archaeology_site']을 발굴하거나 주요 ['concept_event_chains']를 완료해 획득할 수 있으며, 유물을 보유한 제국과의 전쟁에서 승리해 강탈할 수도 있습니다.\n\n§H$concept_relics$§!은 보유하는 것만으로도 지속 효과를 발휘하며, 활성화하여 강력한 일시적 효과를 얻을 수도 있습니다. 이러한 유물은 £interface£ ['concept_discoveries_view']의 $discoveries_view_tab_relics$ 탭에서 관리할 수 있습니다."
+ #Singular: ['concept_astral_action'] or §H$concept_astral_action$§!
+ #Plural: ['concept_astral_actions'] or §H$concept_astral_actions$§!
+ concept_astral_action: "아스트랄 행동"
+ concept_astral_actions: "아스트랄 행동"
+ concept_astral_action_desc: "§H$concept_astral_actions$§!은 제국이 우주의 구조와 상호 작용할 수 있는 특별한 능력입니다. 아스트랄 현상을 적절히 활용하면 전략적 이점을 얻을 수 있습니다.\n\n§H$concept_astral_actions$§!은 일반적으로 ['concept_astral_rifts']을 탐사해 잠금 해제할 수 있습니다."
+ #Singular: ['concept_minor_artifact'] or §H$concept_minor_artifact$§!
+ #Plural: ['concept_minor_artifacts'] or §H$concept_minor_artifacts$§!
+ concept_minor_artifact: "골동품"
+ concept_minor_artifacts: "골동품"
+ concept_minor_artifact_desc: "§H$concept_minor_artifacts$§!은 일반적으로 £archaeology£ ['concept_archaeology_site']을 발굴해 획득할 수 있는 고대 문명의 잔재입니다. §H$concept_relics$§!만큼 강력하지는 않지만, 특수한 제국 보너스를 활성화하거나 귀중한 자원으로 교환하는 등 다양한 방식으로 활용할 수 있습니다.\n\n골동품의 활용 방식은 제국의 기술 발전 정도나 정책에 따라 달라지며, 문화 강화, 과학적 돌파구 마련은 물론, 군사적으로도 활용될 수 있습니다. 골동품은 £interface£ ['concept_discoveries_view']에서 관리할 수 있습니다."
+ #Singular: ['concept_crisis'] or §H$concept_crisis$§!
+ #Plural: -
+ concept_crisis: "위기"
+ concept_crisis_desc: "§H$concept_crisis$§!는 제국이 금단의 힘과 파멸적인 기술을 통해 존재 자체에 대한 해악으로 거듭나고 전례 없는 위협으로 부상하는 것을 의미합니다.\n\n그렇게 위기의 화신이 된 제국은 온 은하계를 적으로 돌리고 피할 수 없는 심판을 받게 됩니다."
+ #Singular: ['concept_overlord_holding'] or §H$concept_overlord_holding$§!
+ #Plural: ['concept_overlord_holdings'] or §H$concept_overlord_holdings$§!
+ concept_overlord_holding: "지배국 보유 자산"
+ concept_overlord_holdings: "지배국 보유 자산"
+ concept_overlord_holding_desc: "§H$concept_overlord_holdings$§!은 지배국이 종속국의 행성에 설립한 특수 시설입니다. 제국의 영향력을 과시하거나 자원을 추출하거나 서비스를 제공하는 등 다양하게 이용해 지배국의 권위를 강화할 수 있습니다.\n\n§H$concept_overlord_holdings$§!의 종류와 수는 ['concept_subject_agreement'] 내용의 영향을 받으며, 지배국의 ['concept_civics']와 ['concept_ethics']과 전략적 우선순위에 따라 효과가 달라집니다. 보유 자산은 지배국에 다양한 혜택을 주지만, 착취적이거나 침해적인 시설로 인식되면 종속국의 원성을 살 수 있습니다."
+ #Singular: ['concept_branch_office'] or §H$concept_branch_office$§!
+ #Plural: ['concept_branch_offices'] or §H$concept_branch_offices$§!
+ concept_branch_office: "$BRANCH_OFFICE$"
+ concept_branch_offices: "$BRANCH_OFFICES$"
+ concept_branch_office_desc: "§H$BRANCH_OFFICES$§!는 설립된 행성의 £trade_value£ ['concept_trade']을 일정 비율만큼 £energy£ ['concept_energy']으로 변환해 기업 소유주에게 제공합니다.\n\n대상 행성의 £interface£ ['concept_colony_view']에서 최대 §Y4§!개의 지사 건물을 설립할 수 있으며, 수도를 업그레이드하면 추가 슬롯이 잠금 해제됩니다."
+ #Singular 1: ['concept_war'] or §H$concept_war$§!
+ #Plural 1: ['concept_wars'] or §H$concept_wars$§!
+ #Singular 2: ['concept_subjugation_war'] or §H$concept_subjugation_war$§!
+ #Plural 2: -
+ #Singular 3: ['concept_total_war'] or §H$concept_total_war$§!
+ #Plural 3: -
+ concept_war: "전쟁"
+ concept_wars: "전쟁"
+ concept_subjugation_war: "종속 전쟁"
+ concept_total_war: "총력전"
+ concept_war_desc: "§H$concept_war$§!은 공식적으로 이루어지는 제국 간 무장 갈등으로, 특정 목표를 쟁취하거나, ['concept_claims']을 확고히 하거나, 원한을 갚거나, 은하의 질서를 바로잡기 위해 벌어지는 등 다양한 요소로 인해 발발됩니다. §H전쟁 명분§!은 전쟁을 정당화하며, 전쟁의 목적과 가능한 결과를 결정짓습니다.\n\n전쟁은 한쪽이 항복하고 상대의 요구를 들어주거나, §H현상 유지§! 협상을 맺어야만 끝나며, 이때 협상 시에 점령한 성계만 유지한 채 ['concept_peace']가 이루어집니다. 전쟁이 길어질수록 §H전쟁 피로도§!가 축적되며, 종전의 압박이 증가합니다. 전쟁은 비용이 많이 들지만 제국의 운명을 결정하는 데 매우 결정적인 역할을 합니다."
+ #Singular: ['concept_peace'] or §H$concept_peace$§!
+ #Plural: -
+ concept_peace: "평화"
+ concept_peace_desc: "§H$concept_peace$§!는 전쟁 당사국이 분쟁을 공식적으로 멈춘 상태를 의미합니다. 통상적으로 전쟁 목표가 강요되거나 영역이 교환되며, 새로운 정치적 조정이 이루어지기도 합니다. 상대를 항복시켜 강제로 평화를 실현하는 방법도 있지만, 양측 모두 전쟁에 지쳐 저절로 평화 협정을 맺게 되기도 합니다.\n\n평화 협정의 조건에 따라 전쟁 후 제국 간의 질서와 국경 및 지배 관계가 달라질 수 있으며, 이러한 협정이 또 다른 분쟁의 씨앗이 되기도 합니다."
+ #Singular: ['concept_galactic_community'] or §H$concept_galactic_community$§!
+ #Plural: -
+ concept_galactic_community: "은하 공동체"
+ concept_galactic_community_desc: "§H$concept_galactic_community$§!는 은하의 여러 제국이 협력을 도모하고, 성간 규범을 정립하고, 공동의 위협에 대처하기 위해 결성한 범은하적 입법 기구입니다. 은하 공동체는 결의안을 제안하고 이를 투표에 부쳐 온 은하에 ['concept_war'], 상업, 사회 가치관에 영향을 줌으로써 '연성 권력'을 행사합니다.\n\n은하 공동체의 회원국은 ['concept_envoys']을 배정하고 ['concept_diplomatic_weight']을 모아 공동체 내 영향력을 확보할 수 있습니다. 은하 공동체는 겉보기에는 통합의 장인 것 같지만, 사실 회원국끼리 경쟁하면서 권모술수를 꾸미거나, 공동 통치라는 명목으로 위계질서를 세우려는 일이 다반사입니다."
+ #Singular: ['concept_galactic_council'] or §H$concept_galactic_council$§!
+ #Plural: -
+ concept_galactic_council: "은하 평의회"
+ concept_galactic_council_desc: "§H$concept_galactic_council$§!는 ['concept_galactic_community'] 내에서 최고 지위를 지니고 있는 통치 기관이며, ['concept_diplomatic_weight']이 제일 강한 회원국으로 구성됩니다. 평의회 회원국은 긴급 조치를 제안하거나 결의안을 거부할 수 있고, 은하 안건을 주도할 수 있는 특혜를 받습니다.\n\n평의회 의석은 수가 제한된 데다 얼마든지 바뀔 수 있으며, 각국의 상대적 외교력에 따라 주어집니다. 평의회는 은하의 질서를 유지하기 위해 결성되지만, 강대국은 우위를 확고히 하기 위해, 그리고 약소국은 그런 강대국을 무너뜨리기 위해 평의회를 활용하는 등 야망의 장이 되기도 합니다."
+ #Singular: ['concept_favor'] or §H$concept_favor$§!
+ #Plural: ['concept_favors'] or §H$concept_favors$§!
+ concept_favor: "호의"
+ concept_favors: "호의"
+ concept_favor_desc: "은하 이벤트에서 다른 제국을 도운 대가로 외교적 영향력을 행사할 수 있는 수단인 §H$concept_favors$§!를 얻을 수 있습니다. 호의는 §H$concept_galactic_community$§! 및 이 밖의 외교 무대에서 일종의 정치적 통화로 사용됩니다.\n\n호의를 이용해 투표 결과를 바꾸거나, 외교 제안을 강화하거나, 협상에서 이점을 얻을 수 있습니다."
+ #Singular: ['concept_diplomatic_weight'] or §H$concept_diplomatic_weight$§!
+ #Plural: -
+ concept_diplomatic_weight: "외교적 영향력"
+ concept_diplomatic_weight_desc: "§H$concept_diplomatic_weight$§!은 제국이 ['concept_galactic_community'] 내에 행사하는 영향력을 나타냅니다. 외교적 영향력이 크면 결의안 통과에 더 많은 영향력을 행사하며 ['concept_galactic_council']에 가입할 수도 있습니다. 외교적 영향력은 경제력, 기술력, 군사력, 그리고 공동체에 배정한 ['concept_envoys']의 수에 따라 결정됩니다.\n\n외교적 영향력은 제국의 지위에 따라 지속적으로 변하며, 제국은 외교적 영향력을 이용해 이익을 추구할 수도 있습니다."
+ #Singular: ['concept_first_contact'] or §H$concept_first_contact$§!
+ #Plural: ['concept_first_contacts'] or §H$concept_first_contacts$§!
+ concept_first_contact: "첫 조우"
+ concept_first_contacts: "첫 조우"
+ concept_first_contact_desc: "이전에 조우한 적이 없는 문명 간의 첫 만남을 §H$concept_first_contact$§!라고 합니다. 첫 조우에 어떻게 대처했는지에 따라 ['concept_diplomacy']를 수립할 수 있으며, 반대로 상대방의 성향에 따라 의심이나 충돌을 살 수도 있습니다.\n\n§H$concept_first_contact$§! 과정에서는 외계 통신을 해독하고, 혹시 모를 사태에 대처하고, 제국이 미지의 세계를 어떻게 대할지 결정하게 됩니다."
+ #Singular: ['concept_workforce'] or §H$concept_workforce$§!
+ #Plural: -
+ concept_workforce: "노동력"
+ concept_workforce_desc: "§H$concept_workforce$§!은 £colony£ ['concept_colony']의 전반적인 노동 능력을 나타내는 지표로, 제국의 원활한 운영을 위해 다양한 직업에 종사할 수 있는 인구가 얼마나 되는지 보여 줍니다.\n\n£pop£ ['concept_pops']은 ['concept_species'], 사회 계층, ['concept_ethics'] 등 다양한 공동 특성에 따라 그룹으로 분리됩니다. 각 그룹은 행성의 §H$concept_workforce$§!에 포함되며, 이용 가능한 £job£ ['concept_jobs']에 할당됩니다."
+ #Singular: £zone£ ['concept_district_specialization'] or £zone£ §H$concept_district_specialization$§!
+ #Plural: £zone£ ['concept_district_specializations'] or £zone£ §H$concept_district_specializations$§!
+ concept_district_specialization: "$planet_zone$"
+ concept_district_specializations: "$planet_zones$"
+ concept_district_specialization_desc: "지구 특성화는 각 £district£ ['concept_district']에서 제공하는 £job£ ['concept_jobs']을 결정하며, 대부분의 경우 이러한 특성화를 통해 £building£ ['concept_buildings']을 지을 수 있는 공간이 추가됩니다."
+ concept_district_specializations_desc: "$concept_district_specialization_desc$"
+ #Singular: -
+ #Plural: £strategic_resource£ ['concept_strategic_resources'] or £strategic_resource£ §H$concept_strategic_resources$§!
+ concept_strategic_resources: "전략적 자원"
+ concept_strategic_resources_desc: "희귀하고 강력한 물질인 £strategic_resource£ §H$concept_strategic_resources$§!은 첨단 기술, 기반 시설, 우주선 시스템에 필수적인 소재입니다.\n\n예를 들어 £volatile_motes£ §H$volatile_motes$§!, £exotic_gases£ §H$exotic_gases$§!, £rare_crystals£ §H$rare_crystals$§! 등이 여기에 해당합니다.\n\n§H희귀 자원§!은 다루기 까다롭지만 더욱 높은 가치를 지닌 자원으로, 고도로 진보된 분야에서 사용됩니다. 이러한 희귀 및 전략적 자원은 다른 무엇보다도 ['concept_civilian_ships'], ['concept_military_ships'], ['concept_starbases'], ['concept_megastructures'] 건설에 사용됩니다.$tt_gain$- £zone£ §H$zone_industrial_plural$§! 또는 £zone£ §H$zone_foundry_plural$§!를 건설합니다.\n- 관련 건물을 건설합니다.\n- $tt_market$"
+ concept_strategic_resources_tooltip: "$concept_strategic_resources_desc$\n\n§G['concept_strategic_resources'] 클릭해서 데이터 뱅크 열기\n메뉴에서 £strategic_resource£ 클릭해서 목록 확장§!"
+ POLICY_OPTION_CONCEPT_BODY: "- ['policy:$POLICY$:$OPTION$',$OPTION_NAME$]"

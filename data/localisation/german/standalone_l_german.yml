@@ -1,0 +1,9 @@
+﻿l_german:
+ ENTERING_GAME_LOBBY: "Spieleinstellungen werden aufgerufen"
+ SERVER_LAUNCHING_MP: "Mehrspieler wird gestartet"
+ SERVER_NAME: "Server-Name: $NAME$"
+ SERVER_PASSWORD: "Server-Passwort: $PASSWORD$"
+ LAUNCHING_GAME: "Spiel wird gestartet"
+ STANDALONE_WAITING_FOR_PLAYERS: "Warten auf $NUM$ Spieler"
+ RECEIVED_GAMESERVER_ID: "Empfangene Server-ID: $SERVERID$"
+ RECEIVED_LOBBY_SERVER: "Empfangener Lobby-Server"

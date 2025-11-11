@@ -1,0 +1,5 @@
+﻿l_german:
+ #Sequential name formats
+ GDF_GDFFLEET: "$ORD$ GVT-Flotte"
+ #Obsolete sequentials (for backwards compatibility)
+ GDF_xxGDFFLEET_ORD: "$O$ GVT-Flotte"

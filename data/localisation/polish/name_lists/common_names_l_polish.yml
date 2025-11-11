@@ -1,0 +1,62 @@
+﻿l_polish:
+ #The following names are applied to generic ships, Megastructures, and space creatures ('fauna') which populate the galaxy and are related to features, rather than particular events.
+ #Generic ships
+ NAME_Constructor: "Konstruktor"
+ #Space Fauna 'countries' (describing e.g. the Tiyanki, Space Crystals, Mining Drones...)
+ #Galactic Imperium
+ NAME_Rebellion: "Koalicja Rebeliantów" #federation
+ NAME_Loyalists: "Imperialni Lojaliści" #federation
+ NAME_The_Civil_War: "Rebelia Galaktyczna" #war
+ NAME_Declared_Crisis_War: "Wojna [This.MainDefender.GetAdj] z kryzysem" #war
+ NAME_Crisis_Star_Eater: "Pożeracz"
+ NAME_GDF: "Galaktyczne Siły Obronne"
+ NAME_Imperial_Crusade_War: "Imperialna krucjata galaktyczna" #war
+ #################
+ #MEGASTRUCTURES
+ #################
+ #Ring World sections
+ NAME_Ring_Section_A: "Segment pierścienia A"
+ NAME_Ring_Section_B: "Segment pierścienia B"
+ NAME_Ring_Section_C: "Segment pierścienia C"
+ NAME_Ring_Section_D: "Segment pierścienia D"
+ NAME_Ring_Section_E: "Segment pierścienia E"
+ NAME_Ring_Section_F: "Segment pierścienia F"
+ NAME_Ring_Section_G: "Segment pierścienia G"
+ NAME_Ring_Section_H: "Segment pierścienia H"
+ NAME_Ring_Section_I: "Segment pierścienia I"
+ NAME_Ring_Section_K: "Segment pierścienia K"
+ NAME_Ring_Section_L: "Segment pierścienia L"
+ NAME_Ring_Section: "Segment pierścienia"
+ NAME_Habitable_Section_A: "Segment mieszkalny A"
+ NAME_Habitable_Section_B: "Segment mieszkalny B"
+ NAME_Habitable_Section_C: "Segment mieszkalny C"
+ NAME_Habitable_Section_D: "Segment mieszkalny D"
+ ##########
+ #ORIGINS
+ ##########
+ #Galactic Doorstep
+ NAME_Galactic_Doorstep: "Czarna Korona" #megastructure
+ NAME_Gateway_Vermin: "Robactwo z bramy kosmicznej" #empire
+ #On the Shoulders of Giants
+ NAME_Theros: "Theros" #planet
+ NAME_Melidas: "Melidas" #planet
+ NAME_Koras: "Koras" #planet
+ NAME_Haradas: "Haradas" #planet
+ NAME_Islena: "Islena" #planet
+ #Shattered Ring
+ NAME_Irreparable_Damage: "Katastrofalne uszkodzenia" #ringworld segment
+ NAME_The_Interloper: "Intruz" #shattered planet
+ #Here Be Dragons
+ NAME_Sky_Dragon: "Niebiański smok"
+ NAME_Sky_Dragon_Baby: "Niebiański smoczek"
+ NAME_Hrozgar_of_the_Endless_Flames: "Hrozgar Bezkresnych Płomieni"
+ #Imperial Fiefdom
+ NAME_Imperial_Origin_Empire: "Święte Imperium [origin_imperial_species.GetAdj]"
+ NAME_Imperial_Origin_Empire_2: "Królestwo [origin_imperial_species_2.GetNameAdj]"
+ NAME_Imperial_Origin_Empire_3: "Elektorat [origin_imperial_species_3.GetNameAdj]"
+ NAME_Imperial_Origin_Empire_4: "Palatynat [origin_imperial_species_4.GetNameAdj]"
+ NAME_Imperial_Origin_Empire_5: "Liga [origin_imperial_species_5.GetAdj]"
+ NAME_Aix: "Aix" #planet
+ #Toxic Knights
+ NAME_Sinople: "Malachit"
+ NAME_Syamelle: "Syamelle"

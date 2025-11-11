@@ -1,0 +1,5 @@
+﻿l_russian:
+ #Sequential name formats
+ GDF_GDFFLEET: "$ORD$-я флотилия СГО"
+ #Obsolete sequentials (for backwards compatibility)
+ GDF_xxGDFFLEET_ORD: "$O$-я флотилия СГО"

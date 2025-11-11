@@ -1,0 +1,537 @@
+﻿l_russian:
+ #See also: english\random_names\random_names_l_english.yml, which contains the names used for randomly-generated stars. The stars named in this file belong to particular, scripted star systems.
+ ######################
+ #PRESCRIPTED SYSTEMS
+ ######################
+ #United Nations of Earth
+ NAME_United_Nations_of_Earth: "Объединенные Нации Земли"
+ NAME_Sol: "Солнце|||gen:Солнца"
+ NAME_1_Ceres: "(1) Церера"
+ NAME_2_Pallas: "(2) Паллада"
+ NAME_3_Juno: "(3) Юнона"
+ NAME_4_Vesta: "(4) Веста"
+ NAME_Mercury: "Меркурий"
+ NAME_Venus: "Венера"
+ NAME_Earth: "Земля|||gen:Земли"
+ NAME_Luna: "Луна"
+ NAME_Mars: "Марс"
+ NAME_Jupiter: "Юпитер"
+ NAME_Io: "Ио"
+ NAME_Europa: "Европа"
+ NAME_Ganymede: "Ганимед"
+ NAME_Callisto: "Калисто"
+ NAME_Saturn: "Сатурн"
+ NAME_Titan: "Титан"
+ NAME_Uranus: "Уран"
+ NAME_Neptune: "Нептун"
+ NAME_Triton: "Тритон"
+ NAME_134340_Pluto: "134340 Плутон"
+ #Alternative names used
+ NAME_Demeter: "Деметра" #Greek equivalent of Ceres
+ NAME_Athena: "Афина" #Athena adopted Pallas's name
+ NAME_Hera: "Гера" #Greek equivalent of Juno
+ NAME_Hestia: "Гестия" #Greek equivalent of Vesta
+ NAME_Hermes: "Гермес" #Greek equivalent of Mercury
+ NAME_Aphrodite: "Афродита" #Greek equivalent of Venus
+ NAME_Gaia: "Гея" #Greek equivalent of Terra
+ NAME_Selene: "Селена" #Greek equivalent of Luna
+ NAME_Ares: "Арес" #Greek equivalent of Mars
+ NAME_Zeus: "Зевс" #Greek equivalent of Jupiter
+ NAME_Phoronis: "Форонис" #Io was also known as Phoronis
+ NAME_Astarte: "Астарта" #Europa may have her origin as Aštart
+ NAME_Catamitus: "Катамит" #Latinized form of Ganymede
+ NAME_Themisto: "Фемисто" #Mother of Arcas in other accounts
+ NAME_Cronus: "Кронос" #Greek equivalent of Saturn
+ NAME_Orpheus: "Орфей" #Titans were important in Orphic tales
+ NAME_Caelus: "Целус" #Latin equivalent of Uranus
+ NAME_Poseidon: "Посейдон" #Greek equivalent of Neptune
+ NAME_Rhodos: "Родос" #Sibling of Triton
+ NAME_Hades: "Аид" #Greek equivalent of Pluto
+ NAME_Tane: "Тане" #Makemake appeared to be a version of the Polynesian god Tāne
+ NAME_Papa: "Папаханаумоку" #Papahānaumoku alternative name for Haumea
+ NAME_Prachetas: "Прачеты" #An epithet of Varuna
+ #UNE neighboring systems
+ NAME_Alpha_Centauri: "Альфа Центавра"
+ NAME_Alpha_Centauri_A: "Альфа Центавра A"
+ NAME_Alpha_Centauri_B: "Альфа Центавра B"
+ NAME_Alpha_Centauri_B_I: "Альфа Центавра B I"
+ NAME_Alpha_Centauri_B_II: "Альфа Центавра B II"
+ NAME_Alpha_Centauri_B_III: "Альфа Центавра B III"
+ NAME_Barnards_Star: "Звезда Барнарда"
+ NAME_Polaris: "Полярная звезда"
+ NAME_PolarisAa: "Полярная звезда Aa"
+ NAME_PolarisAb: "Полярная звезда Ab"
+ NAME_PolarisB: "Полярная звезда B"
+ NAME_Procyon: "Процион"
+ NAME_Procyon_A: "Процион A"
+ NAME_Procyon_B: "Процион B"
+ NAME_Proxima_Centauri: "Проксима Центавра"
+ NAME_Proxima_Centauri_b: "Проксима Центавра b"
+ NAME_Proxima_Centauri_c: "Проксима Центавра c"
+ NAME_Sirius: "Сириус"
+ NAME_Sirius_A: "Сириус A"
+ NAME_Sirius_B: "Сириус B"
+ NAME_136472_Makemake: "136472 Макемаке"
+ NAME_136108_Haumea: "136108 Хаумеа"
+ NAME_20000_Varuna: "20000 Варуна"
+ #Deneb (Commonwealth of Man/UNE)
+ NAME_Deneb: "Денеб" #star
+ NAME_Inferno: "Пекло" #planet
+ NAME_DT4-298: "DT4-298" #asteroid
+ NAME_LR-2129: "LR-2129" #asteroid
+ NAME_GR-345: "GR-345" #asteroid
+ NAME_Olympus: "Олимп" #planet
+ NAME_New_Luna: "Новая Луна" #moon, as in 'NAME_Luna'
+ NAME_Unity: "Единство" #moon
+ NAME_Marble: "Мрамор" #planet
+ NAME_Hyperion: "Гиперион" #planet
+ NAME_Helios: "Гелиос" #moon
+ NAME_Tumbleweed: "Перекати-поле" #planet
+ NAME_Jackson's_Planet: "Планета Джексона" #planet
+ #Sol (Void Dweller origin)
+ NAME_Sol_Void_Dweller: "Солнце (жители пустоты)" #system
+ NAME_Old_Earth: "Старая Земля" #planet
+ NAME_Earth_Habitat: "Поселение Земля"
+ NAME_Mars_Habitat: "Поселение Марс"
+ NAME_Saturn_Habitat: "Поселение Сатурн"
+ #Titawin (Federated Theian Preservers)
+ titawin_init_NAME: "$NAME_Titawin$"
+ titawin_init_DESC: "Стартовая звездная система Федеративных хранителей Тейи.\n\n$system_initializer_DESC$"
+ NAME_Titawin: "Титавин" #Upsilon Andromedae
+ NAME_Titawin_A: "Титавин A" #F-Type Star
+ NAME_Titawin_B: "Титавин B" #Red Dwarf Star
+ NAME_Saffar: "Саффар" #Gas Giant
+ NAME_Samh: "Самх" #Gas Giant
+ NAME_Majriti: "Маджрити" #Gas Giant
+ NAME_Curiel: "Куриэль" #Gas Giant
+ NAME_Theia: "Тея" #Homeworld
+ NAME_Akal_Amectuh: "Акал Амек" #Moon
+ NAME_Yessefsi: "Йессеф" #Molten World
+ NAME_PHS_01: "PHS-01" #Asteroid
+ NAME_PHS_02: "PHS-02" #Asteroid
+ NAME_PHS_03: "PHS-03" #Asteroid
+ NAME_PHS_04: "PHS-04" #Asteroid
+ #Sol (Knights of the Toxic God)
+ NAME_Luna_Habitat: "Обитаемый комплекс Сол"
+ #Sol (Blooms of Gaea)
+ NAME_Gaea: "Гея" #Homeworld
+ #L-Cluster
+ NAME_Final_Egress: "Последний Исход" #star
+ NAME_Sel-Ufaan: "Сел-Уфаан"
+ NAME_Ten-Aard-Shel: "Тен-Аард-Шел"
+ NAME_Diim-Fu-Rem: "Диим-Фа-Рем"
+ NAME_Dora-Fu-Rem: "Дора-Фа-Рем"
+ NAME_Naal-Di-Kor: "Наал-Ди-Кор"
+ NAME_Tao-Enar-Vi: "Тао-Энар-Ви"
+ NAME_Tao-Fun-Vi: "Тао-Фан-Ви"
+ NAME_Tao-Arl-Vi: "Тао-Арл-Ви"
+ NAME_Tao-Got-Vi: "Тао-Гот-Ви"
+ NAME_Gol-Unda-Fiir: "Гол-Унда-Фиир"
+ NAME_Dora-Enar-Fiir: "Дора-Энар-Фиир"
+ NAME_Dora-Fun-Fiir: "Дора-Фан-Фиир"
+ NAME_Dora-Arl-Fiir: "Дора-Арл-Фиир"
+ NAME_Dora-Got-Fiir: "Дора-Гот-Фиир"
+ NAME_Gol-Umn-Toor: "Гол-Умн-Тоор"
+ NAME_Dora-Enar-Toor: "Дора-Энар-Тоор"
+ NAME_Gol-Salm-Ri: "Гол-Салм-Ри"
+ NAME_Gol-Mel-Rood: "Гол-Мел-Роод"
+ NAME_Dora-Enar-Rood: "Дора-Энар-Роод"
+ ##############
+ #CARAVANEERS
+ ##############
+ #Ship names
+ NAME_Caravaneer_Starbase: "Маяк караванщиков"
+ ###########
+ #ENCLAVES
+ ###########
+ #Artisans
+ NAME_Artisan_Troupe: "Труппа мастеров" #empire
+ NAME_Artisan_adj: "Мастер" #empire, e.g. 'an Artisan starbase'
+ NAME_Ars_Artem: "Арс Артэм"
+ #Curators
+ NAME_Curator_Order: "Орден кураторов" #empire
+ NAME_Curator_adj: "Куратор" #empire, e.g. 'a Curator starbase'
+ NAME_Curator_Alpha_Enclave: "Анклав Кураторов Альфа" #starbase
+ NAME_Curator_Lambda_Enclave: "Анклав Кураторов Лямбда" #starbase
+ NAME_Curator_Sigma_Enclave: "Анклав Кураторов Сигма" #starbase
+ #Traders
+ NAME_Muutagan_Merchant_Guild: "Муутаганская Торговая Гильдия" #empire
+ NAME_Muutagan_adj: "Муутаганск|||masc:Муутаганский $1$|||masc,gen:Муутаганского $1$|||masc,dat:Муутаганскому $1$|||masc,acc:Муутаганский $1$|||masc,inst:Муутаганским $1$|||masc,prep:Муутаганском $1$|||fem:Муутаганская $1$|||fem,gen:Муутаганской $1$|||fem,dat:Муутаганской $1$|||fem,acc:Муутаганскую $1$|||fem,inst:Муутаганской $1$|||fem,prep:Муутаганской $1$|||neut:Муутаганское $1$|||neut,gen:Муутаганского $1$|||neut,dat:Муутаганскому $1$|||neut,acc:Муутаганское $1$|||neut,inst:Муутаганским $1$|||neut,prep:Муутаганском $1$|||pl:Муутаганские $1$|||pl,gen:Муутаганских $1$|||pl,dat:Муутаганским $1$|||pl,acc:Муутаганские $1$|||pl,inst:Муутаганскими $1$|||pl,prep:Муутаганских $1$|||corp:Муутаган $1$" #empire
+ NAME_Muutagan: "Муутаган|||gen:Муутагана" #species
+ NAME_Muutagan_plural: "Муутаганцы|||gen:Муутаганцев"
+ NAME_Muutag_Station: "Станция Муутаг" #starbase
+ NAME_Riggan_Commerce_Exchange: "Ригганская Торговая Биржа" #empire
+ NAME_Riggan_adj: "Ригганск|||masc:Ригганский $1$|||masc,gen:Ригганского $1$|||masc,dat:Ригганскому $1$|||masc,acc:Ригганский $1$|||masc,inst:Ригганским $1$|||masc,prep:Ригганском $1$|||fem:Ригганская $1$|||fem,gen:Ригганской $1$|||fem,dat:Ригганской $1$|||fem,acc:Ригганскую $1$|||fem,inst:Ригганской $1$|||fem,prep:Ригганской $1$|||neut:Ригганское $1$|||neut,gen:Ригганского $1$|||neut,dat:Ригганскому $1$|||neut,acc:Ригганское $1$|||neut,inst:Ригганским $1$|||neut,prep:Ригганском $1$|||pl:Ригганские $1$|||pl,gen:Ригганских $1$|||pl,dat:Ригганским $1$|||pl,acc:Ригганские $1$|||pl,inst:Ригганскими $1$|||pl,prep:Ригганских $1$|||corp:Ригган $1$" #empire
+ NAME_Riggan: "Ригган|||gen:Риггана" #species
+ NAME_Riggan_plural: "Ригганцы|||gen:Ригганцев"
+ NAME_Grand_Bazaar: "Большой базар" #starbase
+ NAME_XuraCorp: "Корпорация «Ксура»" #empire
+ NAME_XuraCorp_adj: "Ксурийск|||masc:Ксурийский $1$|||masc,gen:Ксурийского $1$|||masc,dat:Ксурийскому $1$|||masc,acc:Ксурийский $1$|||masc,inst:Ксурийским $1$|||masc,prep:Ксурийском $1$|||fem:Ксурийская $1$|||fem,gen:Ксурийской $1$|||fem,dat:Ксурийской $1$|||fem,acc:Ксурийскую $1$|||fem,inst:Ксурийской $1$|||fem,prep:Ксурийской $1$|||neut:Ксурийское $1$|||neut,gen:Ксурийского $1$|||neut,dat:Ксурийскому $1$|||neut,acc:Ксурийское $1$|||neut,inst:Ксурийским $1$|||neut,prep:Ксурийском $1$|||pl:Ксурийские $1$|||pl,gen:Ксурийских $1$|||pl,dat:Ксурийским $1$|||pl,acc:Ксурийские $1$|||pl,inst:Ксурийскими $1$|||pl,prep:Ксурийских $1$|||corp:Ксури $1$" #empire
+ NAME_Xuri: "Ксури" #species
+ NAME_Xuri_plural: "Ксури"
+ NAME_XuraCorp_HQ: "Штаб корпорации «Ксура»" #starbase
+ #Salvagers
+ NAME_Asters_Workshop: "Мастерская Астера" #starbase
+ #Shroudwalkers
+ NAME_Shroud_Teachers: "Локус Покрова" #starbase
+ #################
+ #FALLEN EMPIRES
+ #################
+ #See also: entries in event_names_l_<language>.yml, which pertain to Awakened Empires.
+ #Star system names
+ NAME_Alpha_Refuge: "Убежище Альфа"
+ NAME_Beta_Refuge: "Убежище Бета"
+ NAME_Gamma_Refuge: "Убежище Гамма"
+ NAME_Delta_Refuge: "Убежище Дельта"
+ NAME_Great_Nexus: "Источник Знаний"
+ NAME_Custodian_Nexus: "Центральный процессор"
+ #Planet names
+ NAME_Apostasy: "Отречение"
+ NAME_Boundary: "Предел"
+ NAME_Brother: "Брат"
+ NAME_Celestial_Throne: "Небесный трон"
+ NAME_The_Core: "Ядро"
+ NAME_Cradle: "Колыбель"
+ NAME_The_Mistake: "Ошибка"
+ NAME_Mother: "Мать"
+ NAME_The_Preserve: "Заповедник"
+ NAME_Pristine_Jewel: "Первозданная Жемчужина"
+ NAME_Prophets_Retreat: "Пристанище Пророка"
+ NAME_Sister: "Сестра"
+ NAME_Sky_Father: "Отец-небо"
+ NAME_Sky_Temple: "Небесный храм"
+ NAME_Walled_Garden: "Огороженный Сад"
+ NAME_Wanderer: "Скиталец"
+ NAME_Alpha_Complex: "Комплекс Альфа"
+ NAME_The_Archives: "Архивы"
+ NAME_Production_Unit: "Производственный модуль"
+ NAME_Processing_Unit: "Вычислительный Модуль"
+ NAME_Circuit_I: "Контур I" #ringworld segment
+ NAME_Circuit_II: "Контур II" #ringworld segment
+ NAME_Circuit_III: "Контур III" #ringworld segment
+ NAME_Superstructure_I: "Пролет I" #ringworld segment
+ NAME_Superstructure_II: "Пролет II" #ringworld segment
+ NAME_Superstructure_III: "Пролет III" #ringworld segment
+ #Species names
+ NAME_Dead_Species: "Мертвая раса"
+ NAME_Synthetic: "Синтетик" #servant robot
+ NAME_Synthetic_plural: "Синтетики"
+ #Ship names
+ NAME_Adjuster: "Регулировщик"
+ NAME_Alpha: "Альфа"
+ NAME_Archivist: "Архивариус"
+ NAME_Avatar: "Аватар"
+ NAME_Benevolence: "Милосердие"
+ NAME_Beta: "Бета"
+ NAME_Cleanser: "Чистильщик"
+ NAME_Cloaker: "Скрытень"
+ NAME_Delta: "Дельта"
+ NAME_Enforcer: "Принудитель"
+ NAME_Librarian: "Библиотекарь"
+ NAME_Sage: "Мудрец"
+ NAME_Savant: "Савант"
+ NAME_Scholar: "Ученый"
+ NAME_Seeker: "Искатель"
+ NAME_Epsilon: "Эпсилон"
+ NAME_Gamma: "Гамма"
+ NAME_Omega: "Омега"
+ NAME_Progress: "Прогресс"
+ NAME_Surplus_I: "Избыток"
+ NAME_Surplus_II: "$NAME_Surplus_I$"
+ NAME_Surplus_III: "$NAME_Surplus_I$"
+ NAME_Tau: "Тау"
+ NAME_Theta: "Тета"
+ ###########################
+ #LEVIATHANS & SPACE FAUNA
+ ###########################
+ #See also: event_names_l_english.yml, which caontains names used for when additional entities spawn, typically around mid-game.
+ #Guardians/Leviathans
+ NAME_Automated_Dreadnought: "Автоматизированный дредноут" #fleet
+ NAME_JuukTidir: "Джуук'Тидир" #ship/entity
+ NAME_Enigmatic_Fortress: "Загадочная крепость"
+ NAME_Infinity_Machine: "Машина бесконечности" #empire, ship design
+ NAME_I_O: "I-O" #ship/entity
+ NAME_The_Infinity_Machine: "Машина бесконечности" #fleet
+ NAME_Gargantua: "Гаргантюа" #black hole
+ NAME_Voidwyrm: "Змей пустоты" #empire
+ NAME_Ether_Drake: "Эфирный дракон" #fleet
+ NAME_Avice: "Авичи" #ship/entity (named dragon)
+ NAME_Grand_Dragon: "Великий дракон" #'ship' type
+ NAME_Dragons_Hoard: "Драконья кладка" #planet
+ #Ancient Mining Drones
+ NAME_Mineral_Extraction_Operation: "Система добычи минералов" #empire
+ NAME_Central_Processing: "Центральный процессор" #planet
+ NAME_Ore_Grinder: "Рудоизмельчитель" #planet
+ NAME_Asset_Protection_Unit: "Единица защиты активов" #fleet
+ NAME_Mining_Corps: "Добывающий корпус" #fleet
+ #Space Amoebae
+ NAME_Spaceborne_Organics: "Космические организмы" #empire
+ NAME_Space_Amoebas_United: "Скопище космических амеб" #empire
+ NAME_Amor_Alveo: "Амор Альвео" #star
+ NAME_Amor_Toreo: "Амор Торео" #planet
+ NAME_Amor_Dareetheo: "Амор Даритео" #planet
+ NAME_Veronax: "Веронакс" #planet
+ NAME_Evor_Aras: "Эвор Арас" #planet
+ NAME_Evor_Tomos: "Эвор Томос" #planet
+ NAME_Eberax: "Эберакс" #planet
+ NAME_Tharonax: "Таронакс" #planet
+ NAME_Narnax: "Нарнакс" #planet
+ NAME_Tior: "Тиор" #planet
+ NAME_Lemior: "Лемиор" #planet
+ NAME_Isior: "Исиор" #planet
+ NAME_Selor: "Селор" #planet
+ NAME_Theresior: "Тересиор" #planet
+ NAME_Pesior: "Песиор" #planet
+ NAME_Amoeba_Swarm: "Рой амеб" #fleet
+ NAME_Amoeba_Swarm_seed: "Рой амеб (£seed_pod£)" #fleet carrying seeds (Fruitful Origin)
+ NAME_Space_Amoeba_Hunters: "Космические амёбы-охотники" #fleet
+ NAME_Space_Amoeba_Hunters_seed: "Космические амебы-охотники (£seed_pod£)" #fleet carrying seeds (Fruitful Origin)
+ #Space Crystals
+ NAME_Prism: "Призма" #empire
+ NAME_Crystal_Nidus: "Кристальное гнездо" #ship
+ NAME_Kappa: "Каппа" #ship
+ NAME_Shardlings: "Осколыши" #fleet
+ NAME_Shardling: "Осколыш" #ship
+ NAME_Emerald_Guardians: "Изумрудные стражи" #fleet
+ NAME_Emerald_Mausoleum: "Изумрудный мавзолей" #planet
+ NAME_Emerald_Roamers: "Изумрудные скитальцы" #fleet
+ NAME_Ruby_Guardians: "Рубиновые стражи" #fleet
+ NAME_Ruby_Stack: "Рубиновое скопление" #fleet
+ NAME_Ruby_Swarm: "Рубиновый рой" #fleet
+ NAME_Sapphire_Guardians: "Сапфировые стражи" #fleet
+ NAME_Sapphire_Lurkers: "Сапфировые странники" #fleet
+ NAME_Topaz_Guardians: "Топазовые стражи" #fleet
+ NAME_Shards_of_Diamond: "Алмазные осколки" #fleet
+ NAME_Shards_of_Obsidian: "Обсидиановые осколки" #fleet
+ NAME_Shards_of_Onyx: "Ониксовые осколки" #fleet
+ NAME_Shards_of_Sapphire: "Сапфировые осколки" #fleet
+ NAME_Yormak's_Belly: "Брюхо Йормака" #planet
+ NAME_Yormak's_Eye: "Глаз Йормака" #planet
+ NAME_Yormak's_Fist: "Кулак Йормака" #planet
+ NAME_Yormak's_Heart: "Сердце Йормака" #planet
+ NAME_Yormak's_Snout: "Хобот Йормака" #planet
+ NAME_Yormak's_Tail: "Хвост Йормака" #planet
+ NAME_Yormak's_Tongue: "Язык Йормака" #planet
+ NAME_Yormak's_Tusk: "Бивень Йормака" #planet
+ #Tiyanki
+ NAME_Placid_Leviathans: "Мирные левиафаны" #empire
+ NAME_Tiyanki_Space_Whale: "Космический кит тиянки" #fleet
+ NAME_Tiyanki_Space_Whale_seed: "Космический кит — тиянки (£seed_pod£)" #fleet carrying seeds (Fruitful Origin)
+ NAME_Tiyanki_Bull: "Самец тиянки"
+ NAME_Tiyanki_Cow: "Самка тиянки"
+ NAME_Tiyanki_Hatchling: "Детёныш тиянки"
+ NAME_Tiyanki_Ox: "Тиянки-вол"
+ NAME_Tiyana_Vek: "Тияна Век" #star
+ NAME_Zathika_Mev: "Затика Мев" #planet
+ NAME_Surribzha: "Сарриб'Ж" #planet
+ NAME_Yllarv: "Ялларв" #planet
+ NAME_Khetzhavu: "Хет'Жаву" #planet
+ NAME_Dulna: "Дулна" #planet
+ NAME_Valzhuva: "Вал'жу'Ва" #planet
+ NAME_Tiyun_Ort: "Тиюн Орт" #star
+ NAME_Ghanek: "Ганек" #planet
+ NAME_Zhaduva: "Жадува" #planet
+ NAME_Orek_Vuul: "Орек Вуул" #planet
+ #Void Clouds
+ NAME_Enigmatic_Energy: "Загадочная энергия" #empire
+ NAME_Great_Wound: "Великая рана" #star/black hole
+ NAME_Subspace_Rupture_1: "Подпространственный разрыв F-49" #black hole
+ NAME_Subspace_Rupture_2: "Подпространственный разрыв RX-199" #black hole
+ NAME_Subspace_Rupture_3: "Подпространственный разрыв G-12" #black hole
+ NAME_Subspace_Rupture_4: "Подпространственный разрыв NL-889" #black hole
+ NAME_Subspace_Rupture_5: "Подпространственный разрыв QX-3" #black hole
+ NAME_Subspace_Rupture_6: "Подпространственный разрыв NGR-412" #black hole
+ NAME_Subspace_Rupture_7: "Подпространственный разрыв ZT-34" #black hole
+ NAME_Subspace_Rupture_8: "Подпространственный разрыв F-311" #black hole
+ NAME_Subspace_Rupture_9: "Подпространственный разрыв SX-77" #black hole
+ NAME_Subspace_Rupture_10: "Подпространственный разрыв PL-4499" #black hole
+ ##################
+ #PRE-FTL SPECIES
+ ##################
+ #See also: entries in event_names_l_<language>.yml
+ #Earth
+ NAME_Human: "Человек|||gen:Человека" #species
+ NAME_Human_plural: "Люди|||gen:Людей" #species
+ NAME_ISS_II: "МКС-2" #International Space Station (2nd generation)
+ NAME_British_Armed_Forces: "Вооруженные Силы Великобритании" #army
+ NAME_Chinese_PLA: "НОАК" #People's Liberation Army
+ NAME_EU_Combined_Forces: "Объединенная армия ЕС" #European Union army
+ NAME_Feudal_Levies: "Феодальное ополчение" #army
+ NAME_German_Wehrmacht: "Германский вермахт" #army
+ NAME_Imperial_Japanese_Forces: "Императорская армия Японии" #army
+ NAME_Russian_Armed_Forces: "Вооруженные силы РФ" #army
+ NAME_Soviet_Red_Army: "Красная армия" #army
+ NAME_US_Armed_Forces: "Вооруженные Силы США" #army
+ NAME_US_Armed_Forces_East: "Вооруженные Силы США — Восток" #army
+ NAME_US_Armed_Forces_West: "Вооруженные Силы США — Запад" #army
+ NAME_Sol_III: "Солнце III" #star
+ ################
+ #OTHER CONTENT
+ ################
+ #Guardians of Zanaam
+ NAME_Guardians_of_Zanaam: "Хранители Занаама" #country, fleet
+ NAME_Zanaam: "Занаам" #planet
+ NAME_Defensive_Alpha: "Защитник Альфа" #ship
+ NAME_Defensive_Beta: "Защитник Бета" #ship
+ NAME_Defensive_Chi: "Защитник Хи" #ship
+ NAME_Defensive_Delta: "Защитник Дельта" #ship
+ NAME_Defensive_Epsilon: "Защитник Эпсилон" #ship
+ NAME_Defensive_Eta: "Защитник Эта" #ship
+ NAME_Defensive_Gamma: "Защитник Гамма" #ship
+ NAME_Defensive_Iota: "Защитник Йота" #ship
+ NAME_Defensive_Kappa: "Защитник Каппа" #ship
+ NAME_Defensive_Ksi: "Защитник Кси" #ship
+ NAME_Defensive_Lambda: "Защитник Лямбда" #ship
+ NAME_Defensive_Mu: "Защитник Мю" #ship
+ NAME_Defensive_Nu: "Защитник Ню" #ship
+ NAME_Defensive_Omega: "Защитник Омега" #ship
+ NAME_Defensive_Omicron: "Защитник Омикрон" #ship
+ NAME_Defensive_Phi: "Защитник Фи" #ship
+ NAME_Defensive_Pi: "Защитник Пи" #ship
+ NAME_Defensive_Psi: "Защитник Пси" #ship
+ NAME_Defensive_Rho: "Защитник Ро" #ship
+ NAME_Defensive_Sigma: "Защитник Сигма" #ship
+ NAME_Defensive_Tau: "Защитник Тау" #ship
+ NAME_Defensive_Theta: "Защитник Тета" #ship
+ NAME_Defensive_Upsilon: "Защитник Ипсилон" #ship
+ NAME_Defensive_Zeta: "Защитник Дзета" #ship
+ #The Sanctuary
+ NAME_Sanctuary: "Заповедник" #star
+ NAME_Administrator: "Администратор" #ship
+ NAME_Sanctuary_Core: "Ядро Заповедника" #ship design/type
+ NAME_Sanctuary_A: "Заповедник A" #ringworld section
+ NAME_Sanctuary-B: "Заповедник B" #ringworld section
+ NAME_Sanctuary-C: "Заповедник C" #ringworld section
+ NAME_Sanctuary-D: "Заповедник D" #ringworld section
+ NAME_Sanctuary-E: "Заповедник E" #ringworld section
+ NAME_Sanctuary-F: "Заповедник F" #ringworld section
+ NAME_Sanctuary-G: "Заповедник G" #ringworld section
+ NAME_Sanctuary-H: "Заповедник H" #ringworld section
+ NAME_Sanctuary-I: "Заповедник I" #ringworld section
+ NAME_Sanctuary-J: "Заповедник J" #ringworld section
+ NAME_Sanctuary-K: "Заповедник K" #ringworld section
+ NAME_Sanctuary-L: "Заповедник L" #ringworld section
+ #Trappist system
+ NAME_Trappist: "Траппист" #system
+ #Ratling systems
+ NAME_Decayed_Hub: "Обветшалый узел" #planet
+ #Hauer system (Rutger Hauer tribute)
+ NAME_Hauer: "Хауэр" #star
+ NAME_Aureyon: "Ау'Рейон" #planet
+ NAME_Baage: "Баадж" #planet
+ NAME_Baelte: "Бель'те" #planet
+ NAME_Bhete: "Бете" #planet
+ NAME_Snaaraa: "Фанж" #planet
+ NAME_Floe: "Флоэ" #planet
+ NAME_Piyhl: "Пи'Юл" #planet
+ NAME_Snaara: "Снаара" #planet
+ NAME_Straeng: "Стренг" #planet
+ NAME_Stykkia: "Стиккия" #planet
+ #Kept Grounds (Wenkwort Artem)
+ NAME_Fruitful: "Смотрители Аудона" #empire
+ NAME_Wenkwort_Keeper: "Аудонский хранитель" #species
+ NAME_Wenkwort_Keeper_plural: "Аудонские хранители" #species
+ NAME_Warder_of_the_Ruins: "Хранитель руин" #ship
+ NAME_Wenkwort: "Уэнкворт" #star
+ NAME_wenkwort_prime: "Уэнкворт Артэм" #planet
+ NAME_wenkwort_moon: "Милфод" #planet
+ NAME_wenkwort_2: "Реллрайт" #planet
+ NAME_wenkwort_3: "Бураве" #planet
+ NAME_wenkwort_4: "Макрен" #planet
+ NAME_wenkwort_asteroid: "Трайн" #planet
+ NAME_Gardener_Drone: "Модуль-смотритель Аудона" #ship
+ NAME_Gardener_Drone_plural: "Отряд смотрителей 14-WW" #fleet
+ NAME_Gardeners: "Садовники"
+ NAME_Gardener1: "Смотритель Пертон" #ship
+ NAME_Gardener2: "Смотритель Спартон-Брон" #ship
+ NAME_Gardener3: "Смотритель Визентон" #ship
+ NAME_Wenkwort_Enforcer: "Аудонский крейсер" #ship design
+ NAME_Wenkwort_Enforcer_plural: "Отряд блюстителей порядка 61-VL" #fleet
+ #Ruins of Shallash
+ NAME_Darad: "Дарад" #planet
+ NAME_Shallash: "Шаллаш" #planet
+ NAME_Shallasha: "Шаллаш a" #moon
+ NAME_Shallashb: "Шаллаш b" #moon
+ NAME_Shallashc: "Шаллаш c" #moon
+ NAME_Shallashd: "Шаллаш d" #moon
+ NAME_Shallashe: "Шаллаш e" #moon
+ NAME_Shallashf: "Шаллаш f" #moon
+ NAME_Parvus: "Парвус" #planet
+ #Fumongus
+ NAME_Fumongus_System: "Орвалл" #star
+ NAME_Grazing_Tiyanki: "Пасущиеся тиянки" #fleet
+ NAME_Grazing_Tiyanki_seed: "Пасущиеся тиянки (£seed_pod£)" #fleet carrying seeds (Fruitful Origin)
+ NAME_Fumongus_Star: "Козмог-1" #star (also a personality/vanity system)
+ NAME_Fumongus_Planet01: "Блем-Сел"
+ NAME_Fumongus_Planet02: "Гай-Миг"
+ NAME_Fumongus_Planet02a: "Гай-Миг a"
+ NAME_Fumongus_PlanetDig: "Мур-Хсретту"
+ NAME_Fumongus_Planet03: "Ан-Май"
+ NAME_Fumongus_Planet03a: "Ан-Май a"
+ #Ghost Ship
+ NAME_Hillos: "Иллос" #system
+ NAME_Hillos_Star: "$NAME_Hillos$" #star
+ NAME_HillosA: "$NAME_Hillos$ I"
+ NAME_HillosB: "$NAME_Hillos$ II"
+ NAME_HillosC: "$NAME_Hillos$ III"
+ NAME_HillosA_moon: "Ширья"
+ #Surveillance Supercomputer
+ NAME_Ultima_Vigilis: "Ультима Виджилис"
+ NAME_Observation_Terminal: "Терминал наблюдения"
+ NAME_Repurposed_Surveillance_Network: "Переоборудованная сеть наблюдения"
+ #Larionessi Refuge
+ NAME_Unique_System_1: "Предел Федерации" #star
+ NAME_Unique_System_2: "Убежище Ларионцев" #star
+ NAME_Unique_System_2_Planet: "Ларион"
+ #Zevox (Shrouded planet)
+ NAME_Unique_System_3: "Зивокс" #star
+ NAME_Unique_System_3_Planet: "Ноль-Один"
+ NAME_Unique_System_3_Moon: "Ноль-Два"
+ #Ancient Battlefields
+ NAME_Unique_System_4: "Опора Фенракса" #star
+ NAME_Unique_System_5: "Прибежище Жанрокса" #star
+ NAME_Unique_System_6: "Афари" #star
+ #Triple Planet systems
+ NAME_Unique_System_7: "Крест Трагулы"
+ NAME_Unique_System_8: "Обещание Трина"
+ NAME_Unique_System_9: "Ло"
+ #Lost Swarm System
+ NAME_Lost_Swarm_System: "Юбоглилт"
+ NAME_Ubogleelt: "Юбоглилт"
+ NAME_UbogleeltA: "Юбоглилт I"
+ NAME_UbogleeltB: "Юбоглилт II"
+ NAME_UbogleeltC: "Юбоглилт III"
+ NAME_UbogleeltD: "Юбоглилт IV"
+ NAME_UbogleeltE: "Юбоглилт V"
+ NAME_Lost_Swarm: "Рой саранчи"
+ NAME_Lost_Swarm_Ship: "Саранча"
+ NAME_Lost_Swarm_Adult: "Саранча"
+ #Holibrae
+ NAME_Holibrae: "Холибре"
+ NAME_Holibrae_Corps: "Корпус Холибре" #fleet
+ NAME_Holibrae_Destroyer: "Эсминец Холибре" #ship type
+ #Star Mall
+ NAME_Parking_Orbit_White_Dwarf: "Парковочная орбита: Зона белого карлика"
+ NAME_Parking_Orbit_Main_Sequence: "Парковочная орбита: Зона главной последовательности"
+ NAME_Star_Mall: "Звездный центр"
+ NAME_Parking_Orbit_Magnetar: "Парковочная орбита: Зона магнетара"
+ NAME_Parking_Orbit_Black_Hole: "Парковочная орбита: Зона черной дыры"
+ NAME_Parking_Orbit_Pulsar: "Парковочная орбита: Зона пульсара"
+ NAME_Parking_Orbit_Brown: "Парковочная орбита: Зона коричневого карлика"
+ star_mall_drone: "Парковочный дрон Звездного центра"
+ star_mall_drone_plural: "Парковочные дроны Звездного центра"
+ NAME_Star_Mall_Parking_Drones: "Парковочная служба Звездного центра"
+ NAME_Star_Mall_Parking_Services: "Парковочная служба Звездного центра"
+ #Breachsealers
+ NAME_Seddom: "Седдом" #Modders
+ NAME_Ariph: "Ариф" #Ariphaos
+ NAME_Hari_XXIV: "Хари XXIV" #Harain & The24thDS
+ NAME_Risasi: "Рисаси" #Risa
+ NAME_Aridder: "Ариддер" #alexrider903
+ NAME_E'cho: "Э’хо" #ECHO
+ NAME_Rover: "Ровер" #Roverstorm
+ NAME_Jasepe: "Джасепе" #jasonpepe
+ NAME_Blaxe: "Блаксе" #SirBlackAxe
+ NAME_Glavi: "Глави" #Glavius
+ NAME_Salvold: "Сальвольд" #Savlor & OldEnt
+ NAME_Frince: "Фринс" #Fireprince

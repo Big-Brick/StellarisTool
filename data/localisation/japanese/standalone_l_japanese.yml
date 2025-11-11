@@ -1,0 +1,9 @@
+﻿l_japanese:
+ ENTERING_GAME_LOBBY: "ゲームを作る"
+ SERVER_LAUNCHING_MP: "マルチプレイを起動"
+ SERVER_NAME: "サーバー名：$NAME$"
+ SERVER_PASSWORD: "サーバーパスワード：$PASSWORD$"
+ LAUNCHING_GAME: "ゲームを始める"
+ STANDALONE_WAITING_FOR_PLAYERS: "$NUM$人のプレイヤーを待っている"
+ RECEIVED_GAMESERVER_ID: "受信したサーバーID：$SERVERID$"
+ RECEIVED_LOBBY_SERVER: "受信したロビーサーバー"

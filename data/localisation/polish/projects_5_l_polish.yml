@@ -1,0 +1,11 @@
+﻿l_polish:
+ LIMBO_2_PROJECT: "Na skraju nicości - druga szansa"
+ LIMBO_2_PROJECT_DESC: "Moglibyśmy dać szansę na drugie życie wymarłemu gatunkowi kosmitów, wczytując ich skany neuronowe do ciał robotów."
+ GHOST_SHIP_PROJECT: "Zbadać \"statek widmo\""
+ GHOST_SHIP_PROJECT_DESC: "Opuszczony statek badawczy odbywa trwający wieki patrol w układzie $NAME_Hillos$. Co jest przyczyną tej samotnej odysei?"
+ GHOST_SHIP_PROJECT_02: "Odpowiedzmy Dziecku $NAME_Hillos_ship$"
+ GHOST_SHIP_PROJECT_02_DESC: "Komunikacja psioniczna wykryta w układzie $NAME_Hillos$ pochodzi prawdopodobnie od sztucznej świadomości uwięzionej na pokładzie okrętu widma $NAME_Hillos_ship$."
+ ANCIENT_MANUFACTORIUM_PROJECT: "Włączmy zasilenia odlewni"
+ ANCIENT_MANUFACTORIUM_PROJECT_DESC: "Teraz, po wszystkich przygotowaniach, nadszedł czas uruchomić tę maszynerię i podłączyć placówkę do planetarnej sieci energetycznej!"
+ STRATOVENTS_PROJECT: "Projekt stratosferycznych kominów"
+ STRATOVENTS_PROJECT_DESC: "Zbadaj wyjątkowe formacje stratosferycznych kominów na planecie §Y[planet.GetName]§! i ich znaczenie dla fauny kosmicznej."

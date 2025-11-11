@@ -1,0 +1,5 @@
+﻿l_braz_por:
+ #Sequential name formats
+ IA_IMPERIALARMADA: "Armada Imperial $R$"
+ #Obsolete sequentials (for backwards compatibility)
+ IA_xxIMPERIALARMADA_ROM: "$R$ Armada Imperial"

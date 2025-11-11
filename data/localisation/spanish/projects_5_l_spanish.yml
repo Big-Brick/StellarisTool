@@ -1,0 +1,11 @@
+﻿l_spanish:
+ LIMBO_2_PROJECT: "Limbo: segunda oportunidad"
+ LIMBO_2_PROJECT_DESC: "Podríamos dar una segunda oportunidad a una especie extinta de antiguos alienígenas cargando sus escáneres neurales en organismos robóticos."
+ GHOST_SHIP_PROJECT: "Estudiar nave fantasma"
+ GHOST_SHIP_PROJECT_DESC: "Hemos detectado una nave científica abandonada que ha navegado por el sistema $NAME_Hillos$ durante siglos. ¿Qué verdad subyace en esta solitaria odisea?"
+ GHOST_SHIP_PROJECT_02: "Respuesta al bebé de $NAME_Hillos_ship$"
+ GHOST_SHIP_PROJECT_02_DESC: "El murmullo psiónico que se detectó en el sistema $NAME_Hillos$ parece que pertenece a la consciencia artificial que se halla atrapada a bordo de la nave fantasma $NAME_Hillos_ship$."
+ ANCIENT_MANUFACTORIUM_PROJECT: "Fundidora en marcha"
+ ANCIENT_MANUFACTORIUM_PROJECT_DESC: "Tras llevar a cabo todos los preparativos, es hora de que pongamos en funcionamiento la maquinaria. ¡Conectad la instalación a la red eléctrica planetaria!"
+ STRATOVENTS_PROJECT: "Proyecto de respiraderos estratosféricos"
+ STRATOVENTS_PROJECT_DESC: "Estudiemos las curiosas formaciones de respiraderos estratosféricos en §Y[planet.GetName]§! y su impacto en la fauna espacial."

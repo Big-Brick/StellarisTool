@@ -1,0 +1,5 @@
+﻿l_french:
+ #Sequential name formats
+ GDF_GDFFLEET: "$R$° Flotte de la FDG"
+ #Obsolete sequentials (for backwards compatibility)
+ GDF_xxGDFFLEET_ORD: "$O$ Flotte de la FDG"

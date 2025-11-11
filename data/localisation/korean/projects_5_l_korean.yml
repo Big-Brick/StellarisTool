@@ -1,0 +1,11 @@
+﻿l_korean:
+ LIMBO_2_PROJECT: "림보: 두 번째 기회"
+ LIMBO_2_PROJECT_DESC: "고대 외계종의 신경 스캔 결과를 로봇 신체에 업로드하면 이 종족에게 두 번째 기회를 줄 수 있습니다."
+ GHOST_SHIP_PROJECT: "'유령선' 조사"
+ GHOST_SHIP_PROJECT_DESC: "수백 년 동안 $NAME_Hillos$ 성계를 순찰하던 버려진 과학선을 발견했습니다. 이 함선의 외로운 여정에 숨겨진 비밀은 무엇일까요?"
+ GHOST_SHIP_PROJECT_02: "$NAME_Hillos_ship$의 아기에게 답하기"
+ GHOST_SHIP_PROJECT_02_DESC: "$NAME_Hillos$ 성계에서 감지된 사이오닉 신호는 '유령선' $NAME_Hillos_ship$에 갇힌 인공 의식으로부터 나온 것으로 보입니다."
+ ANCIENT_MANUFACTORIUM_PROJECT: "주조소 가동"
+ ANCIENT_MANUFACTORIUM_PROJECT_DESC: "이제 모든 준비를 마쳤으니, 장비를 가동하고 이 시설을 행성 전력망에 연결할 때가 왔습니다!"
+ STRATOVENTS_PROJECT: "성층권 분출공 프로젝트"
+ STRATOVENTS_PROJECT_DESC: "§Y[planet.GetName]§!의 독특한 성층권 분출공 지형과 우주 동물과의 관련성을 조사합니다."

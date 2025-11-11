@@ -1,0 +1,546 @@
+﻿l_korean:
+ #######
+ #MISC
+ #######
+ #Assorted empire/country names
+ NAME_Ancient_AI: "고대 AI"
+ NAME_Armistice_Initiative: "정전 협의회"
+ NAME_Awoken: "깨어난 자"
+ NAME_Commonwealth_of_Man: "인류 연방" #UNE initializer
+ NAME_Creatures_of_the_Shroud: "장막의 생명체"
+ NAME_Cunning_Pirates: "교활한 해적"
+ NAME_Deformed_Creatures: "기형 생명체" #terraforming accident
+ NAME_Demonic_Creatures: "악마 생명체"
+ NAME_Demon_Incursion: "악마의 습격"
+ NAME_Demon_Incursion_adj: "악마"
+ NAME_Eternal_Watchers: "영원한 감시자"
+ NAME_Incoming_Asteroid: "접근 중인 소행성" #a literal asteroid
+ NAME_Living_Snow: "생체 눈" #empire (planetary event)
+ NAME_Looped_Syzygy: "순환 대칭체"
+ NAME_Marauding_Creatures: "굶주린 괴물" #planetary event
+ NAME_mardak_vol_haters: "볼"
+ NAME_Mutant_Horrors: "공포의 돌연변이" #also used as an army name
+ NAME_Prikkiki_Ti: "프릭키키-티"
+ NAME_Psionic_Avatar_Country: "사이오닉 아바타"
+ NAME_Ransomeers: "인질단"
+ NAME_Rising_Manifold: "부상하는 다양체" #abstract/nonsensical
+ NAME_Shattered_Frontier: "부서진 개척지" #empire, alluding to colonial frontiers (Shroud entity)
+ NAME_Shroud_Reformers: "장막의 개혁가" #the definitive Shroud
+ NAME_Spawning_Dragons: "풀려난 드래곤" #literal
+ NAME_Subterranean_Nation: "지하 국가"
+ NAME_The_Loop: "순환" #as in time
+ NAME_The_Shroud: "장막"
+ NAME_Titanic_Life: "거대 생명체" #gigantic lifeforms
+ NAME_Unknown_Ancientry: "미확인 고대 존재"
+ NAME_Unscrupulous_Salvagers: "부도덕한 인양단"
+ NAME_Wreckers: "파괴단"
+ #Assorted species names
+ NAME_AI: "AI"
+ NAME_Awoken_Robot: "깨어난 자"
+ NAME_Azizians: "아지지안"
+ NAME_Cockroach: "바퀴벌레" #literal
+ NAME_Cockroach_plural: "바퀴벌레" #literal
+ NAME_Migrating_Trees: "이동하는 숲" #literal
+ NAME_Rampaging_Forests: "광란의 숲" #literal
+ NAME_Prikki: "프릭키"
+ NAME_Robot: "로봇"
+ NAME_Robot_plural: "로봇"
+ NAME_Titans: "타이탄" #gigantic lifeforms
+ NAME_Demon_Refugees: "악마"
+ NAME_Demon_Refugee_pl: "악마"
+ #Assorted star system names
+ NAME_Klendath: "클렌다스"
+ NAME_Pantagruel: "팡타그뤼엘"
+ NAME_Zron: "즈론"
+ #Assorted planet names
+ NAME_Baldarak: "발다락"
+ NAME_New_Baldarak: "신 발다락"
+ NAME_Chabkymak: "차브키막"
+ NAME_Exile: "엑자일"
+ NAME_Fotangia: "포탕기아"
+ NAME_The_Fragments: "파편" #a shattered world
+ NAME_Gish: "기쉬"
+ NAME_Homeworld_Two: "[Space_Owner.GetHomeWorldName] II" #after terraforming
+ NAME_Paridayda: "파리데이다" #gaia world
+ NAME_Spjuuht: "스프주흐트"
+ NAME_Tollok_Rong: "톨록 롱"
+ NAME_Zron_Prime: "즈론 프라임" #as in 'NAME_Zron'
+ #Assorted fleet names
+ NAME_5th_Dimensionalists: "5차원의 존재"
+ NAME_Ancient_AI_Fleet: "고대 AI 함대"
+ NAME_Clutch_of_Whelps: "새끼 무리" #dragons
+ NAME_Dimensional_Portal: "차원문"
+ NAME_Greased_Lightning: "기름 친 번개"
+ NAME_Head_in_Sand: "모래 속 머리" #i.e. cowardly/ignorant
+ NAME_Hijacked_Fleet: "탈취된 함대"
+ NAME_Main_Forces: "주력군"
+ NAME_mardak_vol_haters_fleet: "마르닥 정화자"
+ NAME_Modified_Probe: "개조된 탐사정"
+ NAME_New_Ship_plural: "새 함선"
+ NAME_Occupation_Flotilla: "점령 전단"
+ NAME_Other_Science_Ship: "다른 과학선" #comprises 'NAME_From_Beyond'
+ NAME_Psionic_Avatar: "사이오닉 아바타"
+ NAME_Ransomeer_Base: "인질단 기지" #starbase
+ NAME_Salvage_Fleet: "인양 함대"
+ NAME_Scrap_Probes: "고철 탐사정"
+ NAME_Seaborn: "바다의 자손"
+ NAME_Seaborn_Flotilla: "바다의 자손 전단"
+ NAME_Skeletal_Giant: "거대 해골"
+ NAME_Surveillance_Bots: "감시 로봇"
+ NAME_TIME_IS_SIGHT_GRAVITY_IS_DESIRE: "시간은 시야다 중력은 갈망이다" #abstract/nonsensical
+ NAME_The_End: "끝" #End of the Cycle (Shroud)
+ NAME_Wrecker_Base: "파괴단 기지" #as in 'NAME_Wreckers'
+ NAME_Zarqlans_Pilgrims: "자클란의 순례자"
+ NAME_Mercenary_Fleet: "[event_target:mercenary_enclave_country.GetName] 함대"
+ NAME_Mindwarden_Fleet: "[mindwarden_enclave_country.GetName] 함대"
+ #Assorted ship names (sometimes also used as the fleet name)
+ NAME_Abandoned_Alien_Vessel: "버려진 외계 함선"
+ NAME_AI_Core: "AI 코어"
+ NAME_AI_Final_Core: "마스터 코어"
+ NAME_Alien_Ship: "외계 함선"
+ NAME_Asteroid: "소행성" #a literal asteroid
+ NAME_Autonomous_Drone: "자율 드론"
+ NAME_Burnt_Out_Science_Ship: "타버린 과학선"
+ NAME_Conceptual_Ship: "개념으로서의 함선" #abstract
+ NAME_Corrupted_Avatar: "타락한 아바타" #psionic entity
+ NAME_Dark_Wanderer: "암흑의 방랑자"
+ NAME_Dimensional_Horror: "차원의 공포"
+ NAME_enigmatic_cache: "알 수 없는 보관함"
+ NAME_Foundling: "버려진 아이" #lost science ship
+ NAME_Fragment: "파편" #Shroud manifestation
+ NAME_From_Beyond: "저 너머에서"
+ NAME_Gallant_Dawn: "용맹한 여명"
+ NAME_Grand_Herald: "위대한 전령"
+ NAME_Herald: "전령"
+ NAME_Junk_Probe_Alpha: "고철 탐사정 알파"
+ NAME_Junk_Probe_Beta: "고철 탐사정 베타"
+ NAME_Kellop-Gar: "켈로프-가르"
+ NAME_Lessenger: "작은 전령"
+ NAME_Lesser_Messenger: "$NAME_Lessenger$"
+ NAME_Mended_Frontier: "회복된 개척지" #as in 'NAME_Shattered_Frontier'
+ NAME_Migil-Yar: "미길-야르"
+ NAME_Suntha-Pol: "순타-폴"
+ NAME_Nanite_Dragon: "모조 어린 드래곤" #a literal dragon
+ NAME_New_Ship: "새 함선"
+ NAME_Ostrich: "오스트리치" #reference to 'NAME_Head_in_Sand'
+ NAME_Patchwork_Paradise: "누더기 낙원" #wrecker ship
+ NAME_Reckoning: "심판"
+ NAME_Reclaimed_Ship: "회수된 함선" #as in 'back in our possession'
+ NAME_Research_Expedition_Vessel: "연구 원정선"
+ NAME_Salvage: "인양선" #literal
+ NAME_Seafallen_Cruiser: "바닷속의 순양함"
+ NAME_Ship_of_Unknown_Origin: "기원을 알 수 없는 함선"
+ NAME_Shroud_Manifestation: "장막 현상"
+ NAME_Skeletal_Transport: "해골 수송선" #as in 'NAME_Skeletal_Giant'
+ NAME_Specter: "스펙터"
+ NAME_Subspace_Anomaly: "아공간 이상 현상" #literal
+ NAME_Syzygy: "대칭체"
+ NAME_Unshrouded_Science_Ship: "장막에서 돌아온 과학선"
+ NAME_Worm_in_Waiting: "기다리는 웜" #definite article, 'The Worm'
+ #Assorted army names
+ NAME_Awoken_Army: "깨어난 자 군대"
+ NAME_Enraged_Guardian: "분노한 수호자"
+ NAME_Enraged_Titan: "분노한 타이탄"
+ NAME_Invading_Horde: "침공자 무리" #subterranean army
+ NAME_Loot_Equipped_Army: "전리품 무장 군대"
+ NAME_Marauding_Swarms: "약탈 무리"
+ NAME_mechawarrior_contractors: "기계전사 청부업자"
+ NAME_military_contractors: "민간 군사 업자"
+ NAME_Mutated_Horrors: "공포의 돌연변이"
+ NAME_Monstrous_Snow: "눈 괴물" #from literal snow
+ NAME_Twisted_Beasts: "뒤틀린 야수"
+ #Assorted leader names
+ NAME_00110001: "110001" #1
+ NAME_00110010: "110010" #2
+ NAME_00110011: "110011" #3
+ NAME_00110100: "110100" #4
+ NAME_00110101: "110101" #5
+ NAME_01000001_01001001: "01000001 01001001" #AI
+ NAME_0101010111: "101010111" #W
+ NAME_Majula_the_Bearer: "감당하는 자 마훌라"
+ NAME_Oracle: "예언자" #also used as the species name
+ NAME_The_Exile: "유배자" #a scientist of the player's own species
+ NAME_William_Shakespeare: "윌리엄 셰익스피어" #May be replaced with a more relevant, national literary figure depending on the extent to which you localize event 'federations2.1', 'Love's Labor's Lost'. See also '.GetAuteur' scripted loc for use of Molière in French.
+ #Other
+ NAME_Machine_Uprising_War: "[This.MainDefender.GetAdj] 기계 반란"
+ #########
+ #CRISES
+ #########
+ #Empire names
+ NAME_Aberrant: "애버런트"
+ NAME_Unbidden: "언비든"
+ NAME_Vehement: "베헤먼트"
+ NAME_Contingency: "컨틴전시"
+ NAME_Cybrex: "사이브렉스"
+ NAME_Cybrex_Empire: "사이브렉스의 잔재"
+ NAME_Dessanu: "데사누"
+ NAME_Dessanu_Consonance: "데사누 조화체"
+ NAME_Gray: "그레이" #also used as a name for the leader, ship and army
+ NAME_Gray_Goo: "그레이 템페스트"
+ NAME_Portal_Holder_1: "타 차원 입구"
+ NAME_Prethoryn_Scourge: "프레소린 스컬지"
+ #Species names
+ NAME_Custodian_Bot: "관리인 봇"
+ NAME_Prethoryn: "프레소린"
+ #Star system names
+ NAME_Contingency_System: "CX-9881"
+ NAME_Cybrex_Beta: "사이브렉스 베타"
+ #Planet names
+ NAME_Contingency_Lair: "넥서스 제로원"
+ NAME_Cybrex_Beta_1: "사이브렉스 베타 I"
+ NAME_Cybrex_Beta_2: "사이브렉스 베타 II"
+ NAME_Cybrex_Beta_3: "사이브렉스 베타 III"
+ NAME_Cybrex_Beta_4: "사이브렉스 베타 IV"
+ #Fleet names
+ NAME_Dessanu_Fleet: "데사누 방위 함대"
+ NAME_Dessanu_Fleet_2: "데사누 순찰 함대"
+ NAME_Feral_Prethoryn: "야생 프레소린"
+ NAME_Loyal_Brood: "충직한 무리"
+ NAME_Prethoryn_Armies: "프레소린 군대"
+ NAME_Prethoryn_Constructor: "프레소린 건설체"
+ NAME_Prethoryn_Infestor: "프레소린 감염체"
+ NAME_Prethoryn_Star_Brood: "프레소린 항성 무리"
+ NAME_Prethoryn_Transport: "프레소린 수송체"
+ NAME_Prethoryn_Vanguard: "프레소린 선봉대"
+ NAME_Refugee_Fleet: "난민 함대"
+ NAME_Sentinel_Auxiliary_Fleet: "센티널 보조 함대"
+ NAME_Sentinel_Battle_Fleet: "센티널 전투 함대"
+ NAME_Sentinel_Defense_Fleet: "센티널 방위 함대"
+ NAME_Sterilization_Hub_1: "박멸 허브 001"
+ NAME_Sterilization_Hub_2: "박멸 허브 002"
+ NAME_Sterilization_Hub_3: "박멸 허브 003"
+ NAME_Sterilization_Hub_4: "박멸 허브 004"
+ NAME_Tempest_Fleet: "템페스트 무리"
+ #Ship names
+ NAME_Dessanu_Interdictor: "위르식"
+ NAME_Dessanu_Mothership: "운쓰라"
+ NAME_Domesticated_Prethoryn: "길들인 프레소린"
+ NAME_Domesticated_Queen: "길들인 여왕"
+ NAME_Domesticated_Swarmling: "길들인 군단충"
+ NAME_Domesticated_Warrior: "길들인 전사"
+ NAME_Early_Warning_X_34: "조기 경보 X-34"
+ NAME_Early_Warning_X_35: "조기 경보 X-35"
+ NAME_Early_Warning_X_36: "조기 경보 X-36"
+ NAME_Early_Warning_X_37: "조기 경보 X-37"
+ NAME_Early_Warning_X_38: "조기 경보 X-38"
+ NAME_Gatebuilder_Starbase: "카프록"
+ NAME_Refugee_Site_Beta: "난민 거주지 베타"
+ NAME_Sentinel_Alpha: "센티널 알파"
+ NAME_Deep_Eyes: "깊은 눈"
+ NAME_Gray_Moon: "회색 위성"
+ NAME_Kobyar_Miru: "코비야르 미루"
+ NAME_Princess_Kolos: "콜로스 공주"
+ NAME_Refugee_Site_Alpha: "난민 거주지 알파"
+ NAME_Stellar_Queen: "별의 여왕"
+ #Army names
+ NAME_Prethoryn_Invaders: "프레소린 침공군"
+ #Leader names
+ NAME_Fleet_Consciousness: "함대 의식"
+ #Cybrex megastructure
+ NAME_Ring_Segment_A: "링 구간 A"
+ NAME_Ring_Segment_B: "링 구간 B"
+ NAME_Ring_Segment_C: "링 구간 C"
+ NAME_Ring_Segment_D: "링 구간 D"
+ NAME_Ring_Segment_E: "링 구간 E"
+ NAME_Ring_Segment_F: "링 구간 F"
+ NAME_Ring_Segment_G: "링 구간 G"
+ NAME_Ring_Segment_H: "링 구간 H"
+ NAME_Ring_Segment_I: "링 구간 I"
+ NAME_Ring_Segment_J: "링 구간 J"
+ NAME_Ring_Segment_K: "링 구간 K"
+ NAME_Ring_Segment_L: "링 구간 L"
+ ###########
+ #ENCLAVES
+ ###########
+ #Leader names
+ NAME_Doctor_Xib: "지브 박사"
+ NAME_Kix_the_Brilliant: "총명한 킥스"
+ NAME_merchant_leader: "프라크티 마고운"
+ NAME_Professor_Zarg: "자르그 교수"
+ NAME_Sensei_Borkaz: "보르카즈 센세"
+ NAME_The_Mentat: "멘타트"
+ ############################
+ #FALLEN & AWAKENED EMPIRES
+ ############################
+ #Leader names
+ NAME_Tuborek: "투보렉"
+ #Other
+ NAME_Holy_World_War: "[This.MainAttacker.GetAdj] 성지 행성 전쟁" #war over a designated Holy World
+ NAME_The_War_in_Heaven: "천상의 전쟁" #war between fallen empires
+ ##############
+ #FEDERATIONS
+ ##############
+ #Military Alliance Joint Operation
+ NAME_training_adversary: "훈련용 대항군" #empire
+ NAME_Training_Targets: "훈련용 연습 표적" #fleet
+ NAME_Elusive_Craft: "회피하는 비행체" #ship
+ #####################
+ #KHANATE & DIADOCHI
+ #####################
+ #Empire & Federation names
+ NAME_Galactic_Horde: "은하 군단" #federation
+ #Fleet names
+ NAME_Chosen_of_the_Great_Khan: "그레이트 칸에게 선택받은 자"
+ NAME_Horde_Auxiliary_Fleet: "[satrapy_species.GetName] 예비 함대"
+ ###########################
+ #LEVIATHANS & SPACE FAUNA
+ ###########################
+ #See also: initializers_names_l_english.yml, containing names related to Leviathans and Space Fauna which appear at galaxy start
+ #Empire names
+ NAME_Alien_Hive: "외계 군체"
+ NAME_Mining_Drone_Expansion_Initiative: "채굴 드론 확장 계획"
+ NAME_Aggressive_Mining_Drone_Expansion_Initiative: "강압 드론 확장 계획"
+ NAME_Old_One: "태고의 존재" #void cloud
+ NAME_Stellarite: "항성 포식자"
+ NAME_VLUUR: "블루우르"
+ #Planet names
+ NAME_Bot_Compactor: "청소부 로봇의 압축기"
+ NAME_Drakes_Roost: "드레이크의 횃대"
+ #Fleet names
+ NAME_Aggressive_Mining_Drone_Expansion_Fleet: "공격 드론 확장 함대"
+ NAME_Ancient_Mining_Drones: "고대 채굴 드론"
+ NAME_Mining_Drone_Expansion_Fleet: "채굴 드론 확장 함대"
+ NAME_Crystalline_Elites: "크리스탈 결정체 정예"
+ NAME_Crystalline_Entity: "크리스탈 결정체"
+ NAME_Exiled_One: "추방된 자" #void cloud
+ NAME_Hiver_Nest: "군체충 둥지"
+ NAME_Life_Tree_Protector_plural: "생명 나무 보호자"
+ NAME_Nesting_Crystals: "둥지 튼 크리스탈" #space crystals
+ NAME_Shard: "샤드" #named dragon
+ NAME_Space_Amoeba_plural: "우주 아메바" #fleet
+ NAME_Space_Amoeba_plural_seed: "우주 아메바(£seed_pod£)" #fleet carrying seeds (Gardeners Origin)
+ NAME_Stellarite_Devourer: "항성 포식자"
+ NAME_Subspace_Rupture_Cloud_1: "아공간 파열 XV-990"
+ NAME_Subspace_Rupture_Cloud_2: "아공간 파열 R-5921"
+ NAME_Subspace_Rupture_Cloud_3: "아공간 파열 TLZ-84"
+ NAME_Tricksy_Mining_Drones: "영악한 채굴 드론" #cute form of 'tricky'
+ NAME_Void_Cloud: "공허 구름"
+ #Ship names
+ NAME_Annoyed_Crystal: "심기가 불편한 크리스탈"
+ NAME_Cortus: "코르투스" #space amoeba
+ NAME_Cracked_Crystalline_Shard: "깨진 크리스탈 결정체 조각"
+ NAME_Dreadnought: "드레드노트"
+ NAME_Drone_0931_F: "드론 0931-F"
+ NAME_Drone_1119_X: "드론 1119-X"
+ NAME_Drone_1433_D: "드론 1433-D"
+ NAME_Drone_1832-D: "드론 1832-D"
+ NAME_Drone_2432_D: "드론 2432-D"
+ NAME_Drone_4119_X: "드론 4119-X"
+ NAME_Drone_5110_X: "드론 5110-X"
+ NAME_Drone_6732_A: "드론 6732-A"
+ NAME_Drone_7731_A: "드론 7731-A"
+ NAME_Effluvial_Offspring: "잔해에서 태어난 아이" #void cloud
+ NAME_Ether_Hatchling: "에테르 드래곤 유체" #ether drake
+ NAME_Shard_Dragon: "가장 위대한 드래곤" #ether drake
+ NAME_KASH: "카쉬" #void cloud
+ NAME_Life_Tree_Protector: "생명 나무 보호자"
+ NAME_Mining_Drone_C_Class: "C급 채굴 드론"
+ NAME_Oriens: "오리엔스" #space amoeba
+ NAME_Ortus: "오르투스" #space amoeba
+ NAME_Psi: "사이"
+ NAME_SHAB: "샤브" #void cloud
+ NAME_Scile: "사일" #named dragon
+ NAME_Stellar_Devourer: "항성 포식자"
+ NAME_TAHA: "타하" #void cloud
+ NAME_TANT: "탄트" #void cloud
+ NAME_Trapped_Asteroid: "포획된 소행성" #inert space crystal
+ NAME_Wraith_450THz: "망령 450THz"
+ NAME_Wraith_520THz: "망령 520THz"
+ NAME_Wraith_650THz: "망령 650THz"
+ NAME_XADRA: "자드라" #void cloud
+ NAME_XELMAGGUS: "젤마구스" #void cloud
+ NAME_XILNIAK: "질니악" #void cloud
+ NAME_XUNIA: "주니아" #void cloud
+ NAME_XUUL: "주울" #void cloud
+ NAME_Young_Dragon: "미성숙한 표본"
+ ############
+ #MARAUDERS
+ ############
+ #Fleet names
+ NAME_234th_Dwamak_Bashers: "제234 드와막 분쇄자"
+ NAME_Armada_of_the_Voidborn: "공허 태생의 군대"
+ NAME_First_Storm_Wing: "최초의 폭풍 날개"
+ NAME_Frenzied_Volunteer_Squadron: "광란의 자원 전대"
+ NAME_Garrison_Fleet: "군단 주둔 함대"
+ NAME_Her_Chosen_Champions: "여신의 선택받은 투사들"
+ NAME_Order_of_Eternal_Night: "영원한 밤의 교단"
+ NAME_Raiding_Fleet: "습격 함대"
+ NAME_Salvaged_Fleet: "인양된 함대"
+ NAME_Star_Rider_Flotilla: "항성 질주 전단"
+ NAME_Twilight_Congregation: "황혼의 신자들"
+ #Ship & starbase names
+ NAME_Garrison_Base: "군단 주둔 기지"
+ #########
+ #NOMADS
+ #########
+ NAME_Galactic_Nomads: "은하 유랑민" #empire name
+ #Species names
+ NAME_Namarian: "나마리안" #also used as an adjective
+ NAME_Namarian_plural: "나마리안"
+ #Fleet names
+ NAME_Nomad_Delivery: "유랑민 수송대"
+ NAME_Nomadic_Armada: "유랑민 함대"
+ NAME_Redirected_Nomad_Delivery: "용도 전환 유랑민 수송대"
+ NAME_Unhinged_Screamer_Flotilla: "흐트러진 비명자 전단"
+ #Ship names
+ NAME_Defender: "방어자"
+ NAME_Home_One: "홈 1"
+ NAME_Home_Two: "홈 2"
+ NAME_Home_Three: "홈 3"
+ NAME_Protector: "보호자"
+ ##########
+ #PIRATES
+ ##########
+ #Empire names
+ NAME_Pirates: "해적"
+ NAME_Privateers: "사략단"
+ NAME_Sunblaster_Pirates: "선블래스터 해적단"
+ #Fleet names
+ NAME_Old_Guard: "옛 경비"
+ NAME_Scarred_Veterans: "상처투성이 베테랑"
+ NAME_Young_Blood: "젊은 피"
+ NAME_Numerous_Pirates: "다수의 해적"
+ NAME_Pirate_Fleet: "해적 함대"
+ NAME_Pirate_Station: "해적 기지" #starbase
+ NAME_Wounded_Pirates: "상처 입은 해적"
+ #Ship names
+ NAME_Damaged_Pillager: "손상된 약탈자"
+ NAME_Defaced_Gunmouth: "훼손된 총구"
+ NAME_Defaced_Starflinger: "훼손된 항성 투척자"
+ NAME_Dices: "다이스"
+ NAME_First_Pillager: "첫 번째 약탈자"
+ NAME_First_Ravager: "첫 번째 유린자"
+ NAME_Ingrates_Inferno: "배덕자의 지옥불"
+ NAME_Second_Pillager: "두 번째 약탈자"
+ NAME_Second_Ravager: "두 번째 유린자"
+ NAME_Third_Pillager: "세 번째 약탈자"
+ NAME_Third_Ravager: "세 번째 유린자"
+ NAME_Outcast_Gunmouth: "추방된 총구"
+ NAME_Outcast_Starflinger: "추방된 항성 투척자"
+ NAME_Pillager: "약탈자"
+ NAME_Ravager: "유린자"
+ NAME_Swashbuckler: "불한당"
+ NAME_Scorched_Ravager: "그을린 유린자"
+ NAME_Slices: "슬라이스"
+ #Bemat Thalassocracy
+ NAME_Thalassocracy: "베마트 해양 제국" #empire
+ NAME_Thalassocracy_species: "베마트"
+ NAME_Thalassocracy_species_plural: "베마트"
+ NAME_Thalassocracy_species_adj: "베마티"
+ NAME_Thalassocracy_fleet: "인수자 함대"
+ NAME_Bemat_corvette_01: "심네"
+ NAME_Bemat_destroyer_01: "나바즈"
+ NAME_Bemat_destroyer_02: "에르메"
+ NAME_Bemat_cruiser_01: "헤베르"
+ NAME_Bemat_cruiser_02: "에드덱"
+ #############
+ #PRECURSORS
+ #############
+ #Cybrex
+ NAME_Cybrex_Alpha: "사이브렉스 알파"
+ #First League
+ NAME_Fen_Habbanis: "펜 하바니스" #star
+ NAME_Fen_Habbanis_I: "펜 하바니스 I" #planet
+ NAME_Fen_Habbanis_II: "펜 하바니스 II" #planet
+ NAME_Fen_Habbanis_III: "펜 하바니스 III" #planet
+ NAME_Fen_Habbanis_IV: "펜 하바니스 IV" #planet
+ NAME_Fen_Habbanis_V: "펜 하바니스 V" #planet
+ NAME_Fen_Habbanis_VI: "펜 하바니스 VI" #planet
+ #Irassians
+ NAME_Ira: "이라" #system
+ NAME_Irass: "이라스" #star
+ NAME_Irass_I: "이라스 I" #planet
+ NAME_Irass_II: "이라스 II" #planet
+ NAME_Irass_III: "이라스 III" #planet
+ NAME_Irass_IV: "이라스 IV" #planet
+ NAME_Irass_V: "이라스 V" #planet
+ NAME_Irass_VI: "이라스 VI" #planet
+ NAME_Irassia: "이라시아" #moon
+ NAME_Irass_VII: "이라스 VII" #planet
+ NAME_Irass_VIIa: "이라스 VIIa" #moon
+ NAME_Irass_VIIb: "이라스 VIIb" #moon
+ NAME_Irass_VIII: "이라스 VIII" #planet
+ NAME_Irass_IX: "이라스 IX" #planet
+ #Vultaum
+ NAME_Vultaumar: "벌타우마르" #star
+ NAME_Vultaumar_Prime: "벌타우마르 프라임" #planet
+ NAME_Vultaumar_Ia: "벌타우마르 Ia" #moon
+ NAME_Vultaumar_Ib: "벌타우마르 Ib" #moon
+ NAME_Vultaumar_II: "벌타우마르 II" #planet
+ NAME_Vultaumar_III: "벌타우마르 III" #planet
+ NAME_Vultaumar_IIa: "벌타우마르 IIa" #moon
+ NAME_Vultaumar_IV: "벌타우마르 IV" #planet
+ NAME_Vultaumar_IVa: "벌타우마르 IVa" #moon
+ NAME_Vultaumar_V: "벌타우마르 V" #planet
+ #Yuht
+ NAME_Yuhtaan: "유타안" #star
+ NAME_Yuhtaan_II: "유타안 II" #planet
+ NAME_Yuhtaan_III: "유타안 III" #planet
+ NAME_Yuhtaan_IV: "유타안 IV" #planet
+ NAME_Yuhtaan_IVa: "유타안 IVa" #moon
+ NAME_Yuhtaan_IVb: "유타안 IVb" #moon
+ NAME_Yuhtaan_IVc: "유타안 IVc" #moon
+ NAME_Yuhtaan_V: "유타안 V" #planet
+ NAME_Yuhtaan_Va: "유타안 Va" #moon
+ NAME_Yuhtaan_Majoris: "유타안 메이저리스" #broken planet
+ NAME_Yuhtaan_Minoris: "유타안 마이너리스" #broken planet
+ ##################
+ #PRE-FTL SPECIES
+ ##################
+ #(Uplifted) species names
+ NAME_Roachoid: "바퀴류" #cockroaches
+ NAME_Snakeoid: "뱀류" #snakes
+ NAME_Robot_Uprising: "로봇 반란"
+ #Ship names
+ NAME_Space_Station: "우주 기지"
+ #Army names
+ NAME_Industrial_Army: "산업 지상군"
+ NAME_Post_Atomic_Army: "원자력 문명 지상군"
+ NAME_Primitive_Army: "원시 지상군"
+ NAME_Robot_Army: "로봇 지상군"
+ #Leader names
+ NAME_Sobak: "소백"
+ Sobak_Background: "천재를 양성할 능력이 안 되는 행성에서 납치해 온 명석한 인재입니다."
+ ###################
+ #RADICAL CULTISTS
+ ###################
+ NAME_Radical_Cult: "광신 집단" #empire name
+ cultist_flagship_damaged: "손상된 기함"
+ #Fleet names
+ NAME_Cult_Defense_Fleet: "광신 집단 방어 함대"
+ NAME_Cultist_Marauders: "광신 집단 약탈자"
+ NAME_Exiled_Pirates: "추방된 해적"
+ #Ship names
+ NAME_Bane_of_the_Heretic: "이단의 재앙"
+ NAME_Cultist_Flagship: "광신 집단 기함"
+ NAME_Cultist_Shipyard: "광신 집단 조선소"
+ NAME_Dawn_of_Creation: "창조의 여명"
+ NAME_Divine_Fury: "신성한 분노"
+ NAME_Divine_Justicar: "신성한 심판관"
+ NAME_Divine_Vessel: "신성한 함선"
+ NAME_Eternal_Damnation: "영원한 저주"
+ NAME_Final_Judgment: "최후의 심판"
+ NAME_Glorious_Might: "영광스러운 힘"
+ NAME_Heathens_Doom: "이교도의 파멸"
+ NAME_Heavenly_Judgment: "천상의 심판"
+ NAME_Heavenly_Portent: "천상의 전조"
+ NAME_Holy_Avatar: "신성한 아바타"
+ NAME_Holy_Defender: "신성한 방어자"
+ NAME_Holy_Protector: "신성한 보호자"
+ NAME_Infidel_Slayer: "불신 처단자"
+ NAME_Path_of_the_Pilgrim: "순례의 길"
+ NAME_Pious_Crusader: "독실한 십자군"
+ NAME_Revered_Elder: "추앙받는 원로"
+ NAME_Righteous_Zealot: "올곧은 광신자"
+ NAME_The_Chosen_One: "선택받은 자"
+ NAME_Sacred_Might: "신성한 힘"
+ NAME_Temple_of_Light: "빛의 신전"
+ NAME_Unyielding_Faith: "불굴의 신앙"
+ NAME_Wrath_of_the_Spirits: "성령의 분노"
+ #########################
+ #REVOLTS & UNREST
+ #########################
+ #Army names
+ NAME_Freedom_Fighters: "자유의 투사"
+ #Other
+ NAME_WAR_OF_REVOLT: "[Root.Target.GetName] 반란"

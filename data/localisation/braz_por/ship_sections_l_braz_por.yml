@@ -1,0 +1,117 @@
+﻿l_braz_por:
+ ####################################
+ #Alpha Naming Convention - WILL LIKELY BE CHANGED IF SECTIONS ARE REDESIGNED
+ #Mid sections have a flavor-name fitting to number of weapon/utility slots followed by the key-word "Core"
+ #Front sections have a flavor-name followed by the key-word "Breaker"
+ #Rear sections have a flavor-name followed by the key-word "Bulwark"
+ ####################################
+ ####################################
+ #Juggernaut
+ ####################################
+ CORE_JUGGERNAUT_SECTION: "Juguernauta"
+ ####################################
+ #Titan
+ ####################################
+ TITAN_BOW: "Proa Titã"
+ TITAN_MID: "Núcleo Titã"
+ TITAN_STERN: "Popa Titã"
+ BIO_TITAN_BOW: "$TITAN_BOW$"
+ BIO_TITAN_MID: "$TITAN_MID$"
+ BIO_TITAN_STERN: "$TITAN_STERN$"
+ ####################################
+ #Battleship
+ ####################################
+ BATTLESHIP_BOW_L1M1S2: "Proa de Disparos"
+ BATTLESHIP_BOW_L1S4: "Destruidor de Titãs"
+ BATTLESHIP_BOW_L2: "Proa de Artilharia"
+ BATTLESHIP_BOW_M1S2SHB: "Proa Hangar"
+ BATTLESHIP_BOW_M2S4: "Proa Vertebral"
+ BATTLESHIP_BOW_M3S2: "Destruidor de Almas"
+ BATTLESHIP_MID_L2S4: "Núcleo Novo"
+ BATTLESHIP_MID_L1M4: "Núcleo da Tempestade"
+ BATTLESHIP_MID_L2M2: "Núcleo de Disparos"
+ BATTLESHIP_MID_L3: "Núcleo de Artilharia"
+ BATTLESHIP_MID_M4SHB: "Núcleo Hangar"
+ BATTLESHIP_MID_S4LHB: "Núcleo Transportador"
+ BATTLESHIP_STERN_M1S2: "Bastião dos Séculos"
+ BATTLESHIP_STERN_L1: "Popa de Artilharia"
+ BATTLESHIP_STERN_M2: "Popa de Disparos"
+ BATTLESHIP_STERN_S4: "Bastião do Apogeu"
+ ####################################
+ #Colonizer
+ ####################################
+ COLONIZER_MID_M1S1: "Nave Colonial"
+ COLONIZER_MID_S3: "Núcleo Semente"
+ COLONIZER_MID_MU1: "Núcleo Gaia"
+ ####################################
+ #Constructor
+ ####################################
+ CONSTRUCTOR_MID_M1S1: "Nave de Construção"
+ CONSTRUCTOR_MID_S3: "Núcleo do Desenvolvedor"
+ CONSTRUCTOR_MID_MU1: "Núcleo do Fusor"
+ ####################################
+ #Corvette
+ ####################################
+ CORVETTE_MID_M1S1: "Barco de Torpedos"
+ CORVETTE_MID_S3: "Interceptador"
+ CORVETTE_MID_S1: "Núcleo do Transformador"
+ CORVETTE_MID_S2PD1: "Nave de Interceptação"
+ ####################################
+ #Cruiser
+ ####################################
+ CRUISER_BOW_L1: "Proa de Artilharia"
+ CRUISER_BOW_M1S2: "Proa de Torpedos"
+ CRUISER_BOW_M2: "Proa de Batalha"
+ CRUISER_MID_S2HB: "Núcleo Hangar"
+ CRUISER_MID_L1M1: "Núcleo de Artilharia"
+ CRUISER_MID_M3: "Núcleo de Disparos"
+ CRUISER_MID_M2S2: "Núcleo de Torpedos"
+ CRUISER_STERN_M1: "Popa de Disparos"
+ CRUISER_STERN_S2: "Popa de Combate"
+ ####################################
+ #Destroyer
+ ####################################
+ DESTROYER_BOW_M1S2: "Proa de Combate"
+ DESTROYER_BOW_S3: "Proa de Sinalização"
+ DESTROYER_BOW_L1: "Proa de Artilharia"
+ DESTROYER_STERN_PD2: "Popa de Sinalização"
+ DESTROYER_STERN_S2: "Bastião do Clarão"
+ DESTROYER_STERN_M1: "Popa de Combate"
+ ####################################
+ #Science
+ ####################################
+ SCIENCE_MID_M1S1: "Nave Científica"
+ SCIENCE_MID_S3: "Núcleo do Desbravador"
+ SCIENCE_MID_MU1: "Núcleo do Conhecimento"
+ ####################################
+ #Science
+ ####################################
+ LIGHT_MILITARY_STATION_SECTION: "Seção de Estação Leve"
+ PD_MILITARY_STATION_SECTION: "Seção de Estação de Defesa Pontual"
+ MEDIUM_MILITARY_STATION_SECTION: "Seção de Estação Média"
+ MISSILE_MILITARY_STATION_SECTION: "Seção de Estação de Mísseis"
+ HEAVY_MILITARY_STATION_SECTION: "Seção de Estação Pesada"
+ HANGAR_MILITARY_STATION_SECTION: "Seção da Estação de Hangar"
+ LIGHT_LARGE_MILITARY_STATION_SECTION: "Seção de Estação Leve"
+ MEDIUM_LARGE_MILITARY_STATION_SECTION: "Seção de Estação Média"
+ HEAVY_LARGE_MILITARY_STATION_SECTION: "Seção de Estação Pesada"
+ HANGAR_LARGE_MILITARY_STATION_SECTION: "Seção da Estação de Hangar"
+ OUTPOST_STATION_SECTION: "Núcleo do Entreposto Fronteiriço"
+ ####################################
+ #Other
+ ####################################
+ MISSILE_DEFAULT: "Seção de Torpedos"
+ DEFAULT_CONSTRUCTION_SECTION: "Nave de Construção"
+ DEFAULT_COLONIZATION_SECTION: "Nave Colonial"
+ DEFAULT_SCIENCESHIP_SECTION: "Nave Científica"
+ DEFAULT_ORBITAL_STATION_SECTION: "Estrutura da Estação Orbital"
+ DEFAULT_MINING_STATION_SECTION: "Estrutura da Estação de Mineração"
+ DEFAULT_RESEARCH_STATION_SECTION: "Estrutura da Estação de Pesquisa"
+ DEFAULT_WORMHOLE_STATION_SECTION: "Estrutura da Estação de Buraco de Minhoca"
+ DEFAULT_MILITARY_STATION_SECTION: "Plataforma Militar Básica"
+ DEFAULT_TRANSPORT_SECTION: "Nave de Transporte"
+ SHIP_COLOSSUS_SECTION: "Colosso"
+ GHOST_SHIP_SECTION: "Estrutura da Nave Fantasma"
+ lost_swarm_adult: "Gafanhoto"
+ lost_swarm_adult_cap: "$lost_swarm_adult$"
+ lost_swarm_adult_plural: "Gafanhotos"

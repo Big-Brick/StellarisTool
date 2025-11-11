@@ -1,0 +1,9 @@
+﻿l_korean:
+ ENTERING_GAME_LOBBY: "게임 설정에 들어가는 중"
+ SERVER_LAUNCHING_MP: "멀티 플레이 실행 중"
+ SERVER_NAME: "서버 이름: $NAME$"
+ SERVER_PASSWORD: "서버 비밀번호: $PASSWORD$"
+ LAUNCHING_GAME: "게임 실행 중"
+ STANDALONE_WAITING_FOR_PLAYERS: "$NUM$ 플레이어를 기다리는 중"
+ RECEIVED_GAMESERVER_ID: "서버 ID 수신: $SERVERID$"
+ RECEIVED_LOBBY_SERVER: "로비 서버 수신"

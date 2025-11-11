@@ -1,0 +1,62 @@
+﻿l_french:
+ #The following names are applied to generic ships, Megastructures, and space creatures ('fauna') which populate the galaxy and are related to features, rather than particular events.
+ #Generic ships
+ NAME_Constructor: "Constructeur"
+ #Space Fauna 'countries' (describing e.g. the Tiyanki, Space Crystals, Mining Drones...)
+ #Galactic Imperium
+ NAME_Rebellion: "Coalition rebelle" #federation
+ NAME_Loyalists: "Coalition loyaliste" #federation
+ NAME_The_Civil_War: "Rébellion galactique" #war
+ NAME_Declared_Crisis_War: "Guerre de la crise [This.MainDefender.GetAdj]" #war
+ NAME_Crisis_Star_Eater: "Mange-étoiles"
+ NAME_GDF: "Force de défense galactique"
+ NAME_Imperial_Crusade_War: "Croisade galactique impériale" #war
+ #################
+ #MEGASTRUCTURES
+ #################
+ #Ring World sections
+ NAME_Ring_Section_A: "Section annulaire A"
+ NAME_Ring_Section_B: "Section annulaire B"
+ NAME_Ring_Section_C: "Section annulaire C"
+ NAME_Ring_Section_D: "Section annulaire D"
+ NAME_Ring_Section_E: "Section annulaire E"
+ NAME_Ring_Section_F: "Section annulaire F"
+ NAME_Ring_Section_G: "Section annulaire G"
+ NAME_Ring_Section_H: "Section annulaire H"
+ NAME_Ring_Section_I: "Section annulaire I"
+ NAME_Ring_Section_K: "Section annulaire K"
+ NAME_Ring_Section_L: "Section annulaire L"
+ NAME_Ring_Section: "Section annulaire"
+ NAME_Habitable_Section_A: "Section habitable A"
+ NAME_Habitable_Section_B: "Section habitable B"
+ NAME_Habitable_Section_C: "Section habitable C"
+ NAME_Habitable_Section_D: "Section habitable D"
+ ##########
+ #ORIGINS
+ ##########
+ #Galactic Doorstep
+ NAME_Galactic_Doorstep: "Couronne Noire" #megastructure
+ NAME_Gateway_Vermin: "Vermine du portail" #empire
+ #On the Shoulders of Giants
+ NAME_Theros: "Théros" #planet
+ NAME_Melidas: "Mélidas" #planet
+ NAME_Koras: "Koras" #planet
+ NAME_Haradas: "Haradas" #planet
+ NAME_Islena: "Isléna" #planet
+ #Shattered Ring
+ NAME_Irreparable_Damage: "Dégâts catastrophiques" #ringworld segment
+ NAME_The_Interloper: "Intrus" #shattered planet
+ #Here Be Dragons
+ NAME_Sky_Dragon: "Dragon céleste"
+ NAME_Sky_Dragon_Baby: "Dragonneau céleste"
+ NAME_Hrozgar_of_the_Endless_Flames: "Hrozgar au souffle éternel"
+ #Imperial Fiefdom
+ NAME_Imperial_Origin_Empire: "Sainte Monarchie [origin_imperial_species.GetAdj]"
+ NAME_Imperial_Origin_Empire_2: "Royauté des [origin_imperial_species_2.GetNamePlural]"
+ NAME_Imperial_Origin_Empire_3: "Principauté électorale des [origin_imperial_species_3.GetNamePlural]"
+ NAME_Imperial_Origin_Empire_4: "Pairie palatine des [origin_imperial_species_4.GetNamePlural]"
+ NAME_Imperial_Origin_Empire_5: "Ligue [origin_imperial_species_5.GetAdj]"
+ NAME_Aix: "Aïx-le-Sanctuaire" #planet
+ #Toxic Knights
+ NAME_Sinople: "Sinople"
+ NAME_Syamelle: "Syamelle"

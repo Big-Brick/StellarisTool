@@ -1,0 +1,117 @@
+﻿l_polish:
+ ####################################
+ #Alpha Naming Convention - WILL LIKELY BE CHANGED IF SECTIONS ARE REDESIGNED
+ #Mid sections have a flavor-name fitting to number of weapon/utility slots followed by the key-word "Core"
+ #Front sections have a flavor-name followed by the key-word "Breaker"
+ #Rear sections have a flavor-name followed by the key-word "Bulwark"
+ ####################################
+ ####################################
+ #Juggernaut
+ ####################################
+ CORE_JUGGERNAUT_SECTION: "Behemot"
+ ####################################
+ #Titan
+ ####################################
+ TITAN_BOW: "Dziób tytana"
+ TITAN_MID: "Rdzeń tytana"
+ TITAN_STERN: "Rufa tytana"
+ BIO_TITAN_BOW: "$TITAN_BOW$"
+ BIO_TITAN_MID: "$TITAN_MID$"
+ BIO_TITAN_STERN: "$TITAN_STERN$"
+ ####################################
+ #Battleship
+ ####################################
+ BATTLESHIP_BOW_L1M1S2: "Burta - dziób"
+ BATTLESHIP_BOW_L1S4: "Destruktor Tytanów"
+ BATTLESHIP_BOW_L2: "Artyleria dziobowa"
+ BATTLESHIP_BOW_M1S2SHB: "Hangar dziobowy"
+ BATTLESHIP_BOW_M2S4: "Kil - część dziobowa"
+ BATTLESHIP_BOW_M3S2: "Destruktor Dusz"
+ BATTLESHIP_MID_L2S4: "Rdzeń Nowej"
+ BATTLESHIP_MID_L1M4: "Rdzeń Siewcy Burzy"
+ BATTLESHIP_MID_L2M2: "Rdzeń burty"
+ BATTLESHIP_MID_L3: "Rdzeń artylerii"
+ BATTLESHIP_MID_M4SHB: "Rdzeń hangaru"
+ BATTLESHIP_MID_S4LHB: "Rdzeń lotniskowca"
+ BATTLESHIP_STERN_M1S2: "Bastion Eonu"
+ BATTLESHIP_STERN_L1: "Artyleria rufowa"
+ BATTLESHIP_STERN_M2: "Rufa - burta"
+ BATTLESHIP_STERN_S4: "Bastion Zenitu"
+ ####################################
+ #Colonizer
+ ####################################
+ COLONIZER_MID_M1S1: "Statek kolonizacyjny"
+ COLONIZER_MID_S3: "Rdzeń Zasiewu"
+ COLONIZER_MID_MU1: "Rdzeń Gai"
+ ####################################
+ #Constructor
+ ####################################
+ CONSTRUCTOR_MID_M1S1: "Statek konstrukcyjny"
+ CONSTRUCTOR_MID_S3: "Rdzeń Dewelopera"
+ CONSTRUCTOR_MID_MU1: "Rdzeń Topnienia"
+ ####################################
+ #Corvette
+ ####################################
+ CORVETTE_MID_M1S1: "Kuter torpedowy."
+ CORVETTE_MID_S3: "Interceptor"
+ CORVETTE_MID_S1: "Rdzeń Zmiennokształtnego"
+ CORVETTE_MID_S2PD1: "Eskortowiec"
+ ####################################
+ #Cruiser
+ ####################################
+ CRUISER_BOW_L1: "Artyleria dziobowa"
+ CRUISER_BOW_M1S2: "Dziób torpedy"
+ CRUISER_BOW_M2: "Burta - dziób"
+ CRUISER_MID_S2HB: "Rdzeń hangaru"
+ CRUISER_MID_L1M1: "Rdzeń artylerii"
+ CRUISER_MID_M3: "Rdzeń burty"
+ CRUISER_MID_M2S2: "Rdzeń torpedy"
+ CRUISER_STERN_M1: "Rufa - burta"
+ CRUISER_STERN_S2: "Rufa kanonierki"
+ ####################################
+ #Destroyer
+ ####################################
+ DESTROYER_BOW_M1S2: "Dziób kanonierki"
+ DESTROYER_BOW_S3: "Dziób eskortowca"
+ DESTROYER_BOW_L1: "Artyleria dziobowa"
+ DESTROYER_STERN_PD2: "Rufa eskortowca"
+ DESTROYER_STERN_S2: "Rufa statku przechwytującego"
+ DESTROYER_STERN_M1: "Rufa kanonierki"
+ ####################################
+ #Science
+ ####################################
+ SCIENCE_MID_M1S1: "Statek badawczy"
+ SCIENCE_MID_S3: "Rdzeń Pioniera"
+ SCIENCE_MID_MU1: "Rdzeń Wiedzy"
+ ####################################
+ #Science
+ ####################################
+ LIGHT_MILITARY_STATION_SECTION: "Sekcja stacji lekkiej"
+ PD_MILITARY_STATION_SECTION: "Sekcja obrony punktowej stacji"
+ MEDIUM_MILITARY_STATION_SECTION: "Sekcja stacji średniej"
+ MISSILE_MILITARY_STATION_SECTION: "Sekcja rakietowa stacji"
+ HEAVY_MILITARY_STATION_SECTION: "Sekcja stacji ciężkiej"
+ HANGAR_MILITARY_STATION_SECTION: "Sekcja hangarowa stacji"
+ LIGHT_LARGE_MILITARY_STATION_SECTION: "Sekcja stacji lekkiej"
+ MEDIUM_LARGE_MILITARY_STATION_SECTION: "Sekcja stacji średniej"
+ HEAVY_LARGE_MILITARY_STATION_SECTION: "Sekcja stacji ciężkiej"
+ HANGAR_LARGE_MILITARY_STATION_SECTION: "Sekcja hangarowa stacji"
+ OUTPOST_STATION_SECTION: "Rdzeń posterunku granicznego"
+ ####################################
+ #Other
+ ####################################
+ MISSILE_DEFAULT: "Sekcja torpedowa"
+ DEFAULT_CONSTRUCTION_SECTION: "Statek konstrukcyjny"
+ DEFAULT_COLONIZATION_SECTION: "Statek kolonizacyjny"
+ DEFAULT_SCIENCESHIP_SECTION: "Statek badawczy"
+ DEFAULT_ORBITAL_STATION_SECTION: "Szkielet stacji orbitalnej"
+ DEFAULT_MINING_STATION_SECTION: "Szkielet stacji górniczej"
+ DEFAULT_RESEARCH_STATION_SECTION: "Szkielet stacji badawczej"
+ DEFAULT_WORMHOLE_STATION_SECTION: "Szkielet stacji tunelu czasoprzestrzennego"
+ DEFAULT_MILITARY_STATION_SECTION: "Podstawowa platforma wojskowa"
+ DEFAULT_TRANSPORT_SECTION: "Statek transportowy"
+ SHIP_COLOSSUS_SECTION: "Kolos"
+ GHOST_SHIP_SECTION: "Szkielet statku widmo"
+ lost_swarm_adult: "Szarańcza"
+ lost_swarm_adult_cap: "$lost_swarm_adult$"
+ lost_swarm_adult_plural: "Szarańcza"

@@ -1,0 +1,5 @@
+﻿l_japanese:
+ #Sequential name formats
+ GDF_GDFFLEET: "$ORD$銀河防衛艦隊"
+ #Obsolete sequentials (for backwards compatibility)
+ GDF_xxGDFFLEET_ORD: "$O$銀河防衛艦隊"

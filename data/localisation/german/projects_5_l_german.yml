@@ -1,0 +1,11 @@
+﻿l_german:
+ LIMBO_2_PROJECT: "Limbo: Eine zweite Chance"
+ LIMBO_2_PROJECT_DESC: "Wir könnten eine uralte und längst ausgestorbene Alienspezies wieder zum Leben erwecken, indem wir ihre Gehirnscans in Roboterkörper laden."
+ GHOST_SHIP_PROJECT: "Geisterschiff erforschen"
+ GHOST_SHIP_PROJECT_DESC: "Ein verlassenes Forschungsschiff ist auf einer jahrhundertelangen Patrouillenroute im $NAME_Hillos$-Systems gefangen. Was steckt wohl hinter dieser einsamen Odyssee?"
+ GHOST_SHIP_PROJECT_02: "$NAME_Hillos_ship$s Kind antworten"
+ GHOST_SHIP_PROJECT_02_DESC: "Das im $NAME_Hillos$-System entdeckte psionische Geplapper scheint zu dem an Bord des \"Geisterschiffs\" $NAME_Hillos_ship$ gefangenen künstlichen Bewusstsein zu gehören."
+ ANCIENT_MANUFACTORIUM_PROJECT: "Gießerei hochfahren"
+ ANCIENT_MANUFACTORIUM_PROJECT_DESC: "Wir haben alle nötigen Vorbereitungen getroffen und sind bereit, die ganze Maschine zum Laufen zu bringen und die Anlage an das planetare Stromnetz anzuschließen!"
+ STRATOVENTS_PROJECT: "Stratosphärische Schlote"
+ STRATOVENTS_PROJECT_DESC: "Führt ein Studium der einzigartigen stratosphärischen Schlote auf §Y[planet.GetName]§! durch, um deren Bedeutung für die Weltraumfauna zu ergründen."

@@ -1,0 +1,5 @@
+﻿l_japanese:
+ #Sequential name formats
+ IA_IMPERIALARMADA: "$R$帝国宇宙軍"
+ #Obsolete sequentials (for backwards compatibility)
+ IA_xxIMPERIALARMADA_ROM: "$R$帝国宇宙軍"

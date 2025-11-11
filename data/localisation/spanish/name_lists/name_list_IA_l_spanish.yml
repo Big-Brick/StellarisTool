@@ -1,0 +1,5 @@
+﻿l_spanish:
+ #Sequential name formats
+ IA_IMPERIALARMADA: "$R$ Armada Imperial"
+ #Obsolete sequentials (for backwards compatibility)
+ IA_xxIMPERIALARMADA_ROM: "$R$ Armada Imperial"

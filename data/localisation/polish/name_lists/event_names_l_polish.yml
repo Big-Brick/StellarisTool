@@ -1,0 +1,546 @@
+﻿l_polish:
+ #######
+ #MISC
+ #######
+ #Assorted empire/country names
+ NAME_Ancient_AI: "Starożytna SI"
+ NAME_Armistice_Initiative: "Inicjatywa Rozejmowa"
+ NAME_Awoken: "Przebudzeni"
+ NAME_Commonwealth_of_Man: "Wspólnota Ludzi" #UNE initializer
+ NAME_Creatures_of_the_Shroud: "Stwory z Woalu"
+ NAME_Cunning_Pirates: "Zmyślni piraci"
+ NAME_Deformed_Creatures: "Zniekształcone stwory" #terraforming accident
+ NAME_Demonic_Creatures: "Demoniczne stwory"
+ NAME_Demon_Incursion: "Demoniczny atak"
+ NAME_Demon_Incursion_adj: "demonicz."
+ NAME_Eternal_Watchers: "Wiekuiści Obserwatorzy"
+ NAME_Incoming_Asteroid: "Nadlatująca asteroida" #a literal asteroid
+ NAME_Living_Snow: "Żywy śnieg" #empire (planetary event)
+ NAME_Looped_Syzygy: "Zapętlona Syzygia"
+ NAME_Marauding_Creatures: "Grasujące stwory" #planetary event
+ NAME_mardak_vol_haters: "Vol"
+ NAME_Mutant_Horrors: "Zmutowane poczwary" #also used as an army name
+ NAME_Prikkiki_Ti: "Prikkiki-Ti"
+ NAME_Psionic_Avatar_Country: "Awatar psioniczny"
+ NAME_Ransomeers: "Porywaki"
+ NAME_Rising_Manifold: "Wschodzący Rozgałęźnik" #abstract/nonsensical
+ NAME_Shattered_Frontier: "Zniszczone Pogranicze" #empire, alluding to colonial frontiers (Shroud entity)
+ NAME_Shroud_Reformers: "Reformatorzy Woalu" #the definitive Shroud
+ NAME_Spawning_Dragons: "Uwolnione smoki" #literal
+ NAME_Subterranean_Nation: "Podziemny lud"
+ NAME_The_Loop: "Pętla" #as in time
+ NAME_The_Shroud: "Woal"
+ NAME_Titanic_Life: "Tytaniczne życie" #gigantic lifeforms
+ NAME_Unknown_Ancientry: "Starożytność nieznana"
+ NAME_Unscrupulous_Salvagers: "Bezlitośni złomiarze"
+ NAME_Wreckers: "Sabotażyści"
+ #Assorted species names
+ NAME_AI: "SI"
+ NAME_Awoken_Robot: "Przebudzeni"
+ NAME_Azizians: "Azyzjanie"
+ NAME_Cockroach: "Karaluch" #literal
+ NAME_Cockroach_plural: "Karaluchy" #literal
+ NAME_Migrating_Trees: "Wędrowne drzewa" #literal
+ NAME_Rampaging_Forests: "Rozszalałe lasy" #literal
+ NAME_Prikki: "Prikki"
+ NAME_Robot: "Robot"
+ NAME_Robot_plural: "Roboty"
+ NAME_Titans: "Tytany" #gigantic lifeforms
+ NAME_Demon_Refugees: "Demon"
+ NAME_Demon_Refugee_pl: "Demony"
+ #Assorted star system names
+ NAME_Klendath: "Klendath"
+ NAME_Pantagruel: "Pantagruel"
+ NAME_Zron: "Zron"
+ #Assorted planet names
+ NAME_Baldarak: "Baldarak"
+ NAME_New_Baldarak: "Nowy Baldarak"
+ NAME_Chabkymak: "Chabkymak"
+ NAME_Exile: "Wygnanie"
+ NAME_Fotangia: "Fotangia"
+ NAME_The_Fragments: "Odłamki" #a shattered world
+ NAME_Gish: "Gish"
+ NAME_Homeworld_Two: "[Space_Owner.GetHomeWorldName] II" #after terraforming
+ NAME_Paridayda: "Paridayda" #gaia world
+ NAME_Spjuuht: "Spjuuht"
+ NAME_Tollok_Rong: "Tollok Rong"
+ NAME_Zron_Prime: "Zron Prime" #as in 'NAME_Zron'
+ #Assorted fleet names
+ NAME_5th_Dimensionalists: "Piątowymiarowcy"
+ NAME_Ancient_AI_Fleet: "Flota starożytnej SI"
+ NAME_Clutch_of_Whelps: "Szpony wyrostków" #dragons
+ NAME_Dimensional_Portal: "Przejście międzywymiarowe"
+ NAME_Greased_Lightning: "Tłusta błyskawica"
+ NAME_Head_in_Sand: "Głowa-w-piach" #i.e. cowardly/ignorant
+ NAME_Hijacked_Fleet: "Porwana flota"
+ NAME_Main_Forces: "Główne siły"
+ NAME_mardak_vol_haters_fleet: "Czyściciele Mardaku"
+ NAME_Modified_Probe: "Zmodyfikowana sonda"
+ NAME_New_Ship_plural: "Nowe jednostki"
+ NAME_Occupation_Flotilla: "Flotylla okupacyjna"
+ NAME_Other_Science_Ship: "Inny statek badawczy" #comprises 'NAME_From_Beyond'
+ NAME_Psionic_Avatar: "Awatar psioniczny"
+ NAME_Ransomeer_Base: "Baza Porywaków" #starbase
+ NAME_Salvage_Fleet: "Flota złomiarzy"
+ NAME_Scrap_Probes: "Złomowane sondy"
+ NAME_Seaborn: "Morscy"
+ NAME_Seaborn_Flotilla: "Flotylla morskich"
+ NAME_Skeletal_Giant: "Olbrzymi szkielet"
+ NAME_Surveillance_Bots: "Roboty badawcze"
+ NAME_TIME_IS_SIGHT_GRAVITY_IS_DESIRE: "CZAS TO WZROK CIĄŻENIE TO PRAGNIENIE" #abstract/nonsensical
+ NAME_The_End: "Koniec" #End of the Cycle (Shroud)
+ NAME_Wrecker_Base: "Baza sabotażystów" #as in 'NAME_Wreckers'
+ NAME_Zarqlans_Pilgrims: "Pielgrzymi Zarqlana"
+ NAME_Mercenary_Fleet: "[event_target:mercenary_enclave_country.GetName]: flota"
+ NAME_Mindwarden_Fleet: "[mindwarden_enclave_country.GetName] - flota"
+ #Assorted ship names (sometimes also used as the fleet name)
+ NAME_Abandoned_Alien_Vessel: "Porzucony statek kosmitów"
+ NAME_AI_Core: "Rdzeń SI"
+ NAME_AI_Final_Core: "Rdzeń główny"
+ NAME_Alien_Ship: "Statek kosmitów"
+ NAME_Asteroid: "Asteroida" #a literal asteroid
+ NAME_Autonomous_Drone: "Samodzielny dron"
+ NAME_Burnt_Out_Science_Ship: "Wypalony statek badawczy"
+ NAME_Conceptual_Ship: "Statek jako koncepcja" #abstract
+ NAME_Corrupted_Avatar: "Spaczony awatar" #psionic entity
+ NAME_Dark_Wanderer: "Mroczny wędrowiec"
+ NAME_Dimensional_Horror: "Międzywymiarowa groza"
+ NAME_enigmatic_cache: "Tajemniczy skład"
+ NAME_Foundling: "Znajda" #lost science ship
+ NAME_Fragment: "Skrawek" #Shroud manifestation
+ NAME_From_Beyond: "Przybysz z Tamtego Świata"
+ NAME_Gallant_Dawn: "Waleczny Świt"
+ NAME_Grand_Herald: "Wielki Herold"
+ NAME_Herald: "Herold"
+ NAME_Junk_Probe_Alpha: "Sonda Rupieć Alfa"
+ NAME_Junk_Probe_Beta: "Sonda Rupieć Beta"
+ NAME_Kellop-Gar: "Kellop-Gar"
+ NAME_Lessenger: "Mały Herold"
+ NAME_Lesser_Messenger: "$NAME_Lessenger$"
+ NAME_Mended_Frontier: "Wyremontowane Pogranicze" #as in 'NAME_Shattered_Frontier'
+ NAME_Migil-Yar: "Migil-Yar"
+ NAME_Suntha-Pol: "Suntha-Pol"
+ NAME_Nanite_Dragon: "Symulowane smoczątko" #a literal dragon
+ NAME_New_Ship: "Nowa jednostka"
+ NAME_Ostrich: "Struś" #reference to 'NAME_Head_in_Sand'
+ NAME_Patchwork_Paradise: "Połatany Raj" #wrecker ship
+ NAME_Reckoning: "Obrachunek"
+ NAME_Reclaimed_Ship: "Odzyskany statek" #as in 'back in our possession'
+ NAME_Research_Expedition_Vessel: "Statek wyprawy badawczej"
+ NAME_Salvage: "Złom" #literal
+ NAME_Seafallen_Cruiser: "Zatopiony krążownik"
+ NAME_Ship_of_Unknown_Origin: "Statek nieznanego pochodzenia"
+ NAME_Shroud_Manifestation: "Manifestacja Woalu"
+ NAME_Skeletal_Transport: "Szkielet transportowiec" #as in 'NAME_Skeletal_Giant'
+ NAME_Specter: "Widmo"
+ NAME_Subspace_Anomaly: "Anomalia podprzestrzenna" #literal
+ NAME_Syzygy: "Syzygia"
+ NAME_Unshrouded_Science_Ship: "Nieosłonięty statek badawczy"
+ NAME_Worm_in_Waiting: "Przyczajony Czerw" #definite article, 'The Worm'
+ #Assorted army names
+ NAME_Awoken_Army: "Armia Przebudzonych"
+ NAME_Enraged_Guardian: "Rozwścieczony strażnik"
+ NAME_Enraged_Titan: "Rozwścieczony tytan"
+ NAME_Invading_Horde: "Horda inwazyjna" #subterranean army
+ NAME_Loot_Equipped_Army: "Armia ze zdobycznym wyposażeniem"
+ NAME_Marauding_Swarms: "Grasujące roje"
+ NAME_mechawarrior_contractors: "Podwykonawcy mechawojowników"
+ NAME_military_contractors: "Podwykonawcy wojskowi"
+ NAME_Mutated_Horrors: "Zmutowane poczwary"
+ NAME_Monstrous_Snow: "Śnieżne potwory" #from literal snow
+ NAME_Twisted_Beasts: "Poczwarne bestie"
+ #Assorted leader names
+ NAME_00110001: "110001" #1
+ NAME_00110010: "110010" #2
+ NAME_00110011: "110011" #3
+ NAME_00110100: "110100" #4
+ NAME_00110101: "110101" #5
+ NAME_01000001_01001001: "01000001 01001001" #AI
+ NAME_0101010111: "101010111" #W
+ NAME_Majula_the_Bearer: "Majula Zwiastunka"
+ NAME_Oracle: "Wyrocznia" #also used as the species name
+ NAME_The_Exile: "Wygnaniec" #a scientist of the player's own species
+ NAME_William_Shakespeare: "William Shakespeare" #May be replaced with a more relevant, national literary figure depending on the extent to which you localize event 'federations2.1', 'Love's Labor's Lost'. See also '.GetAuteur' scripted loc for use of Molière in French.
+ #Other
+ NAME_Machine_Uprising_War: "Powstanie maszyn [This.MainDefender.GetAdj]"
+ #########
+ #CRISES
+ #########
+ #Empire names
+ NAME_Aberrant: "Dziwolągi"
+ NAME_Unbidden: "Istoty z innych wymiarów"
+ NAME_Vehement: "Gorliwcy"
+ NAME_Contingency: "Kryzys"
+ NAME_Cybrex: "Cybrex"
+ NAME_Cybrex_Empire: "Pozostałość Cybrexu"
+ NAME_Dessanu: "Dessanu"
+ NAME_Dessanu_Consonance: "Współbrzmienie Dessanu"
+ NAME_Gray: "Szarość" #also used as a name for the leader, ship and army
+ NAME_Gray_Goo: "Szara Nawałnica"
+ NAME_Portal_Holder_1: "Przejście międzywymiarowe"
+ NAME_Prethoryn_Scourge: "Pretoryńska zaraza"
+ #Species names
+ NAME_Custodian_Bot: "Robot opiekun"
+ NAME_Prethoryn: "Pretoryni"
+ #Star system names
+ NAME_Contingency_System: "CX-9881"
+ NAME_Cybrex_Beta: "Cybrex Beta"
+ #Planet names
+ NAME_Contingency_Lair: "Ogniwo Zero-Jeden"
+ NAME_Cybrex_Beta_1: "Cybrex Beta I"
+ NAME_Cybrex_Beta_2: "Cybrex Beta II"
+ NAME_Cybrex_Beta_3: "Cybrex Beta III"
+ NAME_Cybrex_Beta_4: "Cybrex Beta IV"
+ #Fleet names
+ NAME_Dessanu_Fleet: "Flota obronna Dessanu"
+ NAME_Dessanu_Fleet_2: "Flota patrolowa Dessanu"
+ NAME_Feral_Prethoryn: "Zdziczały pretoryn"
+ NAME_Loyal_Brood: "Wierny rój"
+ NAME_Prethoryn_Armies: "Armie pretorynów"
+ NAME_Prethoryn_Constructor: "Konstruktor pretorynów"
+ NAME_Prethoryn_Infestor: "Patogen pretorynów"
+ NAME_Prethoryn_Star_Brood: "Gwiezdny rój pretorynów"
+ NAME_Prethoryn_Transport: "Transportowiec pretorynów"
+ NAME_Prethoryn_Vanguard: "Przednia straż pretorynów"
+ NAME_Refugee_Fleet: "Flota uchodźców"
+ NAME_Sentinel_Auxiliary_Fleet: "Pomocnicza flota Strażników"
+ NAME_Sentinel_Battle_Fleet: "Flota bojowa Strażników"
+ NAME_Sentinel_Defense_Fleet: "Flota obronna Strażników"
+ NAME_Sterilization_Hub_1: "Węzeł sterylizacyjny 001"
+ NAME_Sterilization_Hub_2: "Węzeł sterylizacyjny 002"
+ NAME_Sterilization_Hub_3: "Węzeł sterylizacyjny 003"
+ NAME_Sterilization_Hub_4: "Węzeł sterylizacyjny 004"
+ NAME_Tempest_Fleet: "Ławica Nawałnicy"
+ #Ship names
+ NAME_Dessanu_Interdictor: "Wirsik"
+ NAME_Dessanu_Mothership: "Unthra"
+ NAME_Domesticated_Prethoryn: "Oswojony pretoryn"
+ NAME_Domesticated_Queen: "Oswojona królowa"
+ NAME_Domesticated_Swarmling: "Oswojona larwa"
+ NAME_Domesticated_Warrior: "Oswojony żołnierz"
+ NAME_Early_Warning_X_34: "Wczesne ostrzeżenie X-34"
+ NAME_Early_Warning_X_35: "Wczesne ostrzeżenie X-35"
+ NAME_Early_Warning_X_36: "Wczesne ostrzeżenie X-36"
+ NAME_Early_Warning_X_37: "Wczesne ostrzeżenie X-37"
+ NAME_Early_Warning_X_38: "Wczesne ostrzeżenie X-38"
+ NAME_Gatebuilder_Starbase: "Kaprok"
+ NAME_Refugee_Site_Beta: "Schronienie uchodźców Beta"
+ NAME_Sentinel_Alpha: "Strażnik Alfa"
+ NAME_Deep_Eyes: "Ciemne Oczy"
+ NAME_Gray_Moon: "Szary Księżyc"
+ NAME_Kobyar_Miru: "Kobyar Miru"
+ NAME_Princess_Kolos: "Księżniczka Kolos"
+ NAME_Refugee_Site_Alpha: "Schronienie uchodźców Alfa"
+ NAME_Stellar_Queen: "Gwiezdna Królowa"
+ #Army names
+ NAME_Prethoryn_Invaders: "Pretoryńscy najeźdźcy"
+ #Leader names
+ NAME_Fleet_Consciousness: "Świadomość floty"
+ #Cybrex megastructure
+ NAME_Ring_Segment_A: "Segment pierścienia A"
+ NAME_Ring_Segment_B: "Segment pierścienia B"
+ NAME_Ring_Segment_C: "Segment pierścienia C"
+ NAME_Ring_Segment_D: "Segment pierścienia D"
+ NAME_Ring_Segment_E: "Segment pierścienia E"
+ NAME_Ring_Segment_F: "Segment pierścienia F"
+ NAME_Ring_Segment_G: "Segment pierścienia G"
+ NAME_Ring_Segment_H: "Segment pierścienia H"
+ NAME_Ring_Segment_I: "Segment pierścienia I"
+ NAME_Ring_Segment_J: "Segment pierścienia J"
+ NAME_Ring_Segment_K: "Segment pierścienia K"
+ NAME_Ring_Segment_L: "Segment pierścienia L"
+ ###########
+ #ENCLAVES
+ ###########
+ #Leader names
+ NAME_Doctor_Xib: "Doktor Xib"
+ NAME_Kix_the_Brilliant: "Kix Wspaniałx"
+ NAME_merchant_leader: "Prakhti Maghoun"
+ NAME_Professor_Zarg: "Profesor Zarg"
+ NAME_Sensei_Borkaz: "Sensei Borkaz"
+ NAME_The_Mentat: "Mentat"
+ ############################
+ #FALLEN & AWAKENED EMPIRES
+ ############################
+ #Leader names
+ NAME_Tuborek: "Tuborek"
+ #Other
+ NAME_Holy_World_War: "Wojna o święty świat [This.MainAttacker.GetAdj]" #war over a designated Holy World
+ NAME_The_War_in_Heaven: "Wojna w niebie" #war between fallen empires
+ ##############
+ #FEDERATIONS
+ ##############
+ #Military Alliance Joint Operation
+ NAME_training_adversary: "Ćwiczebny przeciwnik" #empire
+ NAME_Training_Targets: "Cele ćwiczebne" #fleet
+ NAME_Elusive_Craft: "Tajemniczy statek" #ship
+ #####################
+ #KHANATE & DIADOCHI
+ #####################
+ #Empire & Federation names
+ NAME_Galactic_Horde: "Horda Galaktyczna" #federation
+ #Fleet names
+ NAME_Chosen_of_the_Great_Khan: "Wybrańcy Wielkiego Chana"
+ NAME_Horde_Auxiliary_Fleet: "Siły pomocnicze [satrapy_species.GetAdj]"
+ ###########################
+ #LEVIATHANS & SPACE FAUNA
+ ###########################
+ #See also: initializers_names_l_english.yml, containing names related to Leviathans and Space Fauna which appear at galaxy start
+ #Empire names
+ NAME_Alien_Hive: "Obcy rój"
+ NAME_Mining_Drone_Expansion_Initiative: "Inicjatywa ekspansji dronów górniczych"
+ NAME_Aggressive_Mining_Drone_Expansion_Initiative: "Inicjatywa ekspansji dronów bojowych"
+ NAME_Old_One: "Starzec" #void cloud
+ NAME_Stellarite: "Stellaryt"
+ NAME_VLUUR: "VLUUR"
+ #Planet names
+ NAME_Bot_Compactor: "Zagęszczarka robota złomiarza"
+ NAME_Drakes_Roost: "Smocza Grzęda"
+ #Fleet names
+ NAME_Aggressive_Mining_Drone_Expansion_Fleet: "Flota ekspansyjna dronów agresywnych"
+ NAME_Ancient_Mining_Drones: "Starożytne drony górnicze"
+ NAME_Mining_Drone_Expansion_Fleet: "Flota ekspansyjna dronów górniczych"
+ NAME_Crystalline_Elites: "Elitarne krystaliczne stwory"
+ NAME_Crystalline_Entity: "Krystaliczny stwór"
+ NAME_Exiled_One: "Wygnaniec" #void cloud
+ NAME_Hiver_Nest: "Gniazdo hodowcy"
+ NAME_Life_Tree_Protector_plural: "Obrońcy Drzewa Życia"
+ NAME_Nesting_Crystals: "Kryształy gniazdowe" #space crystals
+ NAME_Shard: "Czacha" #named dragon
+ NAME_Space_Amoeba_plural: "Kosmiczne ameby" #fleet
+ NAME_Space_Amoeba_plural_seed: "Kosmiczne ameby (£seed_pod£)" #fleet carrying seeds (Gardeners Origin)
+ NAME_Stellarite_Devourer: "Pożeracz stellarytu"
+ NAME_Subspace_Rupture_Cloud_1: "Pęknięcie podprzestrzenne XV-990"
+ NAME_Subspace_Rupture_Cloud_2: "Pęknięcie podprzestrzenne R-5921"
+ NAME_Subspace_Rupture_Cloud_3: "Pęknięcie podprzestrzenne TLZ-84"
+ NAME_Tricksy_Mining_Drones: "Cwane drony górnicze" #cute form of 'tricky'
+ NAME_Void_Cloud: "Chmura próżniowa"
+ #Ship names
+ NAME_Annoyed_Crystal: "Rozgniewany kryształ"
+ NAME_Cortus: "Cortus" #space amoeba
+ NAME_Cracked_Crystalline_Shard: "Pęknięty krystaliczny odłamek"
+ NAME_Dreadnought: "Pancernik"
+ NAME_Drone_0931_F: "Dron 0931-F"
+ NAME_Drone_1119_X: "Dron 1119-X"
+ NAME_Drone_1433_D: "Dron 1433-D"
+ NAME_Drone_1832-D: "Dron 1832-D"
+ NAME_Drone_2432_D: "Dron 2432-D"
+ NAME_Drone_4119_X: "Dron 4119-X"
+ NAME_Drone_5110_X: "Dron 5110-X"
+ NAME_Drone_6732_A: "Dron 6732-A"
+ NAME_Drone_7731_A: "Dron 7731-A"
+ NAME_Effluvial_Offspring: "Potomstwo wyziewów" #void cloud
+ NAME_Ether_Hatchling: "Eteryczne pisklę" #ether drake
+ NAME_Shard_Dragon: "Największy smok" #ether drake
+ NAME_KASH: "KASH" #void cloud
+ NAME_Life_Tree_Protector: "Obrońca Drzewa Życia"
+ NAME_Mining_Drone_C_Class: "Dron górniczy klasy C"
+ NAME_Oriens: "Oriens" #space amoeba
+ NAME_Ortus: "Ortus" #space amoeba
+ NAME_Psi: "Psi"
+ NAME_SHAB: "SHAB" #void cloud
+ NAME_Scile: "Scile" #named dragon
+ NAME_Stellar_Devourer: "Gwiezdny pożeracz"
+ NAME_TAHA: "TAHA" #void cloud
+ NAME_TANT: "TANT" #void cloud
+ NAME_Trapped_Asteroid: "Uwięziona asteroida" #inert space crystal
+ NAME_Wraith_450THz: "Upiór 450THz"
+ NAME_Wraith_520THz: "Upiór 520THz"
+ NAME_Wraith_650THz: "Upiór 650THz"
+ NAME_XADRA: "XADRA" #void cloud
+ NAME_XELMAGGUS: "XELMAGGUS" #void cloud
+ NAME_XILNIAK: "XILNIAK" #void cloud
+ NAME_XUNIA: "XUNIA" #void cloud
+ NAME_XUUL: "XUUL" #void cloud
+ NAME_Young_Dragon: "Niedojrzały okaz"
+ ############
+ #MARAUDERS
+ ############
+ #Fleet names
+ NAME_234th_Dwamak_Bashers: "234. Flota Gnębicieli Dwamaków"
+ NAME_Armada_of_the_Voidborn: "Armada Zrodzonych w Próżni"
+ NAME_First_Storm_Wing: "Pierwsze Skrzydło Burzy"
+ NAME_Frenzied_Volunteer_Squadron: "Eskadra Wściekłych Ochotników"
+ NAME_Garrison_Fleet: "Flota Garnizonu Hordy"
+ NAME_Her_Chosen_Champions: "Wybrańcy Pani"
+ NAME_Order_of_Eternal_Night: "Zakon Wiecznej Nocy"
+ NAME_Raiding_Fleet: "Flota najeźdźców"
+ NAME_Salvaged_Fleet: "Flota z odzysku"
+ NAME_Star_Rider_Flotilla: "Flotylla Gwiezdnych Piratów"
+ NAME_Twilight_Congregation: "Kongregacja Zmierzch"
+ #Ship & starbase names
+ NAME_Garrison_Base: "Stacja Garnizonu Hordy"
+ #########
+ #NOMADS
+ #########
+ NAME_Galactic_Nomads: "Galaktyczni nomadzi" #empire name
+ #Species names
+ NAME_Namarian: "Namarianin" #also used as an adjective
+ NAME_Namarian_plural: "Namarianie"
+ #Fleet names
+ NAME_Nomad_Delivery: "Dostawa nomadów"
+ NAME_Nomadic_Armada: "Wędrowna Armada"
+ NAME_Redirected_Nomad_Delivery: "Przekierowana dostawa nomadów"
+ NAME_Unhinged_Screamer_Flotilla: "Flotylla Szalonych Krzykaczy"
+ #Ship names
+ NAME_Defender: "Obrońca"
+ NAME_Home_One: "Dom Jeden"
+ NAME_Home_Two: "Dom Dwa"
+ NAME_Home_Three: "Dom Trzy"
+ NAME_Protector: "Protektor"
+ ##########
+ #PIRATES
+ ##########
+ #Empire names
+ NAME_Pirates: "Piraci"
+ NAME_Privateers: "Korsarze"
+ NAME_Sunblaster_Pirates: "Piraci Gwiezdnej Plazmy"
+ #Fleet names
+ NAME_Old_Guard: "Stara Gwardia"
+ NAME_Scarred_Veterans: "Sterani Weterani"
+ NAME_Young_Blood: "Młoda Krew"
+ NAME_Numerous_Pirates: "Liczni piraci"
+ NAME_Pirate_Fleet: "Flota piracka"
+ NAME_Pirate_Station: "Stacja piratów" #starbase
+ NAME_Wounded_Pirates: "Ranni piraci"
+ #Ship names
+ NAME_Damaged_Pillager: "Uszkodzony łupieżca"
+ NAME_Defaced_Gunmouth: "Oszpecony Odrzutnik"
+ NAME_Defaced_Starflinger: "Oszpecony Gwiazdomiot"
+ NAME_Dices: "Siekanka"
+ NAME_First_Pillager: "Pierwszy Łupieżca"
+ NAME_First_Ravager: "Pierwszy Burzyciel"
+ NAME_Ingrates_Inferno: "Piekło Niewdzięcznika"
+ NAME_Second_Pillager: "Drugi Łupieżca"
+ NAME_Second_Ravager: "Drugi Burzyciel"
+ NAME_Third_Pillager: "Trzeci Łupieżca"
+ NAME_Third_Ravager: "Trzeci Burzyciel"
+ NAME_Outcast_Gunmouth: "Odrzutnik Wyrzutek"
+ NAME_Outcast_Starflinger: "Gwiazdomiot Wyrzutek"
+ NAME_Pillager: "Łupieżca"
+ NAME_Ravager: "Burzyciel"
+ NAME_Swashbuckler: "Rębajło"
+ NAME_Scorched_Ravager: "Wypalony Burzyciel"
+ NAME_Slices: "Plasterek"
+ #Bemat Thalassocracy
+ NAME_Thalassocracy: "Talassokracja Bemat" #empire
+ NAME_Thalassocracy_species: "Bemaci"
+ NAME_Thalassocracy_species_plural: "Bemaci"
+ NAME_Thalassocracy_species_adj: "Bematów"
+ NAME_Thalassocracy_fleet: "Flota Pozyskująca"
+ NAME_Bemat_corvette_01: "Simne"
+ NAME_Bemat_destroyer_01: "Nabaz"
+ NAME_Bemat_destroyer_02: "Ermeh"
+ NAME_Bemat_cruiser_01: "Hebehr"
+ NAME_Bemat_cruiser_02: "Eddek"
+ #############
+ #PRECURSORS
+ #############
+ #Cybrex
+ NAME_Cybrex_Alpha: "Cybrex Alfa"
+ #First League
+ NAME_Fen_Habbanis: "Fen Habbanis" #star
+ NAME_Fen_Habbanis_I: "Fen Habbanis I" #planet
+ NAME_Fen_Habbanis_II: "Fen Habbanis II" #planet
+ NAME_Fen_Habbanis_III: "Fen Habbanis III" #planet
+ NAME_Fen_Habbanis_IV: "Fen Habbanis IV" #planet
+ NAME_Fen_Habbanis_V: "Fen Habbanis V" #planet
+ NAME_Fen_Habbanis_VI: "Fen Habbanis VI" #planet
+ #Irassians
+ NAME_Ira: "Ira" #system
+ NAME_Irass: "Irass" #star
+ NAME_Irass_I: "Irass I" #planet
+ NAME_Irass_II: "Irass II" #planet
+ NAME_Irass_III: "Irass III" #planet
+ NAME_Irass_IV: "Irass IV" #planet
+ NAME_Irass_V: "Irass V" #planet
+ NAME_Irass_VI: "Irass VI" #planet
+ NAME_Irassia: "Irassia" #moon
+ NAME_Irass_VII: "Irass VII" #planet
+ NAME_Irass_VIIa: "Irass VIIa" #moon
+ NAME_Irass_VIIb: "Irass VIIb" #moon
+ NAME_Irass_VIII: "Irass VIII" #planet
+ NAME_Irass_IX: "Irass IX" #planet
+ #Vultaum
+ NAME_Vultaumar: "Vultaumar" #star
+ NAME_Vultaumar_Prime: "Vultaumar Prime" #planet
+ NAME_Vultaumar_Ia: "Vultaumar Ia" #moon
+ NAME_Vultaumar_Ib: "Vultaumar Ib" #moon
+ NAME_Vultaumar_II: "Vultaumar II" #planet
+ NAME_Vultaumar_III: "Vultaumar III" #planet
+ NAME_Vultaumar_IIa: "Vultaumar IIa" #moon
+ NAME_Vultaumar_IV: "Vultaumar IV" #planet
+ NAME_Vultaumar_IVa: "Vultaumar IVa" #moon
+ NAME_Vultaumar_V: "Vultaumar V" #planet
+ #Yuht
+ NAME_Yuhtaan: "Yuhtaan" #star
+ NAME_Yuhtaan_II: "Yuhtaan II" #planet
+ NAME_Yuhtaan_III: "Yuhtaan III" #planet
+ NAME_Yuhtaan_IV: "Yuhtaan IV" #planet
+ NAME_Yuhtaan_IVa: "Yuhtaan IVa" #moon
+ NAME_Yuhtaan_IVb: "Yuhtaan IVb" #moon
+ NAME_Yuhtaan_IVc: "Yuhtaan IVc" #moon
+ NAME_Yuhtaan_V: "Yuhtaan V" #planet
+ NAME_Yuhtaan_Va: "Yuhtaan Va" #moon
+ NAME_Yuhtaan_Majoris: "Yuhtaan Majoris" #broken planet
+ NAME_Yuhtaan_Minoris: "Yuhtaan Minoris" #broken planet
+ ##################
+ #PRE-FTL SPECIES
+ ##################
+ #(Uplifted) species names
+ NAME_Roachoid: "Karaluchoid" #cockroaches
+ NAME_Snakeoid: "Wężoid" #snakes
+ NAME_Robot_Uprising: "Powstanie robotów"
+ #Ship names
+ NAME_Space_Station: "Stacja kosmiczna"
+ #Army names
+ NAME_Industrial_Army: "Armia ery przemysłowej"
+ NAME_Post_Atomic_Army: "Armia postnuklearna"
+ NAME_Primitive_Army: "Prymitywna armia"
+ NAME_Robot_Army: "Armia robotów"
+ #Leader names
+ NAME_Sobak: "Sobak"
+ Sobak_Background: "Genialny umysł porwany ze świata, który nie pobudzał jego geniuszu."
+ ###################
+ #RADICAL CULTISTS
+ ###################
+ NAME_Radical_Cult: "Fanatyczny Kult" #empire name
+ cultist_flagship_damaged: "Uszkodzony okręt flagowy"
+ #Fleet names
+ NAME_Cult_Defense_Fleet: "Flota obronna Kultu"
+ NAME_Cultist_Marauders: "Kultyści rabusie"
+ NAME_Exiled_Pirates: "Wygnani piraci"
+ #Ship names
+ NAME_Bane_of_the_Heretic: "Zguba Heretyków"
+ NAME_Cultist_Flagship: "Okręt flagowy kultystów"
+ NAME_Cultist_Shipyard: "Stocznia kultystów"
+ NAME_Dawn_of_Creation: "Jutrzenka Stworzenia"
+ NAME_Divine_Fury: "Bożygniew"
+ NAME_Divine_Justicar: "Boży Sędzia"
+ NAME_Divine_Vessel: "Boże Naczynie"
+ NAME_Eternal_Damnation: "Wiekuiste Potępienie"
+ NAME_Final_Judgment: "Sąd Ostateczny"
+ NAME_Glorious_Might: "Chwalebna Potęga"
+ NAME_Heathens_Doom: "Zguba Pogan"
+ NAME_Heavenly_Judgment: "Niebiański Osąd"
+ NAME_Heavenly_Portent: "Niebiański Omen"
+ NAME_Holy_Avatar: "Święty Awatar"
+ NAME_Holy_Defender: "Święty Obrońca"
+ NAME_Holy_Protector: "Święty Protektor"
+ NAME_Infidel_Slayer: "Zabójca Niewiernych"
+ NAME_Path_of_the_Pilgrim: "Droga Pielgrzyma"
+ NAME_Pious_Crusader: "Pobożny Krzyżowiec"
+ NAME_Revered_Elder: "Czcigodny Starszy"
+ NAME_Righteous_Zealot: "Prawy Zelota"
+ NAME_The_Chosen_One: "Wybraniec"
+ NAME_Sacred_Might: "Święta Potęga"
+ NAME_Temple_of_Light: "Świątynia Światłości"
+ NAME_Unyielding_Faith: "Niezłomna Wiara"
+ NAME_Wrath_of_the_Spirits: "Gniew Ducha"
+ #########################
+ #REVOLTS & UNREST
+ #########################
+ #Army names
+ NAME_Freedom_Fighters: "Bojownicy Wolności"
+ #Other
+ NAME_WAR_OF_REVOLT: "Powstanie [Root.Target.GetAdj]"

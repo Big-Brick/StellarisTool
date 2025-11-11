@@ -1,0 +1,104 @@
+﻿l_korean:
+ ####################################
+ #COMMON STRINGS
+ ####################################
+ mandate_unity_reward: "§Y6§!개월 분량의 £unity£ 통합(최대 1000)"
+ ####################################
+ #MANDATES
+ ####################################
+ MANDATE_mandate_planet_separatist: "분리주의 동조자"
+ MANDATE_mandate_planet_separatist_DESC: "[Root.GetPopFactionName](을)를 독립 제국으로 해방하십시오.\n\n보상:\n$mandate_influence_reward_t3$"
+ MANDATE_mandate_emancipation: "위대한 해방자"
+ MANDATE_mandate_emancipation_DESC: "[Root.Owner.GetName]의 노예제를 폐지하십시오.\n\n보상:\n$mandate_influence_reward_t3$\n$mandate_happiness_reward_t1$"
+ MANDATE_mandate_emancipation2: "대중의 해방자"
+ MANDATE_mandate_emancipation2_DESC: "[Root.Owner.GetSpeciesAdj]의 행성에 있는 노예들을 모두 해방하십시오.\n\n보상:\n$mandate_influence_reward_t3$\n$mandate_happiness_reward_t1$"
+ MANDATE_mandate_orbital_researcher: "궤도 연구원"
+ MANDATE_mandate_orbital_researcher_DESC: "새로운 궤도 §Y연구 기지§!를 4개 이상 건설해 [Root.Owner.GetName]의 연구 역량을 강화하십시오.\n\n보상:\n$mandate_unity_reward$"
+ MANDATE_mandate_miner: "외우주의 광부"
+ MANDATE_mandate_miner_DESC: "새로운 궤도 §Y채굴 기지§!를 4개 이상 건설해 [Root.Owner.GetName]의 광물 비축량을 늘리십시오.\n\n보상:\n$mandate_influence_reward_t5$"
+ MANDATE_mandate_shipwright: "조선공"
+ MANDATE_mandate_shipwright_DESC: "임기 동안 총 함대 수용력의 75% 이상에 해당하는 함대를 유지해 [Root.Owner.GetSpeciesAdj]의 안전과 안보를 보장하십시오.\n\n보상:\n$mandate_influence_reward_t5$"
+ MANDATE_mandate_peacemaker: "중재자"
+ MANDATE_mandate_peacemaker_DESC: "임기 동안 [Root.Owner.GetName](이)가 참여하고 있는 전쟁을 모두 종결하고, 평화를 유지하십시오.\n\n보상:\n$mandate_influence_reward_t5$"
+ MANDATE_mandate_slaver: "노예상"
+ MANDATE_mandate_slaver_DESC: "[Root.Owner.GetName]의 노예제를 합법화해, 번성시키십시오.\n\n보상:\n$mandate_influence_reward_t2$"
+ MANDATE_mandate_xenopurger: "외계인 정화자"
+ MANDATE_mandate_xenopurger_DESC: "임기 동안 §Y하나 이상의 식민지§!에서 우리 사이에 살아가는 위협적인 외계인을 정화하십시오.\n\n보상:\n$mandate_influence_reward_t2$\n$mandate_happiness_reward_t1$"
+ MANDATE_mandate_nationalist: "반환자"
+ MANDATE_mandate_nationalist_DESC: "§Y[parameter:country.GetName]§!에서 소유하던 행성을 반환하십시오.\n\n보상:\n$mandate_influence_reward_t3$"
+ ####################################
+ #MANDATE CHAINS
+ ####################################
+ mandate_miner_chain_title: "광부 공약"
+ mandate_miner_chain_desc: "[This.GetRulerName] [This.GetRulerTitle](은)는 §Y채굴 기지를§! 적합한 미행성의 궤도에 건설해 £minerals£ §Y광물 생산량§!을 늘리겠다는 공약으로 당선되었습니다. 공약을 완수하십시오.\n\n보상:\n$mandate_unity_reward$"
+ mining_stations_built: "채굴 기지 건설 완료"
+ mandate_orbresearch_chain_title: "궤도 연구 공약"
+ mandate_orbresearch_chain_desc: "[This.GetRulerName] [This.GetRulerTitle](은)는 §Y연구 기지§!를 적합한 행성의 궤도에 건설해 §Y연구 생산량§!을 올린다는 공약으로 당선되었습니다. 공약을 완수하십시오.\n\n보상:\n$mandate_unity_reward$"
+ orbresearch_built: "연구 기지 건설 완료"
+ mandate_xenopurge_chain_title: "외계인 정화자 공약"
+ mandate_xenopurge_chain_desc: "[This.GetRulerName] [This.GetRulerTitle](은)는 §H[purge_planet.GetName]§!에서 §Y[Root.GetSpeciesAdj] 외 종족§!을 모두 §Y정화§!한다는 공약으로 당선되었습니다. 공약을 완수하십시오.\n\n보상:\n$mandate_influence_reward_t2$\n$mandate_happiness_reward_t1$"
+ world_purged: "행성 정화 완료"
+ mandate_shipwright_chain_title: "조선공 공약"
+ mandate_shipwright_chain_desc: "[This.GetRulerName] [This.GetRulerTitle](은)는 임기 동안 군비를 늘려, §Y총 함대 수용력의 75% 이상에 해당하는 함대§!를 사용하겠다는 공약으로 당선되었습니다. 공약을 완수하십시오.\n\n보상:\n$mandate_influence_reward_t2$"
+ military_presence_maintained: "공약 이행 완료"
+ mandate_fiscal_reserve_chain_title: "긴축 재정 공약"
+ mandate_fiscal_reserve_chain_desc: "[This.GetRulerName] [This.GetRulerTitle](은)는 §Y임기 동안§! 예산을 §Y절약하고§! §Y신중히 지출해서§! §H[Root.GetName]§!에 §Y£energy£ 1000 에너지 크레딧 이상§!을 비축하겠다는 공약으로 당선되었습니다. 공약을 완수하십시오."
+ mandate_emancipation_chain_title: "위대한 해방자 공약"
+ mandate_emancipation_chain_desc: "[This.GetRulerName] [This.GetRulerTitle](은)는 임기 동안 노예제를 §Y금지§!하고 §Y폐지§!하겠다는 공약으로 당선되었습니다. 공약을 완수하십시오.\n\n보상:\n$mandate_influence_reward_t3$\n$mandate_happiness_reward_t1$"
+ mandate_fulfilled: "공약 이행 완료"
+ mandate_emancipation2_chain_title: "대중의 해방자 공약"
+ mandate_emancipation2_chain_desc: "[This.GetRulerName] [This.GetRulerTitle](은)는 임기 내에 §H[free_planet.GetName]§!에 있는 §Y노예를 모두 해방§!하겠다는 공약으로 당선되었습니다. 공약을 완수하십시오.\n\n보상:\n$mandate_influence_reward_t3$\n$mandate_happiness_reward_t1$"
+ planet_freed: "행성 해방 완료"
+ mandate_separatist_chain_title: "분리주의자 공약"
+ mandate_separatist_chain_desc: "[This.GetRulerName] [This.GetRulerTitle](은)는 §H[release_planet.GetName]§! 행성을 독립 제국으로 §Y해방§!시켜 주겠다는 공약으로 당선되었습니다. 자세한 내용은 §Y세력 목록§!을 확인하십시오.\n\n보상:\n$mandate_influence_reward_t3$"
+ empire_released: "제국 해방 완료"
+ mandate_peacemaker_chain_title: "중재자 공약"
+ mandate_peacemaker_chain_desc: "[This.GetRulerName] [This.GetRulerTitle](은)는 임기 동안 §Y[Root.GetSpeciesAdj] 종족이 관여하는 전쟁을 모두 종결§!하겠다는 공약으로 당선되었습니다. 공약을 완수하십시오.\n\n보상:\n$mandate_influence_reward_t2$"
+ no_engagements: "모든 분쟁 행위 종결 완료"
+ mandate_slaver_chain_title: "노예상 공약"
+ mandate_slaver_chain_desc: "[This.GetRulerName] [This.GetRulerTitle](은)는 임기 동안 §Y500§! £pop£ §H팝§!이상을 §Y노예화§!하겠다는 공약으로 당선되었습니다.\n\n보상:\n$mandate_influence_reward_t2$"
+ pops_enslaved: "팝 노예화 완료"
+ mandate_nationalist_chain_title: "반환자 공약"
+ mandate_nationalist_chain_desc: "[This.GetRulerName] [This.GetRulerTitle](은)는 임기 내에 §H[ceding_empire.GetName]§! 소유의 식민지들을 §Y반환§!하겠다는 공약으로 당선되었습니다. 세력 목록에서 해당 공약을 이행할 수 있습니다.\n\n보상:\n$mandate_influence_reward_t3$"
+ planet_ceded: "행성 반환 완료"
+ ####################################
+ #MANDATE EVENTS
+ ####################################
+ mandate.1.title: "새로운 통치자 공약"
+ mandate.1.desc: "[Root.GetRulerName](이)가 §H[Root.GetName]§!의 §Y[Root.GetRulerTitle]§!(으)로 당선되었습니다.\n\n당선자의 자세한 §Y공약§!은 §Y상황 일지§!를 참고해 주십시오."
+ mandate.2.title: "공약 불이행"
+ mandate.2.desc: "선거 운동에서 약속한 공약을 지키지 못한 채, [Root.GetRulerTitle]의 임기가 끝났습니다."
+ #Separatist
+ mandate.100.title: "분리주의 동조자 공약 이행 완료"
+ mandate.100.desc: "[Root.GetRulerTitle]의 공약에 따라, §H[released_planet.GetName]§!(은)는 §H[Root.GetName]§!의 §Y속국§!으로 독립했습니다."
+ #Miner
+ mandate.111.title: "광부 공약 이행 완료"
+ mandate.111.desc: "[Root.GetRulerTitle]의 공약에 따라, 채굴 기지가 추가로 건설되었습니다."
+ #Orbital Researcher
+ mandate.121.title: "궤도 연구원 공약 이행 완료"
+ mandate.121.desc: "[Root.GetRulerTitle]의 공약에 따라, 연구 기지가 추가로 건설되었습니다."
+ #Xenopurger
+ mandate.132.title: "외계인 정화자 공약 이행 완료"
+ mandate.132.desc: "[Root.GetRulerTitle]의 공약에 따라, [From.GetName] 식민지에서 [Root.GetSpeciesAdj] 외 종족이 정화되었습니다."
+ #Shipwright
+ mandate.141.title: "조선공 공약 이행 완료"
+ mandate.141.desc: "[Root.GetRulerTitle]의 공약에 따라, 우리 제국은 현재 총 함대 수용력의 75% 이상을 사용 중입니다."
+ mandate.142.title: "공약 불이행"
+ mandate.142.desc: "[Root.GetRulerTitle](은)는 공약의 목표를 정해진 기한 내에 달성하지 못했습니다."
+ #Emancipator 1
+ mandate.150.title: "위대한 해방자 공약 이행 완료"
+ mandate.150.desc: "[Root.GetRulerTitle]의 공약에 따라, 이제 §Y노예제§!는 [Root.GetName]에서 불법이 되었습니다."
+ #Emancipator 2
+ mandate.155.title: "대중의 해방자 공약 이행 완료"
+ mandate.155.desc: "[Root.GetRulerTitle]의 공약에 따라, [From.GetName]의 노예는 모두 해방되었습니다."
+ #Peacemaker
+ mandate.161.title: "중재자 공약 이행 완료"
+ mandate.161.desc: "[Root.GetRulerTitle]의 공약에 따라, §H[Root.GetName]§!(은)는 이제 어떤 분쟁에도 관여하지 않습니다."
+ mandate.162.title: "공약 불이행"
+ mandate.162.desc: "$mandate.142.desc$"
+ #Slaver
+ mandate.171.title: "노예상 공약 이행 완료"
+ mandate.171.desc: "[Root.GetRulerTitle]의 공약에 따라, §Y500§! £pop£ §H팝§!을 노예화했습니다."
+ #Nationalist
+ mandate.180.title: "반환자 공약 이행 완료"
+ mandate.180.desc: "[Root.GetRulerTitle]의 공약에 따라, §H[ceding_empire.GetName]§!에게 식민지를 반환했습니다."
