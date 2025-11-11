@@ -1,0 +1,49 @@
+# triggered district names will pick the first one that they hit.
+
+triggered_name = {
+	trigger = {
+		has_any_normal_agriculture_zone = yes
+		exists = owner
+		owner = {
+			has_technology = tech_nano_vitality_crops
+		}
+	}
+	text = agriculture_4
+}
+
+triggered_name = {
+	trigger = {
+		has_any_normal_agriculture_zone = yes
+		exists = owner
+		owner = {
+			has_technology = tech_gene_crops
+		}
+	}
+	text = agriculture_3
+}
+
+triggered_name = {
+	trigger = {
+		has_any_normal_agriculture_zone = yes
+		exists = owner
+		owner = {
+			has_technology = tech_eco_simulation
+		}
+	}
+	text = agriculture_2
+}
+
+triggered_name = {
+	trigger = {
+		has_any_normal_agriculture_zone = yes
+		exists = owner
+		owner = {
+			has_technology = tech_eco_simulation
+		}
+	}
+	text = agriculture_1
+}
+
+triggered_name = {
+	text = agriculture_0
+}

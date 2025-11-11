@@ -1,0 +1,52 @@
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			is_regular_empire = yes
+			NOT = {
+				has_country_flag = fallen_empire_1
+			}
+		}
+	}
+	modifier = {
+		job_physicist_add = $AMOUNT$
+		job_biologist_add = $AMOUNT$
+		job_engineer_add = $AMOUNT$
+	}
+}
+
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			is_hive_empire = yes
+		}
+	}
+	job_calculator_physicist_add = $AMOUNT$
+	job_calculator_biologist_add = $AMOUNT$
+	job_calculator_engineer_add = $AMOUNT$
+}
+
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = { is_machine_empire = yes }
+	}
+	job_calculator_physicist_add = $AMOUNT$
+	job_calculator_biologist_add = $AMOUNT$
+	job_calculator_engineer_add = $AMOUNT$
+}
+
+### MATERIALIST FE
+
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			has_country_flag = fallen_empire_1
+		}
+	}
+	job_fe_archivist_add = $AMOUNT$
+	job_fe_archivist_add = $AMOUNT$
+	job_fe_archivist_add = $AMOUNT$
+}

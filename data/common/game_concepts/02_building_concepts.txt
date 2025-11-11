@@ -1,0 +1,166 @@
+### BUILDING CONCEPTS
+
+concept_alien_zoo = {
+	icon = "gfx/interface/icons/buildings/building_xeno_zoo.dds"
+}
+
+concept_archaeostudies_faculty = {
+	icon = "gfx/interface/icons/buildings/building_archaeostudies_faculty.dds"
+}
+
+concept_bureaucratic_1 = {
+	icon = "gfx/interface/icons/buildings/building_bureaucratic_1.dds"
+}
+
+concept_clinic = {
+	icon = "gfx/interface/icons/buildings/building_medical_2.dds"
+}
+
+concept_clone_army_clone_vat = {
+	icon = "gfx/interface/icons/buildings/building_ancient_relics.dds"
+}
+
+concept_commercial_zone = {
+	icon = "gfx/interface/icons/buildings/building_commercial_zone.dds"
+}
+
+concept_energy_grid = {
+	icon = "gfx/interface/icons/buildings/building_energy_grid.dds"
+}
+
+concept_hab_capital = {
+	icon = "gfx/interface/icons/buildings/building_capital.dds"
+}
+
+concept_hydroponics_farm = {
+	icon = "gfx/interface/icons/buildings/building_hydroponics_farm.dds"
+}
+
+concept_knight_commandery = {
+	icon = "gfx/interface/icons/buildings/building_order_holding.dds"
+}
+
+concept_low_tech_admin_hub = {
+	icon = "gfx/interface/icons/buildings/building_low_tech_admin_hub.dds"
+}
+
+concept_low_tech_capital = {
+	icon = "gfx/interface/icons/buildings/building_low_tech_capital.dds"
+}
+
+concept_low_tech_farm = {
+	icon = "gfx/interface/icons/buildings/building_low_tech_farm.dds"
+}
+
+concept_low_tech_power_plant = {
+	icon = "gfx/interface/icons/buildings/building_low_tech_power_plant.dds"
+}
+
+concept_low_tech_research_lab = {
+	icon = "gfx/interface/icons/buildings/building_low_tech_research_lab.dds"
+}
+
+concept_low_tech_scrap_refinery = {
+	icon = "gfx/interface/icons/buildings/building_low_tech_scrap_refinery.dds"
+}
+
+concept_military_academy = {
+	icon = "gfx/interface/icons/buildings/building_military_academy.dds"
+}
+
+concept_mineral_purification_plant = {
+	icon = "gfx/interface/icons/buildings/building_mineral_purification_plant.dds"
+}
+
+concept_necrophage_elevation_chamber = {
+	icon = "gfx/interface/icons/buildings/building_chamber_of_elevation_1.dds"
+}
+
+concept_noble_estates = {
+	icon = "gfx/interface/icons/buildings/building_palace.dds"
+}
+
+concept_noble_vacation_homes = {
+	icon = "gfx/interface/icons/buildings/building_palace.dds"
+}
+
+concept_offspring_holding = {
+	icon = "gfx/interface/icons/buildings/building_offspring_nest.dds"
+}
+
+concept_offspring_nests = {
+	icon = "gfx/interface/icons/buildings/building_offspring_nest.dds"
+}
+
+concept_order_keep = {
+	icon = "gfx/interface/icons/buildings/building_order_keep.dds"
+}
+
+concept_research_lab = {
+	icon = "gfx/interface/icons/buildings/building_research_lab_1.dds"
+}
+
+concept_robot_assembly_plant = {
+	icon = "gfx/interface/icons/buildings/building_robot_assembly_plant.dds"
+}
+
+concept_sacrificial_shrine = {
+	icon = "gfx/interface/icons/buildings/building_sacrificial_temple_2.dds"
+}
+
+concept_sacrificial_temple = {
+	icon = "gfx/interface/icons/buildings/building_sacrificial_temple_1.dds"
+}
+
+concept_spawning_pools = {
+	icon = "gfx/interface/icons/buildings/building_spawning_pool.dds"
+}
+
+concept_tree_of_life_holding = {
+	icon = "gfx/interface/icons/buildings/holding_tree_of_life_sapling.dds"
+}
+
+### DISTRICT CONCEPTS
+
+concept_city_district = {
+	alias = { concept_city_districts }
+	icon = "gfx/interface/icons/districts/district_city.dds"
+}
+
+concept_hive_district = {
+	alias = { concept_hive_districts }
+	icon = "gfx/interface/icons/districts/district_hive.dds"
+}
+
+concept_nexus_district = {
+	alias = { concept_nexus_districts }
+	icon = "gfx/interface/icons/districts/district_nexus.dds"
+}
+
+concept_industrial_district = {
+	alias = { concept_industrial_districts }
+	icon = "gfx/interface/icons/districts/district_industrial.dds"
+}
+
+concept_generator_district = {
+	alias = { concept_generator_districts }
+	icon = "gfx/interface/icons/districts/district_generator.dds"
+}
+
+concept_mining_district = {
+	alias = { concept_mining_districts }
+	icon = "gfx/interface/icons/districts/district_mining.dds"
+}
+
+concept_farming_district = {
+	alias = { concept_farming_districts }
+	icon = "gfx/interface/icons/districts/district_farming.dds"
+}
+
+concept_precinct_house = {
+	icon = "gfx/interface/icons/buildings/building_precinct_house.dds"
+}
+
+concept_state_academy = {
+	icon = "gfx/interface/icons/buildings/building_state_academy.dds"
+}

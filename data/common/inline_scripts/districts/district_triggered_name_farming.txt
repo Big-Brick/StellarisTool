@@ -1,0 +1,57 @@
+# triggered district names will pick the first one that they hit.
+
+# Tankbound
+triggered_name = {
+	trigger = {
+		exists = owner
+		owner = { is_tankbound_empire = yes }
+	}
+	text = automated_farming
+}
+
+# zone_agrarian_urban
+triggered_name = {
+	trigger = {
+        num_zones = {
+			type = zone_agrarian_urban
+			value > 0
+		}
+	}
+	text = zone_agrarian_urban
+}
+
+# zone_agrarian_urban
+triggered_name = {
+	trigger = {
+		num_zones = {
+			type = zone_agrarian_anglers
+			value > 0
+		}
+	}
+	text = zone_agrarian_anglers
+}
+
+# zone_food_biology
+triggered_name = {
+	trigger = {
+        num_zones = {
+			type = zone_food_biology
+			value > 0
+		}
+	}
+	text = zone_food_biology
+}
+
+# zone_exotic_gases
+inline_script = {
+	script = districts/district_triggered_name_farming_exotic_gases
+}
+
+# zone_anglers
+inline_script = {
+	script = districts/district_triggered_name_farming_anglers
+}
+
+inline_script = {
+	script = districts/district_triggered_name_farming_default
+}

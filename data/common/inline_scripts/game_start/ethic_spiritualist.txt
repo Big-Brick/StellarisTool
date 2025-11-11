@@ -1,0 +1,29 @@
+# Spiritualist Ethics Initial Setup
+# Buildings Added:
+#	* Temple
+
+if = {
+	limit = {
+		exists = owner
+		owner = {
+			is_spiritualist = yes
+		}
+	}
+	if = {
+		limit = {
+			has_zone = {
+				zone = zone_habitat_research_unity
+			}
+		}
+		add_building = {
+			zone = zone_habitat_research_unity
+			building = building_temple
+		}
+	}
+	else = {
+		add_building = {
+			zone = zone_research_unity
+			building = building_temple
+		}
+	}
+}

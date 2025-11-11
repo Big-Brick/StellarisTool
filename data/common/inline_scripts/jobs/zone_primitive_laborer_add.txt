@@ -1,0 +1,9 @@
+triggered_district_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			is_gestalt = no
+		}
+	}
+	job_primitive_laborer_add = $AMOUNT$
+}

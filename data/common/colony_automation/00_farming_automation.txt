@@ -1,0 +1,34 @@
+automate_farming_planet = {
+	category = "planet_automation_designation_construction"
+
+	available = {
+		has_farming_designation = yes
+		NOT = {
+			uses_district_set = habitat
+		}
+	}
+
+	prio_districts = {
+		district_farming
+		district_rw_urban_1
+	}
+
+	prio_zones = {
+		zone_food
+		zone_food_ring_world
+	}
+
+	buildings = {
+		1 = {
+			building = building_food_processing_facility
+		}
+
+		2 = {
+			building = building_gas_extractors
+		}
+
+		3 = {
+			building = building_farming_districts_1
+		}
+	}
+}

@@ -1,0 +1,42 @@
+# triggered district names will pick the first one that they hit.
+
+# Tankbound
+triggered_name = {
+	trigger = {
+		exists = owner
+		owner = { is_tankbound_empire = yes }
+	}
+	text = automated_generator
+}
+
+# zone_habitat_hydroponics
+triggered_name = {
+	trigger = {
+        num_zones = {
+			type = zone_habitat_hydroponics
+			value > 0
+		}
+	}
+	text = zone_habitat_hydroponics
+}
+
+# zone_energy_physics
+triggered_name = {
+	trigger = {
+        num_zones = {
+			type = zone_energy_physics
+			value > 0
+		}
+	}
+	text = zone_energy_physics
+}
+
+# zone_volatile_motes
+inline_script = {
+	script = districts/district_triggered_name_generator_volatile_motes
+}
+
+
+inline_script = {
+	script = districts/district_triggered_name_generator_default
+}

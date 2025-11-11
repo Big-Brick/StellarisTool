@@ -1,0 +1,517 @@
+@base_cost = 30
+@city_cost = 50
+@biomass_cost = 50
+
+@wilderness_district_build_long = 480
+@wilderness_district_build_short = 240
+
+# City (blue)
+district_craglands = {
+	base_buildtime = @wilderness_district_build_long
+
+	overlay_icon = GFX_district_government
+
+	show_on_uncolonized = {
+		uses_district_set = standard
+		exists = from
+		from = { is_wilderness_empire = yes }
+	}
+
+	potential = {
+		uses_district_set = standard
+		exists = owner
+		owner = { is_wilderness_empire = yes }
+		NAND = {
+			is_capital = yes
+			owner = {
+				has_menace_perk = menp_behemoth_mind_meld
+			}
+		}
+	}
+
+	zone_slots = {
+		slot_city_government
+		slot_city_01
+		slot_city_02
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_arcology_housing
+		district_rw_city
+		district_nexus
+		district_hive
+		district_city
+		district_mindlink
+	}
+
+	resources = {
+		category = planet_districts_cities
+		cost = {
+			minerals = 500
+		}
+		cost = {
+			biomass = @biomass_cost
+		}
+		upkeep = {
+			energy = 2
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 100
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_tradition = tr_domination_imperious_architecture
+			}
+		}
+		planet_defense_armies_add = 2
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_tradition = tr_prosperity_public_works
+			}
+		}
+		planet_housing_add = 50
+	}
+
+	inline_script = {
+		script = buildings/on_all_wilderness_buildings_districts
+	}
+
+	ai_resource_production = {
+		unity = 5
+		trigger = {
+			OR = {
+				has_building = building_commensal_clearing_1
+				has_building = building_commensal_clearing_2
+				has_building = building_commensal_clearing_3
+				has_building = building_commensal_clearing_4
+			}
+		}
+	}
+
+	exempt_from_ai_planet_specialization = yes
+	ai_estimate_without_unemployment = yes
+	additional_ai_weight = 10
+}
+
+# Industry (orange)
+#district_metallic_dew_plains = {
+#	base_buildtime = @wilderness_district_build_long
+#
+#
+#	prerequisites = {
+#		tech_basic_industry
+#	}
+#	zone_slots = { #TEMPORARY WILL BE DELETED
+#		slot_city_02
+#	}
+#
+#	conversion_ratio = 1
+#	convert_to = {
+#		district_arcology_arms_industry
+#		district_rw_industrial
+#	}
+#
+#	resources = {
+#		category = planet_districts_industrial
+#		cost = {
+#			minerals = 500
+#		}
+#		upkeep = {
+#			energy = 2
+#		}
+#	}
+#	triggered_desc = {
+#		text = district_metallic_dew_plains_tooltip_desc
+#	}
+#	planet_modifier = {
+#		planet_max_buildings_add = 0.5
+#	}
+#
+#	inline_script = {
+#		script = buildings/#on_all_wilderness_buildings_districts
+#	}
+#
+#	ai_resource_production = {
+#		alloys = 5
+#		trigger = {
+#			OR = {
+#				has_building = building_natural_furnace_0
+#				has_building = building_natural_furnace_1
+#				has_building = building_natural_furnace_2
+#				has_building = building_natural_furnace_3
+#			}
+#		}
+#	}
+#
+#	ai_estimate_without_unemployment = yes
+#	additional_ai_weight = 10
+#}
+
+# Energy (yellow)
+district_photosynthesis_fields = {
+	expansion_planner = yes
+	base_buildtime = @wilderness_district_build_short
+	overlay_icon = GFX_district_energy
+	inherits_capped_modifiers_from = district_generator
+	is_uncapped = {
+		is_wilderness_generator_district_uncapped = yes
+	}
+
+	min_for_deposits_on_planet = 3
+	max_for_deposits_on_planet = 15
+
+	zone_slots = {
+		slot_energy
+	}
+
+	show_on_uncolonized = {
+		uses_district_set = standard
+		exists = from
+		from = {
+			is_wilderness_empire = yes
+		}
+	}
+
+	potential = {
+		uses_district_set = standard
+		exists = owner
+		owner = {
+			is_wilderness_empire = yes
+		}
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_generator
+		district_photosynthesis_fields_uncapped
+		district_nexus_1
+		district_hive_1
+	}
+
+	resources = {
+		category = planet_districts_generator
+		cost = {
+			minerals = 300
+		}
+		cost = {
+			biomass = @biomass_cost
+		}
+		upkeep = {
+			energy = 1
+		}
+	}
+	planet_modifier = {
+		job_technician_drone_add = @base_rural_district_jobs
+		planet_housing_add = 100
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_tradition = tr_prosperity_public_works
+			}
+		}
+		planet_housing_add = 50
+	}
+
+	inline_script = {
+		script = buildings/on_all_wilderness_buildings_districts
+	}
+
+	prerequisites = {
+		tech_power_plant_1
+	}
+
+	ai_resource_production = {
+		energy = 5
+		trigger = {
+			OR = {
+				has_building = building_bioelectric_stimulator_1
+				has_building = building_bioelectric_stimulator_2
+				has_building = building_bioelectric_stimulator_3
+				has_building = building_bioelectric_stimulator_4
+			}
+		}
+	}
+
+	ai_estimate_without_unemployment = yes
+	additional_ai_weight = 10
+}
+
+district_photosynthesis_fields_uncapped = {
+	base_buildtime = @wilderness_district_build_short
+	icon = district_photosynthesis_fields
+	overlay_icon = GFX_district_energy
+
+	zone_slots = {
+		slot_energy
+	}
+
+	show_on_uncolonized = {
+		always = no
+	}
+
+	potential = {
+		always = no
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_generator
+		district_photosynthesis_fields
+		district_nexus_1
+		district_hive_1
+	}
+}
+
+# Mining (red)
+district_hollow_mountains = {
+	expansion_planner = yes
+	base_buildtime = @wilderness_district_build_short
+	overlay_icon = GFX_district_minerals
+	inherits_capped_modifiers_from = district_mining
+	is_uncapped = {
+		is_wilderness_mining_district_uncapped = yes
+	}
+
+	min_for_deposits_on_planet = 1
+	max_for_deposits_on_planet = 15
+
+	zone_slots = {
+		slot_minerals
+	}
+
+	show_on_uncolonized = {
+		uses_district_set = standard
+		exists = from
+		from = {
+			is_wilderness_empire = yes
+		}
+	}
+
+	potential = {
+		uses_district_set = standard
+		exists = owner
+		owner = {
+			is_wilderness_empire = yes
+		}
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_mining
+		district_hollow_mountains_uncapped
+		district_nexus_2
+		district_hive_2
+	}
+
+	resources = {
+		category = planet_districts_mining
+		cost = {
+			minerals = 300
+		}
+		cost = {
+			biomass = @biomass_cost
+		}
+		upkeep = {
+			food = 1
+		}
+	}
+
+	planet_modifier = {
+		job_mining_drone_add = @base_rural_district_jobs
+		planet_housing_add = 100
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_tradition = tr_prosperity_public_works
+			}
+		}
+		planet_housing_add = 50
+	}
+
+	prerequisites = {
+		tech_mechanized_mining
+	}
+
+	ai_resource_production = {
+		minerals = 5
+		trigger = {
+			OR = {
+				has_building = building_churning_tunnels_1
+				has_building = building_churning_tunnels_2
+				has_building = building_churning_tunnels_3
+				has_building = building_churning_tunnels_4
+			}
+		}
+	}
+
+	ai_estimate_without_unemployment = yes
+	additional_ai_weight = 10
+}
+
+district_hollow_mountains_uncapped = {
+	base_buildtime = @wilderness_district_build_short
+	icon = district_hollow_mountains
+	overlay_icon = GFX_district_minerals
+
+	zone_slots = {
+		slot_minerals
+	}
+
+	show_on_uncolonized = {
+		always = no
+	}
+
+	potential = {
+		always = no
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_mining
+		district_hollow_mountains
+		district_nexus_2
+		district_hive_2
+	}
+}
+
+# Farming (green)
+district_orchard_forests = {
+	expansion_planner = yes
+	base_buildtime = @wilderness_district_build_short
+	overlay_icon = GFX_district_food
+	inherits_capped_modifiers_from = district_farming
+	is_uncapped = {
+		is_wilderness_farming_district_uncapped = yes
+	}
+
+	min_for_deposits_on_planet = 3
+	max_for_deposits_on_planet = 15
+
+	zone_slots = {
+		slot_food
+	}
+
+	show_on_uncolonized = {
+		uses_district_set = standard
+		exists = from
+		from = {
+			is_wilderness_empire = yes
+		}
+	}
+
+	potential = {
+		uses_district_set = standard
+		exists = owner
+		owner = {
+			is_wilderness_empire = yes
+		}
+	}
+
+	allow = {
+		NOT = { has_modifier = resort_colony }
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_farming
+		district_nexus_3
+		district_hive_3
+	}
+
+	resources = {
+		category = planet_districts_farming
+		cost = {
+			minerals = 300
+		}
+		cost = {
+			biomass = @biomass_cost
+		}
+		upkeep = {
+			energy = 1
+		}
+	}
+
+	planet_modifier = {
+		job_agri_drone_add = @base_rural_district_jobs
+		planet_housing_add = 100
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_tradition = tr_prosperity_public_works
+			}
+		}
+		planet_housing_add = 50
+	}
+
+	inline_script = {
+		script = buildings/on_all_wilderness_buildings_districts
+	}
+
+	prerequisites = {
+		tech_industrial_farming
+	}
+
+	ai_resource_production = {
+		food = 5
+		trigger = {
+			OR = {
+				has_building = building_massive_growth_1
+				has_building = building_massive_growth_2
+				has_building = building_massive_growth_3
+				has_building = building_massive_growth_4
+			}
+		}
+	}
+
+	ai_estimate_without_unemployment = yes
+	additional_ai_weight = 10
+}
+
+district_orchard_forests_uncapped = {
+	base_buildtime = @wilderness_district_build_short
+	icon = district_orchard_forests
+	overlay_icon = GFX_district_food
+
+	zone_slots = {
+		slot_food
+	}
+
+	show_on_uncolonized = {
+		always = no
+	}
+
+	potential = {
+		always = no
+	}
+
+	allow = {
+		NOT = { has_modifier = resort_colony }
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_farming
+		district_orchard_forests
+		district_nexus_3
+		district_hive_3
+	}
+}

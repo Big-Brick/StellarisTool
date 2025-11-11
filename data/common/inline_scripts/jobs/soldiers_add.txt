@@ -1,0 +1,32 @@
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = { is_gestalt = no }
+		NOT = {
+			has_zone = {
+				zone = zone_habitat_knights
+			}
+		}
+	}
+	job_soldier_add = $AMOUNT$
+}
+
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = { is_gestalt = no }
+		has_zone = {
+			zone = zone_habitat_knights
+		}
+	}
+	job_knight_add = $AMOUNT$
+	mult = 0.5
+}
+
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = { is_gestalt = yes }
+	}
+	job_warrior_drone_add = $AMOUNT$
+}

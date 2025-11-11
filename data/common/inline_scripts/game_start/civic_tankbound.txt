@@ -1,0 +1,31 @@
+# Tankbound Inital Setup
+# Replace up to 3 Farming Districts by Generator Districts
+
+if = {
+	limit = {
+		exists = owner
+		owner = {
+			is_tankbound_empire = yes
+		}
+	}
+
+	while = {
+		count = 3
+		if = {
+			limit = {
+				check_variable = {
+					which = farming_districts
+					value > 0
+				}
+			}
+			change_variable = {
+				which = farming_districts
+				value = -1
+			}
+			change_variable = {
+				which = energy_districts
+				value = 1
+			}
+		}
+	}
+}

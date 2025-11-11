@@ -1,0 +1,22 @@
+# Resource Consolidation Inital Setup
+# Blockers Added:
+#   * Prototype Machinery
+#   * 2× Ongoing Construction
+#   * If Driven Assimilator
+#   * Organic Slurry
+
+if = {
+    limit = {
+        owner = {
+            has_origin = origin_machine
+        }
+    }
+    add_deposit = d_machine_prototype_pc_machine
+    add_deposit = d_machine_ongoing_construction
+    add_deposit = d_machine_ongoing_construction
+    #Assimilators
+    if = {
+        limit = { owner = { has_civic = civic_machine_assimilator } }
+        add_deposit = d_organic_slurry
+    }
+}

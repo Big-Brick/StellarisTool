@@ -1,0 +1,25 @@
+# Shattered Ring Inital Setup
+# Rural Districts set to:
+#	* +2 Mining Districts (up from 2x due to inferior mineral production)
+# Flags Set:
+#	* Uncapped Generator Districts
+#	* Uncapped Mining Districts
+#	* Uncapped Farming Districts
+
+if = {
+	limit = {
+		exists = owner
+		owner = {
+			has_origin = origin_shattered_ring
+		}
+	}
+	
+	change_variable = {
+		which = mining_districts
+		value = 2
+	}
+
+	set_planet_flag = uncapped_energy
+	set_planet_flag = uncapped_mining
+	set_planet_flag = uncapped_farming
+}

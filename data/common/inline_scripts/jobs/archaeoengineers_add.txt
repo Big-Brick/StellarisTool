@@ -1,0 +1,68 @@
+# Regular
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = { is_gestalt = no }
+	}
+	modifier = {
+		job_biologist_add = $BASE_AMOUNT$
+	}
+}
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			is_gestalt = no
+			has_ascension_perk = ap_archaeoengineers
+		}
+	}
+	modifier = {
+		job_biologist_add = $AP_AMOUNT$
+	}
+}
+# Hive Minds
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			is_hive_empire = yes
+		}
+	}
+	modifier = {
+		job_archaeo_drone_add = $BASE_AMOUNT$
+	}
+}
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			is_hive_empire = yes
+			has_ascension_perk = ap_archaeoengineers
+		}
+	}
+	modifier = {
+		job_archaeo_drone_add = $AP_AMOUNT$
+	}
+}
+# Machine Intelligences
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = { is_machine_empire = yes }
+	}
+	modifier = {
+		job_bath_attendant_machine_add = $BASE_AMOUNT$
+	}
+}
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			is_machine_empire = yes
+			has_ascension_perk = ap_archaeoengineers
+		}
+	}
+	modifier = {
+		job_bath_attendant_machine_add = $AP_AMOUNT$
+	}
+}

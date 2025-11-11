@@ -1,0 +1,40 @@
+# from = country
+# this = species
+
+migration_control_yes = {
+	can_migrate = no
+	ai_will_do = {
+		factor = 0.01
+	}
+}
+
+migration_control_no = {
+	potential = {
+		exists = from
+		is_disconnected_drone_pop = no
+	}
+
+	allow = {
+		hidden_trigger = { exists = from }
+		custom_tooltip = {
+			NOR = {
+				has_citizenship_type = { country = from type = citizenship_purge_machine }
+				has_citizenship_type = { country = from type = citizenship_purge }
+			}
+			fail_text = is_undesirables_tooltip
+		}
+		custom_tooltip = {
+			fail_text = cant_be_livestock_or_matrix
+			NAND = {
+				has_citizenship_type = { country = from type = citizenship_slavery }
+				OR = {
+					has_slavery_type = { country = from type = slavery_livestock }
+					has_slavery_type = { country = from type = slavery_matrix }
+				}
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 100
+	}
+}

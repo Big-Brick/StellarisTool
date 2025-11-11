@@ -1,0 +1,49 @@
+# triggered district names will pick the first one that they hit.
+
+triggered_name = {
+	trigger = {
+        has_any_normal_mining_zone = yes
+		exists = owner
+		owner = {
+			has_technology = tech_mining_3
+		}
+	}
+	text = mining_4
+}
+
+triggered_name = {
+	trigger = {
+        has_any_normal_mining_zone = yes
+		exists = owner
+		owner = {
+			has_technology = tech_mining_2
+		}
+	}
+	text = mining_3
+}
+
+triggered_name = {
+	trigger = {
+        has_any_normal_mining_zone = yes
+		exists = owner
+		owner = {
+			has_technology = tech_mining_1
+		}
+	}
+	text = mining_2
+}
+
+triggered_name = {
+	trigger = {
+        has_any_normal_mining_zone = yes
+		exists = owner
+		owner = {
+			has_technology = tech_powered_exoskeletons
+		}
+	}
+	text = mining_1
+}
+
+triggered_name = {
+	text = mining_0
+}

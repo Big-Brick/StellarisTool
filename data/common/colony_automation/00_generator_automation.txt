@@ -1,0 +1,37 @@
+automate_generator_planet = {
+	category = "planet_automation_designation_construction"
+
+	available = {
+		has_generator_designation = yes
+		NAND = {
+			exists = owner
+			owner = { has_technology = tech_mine_betharian }
+			has_deposit = d_betharian_deposit
+		}
+	}
+
+	prio_districts = {
+		district_generator
+		district_hab_energy
+		district_rw_urban_1
+	}
+
+	prio_zones = {
+		zone_energy
+		zone_energy_ring_world
+	}
+
+	buildings = {
+		1 = {
+			building = building_energy_grid
+		}
+
+		2 = {
+			building = building_mote_harvesters
+		}
+
+		3 = {
+			building = building_generator_districts_1
+		}
+	}
+}

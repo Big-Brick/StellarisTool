@@ -1,0 +1,403 @@
+##################
+# MISC
+##################
+
+@build_block_radius_none = 0
+@build_block_radius_civilian = 20
+@build_block_radius_military = 200
+
+@speed_very_slow = 80
+@speed_slow = 100
+@speed_default = 120
+@speed_fast = 140
+@speed_very_fast = 160
+@speed_event_super_slow = 0.5
+
+@station_civilian_hp = 2000
+@station_small_hp = 3000
+@station_medium_hp = 15000
+@station_large_hp = 25000
+@station_enclave_hp = 40000
+
+@outpost_armor = 2000
+@starport_armor = 4000
+@starhold_armor = 10000
+@starfort_armor = 20000
+@citadel_armor = 40000
+
+@fe_destroyer_hp = 1000
+@fe_battleship_hp = 5000
+@fe_titan_hp = 20000
+
+# Miscellaneous ships
+@tiny_ship_hp = 150
+
+##################
+# CORVETTE
+##################
+
+@corvette_collision_radius = 2.0
+@corvette_formation_priority = 20
+
+@corvette_hp = 200
+@corvette_evasion = 60
+@corvette_build_time = 60
+
+@corvette_upkeep_energy = 0.3
+@corvette_upkeep_alloys = 0.1
+@corvette_upkeep_minerals = 0.2
+
+@corvette_logistic_upkeep_trade = 0.1
+@frigate_logistic_upkeep_trade = 0.1
+
+@frigate_collision_radius = 3.0
+@frigate_formation_priority = 25
+
+@frigate_hp = 400
+@frigate_evasion = 20
+@frigate_build_time = 90
+
+##################
+# DESTROYER
+##################
+
+@destroyer_collision_radius = 2.5
+@destroyer_formation_priority = 10
+
+@destroyer_hp = 600
+@destroyer_evasion = 35
+@destroyer_build_time = 120
+
+@destroyer_upkeep_energy = 0.6
+@destroyer_upkeep_alloys = 0.2
+@destroyer_upkeep_minerals = 0.4
+
+@destroyer_logistic_upkeep_trade = 0.2
+
+##################
+# CRUISER
+##################
+
+@cruiser_collision_radius = 3.5
+@cruiser_formation_priority = 30
+
+@cruiser_hp = 1800
+@cruiser_evasion = 10
+@cruiser_build_time = 240
+
+@cruiser_upkeep_energy = 1.2
+@cruiser_upkeep_alloys = 0.4
+@cruiser_upkeep_minerals = 0.8
+
+@cruiser_logistic_upkeep_trade = 0.4
+
+##################
+# BATTLESHIP
+##################
+
+@battleship_collision_radius = 6
+@battleship_formation_priority = 50
+
+@battleship_hp = 3000
+@battleship_evasion = 5
+@battleship_build_time = 480
+
+@battleship_upkeep_energy = 2.4
+@battleship_upkeep_alloys = 0.8
+
+@battleship_logistic_upkeep_trade = 0.8
+
+##################
+# TITAN
+##################
+
+@titan_collision_radius = 12
+@titan_formation_priority = 40
+
+@titan_hp = 15000
+@titan_evasion = 5
+@titan_build_time = 1800
+
+@titan_upkeep_energy = 4.8
+@titan_upkeep_alloys = 1.6
+
+@titan_logistic_upkeep_trade = 1.6
+
+##################
+# COLOSSUS
+##################
+
+@colossus_collision_radius = 4
+@colossus_formation_priority = 4
+
+@colossus_hp = 30000
+@colossus_evasion = 2
+@colossus_build_time = 3600
+
+@colossus_upkeep_energy = 30
+@colossus_upkeep_alloys = 10
+
+@colossus_logistic_upkeep_trade = 10
+
+##################
+# JUGGERNAUT
+##################
+
+@juggernaut_collision_radius = 4
+@juggernaut_formation_priority = 4
+
+@juggernaut_hp = 100000
+@juggernaut_evasion = 2
+@juggernaut_build_time = 3600
+
+@juggernaut_upkeep_energy = 30
+@juggernaut_upkeep_alloys = 10
+
+##################
+# CONSTRUCTION SHIP
+##################
+
+@construction_hp = 300
+@construction_evasion = 25
+@construction_build_time = 60
+@construction_ship_cost = 100
+@engineering_vessel_cost = 50
+
+@construction_upkeep_energy = 1
+@construction_upkeep_alloys = 0
+
+##################
+# SCIENCE SHIP
+##################
+
+@science_hp = 300
+@science_evasion = 40
+@science_build_time = 60
+@science_ship_cost = 100
+@exploration_vessel_cost = 50
+
+@science_upkeep_energy = 1
+@science_upkeep_alloys = 0
+
+##################
+# COLONY SHIP
+##################
+
+@colony_hp = 500
+@colony_evasion = 10
+@colony_build_time = 360
+
+@colony_upkeep_energy = 1
+@colony_upkeep_alloys = 0
+
+@colony_cost_very_low = 50
+@colony_cost_very_low_max = 100		# This is used for the ai_budgets
+
+@colony_cost_low = 100
+@colony_cost_low_max = 150			# This is used for the ai_budgets
+
+@colony_cost_base = 200
+@colony_cost_base_max = 250			# This is used for the ai_budgets
+
+@colony_cost_mid = 400
+@colony_cost_mid_max = 450			# This is used for the ai_budgets
+
+@colony_cost_high = 500
+@colony_cost_high_max = 550			# This is used for the ai_budgets
+
+@colony_cost_very_high = 700
+@colony_cost_very_high_max = 750	# This is used for the ai_budgets
+
+##################
+# TRANSPORT SHIP
+##################
+
+@transport_hp = 100
+@transport_evasion = 70
+@transport_build_time = 0
+
+@transport_upkeep_energy = 0
+@transport_upkeep_alloys = 0
+
+#####################
+# CIVILIAN STATIONS
+#####################
+
+@civilian_station_cost = 100
+
+##################
+# Entities
+##################
+
+@small_trail_W = 10
+@small_trail_L = 60
+@medium_trail_W = 25
+@medium_trail_L = 150
+@large_trail_W = 50
+@large_trail_L =  300
+
+##################
+# BIOSHIPS
+##################
+
+##################
+# MAULER
+##################
+
+@mauler_formation_priority = 25
+@mauler_disengage_chance = 1.00
+
+@mauler_stage_1_collision_radius = 2.0
+@mauler_stage_1_hp = 300
+@mauler_stage_1_evasion = 40
+@mauler_stage_1_build_time = 75
+@mauler_stage_1_section_cost = 30		    # Cost in alloys, this is converted to food by @alloy_to_food_cost_ratio
+@mauler_stage_1_upkeep_alloys = 0.1
+@mauler_stage_1_upkeep_food = 0.3
+@mauler_stage_1_upkeep_logistic = 0.1
+@mauler_stage_1_min_upgrade_cost = 1    	# Cost in alloys
+@mauler_stage_1_growth_threshold = 60
+
+@mauler_stage_2_collision_radius = 2.5
+@mauler_stage_2_hp = 450
+@mauler_stage_2_evasion = 30
+@mauler_stage_2_build_time = 150
+@mauler_stage_2_section_cost = 60   		# Cost in alloys, this is converted to food by @alloy_to_food_cost_ratio
+@mauler_stage_2_upkeep_alloys = 0.2
+@mauler_stage_2_upkeep_food = 0.6
+@mauler_stage_2_upkeep_logistic = 0.2
+@mauler_stage_2_min_upgrade_cost = 2		# Cost in alloys
+@mauler_stage_2_growth_threshold = 120
+
+@mauler_stage_3_collision_radius = 3.0
+@mauler_stage_3_hp = 600
+@mauler_stage_3_evasion = 20
+@mauler_stage_3_build_time = 300
+@mauler_stage_3_section_cost = 120  		# Cost in alloys, this is converted to food by @alloy_to_food_cost_ratio
+@mauler_stage_3_upkeep_alloys = 0.4
+@mauler_stage_3_upkeep_food = 1.2
+@mauler_stage_3_upkeep_logistic = 0.4
+@mauler_stage_3_min_upgrade_cost = 4		# Cost in alloys
+
+##################
+# Weaver
+##################
+
+@weaver_formation_priority = 10
+@weaver_disengage_chance = 1.5
+
+@weaver_stage_1_collision_radius = 2.0
+@weaver_stage_1_hp = 600
+@weaver_stage_1_evasion = 35
+@weaver_stage_1_build_time = 120
+@weaver_stage_1_section_cost = 60			# Cost in alloys, this is converted to food by @alloy_to_food_cost_ratio
+@weaver_stage_1_upkeep_alloys = 0.2
+@weaver_stage_1_upkeep_food = 0.6
+@weaver_stage_1_upkeep_logistic = 0.2
+@weaver_stage_1_min_upgrade_cost = 2		# Cost in alloys
+@weaver_stage_1_growth_threshold = 60
+
+@weaver_stage_2_collision_radius = 2.5
+@weaver_stage_2_hp = 900
+@weaver_stage_2_evasion = 35
+@weaver_stage_2_build_time = 240
+@weaver_stage_2_section_cost = 120			# Cost in alloys, this is converted to food by @alloy_to_food_cost_ratio
+@weaver_stage_2_upkeep_alloys = 0.4
+@weaver_stage_2_upkeep_food = 1.2
+@weaver_stage_2_upkeep_logistic = 0.4
+@weaver_stage_2_min_upgrade_cost = 4		# Cost in alloys
+@weaver_stage_2_growth_threshold = 120
+
+@weaver_stage_3_collision_radius = 3.0
+@weaver_stage_3_hp = 1200
+@weaver_stage_3_evasion = 20
+@weaver_stage_3_build_time = 480
+@weaver_stage_3_section_cost = 240			# Cost in alloys, this is converted to food by @alloy_to_food_cost_ratio
+@weaver_stage_3_upkeep_alloys = 0.8
+@weaver_stage_3_upkeep_food = 2.4
+@weaver_stage_3_upkeep_logistic = 0.8
+@weaver_stage_3_min_upgrade_cost = 8		# Cost in alloys
+
+##################
+# Harbinger
+##################
+
+@harbinger_formation_priority = 30
+@harbinger_disengage_chance = 1.5
+
+@harbinger_stage_1_collision_radius = 2.5
+@harbinger_stage_1_hp = 1800
+@harbinger_stage_1_evasion = 10
+@harbinger_stage_1_piracy_suppression = 8
+@harbinger_stage_1_build_time = 240
+@harbinger_stage_1_section_cost = 120		# Cost in alloys, this is converted to food by @alloy_to_food_cost_ratio
+@harbinger_stage_1_upkeep_alloys = 0.4
+@harbinger_stage_1_upkeep_food = 1.2
+@harbinger_stage_1_upkeep_logistic = 0.4
+@harbinger_stage_1_min_upgrade_cost	= 4		# Cost in alloys
+@harbinger_stage_1_growth_threshold = 60
+
+@harbinger_stage_2_collision_radius = 3.5
+@harbinger_stage_2_hp = 2700
+@harbinger_stage_2_evasion = 10
+@harbinger_stage_2_piracy_suppression = 6
+@harbinger_stage_2_build_time = 480
+@harbinger_stage_2_section_cost = 240		# Cost in alloys, this is converted to food by @alloy_to_food_cost_ratio
+@harbinger_stage_2_upkeep_alloys = 0.8
+@harbinger_stage_2_upkeep_food = 2.4
+@harbinger_stage_2_upkeep_logistic = 0.8
+@harbinger_stage_2_min_upgrade_cost	= 8		# Cost in alloys
+@harbinger_stage_2_growth_threshold = 120
+
+@harbinger_stage_3_collision_radius = 6
+@harbinger_stage_3_hp = 3600
+@harbinger_stage_3_evasion = 5
+@harbinger_stage_3_piracy_suppression = 4
+@harbinger_stage_3_build_time = 960
+@harbinger_stage_3_section_cost = 480		# Cost in alloys, this is converted to food by @alloy_to_food_cost_ratio
+@harbinger_stage_3_upkeep_alloys = 1.6
+@harbinger_stage_3_upkeep_food = 4.8
+@harbinger_stage_3_upkeep_logistic = 1.6
+@harbinger_stage_3_min_upgrade_cost = 16		# Cost in alloys
+
+##################
+# Stinger
+##################
+
+@stinger_formation_priority = 50
+@stinger_disengage_chance = 1.25
+
+@stinger_stage_1_collision_radius = 2.5
+@stinger_stage_1_hp = 3000
+@stinger_stage_1_evasion = 10
+@stinger_stage_1_piracy_suppression = 6
+@stinger_stage_1_build_time = 480
+@stinger_stage_1_section_cost = 240			# Cost in alloys, this is converted to food by @alloy_to_food_cost_ratio
+@stinger_stage_1_upkeep_alloys = 0.8
+@stinger_stage_1_upkeep_food = 2.4
+@stinger_stage_1_upkeep_logistic = 0.8
+@stinger_stage_1_min_upgrade_cost = 8		# Cost in alloys
+@stinger_stage_1_growth_threshold = 60
+
+@stinger_stage_2_collision_radius = 3.5
+@stinger_stage_2_hp = 4500
+@stinger_stage_2_evasion = 10
+@stinger_stage_2_piracy_suppression = 4
+@stinger_stage_2_build_time = 960
+@stinger_stage_2_section_cost = 480			# Cost in alloys, this is converted to food by @alloy_to_food_cost_ratio
+@stinger_stage_2_upkeep_alloys = 1.6
+@stinger_stage_2_upkeep_food = 4.8
+@stinger_stage_2_upkeep_logistic = 1.6
+@stinger_stage_2_min_upgrade_cost = 16		# Cost in alloys
+@stinger_stage_2_growth_threshold = 120
+
+@stinger_stage_3_collision_radius = 6
+@stinger_stage_3_hp = 6000
+@stinger_stage_3_evasion = 5
+@stinger_stage_3_piracy_suppression = 2
+@stinger_stage_3_build_time = 1920
+@stinger_stage_3_section_cost = 960			# Cost in alloys, this is converted to food by @alloy_to_food_cost_ratio
+@stinger_stage_3_upkeep_alloys = 3.2
+@stinger_stage_3_upkeep_food = 9.6
+@stinger_stage_3_upkeep_logistic = 3.2
+@stinger_stage_3_min_upgrade_cost = 32		# Cost in alloys

@@ -1,0 +1,193 @@
+# Categories of portrait sets used in empire design view.
+# Portrait sets are listed in portrait_sets database.
+
+humanoids = {
+	name = HUM
+
+	sets = {
+		cybernetic_humans
+		humans
+		humanoids
+		cybernetic_humanoids
+		synthetic_humanoids
+		psionic_humanoids
+	}
+}
+
+machines = {
+	name = MACHINE
+
+	sets = {
+		machines
+		biogenesis_machines
+		psionic_machines
+	}
+}
+
+mammalians = {
+	name = MAM
+
+	sets = {
+		mammalians
+		cybernetic_mammalians
+		biogenesis_mammalians
+		psionic_mammalians
+	}
+}
+
+reptilians = {
+	name = REP
+
+	sets = {
+		reptilians
+		cybernetic_reptilians
+		biogenesis_reptilians
+	}
+}
+
+avians = {
+	name = AVI
+
+	sets = {
+		avians
+		cybernetic_avians
+		synthetic_avians
+		biogenesis_avians
+		psionic_avians
+	}
+}
+
+arthropoids = {
+	name = ART
+
+	sets = {
+		arthropoids
+		cybernetic_arthropoids
+		synthetic_arthropoids
+		biogenesis_arthropoids
+		psionic_arthropoids
+	}
+}
+
+molluscoids = {
+	name = MOL
+
+	sets = {
+		molluscoids
+		synthetic_molluscoids
+		ep9_exclusive_molluscoid
+		biogenesis_molluscoids
+		psionic_molluscoids
+	}
+}
+
+fungoids = {
+	name = FUN
+
+	sets = {
+		fungoids
+		cybernetic_fungoids
+		psionic_fungoids
+	}
+}
+
+plantoids = {
+	name = PLANT
+
+	sets = {
+		plantoids
+		biogenesis_plantoids
+	}
+}
+
+lithoids = {
+	name = LITHOID
+
+	sets = {
+		lithoids
+	}
+}
+
+necroids = {
+	name = NECROID
+
+	sets = {
+		necroids
+	}
+}
+
+aquatics = {
+	name = AQUATIC
+
+	sets = {
+		aquatics
+		synthetic_aquatics
+		biogenesis_aquatic
+		psionic_aquatics
+	}
+}
+
+toxoids = {
+	name = TOX
+
+	sets = {
+		toxoids
+	}
+}
+
+cybernetics = {
+	name = CYBERNETIC
+
+	sets = {
+		cybernetic_humans
+		cybernetic_humanoids
+		cybernetic_mammalians
+		cybernetic_reptilians
+		cybernetic_avians
+		cybernetic_arthropoids
+		cybernetic_fungoids
+	}
+}
+
+synthetics = {
+	name = SYNTH
+
+	sets = {
+		synthetic_humanoids
+		synthetic_avians
+		synthetic_arthropoids
+		synthetic_molluscoids
+		synthetic_aquatics
+	}
+}
+
+biogenesis = {
+	name = BIOGENESIS_CAT
+
+	sets = {
+		biogenesis_molluscoids
+		biogenesis_aquatic
+		biogenesis_avians
+		biogenesis_reptilians
+		biogenesis_plantoids
+		biogenesis_arthropoids
+		biogenesis_mammalians
+		biogenesis_machines
+	}
+}
+
+psionics = {
+	name = PSIONIC
+
+	sets = {
+		psionic_fungoids
+		psionic_humanoids
+		psionic_aquatics
+		psionic_molluscoids
+		psionic_avians
+		psionic_arthropoids
+		psionic_mammalians
+		psionic_machines
+		mindwarden
+	}
+}

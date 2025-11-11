@@ -1,0 +1,35 @@
+@stone_age_pops					= 400
+@bronze_age_pops				= 800
+@iron_age_pops					= 900
+@late_medieval_age_pops			= 1000
+@renaissance_age_pops			= 1200
+@steam_age_pops					= 1600
+@industrial_age_pops			= 2200
+@machine_age_pops				= 2400
+@atomic_age_pops				= 2600
+@early_space_age_pops			= 2800
+
+@ancient_or_medieval_era_growth	= 1
+@victorian_era_growth			= 2
+@machine_age_growth				= 3
+@atomic_age_growth				= 5
+@early_space_age_growth			= 8
+
+@small_awareness_gain			= 5
+@medium_awareness_gain			= 10
+@big_awareness_gain				= 20
+
+@insight_envoy_gain = 0.25
+@major_insight_envoy_gain = 0.5
+
+@cloaking_very_low_strength		= 1
+@cloaking_low_strength			= 2
+@cloaking_medium_strength		= 3
+@cloaking_high_strength			= 4
+@cloaking_very_high_strength	= 5
+
+@basic_cloaking_weight			= 5
+@advanced_cloaking_weight		= 10
+@elite_cloaking_weight			= 15
+@dark_matter_cloaking_weight	= 20
+@psi_cloaking_weight			= 25

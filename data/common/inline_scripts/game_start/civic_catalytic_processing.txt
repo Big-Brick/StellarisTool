@@ -1,0 +1,19 @@
+# Catalytic Processing Inital Setup
+# Swap a Mining District for two Farming Districts
+
+if = {
+	limit = {
+		exists = owner
+		owner = {
+			is_catalytic_empire = yes
+		}
+	}
+	change_variable = {
+		which = mining_districts
+		value = -1
+	}
+	change_variable = {
+		which = farming_districts
+		value = 2
+	}
+}

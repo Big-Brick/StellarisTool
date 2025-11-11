@@ -1,0 +1,42 @@
+automate_factory_planet = {
+	category = "planet_automation_designation_construction"
+
+	available = {
+		has_factory_designation = yes
+	}
+
+	prio_districts = {
+		district_city
+		district_hive
+		district_nexus
+		district_arcology_housing
+		district_rw_city
+		district_hab_housing
+	}
+	
+	prio_zones = {
+		zone_factory
+	}
+
+	buildings = {
+		1 = {
+			building = building_ministry_production
+		}
+
+		2 = {
+			building = building_production_center
+		}
+		
+		3 = {
+			building = building_factory_efficiency_1
+		}
+				
+		4 = {
+			building = building_factory_upkeep_1
+		}
+
+		5 = {
+			building = building_factory_1 
+		}
+	}
+}

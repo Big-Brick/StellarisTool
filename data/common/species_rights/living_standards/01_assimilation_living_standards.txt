@@ -1,0 +1,441 @@
+living_standard_deassimilation = {
+	pop_group_modifier = {}
+
+	potential = {
+		exists = from
+		has_trait = trait_hive_mind
+		from = {
+			NOT = { has_ethic = ethic_gestalt_consciousness }
+			can_perform_genetic_assimilation = yes
+		}
+	}
+
+	allow = {
+		hidden_trigger = { exists = from }
+		custom_tooltip = {
+			fail_text = SPECIES_MUST_BE_ASSIMILATING
+			has_citizenship_type = {
+				type = citizenship_assimilation
+				country = from
+			}
+		}
+	}
+
+	ai_will_do = {
+		factor = 100
+	}
+}
+
+living_standard_ego_assimilation = {
+	in_breach_of = {
+		{
+			trigger = {
+				is_gestalt = yes
+			}
+			key = resolution_greatergood_universal_prosperity_mandate
+		}
+	}
+
+	pop_group_modifier = {
+		pop_happiness = -0.50
+	}
+
+	potential = {
+		has_psionic_species_trait = no
+		NOR = {
+			has_trait = trait_mechanical
+			has_trait = trait_machine_unit
+		}
+		exists = from
+		from = {
+			is_hive_empire = yes
+			can_perform_genetic_assimilation = yes
+			NOT = { has_civic = civic_hive_devouring_swarm }
+		}
+	}
+
+	allow = {
+		hidden_trigger = { exists = from }
+		custom_tooltip = {
+			fail_text = SPECIES_MUST_BE_ASSIMILATING
+			has_citizenship_type = {
+				type = citizenship_assimilation
+				country = from
+			}
+		}
+	}
+
+	ai_will_do = {
+		factor = 100
+	}
+}
+
+living_standard_ego_assimilation_psionic = {
+	in_breach_of = {
+		{
+			trigger = {
+				is_gestalt = yes
+			}
+			key = resolution_greatergood_universal_prosperity_mandate
+		}
+	}
+
+	pop_group_modifier = {
+		pop_happiness = -0.50
+	}
+
+	potential = {
+		has_psionic_species_trait = yes
+		NOR = {
+			has_trait = trait_mechanical
+			has_trait = trait_machine_unit
+		}
+		exists = from
+		from = {
+			is_hive_empire = yes
+			can_perform_genetic_assimilation = yes
+			NOT = { has_civic = civic_hive_devouring_swarm }
+		}
+	}
+
+	allow = {
+		hidden_trigger = { exists = from }
+		custom_tooltip = {
+			fail_text = SPECIES_MUST_BE_ASSIMILATING
+			has_citizenship_type = {
+				type = citizenship_assimilation
+				country = from
+			}
+		}
+	}
+
+	ai_will_do = {
+		factor = 100
+	}
+}
+
+living_standard_cyborg_ego_assimilation = {
+	in_breach_of = {
+		{
+			trigger = {
+				is_gestalt = yes
+			}
+			key = resolution_greatergood_universal_prosperity_mandate
+		}
+	}
+
+	pop_group_modifier = {
+		pop_happiness = -0.50
+	}
+
+	potential = {
+		OR = {
+			has_utopia = yes
+			has_synthetic_dawn = yes
+			has_machine_age_dlc = yes
+		}
+		has_psionic_species_trait = no
+		NOR = {
+			has_trait = trait_mechanical
+			has_trait = trait_machine_unit
+		}
+		exists = from
+		from = {
+			OR = {
+				AND = {
+					is_hive_empire = yes
+					has_tradition = tr_cybernetics_transubstantiation_synthesis
+					NOT = { has_civic = civic_hive_devouring_swarm }
+				}
+				AND = {
+					is_machine_empire = yes
+					has_valid_civic = civic_machine_assimilator
+					prev = {
+						NOT = {
+							has_trait = trait_cybernetic
+						}
+					}
+				}
+			}
+		}
+	}
+
+	allow = {
+		hidden_trigger = { exists = from }
+		custom_tooltip = {
+			fail_text = SPECIES_MUST_BE_ASSIMILATING
+			has_citizenship_type = {
+				type = citizenship_assimilation
+				country = from
+			}
+		}
+	}
+
+	ai_will_do = {
+		factor = 100
+	}
+}
+
+living_standard_cyborg_ego_assimilation_psionic = {
+	in_breach_of = {
+		{
+			trigger = {
+				is_gestalt = yes
+			}
+			key = resolution_greatergood_universal_prosperity_mandate
+		}
+	}
+
+	pop_group_modifier = {
+		pop_happiness = -0.50
+	}
+
+	potential = {
+		OR = {
+			has_utopia = yes
+			has_machine_age_dlc = yes
+		}
+		has_psionic_species_trait = yes
+		NOR = {
+			has_trait = trait_mechanical
+			has_trait = trait_machine_unit
+		}
+		exists = from
+		from = {
+			OR = {
+				AND = {
+					is_hive_empire = yes
+					has_tradition = tr_cybernetics_transubstantiation_synthesis
+					NOT = { has_civic = civic_hive_devouring_swarm }
+				}
+				AND = {
+					is_machine_empire = yes
+					has_valid_civic = civic_machine_assimilator
+					prev = {
+						NOT = {
+							has_trait = trait_cybernetic
+						}
+					}
+				}
+			}
+		}
+	}
+
+	allow = {
+		hidden_trigger = { exists = from }
+		custom_tooltip = {
+			fail_text = SPECIES_MUST_BE_ASSIMILATING
+			has_citizenship_type = {
+				type = citizenship_assimilation
+				country = from
+			}
+		}
+	}
+
+	ai_will_do = {
+		factor = 100
+	}
+}
+
+living_standard_tech_assimilation = {
+	pop_group_modifier = {
+		pop_happiness = -0.25
+	}
+
+	potential = {
+		OR = {
+			has_utopia = yes
+			has_synthetic_dawn = yes
+			has_machine_age_dlc = yes
+		}
+		exists = from
+		from = {
+			OR = {
+				AND = {
+					OR = {
+						is_machine_empire = yes
+						is_individual_machine = yes
+					}
+					prev = {
+						OR = {
+							has_trait = trait_mechanical
+							has_trait = trait_machine_unit
+							has_trait = trait_cybernetic
+						}
+					}
+				}
+				has_country_flag = synth_assimilation
+			}
+		}
+	}
+
+	allow = {
+		hidden_trigger = { exists = from }
+		custom_tooltip = {
+			fail_text = SPECIES_MUST_BE_ASSIMILATING
+			has_citizenship_type = {
+				type = citizenship_assimilation
+				country = from
+			}
+		}
+	}
+
+	ai_will_do = {
+		factor = 100
+	}
+}
+
+living_standard_cyborg_assimilation = {
+	pop_group_modifier = {
+		pop_happiness = -0.25
+	}
+
+	potential = {
+		OR = {
+			has_utopia = yes
+			has_machine_age_dlc = yes
+		}
+		has_psionic_species_trait = no
+		NOR = {
+			has_trait = trait_mechanical
+			has_trait = trait_machine_unit
+		}
+		exists = from
+		from = {
+			AND = {
+				is_hive_empire = no
+				has_tradition = tr_cybernetics_transubstantiation_synthesis
+			}
+		}
+	}
+
+	allow = {
+		hidden_trigger = { exists = from }
+		custom_tooltip = {
+			fail_text = SPECIES_MUST_BE_ASSIMILATING
+			has_citizenship_type = {
+				type = citizenship_assimilation
+				country = from
+			}
+		}
+	}
+
+	ai_will_do = {
+		factor = 100
+	}
+}
+
+living_standard_cyborg_assimilation_psionic = {
+	pop_group_modifier = {
+		pop_happiness = -0.25
+	}
+
+	potential = {
+		OR = {
+			has_utopia = yes
+			has_machine_age_dlc = yes
+		}
+		has_psionic_species_trait = yes
+		NOR = {
+			has_trait = trait_mechanical
+			has_trait = trait_machine_unit
+		}
+		exists = from
+		from = {
+			AND = {
+				is_hive_empire = no
+				has_tradition = tr_cybernetics_transubstantiation_synthesis
+			}
+		}
+	}
+
+	allow = {
+		hidden_trigger = { exists = from }
+		custom_tooltip = {
+			fail_text = SPECIES_MUST_BE_ASSIMILATING
+			has_citizenship_type = {
+				type = citizenship_assimilation
+				country = from
+			}
+		}
+	}
+
+	ai_will_do = {
+		factor = 100
+	}
+}
+
+living_standard_psi_assimilation = {
+	pop_group_modifier = {
+		pop_happiness = -0.25
+	}
+
+	potential = {
+		NOT = { has_trait = trait_cybernetic }
+		exists = from
+		from = {
+			OR = {
+				has_tradition = tr_psionics_psionic_assimilation
+				has_tradition = tr_psionics_shroud_great_awakening
+			}
+		}
+	}
+
+	allow = {
+		hidden_trigger = { exists = from }
+		custom_tooltip = {
+			fail_text = SPECIES_MUST_BE_ASSIMILATING
+			has_citizenship_type = {
+				type = citizenship_assimilation
+				country = from
+			}
+		}
+		if = {
+			limit = {
+				from = {
+					has_civic = civic_machine_assimilator
+				}
+			}
+			custom_tooltip = {
+				fail_text = ASSIMILATORS_ORGANIC_NO_ASSIMILATE
+				is_organic_species = no
+			}
+		}
+	}
+
+	ai_will_do = {
+		factor = 100
+	}
+}
+
+living_standard_psi_assimilation_cyborg = {
+	pop_group_modifier = {
+		pop_happiness = -0.25
+	}
+
+	potential = {
+		has_trait = trait_cybernetic
+		exists = from
+		from = {
+			OR = {
+				has_tradition = tr_psionics_psionic_assimilation
+				has_tradition = tr_psionics_shroud_great_awakening
+			}
+		}
+	}
+
+	allow = {
+		hidden_trigger = { exists = from }
+		custom_tooltip = {
+			fail_text = SPECIES_MUST_BE_ASSIMILATING
+			has_citizenship_type = {
+				type = citizenship_assimilation
+				country = from
+			}
+		}
+	}
+
+	ai_will_do = {
+		factor = 100
+	}
+}

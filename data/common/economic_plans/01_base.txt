@@ -1,0 +1,9 @@
+# Base AI economic plans
+
+basic_economy_plan = {
+	ai_weight = { weight = 1000 }
+	
+	inline_script = "ai/ai_base"
+	inline_script = "ai/ai_base_food"
+	inline_script = "ai/ai_base_cg"
+}

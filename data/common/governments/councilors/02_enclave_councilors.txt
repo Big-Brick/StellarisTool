@@ -1,0 +1,103 @@
+councilor_shroudwalker_teacher = {
+	leader_class = { official }
+	possible = {
+		any_owned_leader = {
+			has_trait = leader_trait_shroudwalker
+		}
+	}
+	is_leader_possible = {
+		has_trait = leader_trait_shroudwalker
+	}
+	modifier = {
+		category_psionics_draw_chance_mult = 0.05
+		country_unity_produces_mult = 0.01
+	}
+	triggered_country_modifier = {
+		potential = { has_shroud_dlc = no }
+		shroud_delve_cost = -0.02
+	}
+	triggered_country_modifier = {
+		potential = { has_shroud_dlc = yes }
+		shroud_delve_cooldown = -0.05 # Delving doesn't cost anything in Shroud so it's changed
+	}
+	icon = "GFX_icon_shroudwalker_teacher"
+	custom_unlock_title = "councilor_shroudwalker_teacher_unlock_title"
+	conditional_tooltip = "councilor_shroudwalker_teacher_conditional_tooltip"
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_master_salvager = {
+	leader_class = { scientist }
+	possible = {
+		any_owned_leader = {
+			has_trait = leader_trait_master_salvager
+		}
+	}
+	is_leader_possible = {
+		has_trait = leader_trait_master_salvager
+	}
+	modifier = {
+		scavenge_debris_mult = 0.1
+		ship_friendly_territory_armor_mult = 0.02
+	}
+	icon = "GFX_icon_master_salvager"
+	custom_unlock_title = "councilor_master_salvager_unlock_title"
+	conditional_tooltip = "councilor_master_salvager_conditional_tooltip"
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_curator_archivist = {
+	leader_class = { scientist }
+	possible = {
+		any_owned_leader = {
+			has_trait = leader_trait_curator
+		}
+	}
+	is_leader_possible = {
+		has_trait = leader_trait_curator
+	}
+	modifier = {
+		planet_researchers_produces_mult = 0.02
+		planet_researchers_upkeep_mult = -0.02
+	}
+	icon = "GFX_icon_curator_archivist"
+	custom_unlock_title = "councilor_curator_archivist_unlock_title"
+	conditional_tooltip = "councilor_curator_archivist_conditional_tooltip"
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_enclave_trader = {
+	leader_class = { official }
+	possible = {
+		any_owned_leader = {
+			OR = {
+				has_trait = leader_trait_xuracorp_liaison
+				has_trait = leader_trait_riggan_liaison
+				has_trait = leader_trait_muutagan_liaison
+			}
+		}
+	}
+	is_leader_possible = {
+		OR = {
+			has_trait = leader_trait_xuracorp_liaison
+			has_trait = leader_trait_riggan_liaison
+			has_trait = leader_trait_muutagan_liaison
+		}
+	}
+	modifier = {
+		country_trade_produces_mult = 0.02
+		country_trade_fee = -0.01
+	}
+	icon = "GFX_icon_enclave_trader"
+	custom_unlock_title = "councilor_enclave_trader_unlock_title"
+	conditional_tooltip = "councilor_enclave_trader_conditional_tooltip"
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
