@@ -675,10 +675,10 @@ class MainWindow(Gtk.Window):
 			nb.append_page(scroller, Gtk.Label(label=area_label))
 		# --- Civics & Jobs tab ---
 		try:
-			civic_effects, job_names = parse_civics_job_effects(common_dir, loc_map)
-			print(f"[main] civics_tab: effects={len(civic_effects)} jobs={len(job_names)}", file=sys.stderr)
+			civic_effects, jobs_map = parse_civics_job_effects(common_dir, loc_map)
+			print(f"[main] civics_tab: effects={len(civic_effects)} jobs={len(jobs_map)}", file=sys.stderr)
 			if civic_effects:
-				cj_tab = CivicsJobsTab(civic_effects, job_names)
+				cj_tab = CivicsJobsTab(civic_effects, jobs_map)
 				nb.append_page(cj_tab, Gtk.Label(label="Civics & Jobs"))
 			else:
 				print("[main] civics_tab: empty (not adding tab)", file=sys.stderr)
