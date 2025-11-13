@@ -22,11 +22,11 @@ Notes:
 import os
 import re
 import glob
-from dataclasses import dataclass, field
 from typing import Dict, List, Tuple, Optional, Set
 
-from parsing.parsing import _discover_jobs, _iter_modifier_blocks, _iter_triggered_country_modifier_blocks, _iter_triggered_planet_modifier_blocks, _strip_comments
-from parsing.types import Job
+from parsing.parsing import _discover_jobs, _strip_comments
+from parsing.modifiers import _iter_modifier_blocks, _iter_triggered_country_modifier_blocks, _iter_triggered_planet_modifier_blocks
+from parsing.types import CivicJobEffects, Job, JobEffect, TypedModifierBlock
 
 import gi
 gi.require_version("Gtk", "3.0")
@@ -36,26 +36,6 @@ DEBUG = True
 def dbg(*a):
 	if DEBUG:
 		print("[civics_jobs]", *a)
-
-# ----------------------------
-# Data types
-# ----------------------------
-
-@dataclass
-class JobEffect:
-	job_key: str				  # e.g., job_researcher
-	job_name: str				 # localized single-name (e.g., Researcher)
-	kind: str					 # "count", "produces_mult", "upkeep_mult"
-	value: str					# as string (keep constants/decimals intact)
-	scope: str					# "country" (typical civic modifiers)
-	source: str				   # file base (for reference)
-	note: str = ""				# optional short note / path inside civic
-
-@dataclass
-class CivicJobEffects:
-	civic_key: str
-	civic_name: str
-	effects: List[JobEffect] = field(default_factory=list)
 
 # ----------------------------
 # Localisation helpers
@@ -420,15 +400,20 @@ def parse_civics_job_effects(common_root: str, loc: Dict[str, str]) -> Tuple[Lis
 
 				# Plain modifiers directly under the civic/origin block
 				for mod_block in _iter_modifier_blocks(body):
-					effects.extend(
-						_parse_effects_from_modifier(
+					if isinstance(mod_block, TypedModifierBlock):
+						new_effects = mod_block.to_job_effects(loc, job_map, os.path.basename(path), "modifier")
+						if new_effects:
+							effects.extend(new_effects)
+					else:
+						fallback = _parse_effects_from_modifier(
 							mod_block.body,  # inner text of modifier
 							loc,
 							job_map,
 							os.path.basename(path),
 							"modifier"
 						)
-					)
+						if fallback:
+							effects.extend(fallback)
 
 				# Triggered country modifiers, each may contain its own modifier block(s)
 				for tcm_block in _iter_triggered_country_modifier_blocks(body):
