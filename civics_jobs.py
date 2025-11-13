@@ -25,7 +25,7 @@ import glob
 from dataclasses import dataclass, field
 from typing import Dict, List, Tuple, Optional, Set
 
-from parsing.parsing import _discover_jobs, _strip_comments
+from parsing.parsing import _discover_jobs, _iter_modifier_blocks, _iter_triggered_country_modifier_blocks, _iter_triggered_planet_modifier_blocks, _strip_comments
 from parsing.types import Job
 
 import gi
@@ -418,14 +418,43 @@ def parse_civics_job_effects(common_root: str, loc: Dict[str, str]) -> Tuple[Lis
 				body = text[body_start:body_end]
 				effects: List[JobEffect] = []
 
-				for mod in _extract_block(body, "modifier"):
-					effects.extend(_parse_effects_from_modifier(mod, loc, job_map, os.path.basename(path), "modifier"))
-				for tcm in _extract_block(body, "triggered_country_modifier"):
-					for mod in _extract_block(tcm, "modifier"):
-						effects.extend(_parse_effects_from_modifier(mod, loc, job_map, os.path.basename(path), "triggered_country_modifier"))
-				for tpm in _extract_block(body, "triggered_planet_modifier"):
-					for mod in _extract_block(tpm, "modifier"):
-						effects.extend(_parse_effects_from_modifier(mod, loc, job_map, os.path.basename(path), "triggered_planet_modifier"))
+				# Plain modifiers directly under the civic/origin block
+				for mod_block in _iter_modifier_blocks(body):
+					effects.extend(
+						_parse_effects_from_modifier(
+							mod_block.body,  # inner text of modifier
+							loc,
+							job_map,
+							os.path.basename(path),
+							"modifier"
+						)
+					)
+
+				# Triggered country modifiers, each may contain its own modifier block(s)
+				for tcm_block in _iter_triggered_country_modifier_blocks(body):
+					for mod_block in _iter_modifier_blocks(tcm_block.body):
+						effects.extend(
+							_parse_effects_from_modifier(
+								mod_block.body,
+								loc,
+								job_map,
+								os.path.basename(path),
+								"triggered_country_modifier"
+							)
+						)
+
+				# Triggered planet modifiers, each may contain its own modifier block(s)
+				for tpm_block in _iter_triggered_planet_modifier_blocks(body):
+					for mod_block in _iter_modifier_blocks(tpm_block.body):
+						effects.extend(
+							_parse_effects_from_modifier(
+								mod_block.body,
+								loc,
+								job_map,
+								os.path.basename(path),
+								"triggered_planet_modifier"
+							)
+						)
 
 				if effects:
 					display_name = f"{name_prefix}{_loc_get(loc, key)}"
