@@ -24,9 +24,10 @@ import re
 import glob
 from typing import Dict, List, Tuple, Optional, Set
 
-from parsing.parsing import _discover_jobs, _strip_comments
+from parsing.context import GlobalContext
 from parsing.modifiers import _iter_modifier_blocks, _iter_triggered_country_modifier_blocks, _iter_triggered_planet_modifier_blocks
-from parsing.types import CivicJobEffects, Job, JobEffect, TypedModifierBlock
+from parsing.parsing import _discover_jobs, _strip_comments
+from parsing.types import CivicJobEffects, Job, JobEffect, JobModifierBlock
 
 import gi
 gi.require_version("Gtk", "3.0")
@@ -170,7 +171,7 @@ def _parse_triggered_jobs_blocks(text: str, loc: Dict[str, str], jobs: Optional[
 			job_key, val = jm.group(1), jm.group(2)
 			if not is_job(job_key):
 				continue
-			eff = JobEffect(job_key, _job_name(loc, job_key), "count", val, "planet/building", srcfile, "triggered_jobs")
+			eff = JobEffect(job=GlobalContext.job_get(job_key), kind="count", value=val, scope="planet/building", source=srcfile, note="triggered_jobs")
 			for ck in civics:
 				result.setdefault(ck, []).append(eff)
 	return result
@@ -190,7 +191,7 @@ def _parse_tpm_for_civic_jobs(tpm_text: str, loc: Dict[str, str], jobs: Optional
 	for jm in re.finditer(r'\b(job_[A-Za-z0-9_]+)\s*=\s*([+\-]?\d+)\b', tpm_text):
 		jk, val = jm.group(1), jm.group(2)
 		if is_job(jk):
-			collected.append(JobEffect(jk, _job_name(loc, jk), "count", val, "planet/building", srcfile, "TPM: add_jobs"))
+			collected.append(JobEffect(job=GlobalContext.job_get(jk), kind="count", value=val, scope="planet/building", source=srcfile, note="TPM: add_jobs"))
 
 	out: Dict[str, List[JobEffect]] = {}
 	if collected:
@@ -325,7 +326,7 @@ def _parse_effects_from_modifier(mod_text: str, loc: Dict[str, str], jobs: Optio
 	for m in JOB_ADD_RE.finditer(mod_text):
 		jk, val = m.group(1), m.group(2)
 		if is_job(jk):
-			effects.append(JobEffect(jk, _job_name(loc, jk), "count", val, "country", src, note))
+			effects.append(JobEffect(job=GlobalContext.job_get(jk), kind="count", value=val, scope="country", source=src, note=note))
 
 	# B1) planet_<plural>_(produces|upkeep)_mult
 	for m in PLANET_JOB_MULT_RE.finditer(mod_text):
@@ -334,7 +335,7 @@ def _parse_effects_from_modifier(mod_text: str, loc: Dict[str, str], jobs: Optio
 			continue
 		jk = _plural_to_job_id(plural)
 		if jk and is_job(jk):
-			effects.append(JobEffect(jk, _job_name(loc, jk), kind, val, "country", src, note))
+			effects.append(JobEffect(GlobalContext.job_get(jk), kind=kind, value=val, scope="country", source=src, note=note))
 
 	# B2) planet_<plural>_<resource>_produces_(add|mult)
 	for m in PLANET_JOB_RESOURCE_RE.finditer(mod_text):
@@ -343,39 +344,40 @@ def _parse_effects_from_modifier(mod_text: str, loc: Dict[str, str], jobs: Optio
 			continue
 		jk = _plural_to_job_id(plural)
 		if jk and is_job(jk):
-			effects.append(JobEffect(jk, _job_name(loc, jk), f"produces_{mode}", val, "country", src, f"{note}; {resource}"))
+			effects.append(JobEffect(job=GlobalContext.job_get(jk), kind=f"produces_{mode}", value=val, scope="country", source=src, note=f"{note}; {resource}"))
 
 	# C) job_<id>_(produces|upkeep)_mult
 	for m in re.finditer(r'\b(job_[A-Za-z0-9_]+)_(produces_mult|upkeep_mult)\s*=\s*([+\-]?[0-9.]+)\b', mod_text):
 		jk, kind, val = m.group(1), m.group(2), m.group(3)
 		if is_job(jk):
-			effects.append(JobEffect(jk, _job_name(loc, jk), kind, val, "country", src, note))
+			effects.append(JobEffect(job=GlobalContext.job_get(jk), kind=kind, value=val, scope="country", source=src, note=note))
 
 	# D) job_<id>_<resource>_produces_(add|mult)
 	for m in re.finditer(r'\b(job_[A-Za-z0-9_]+)_([A-Za-z0-9_]+)_produces_(add|mult)\s*=\s*([+\-]?[0-9.]+)\b', mod_text):
 		jk, resource, mode, val = m.group(1), m.group(2), m.group(3), m.group(4)
 		if is_job(jk):
-			effects.append(JobEffect(jk, _job_name(loc, jk), f"produces_{mode}", val, "country", src, f"{note}; {resource}"))
+			effects.append(JobEffect(job=GlobalContext.job_get(jk), kind=f"produces_{mode}", value=val, scope="country", source=src, note=f"{note}; {resource}"))
 
 	# E) job_<id>_output[_add|_mult]
 	for m in re.finditer(r'\b(job_[A-Za-z0-9_]+)_output(_(add|mult))?\s*=\s*([+\-]?[0-9.]+)\b', mod_text):
 		jk, _, suffix, val = m.group(1), m.group(2), m.group(3), m.group(4)
 		if is_job(jk):
 			kind = "output" if not suffix else f"output_{suffix}"
-			effects.append(JobEffect(jk, _job_name(loc, jk), kind, val, "country", src, note))
+			effects.append(JobEffect(job=GlobalContext.job_get(jk), kind=kind, value=val, scope="country", source=src, note=note))
 
 	# F) <job-base>_jobs_bonus_workforce_mult
 	for m in JOBS_BONUS_WORKFORCE_RE.finditer(mod_text):
 		base, val = m.group(1), m.group(2)
 		jk = f"job_{base}"
 		if is_job(jk):
-			effects.append(JobEffect(jk, _job_name(loc, jk), "bonus_workforce_mult", val, "country", src, note))
+			effects.append(JobEffect(job=GlobalContext.job_get(jk), kind="bonus_workforce_mult", value=val, scope="country", source=src, note=note))
 
 	return effects
 
 def parse_civics_job_effects(common_root: str, loc: Dict[str, str]) -> Tuple[List[CivicJobEffects], Dict[str, Job]]:
 	# Discover jobs
 	job_map = _discover_jobs(common_root, loc)
+	GlobalContext.set_global_context(job_map, loc)
 	if len(job_map) == 0:
 		dbg("WARNING: 0 jobs discovered — will NOT filter by known jobs (fallback enabled)")
 		job_map = None  # disable filtering so we still see effects
@@ -399,9 +401,9 @@ def parse_civics_job_effects(common_root: str, loc: Dict[str, str]) -> Tuple[Lis
 				effects: List[JobEffect] = []
 
 				# Plain modifiers directly under the civic/origin block
-				for mod_block in _iter_modifier_blocks(body):
-					if isinstance(mod_block, TypedModifierBlock):
-						new_effects = mod_block.to_job_effects(loc, job_map, os.path.basename(path), "modifier")
+				for mod_block in _iter_modifier_blocks(body, path):
+					if isinstance(mod_block, JobModifierBlock):
+						new_effects = mod_block.to_job_effects()
 						if new_effects:
 							effects.extend(new_effects)
 					else:
@@ -445,7 +447,7 @@ def parse_civics_job_effects(common_root: str, loc: Dict[str, str]) -> Tuple[Lis
 					display_name = f"{name_prefix}{_loc_get(loc, key)}"
 					found.append(CivicJobEffects(key, display_name, effects))
 					for eff in effects:
-						job_names.setdefault(eff.job_key, eff.job_name)
+						job_names.setdefault(eff.job.key, eff.job.name)
 
 		found.sort(key=lambda c: c.civic_name.lower())
 		dbg(f"scan done: {block_prefix} -> {len(found)} entries with effects")
@@ -467,7 +469,7 @@ def parse_civics_job_effects(common_root: str, loc: Dict[str, str]) -> Tuple[Lis
 				civics.append(index[ck])
 			index[ck].effects.extend(effs)
 			for eff in effs:
-				jn_civ.setdefault(eff.job_key, eff.job_name)
+				jn_civ.setdefault(eff.job.key, eff.job.name)
 
 	# Finalize
 	results = [c for c in civics if c.effects] + [o for o in origins if o.effects]
@@ -497,7 +499,7 @@ def _parse_group_resource_effects(buf: str, known_jobs: Set[str]) -> List[JobEff
 
 def _parse_jobs_bonus_workforce(buf: str, known_jobs: Set[str]) -> List[JobEffect]:
 	effects: List[JobEffect] = []
-	for m in _JOBS_BONUS_WORKFORCE_RE.finditer(buf):
+	for m in GlobalContext.jobs_workforce_mult_re.finditer(buf):
 		base, val = m.groups()
 		for job_key in _expand_group_to_jobs(base, known_jobs):
 			effects.append(JobEffect(
@@ -630,20 +632,20 @@ class CivicsJobsTab(Gtk.Box):
 		parts: List[str] = []
 		for eff in c.effects:
 			if eff.kind == "count":
-				parts.append(f"{eff.job_name} {_fmt_signed_int(eff.value)}")
+				parts.append(f"{eff.job.name} {_fmt_signed_int(eff.value)}")
 			elif eff.kind in ("produces_mult", "upkeep_mult", "output_mult", "bonus_workforce_mult"):
 				label = "prod" if eff.kind.startswith("produces") else (
 					"upkeep" if eff.kind.startswith("upkeep") else (
 						"output" if "output" in eff.kind else "workforce"
 					)
 				)
-				parts.append(f"{eff.job_name} {_fmt_pct(eff.value)} {label}{_maybe_res(eff.note)}")
+				parts.append(f"{eff.job.name} {_fmt_pct(eff.value)} {label}{_maybe_res(eff.note)}")
 			elif eff.kind in ("produces_add", "output", "output_add"):
 				label = "prod" if eff.kind.startswith("produces") else "output"
-				parts.append(f"{eff.job_name} {eff.value} {label}{_maybe_res(eff.note)}")
+				parts.append(f"{eff.job.name} {eff.value} {label}{_maybe_res(eff.note)}")
 			else:
 				# Unknown/new kind – don’t drop it, display raw
-				parts.append(f"{eff.job_name} {eff.kind}={eff.value}{_maybe_res(eff.note)}")
+				parts.append(f"{eff.job.name} {eff.kind}={eff.value}{_maybe_res(eff.note)}")
 
 		return "; ".join(parts) if parts else "—"
 

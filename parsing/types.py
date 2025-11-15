@@ -1,27 +1,51 @@
 from dataclasses import dataclass, field
 from typing import Dict, List
 
+from .context import Job, Resource
 
 @dataclass
 class JobEffect:
-	job_key: str				  # e.g., job_researcher
-	job_name: str				 # localized single-name (e.g., Researcher)
+	job: Job
 	kind: str					 # "count", "produces_mult", "upkeep_mult"
 	value: str					# as string (keep constants/decimals intact)
 	scope: str					# "country" (typical civic modifiers)
 	source: str				   # file base (for reference)
-	note: str = ""				# optional short note / path inside civic
+	note: str				# optional short note / path inside civic
+
+@dataclass(init=False)
+class JobEffectProductionAdd(JobEffect):
+	"""
+	Typed version of 'job produces ADD something'.
+
+	New fields:
+	- resource: Resource     (strongly typed resource)
+	- amount:   int          (numeric amount)
+
+	But we ALSO keep the base JobEffect fields in sync so existing code keeps working:
+	- job_key / job_name / kind / value / src / note
+	"""
+	resource: Resource
+	amount: int
+
+	def __init__(self, job: Job, resource: Resource, amount: int, scope: str, source: str, note: str) -> None:
+		self.resource = resource
+		self.amount = int(amount)
+
+		# keep old API consistent
+		super().__init__(
+			job = job,
+			kind="produces_add",
+			value=str(self.amount),  # legacy string field
+			scope=scope,
+			source=source,
+			note=note,
+		)
 
 @dataclass
 class CivicJobEffects:
 	civic_key: str
 	civic_name: str
 	effects: List[JobEffect] = field(default_factory=list)
-
-@dataclass
-class Job:
-	key: str    # e.g. "job_physicist"
-	name: str   # localized display name, e.g. "Physicist"
 
 # Base block type for "X = { ... }" style chunks
 @dataclass
@@ -45,23 +69,25 @@ class ModifierBlock(BlockBase):
 		return "modifier"
 
 @dataclass
-class TypedModifierBlock(ModifierBlock):
+class JobModifierBlock(ModifierBlock):
 	"""
 	Base for strongly-typed modifier blocks.
 	Subclasses should parse `body` in __post_init__ and implement to_job_effects().
 	"""
 
-	def to_job_effects(
-		self,
-		jobs: Dict[str, Job],
-		src: str,
-		context: str,
-	) -> List[JobEffect]:
+	def to_job_effects(self) -> List[JobEffect]:
 		"""
 		Convert this modifier into JobEffect list.
 		Must be overridden in subclasses.
 		"""
 		raise NotImplementedError
+
+@dataclass
+class PlanetJobProduceAddModifier(JobModifierBlock):
+	modifiers: List[JobEffectProductionAdd]
+
+	def to_job_effects(self) -> List[JobEffect]:
+		return self.modifiers
 
 @dataclass
 class TriggeredCountryModifierBlock(BlockBase):

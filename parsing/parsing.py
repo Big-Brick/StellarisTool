@@ -4,7 +4,7 @@ import re
 
 from typing import Dict
 
-from .types import Job
+from .context import Job
 
 DEBUG_TYPED_MODIFIERS = True
 
