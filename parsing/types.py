@@ -18,16 +18,16 @@ class JobEffectProductionAdd(JobEffect):
 	Typed version of 'job produces ADD something'.
 
 	New fields:
-	- resource: Resource     (strongly typed resource)
-	- amount:   int          (numeric amount)
+	- resource: Resource	 (strongly typed resource)
+	- amount:   int		  (numeric amount)
 
 	But we ALSO keep the base JobEffect fields in sync so existing code keeps working:
 	- job_key / job_name / kind / value / src / note
 	"""
 	resource: Resource
-	amount: int
+	amount: float
 
-	def __init__(self, job: Job, resource: Resource, amount: int, scope: str, source: str, note: str) -> None:
+	def __init__(self, job: Job, resource: Resource, amount: float, scope: str, source: str, note: str) -> None:
 		self.resource = resource
 		self.amount = int(amount)
 
@@ -35,6 +35,25 @@ class JobEffectProductionAdd(JobEffect):
 		super().__init__(
 			job = job,
 			kind="produces_add",
+			value=str(self.amount),  # legacy string field
+			scope=scope,
+			source=source,
+			note=note,
+		)
+
+@dataclass(init=False)
+class JobEffectUpkeepMult(JobEffect):
+	"""
+	Typed version of 'job upkeep multiplier'.
+	Stores the numeric multiplier as a float while keeping the base fields in sync.
+	"""
+	amount: float
+
+	def __init__(self, job: Job, amount: float, scope: str, source: str, note: str) -> None:
+		self.amount = float(amount)
+		super().__init__(
+			job=job,
+			kind="upkeep_mult",
 			value=str(self.amount),  # legacy string field
 			scope=scope,
 			source=source,
@@ -50,8 +69,8 @@ class CivicJobEffects:
 # Base block type for "X = { ... }" style chunks
 @dataclass
 class BlockBase:
-	body: str      # inner text inside braces: everything between '{' and '}'
-	raw_text: str  # full text of the block, e.g. 'modifier = { ... }'
+	body: List[str]
+	raw_text: str
 
 	@classmethod
 	def keyword(cls) -> str:
@@ -61,7 +80,6 @@ class BlockBase:
 		"""
 		raise NotImplementedError
 
-
 @dataclass
 class ModifierBlock(BlockBase):
 	@classmethod
@@ -70,21 +88,7 @@ class ModifierBlock(BlockBase):
 
 @dataclass
 class JobModifierBlock(ModifierBlock):
-	"""
-	Base for strongly-typed modifier blocks.
-	Subclasses should parse `body` in __post_init__ and implement to_job_effects().
-	"""
-
-	def to_job_effects(self) -> List[JobEffect]:
-		"""
-		Convert this modifier into JobEffect list.
-		Must be overridden in subclasses.
-		"""
-		raise NotImplementedError
-
-@dataclass
-class PlanetJobProduceAddModifier(JobModifierBlock):
-	modifiers: List[JobEffectProductionAdd]
+	modifiers: List[JobEffect] = field(default_factory=list)
 
 	def to_job_effects(self) -> List[JobEffect]:
 		return self.modifiers

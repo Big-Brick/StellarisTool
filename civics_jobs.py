@@ -408,7 +408,7 @@ def parse_civics_job_effects(common_root: str, loc: Dict[str, str]) -> Tuple[Lis
 							effects.extend(new_effects)
 					else:
 						fallback = _parse_effects_from_modifier(
-							mod_block.body,  # inner text of modifier
+							mod_block.raw_text,  # inner text of modifier
 							loc,
 							job_map,
 							os.path.basename(path),
