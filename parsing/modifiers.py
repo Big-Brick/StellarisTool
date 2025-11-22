@@ -14,6 +14,8 @@ from .types import (
 	JobEffectProductionAdd,
 	JobEffectUpkeepMult)
 
+from .parsing_job_effect import JobEffectParser
+
 TBlock = TypeVar("TBlock", bound=BlockBase)
 
 def _iter_blocks_of_type(text: str, block_cls: Type[TBlock]) -> Iterator[TBlock]:
@@ -101,51 +103,11 @@ def _iter_modifier_blocks(text: str, src: str) -> Iterator[ModifierBlock]:
 		leftover: List[str] = []
 
 		for entry in entries:
-			# Try planet_*_produces_add first
-			m_prod = GlobalContext.planet_job_produces_add_re.match(entry)
-			if m_prod:
-				group = m_prod.group("group")
-				res_key = m_prod.group("res")
-				amount = float(m_prod.group("amount"))
-
-				base = group[:-1] if group.endswith("s") else group
-				job_key = f"job_{base}"
-				job = GlobalContext.job_get(job_key)
-				resource = GlobalContext.resource_from_key(res_key)
-
-				modifiers.append(JobEffectProductionAdd(
-					job=job,
-					resource=resource,
-					amount=amount,
-					scope="unk",
-					source=src,
-					note="",
-				))
-				continue  # skip putting this entry in leftover
-
-			# Try planet_*_upkeep_mult next
-			try:
-				m_upkeep = GlobalContext.planet_job_upkeep_mult_re.match(entry)
-				if m_upkeep:
-					group = m_upkeep.group("group")
-					amount = float(m_upkeep.group("amount"))
-
-					base = group[:-1] if group.endswith("s") else group
-					job_key = f"job_{base}"
-					job = GlobalContext.job_get(job_key)
-
-					modifiers.append(JobEffectUpkeepMult(
-						job=job,
-						amount=amount,
-						scope="unk",
-						source=src,
-						note="",
-					))
-					continue  # skip leftover
-			except Exception:
-				pass
-			# If it matches neither pattern, store it unchanged
-			leftover.append(entry)
+			eff: JobEffect = JobEffectParser.parse_any_job_effect(entry)
+			if eff is not None:
+				modifiers.append(eff)
+			else:
+				leftover.append(entry)
 
 		if modifiers:
 			yield JobModifierBlock(body=leftover, raw_text=raw, modifiers=modifiers)
